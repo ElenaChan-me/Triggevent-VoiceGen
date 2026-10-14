@@ -1,0 +1,1347 @@
+[
+ {
+  "en": "Buster on {event.target}",
+  "ja": "{event.target}にタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Tether",
+  "ja": "線",
+  "note": ""
+ },
+ {
+  "en": "No Tether",
+  "ja": "線なし",
+  "note": ""
+ },
+ {
+  "en": "Spread out of Cones",
+  "ja": "扇範囲の外で散開",
+  "note": ""
+ },
+ {
+  "en": "Stacks out of Cones",
+  "ja": "扇範囲の外で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread in Cones",
+  "ja": "扇範囲の中で散開",
+  "note": ""
+ },
+ {
+  "en": "Stacks in Cones",
+  "ja": "扇範囲の中で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Line Spread",
+  "ja": "直線散開",
+  "note": ""
+ },
+ {
+  "en": "Avoid Tower",
+  "ja": "塔を避ける",
+  "note": ""
+ },
+ {
+  "en": "Take Tower",
+  "ja": "塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Confetti",
+  "ja": "コンフェッティ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Confetti on {confettiPlayers}",
+  "ja": "{confettiPlayers}にコンフェッティ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Avoid Both",
+  "ja": "両方避ける",
+  "note": ""
+ },
+ {
+  "en": "Out of Cones, In Lines",
+  "ja": "扇範囲の外、直線の中",
+  "note": ""
+ },
+ {
+  "en": "In Cones, Out of Lines",
+  "ja": "扇範囲の中、直線の外",
+  "note": ""
+ },
+ {
+  "en": "Stand in Both",
+  "ja": "両方の中に立つ",
+  "note": ""
+ },
+ {
+  "en": "Avoid Ice, Stone",
+  "ja": "氷を避ける、石",
+  "note": ""
+ },
+ {
+  "en": "Fake Ice, Stone",
+  "ja": "偽物の氷、石",
+  "note": ""
+ },
+ {
+  "en": "Avoid Ice, Dark",
+  "ja": "氷を避ける、闇",
+  "note": ""
+ },
+ {
+  "en": "Fake Ice, Dark",
+  "ja": "偽物の氷、闇",
+  "note": ""
+ },
+ {
+  "en": "Drop Stone",
+  "ja": "石を置く",
+  "note": ""
+ },
+ {
+  "en": "Avoid Stone and Puddle",
+  "ja": "石と床を避ける",
+  "note": ""
+ },
+ {
+  "en": "West Safe",
+  "ja": "西が安置",
+  "note": ""
+ },
+ {
+  "en": "East Safe",
+  "ja": "東が安置",
+  "note": ""
+ },
+ {
+  "en": "Stone",
+  "ja": "石",
+  "note": ""
+ },
+ {
+  "en": "Dark",
+  "ja": "闇",
+  "note": ""
+ },
+ {
+  "en": "{safeSpot2} Safe, Confetti",
+  "ja": "{safeSpot2}が安置、コンフェッティ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "{safeSpot2} Safe, Confetti on {confettiPlayers}",
+  "ja": "{safeSpot2}が安置、{confettiPlayers}にコンフェッティ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Final Soaks",
+  "ja": "最後の塔踏み",
+  "note": ""
+ },
+ {
+  "en": "Raidwide",
+  "ja": "全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Arrows",
+  "ja": "矢印",
+  "note": ""
+ },
+ {
+  "en": "Double North",
+  "ja": "北2回",
+  "note": ""
+ },
+ {
+  "en": "Double South",
+  "ja": "南2回",
+  "note": ""
+ },
+ {
+  "en": "Double East",
+  "ja": "東2回",
+  "note": ""
+ },
+ {
+  "en": "Double West",
+  "ja": "西2回",
+  "note": ""
+ },
+ {
+  "en": "North West",
+  "ja": "北から西",
+  "note": "北のあと西の意味"
+ },
+ {
+  "en": "North East",
+  "ja": "北から東",
+  "note": "北のあと東の意味"
+ },
+ {
+  "en": "South West",
+  "ja": "南から西",
+  "note": "M1Nでは南西の意味でも使われる"
+ },
+ {
+  "en": "South East",
+  "ja": "南から東",
+  "note": "M1Nでは南東の意味でも使われる"
+ },
+ {
+  "en": "East North",
+  "ja": "東から北",
+  "note": ""
+ },
+ {
+  "en": "East South",
+  "ja": "東から南",
+  "note": ""
+ },
+ {
+  "en": "West North",
+  "ja": "西から北",
+  "note": ""
+ },
+ {
+  "en": "West South",
+  "ja": "西から南",
+  "note": ""
+ },
+ {
+  "en": "Error",
+  "ja": "エラー",
+  "note": ""
+ },
+ {
+  "en": "Sleep Tether",
+  "ja": "睡眠の線",
+  "note": ""
+ },
+ {
+  "en": "Confusion Tether",
+  "ja": "混乱の線",
+  "note": ""
+ },
+ {
+  "en": "Spread for Sleep",
+  "ja": "睡眠で散開",
+  "note": ""
+ },
+ {
+  "en": "Spread for Confusion",
+  "ja": "混乱で散開",
+  "note": ""
+ },
+ {
+  "en": "Fake Gaze",
+  "ja": "偽物の視線",
+  "note": ""
+ },
+ {
+  "en": "Real Gaze",
+  "ja": "本物の視線",
+  "note": ""
+ },
+ {
+  "en": "{actualSpread ? 'Spread' : 'Stack'} {fakeThunder ? 'In Thunder' : 'In Safe'}, Look {fakeGaze ? 'Towards' : 'Away'}",
+  "ja": "{fakeThunder ? '雷の中で' : '安置で'}{actualSpread ? '散開' : '頭割り'}、{fakeGaze ? 'ボスを見る' : '背を向ける'}",
+  "note": ""
+ },
+ {
+  "en": "",
+  "ja": "",
+  "note": ""
+ },
+ {
+  "en": "Cone, {supportsCone ? 'Supports' : 'DPS'} have cone",
+  "ja": "扇範囲、{supportsCone ? 'タンクヒーラー' : 'DPS'}が扇",
+  "note": ""
+ },
+ {
+  "en": "Circle, {supportsCone ? 'Supports' : 'DPS'} have cone",
+  "ja": "円範囲、{supportsCone ? 'タンクヒーラー' : 'DPS'}が扇",
+  "note": ""
+ },
+ {
+  "en": "Stack, {supportsCone ? 'Supports' : 'DPS'} have cone",
+  "ja": "頭割り、{supportsCone ? 'タンクヒーラー' : 'DPS'}が扇",
+  "note": ""
+ },
+ {
+  "en": "Error, {supportsCone ? 'Supports' : 'DPS'} have cone",
+  "ja": "エラー、{supportsCone ? 'タンクヒーラー' : 'DPS'}が扇",
+  "note": ""
+ },
+ {
+  "en": "Cone with {buddy}, Baits",
+  "ja": "{buddy}と扇範囲、誘導",
+  "note": ""
+ },
+ {
+  "en": "Circle with {buddy}, Baits",
+  "ja": "{buddy}と円範囲、誘導",
+  "note": ""
+ },
+ {
+  "en": "Stack, Baits",
+  "ja": "頭割り、誘導",
+  "note": ""
+ },
+ {
+  "en": "Nothing, Baits",
+  "ja": "何もなし、誘導",
+  "note": ""
+ },
+ {
+  "en": "Cone",
+  "ja": "扇範囲",
+  "note": ""
+ },
+ {
+  "en": "Circle",
+  "ja": "円範囲",
+  "note": ""
+ },
+ {
+  "en": "Stack with {buddy}",
+  "ja": "{buddy}と頭割り",
+  "note": ""
+ },
+ {
+  "en": "Nothing",
+  "ja": "何もなし",
+  "note": ""
+ },
+ {
+  "en": "Cone, Bait Between",
+  "ja": "扇範囲、間で誘導",
+  "note": ""
+ },
+ {
+  "en": "Circle, Bait Between",
+  "ja": "円範囲、間で誘導",
+  "note": ""
+ },
+ {
+  "en": "Stack with {buddy}, Bait Between",
+  "ja": "{buddy}と頭割り、間で誘導",
+  "note": ""
+ },
+ {
+  "en": "Nothing, Bait Between",
+  "ja": "何もなし、間で誘導",
+  "note": ""
+ },
+ {
+  "en": "Cone, Bait Away",
+  "ja": "扇範囲、離れて誘導",
+  "note": ""
+ },
+ {
+  "en": "Circle, Bait Away",
+  "ja": "円範囲、離れて誘導",
+  "note": ""
+ },
+ {
+  "en": "Stack with {buddy}, Bait Away",
+  "ja": "{buddy}と頭割り、離れて誘導",
+  "note": ""
+ },
+ {
+  "en": "Nothing, Bait Away",
+  "ja": "何もなし、離れて誘導",
+  "note": ""
+ },
+ {
+  "en": "Bait Away",
+  "ja": "離れて誘導",
+  "note": ""
+ },
+ {
+  "en": "Bait Between",
+  "ja": "間で誘導",
+  "note": ""
+ },
+ {
+  "en": "Trines",
+  "ja": "トライン",
+  "note": "技名要確認"
+ },
+ {
+  "en": "{wingsSafe} Safe",
+  "ja": "{wingsSafe}が安置",
+  "note": ""
+ },
+ {
+  "en": "Failed",
+  "ja": "失敗",
+  "note": ""
+ },
+ {
+  "en": "Knockback",
+  "ja": "ノックバック",
+  "note": ""
+ },
+ {
+  "en": "Attack Chaos",
+  "ja": "カオスを攻撃",
+  "note": ""
+ },
+ {
+  "en": "Attack Exdeath",
+  "ja": "エクスデスを攻撃",
+  "note": ""
+ },
+ {
+  "en": "Headwind",
+  "ja": "向かい風",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Tailwind",
+  "ja": "追い風",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Headwind and Entropy",
+  "ja": "向かい風とエントロピー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Tailwind and Entropy",
+  "ja": "追い風とエントロピー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Headwind and Dynamic Fluid",
+  "ja": "向かい風とダイナミックフルード",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Tailwind and Dynamic Fluid",
+  "ja": "追い風とダイナミックフルード",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Entropy On You Soon",
+  "ja": "まもなく自分にエントロピー",
+  "note": ""
+ },
+ {
+  "en": "Entropies Soon",
+  "ja": "まもなくエントロピー",
+  "note": ""
+ },
+ {
+  "en": "Dynamic On You Soon",
+  "ja": "まもなく自分にダイナミック",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Dynamics Soon",
+  "ja": "まもなくダイナミック",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Starting {resultingStart} -> {resultingClockwise ? 'Clockwise' : 'CCW'}",
+  "ja": "{resultingStart}から開始、{resultingClockwise ? '時計回り' : '反時計回り'}",
+  "note": ""
+ },
+ {
+  "en": "{myNumber} { myPosition } { resultingClockwise ? 'CW' : 'CCW' }",
+  "ja": "{myNumber}番、{ myPosition }、{ resultingClockwise ? '時計回り' : '反時計回り' }",
+  "note": ""
+ },
+ {
+  "en": "Sides Then Front/Back",
+  "ja": "横、そのあと前後",
+  "note": ""
+ },
+ {
+  "en": "Front/Back then Sides",
+  "ja": "前後、そのあと横",
+  "note": ""
+ },
+ {
+  "en": "Front/Back",
+  "ja": "前後",
+  "note": ""
+ },
+ {
+  "en": "Sides",
+  "ja": "横",
+  "note": ""
+ },
+ {
+  "en": "Knockback from {event.source}",
+  "ja": "{event.source}からノックバック",
+  "note": ""
+ },
+ {
+  "en": "Away from {event.source}",
+  "ja": "{event.source}から離れる",
+  "note": ""
+ },
+ {
+  "en": "Proximity Buster",
+  "ja": "距離減衰タンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Earthquake - 1 HP",
+  "ja": "アースクエイク、HP1",
+  "note": "技名要確認"
+ },
+ {
+  "en": "First",
+  "ja": "1番目",
+  "note": ""
+ },
+ {
+  "en": "Second",
+  "ja": "2番目",
+  "note": ""
+ },
+ {
+  "en": "Third",
+  "ja": "3番目",
+  "note": ""
+ },
+ {
+  "en": "First + Accretion",
+  "ja": "1番目、アクリーション",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Second + Accretion",
+  "ja": "2番目、アクリーション",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Roles {safe}",
+  "ja": "{safe}でロール別",
+  "note": ""
+ },
+ {
+  "en": "Stack {safe}",
+  "ja": "{safe}で頭割り",
+  "note": ""
+ },
+ {
+  "en": "{safe} Behind Chaos",
+  "ja": "{safe}、カオスの背後",
+  "note": ""
+ },
+ {
+  "en": "{safeSpots} safe",
+  "ja": "{safeSpots}が安置",
+  "note": ""
+ },
+ {
+  "en": "{firstSafe} to {secondSafe}, Roles {finalSafe}",
+  "ja": "{firstSafe}から{secondSafe}、{finalSafe}でロール別",
+  "note": ""
+ },
+ {
+  "en": "{firstSafe} to {secondSafe}, Stack {finalSafe}",
+  "ja": "{firstSafe}から{secondSafe}、{finalSafe}で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Roles {finalSafe}",
+  "ja": "{finalSafe}でロール別",
+  "note": ""
+ },
+ {
+  "en": "Stack {finalSafe}",
+  "ja": "{finalSafe}で頭割り",
+  "note": ""
+ },
+ {
+  "en": "{safe} Safe",
+  "ja": "{safe}が安置",
+  "note": ""
+ },
+ {
+  "en": "{event.target} Cleansed",
+  "ja": "{event.target}のデバフ解除",
+  "note": ""
+ },
+ {
+  "en": "Cleansed",
+  "ja": "デバフ解除",
+  "note": ""
+ },
+ {
+  "en": "{firstTethers} then {secondTethers}",
+  "ja": "{firstTethers}、そのあと{secondTethers}",
+  "note": ""
+ },
+ {
+  "en": "{allTethers}",
+  "ja": "{allTethers}",
+  "note": ""
+ },
+ {
+  "en": "Bait Blizzards then Stacks",
+  "ja": "ブリザド誘導、そのあと頭割り",
+  "note": ""
+ },
+ {
+  "en": "Move",
+  "ja": "動く",
+  "note": ""
+ },
+ {
+  "en": "Stack on {event.target.job.support ? 'Support' : 'DPS'}",
+  "ja": "{event.target.job.support ? 'タンクヒーラー' : 'DPS'}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Swap",
+  "ja": "交代",
+  "note": ""
+ },
+ {
+  "en": "Away from Stacks, Keep Moving",
+  "ja": "頭割りから離れて、動き続ける",
+  "note": ""
+ },
+ {
+  "en": "Enrage",
+  "ja": "時間切れ",
+  "note": ""
+ },
+ {
+  "en": "{real ? 'Real' : 'Fake'} Cross",
+  "ja": "{real ? '本物' : '偽物'}のクロス",
+  "note": ""
+ },
+ {
+  "en": "{real ? 'Real' : 'Fake'} Inferno",
+  "ja": "{real ? '本物' : '偽物'}のインフェルノ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "{real ? 'Real' : 'Fake'} Tsunami",
+  "ja": "{real ? '本物' : '偽物'}のツナミ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Kefka Says",
+  "ja": "ケフカセッズ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real Short Accel",
+  "ja": "本物、短い加速度爆弾",
+  "note": ""
+ },
+ {
+  "en": "Real Short + Shriek",
+  "ja": "本物、短い加速度爆弾、シュリーク",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real Long Accel",
+  "ja": "本物、長い加速度爆弾",
+  "note": ""
+ },
+ {
+  "en": "Real Long + Shriek",
+  "ja": "本物、長い加速度爆弾、シュリーク",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real Water",
+  "ja": "本物の水",
+  "note": ""
+ },
+ {
+  "en": "Real Lightning",
+  "ja": "本物の雷",
+  "note": ""
+ },
+ {
+  "en": "Fake Short Accel",
+  "ja": "偽物、短い加速度爆弾",
+  "note": ""
+ },
+ {
+  "en": "Fake Long Accel",
+  "ja": "偽物、長い加速度爆弾",
+  "note": ""
+ },
+ {
+  "en": "Fake Long + Shriek",
+  "ja": "偽物、長い加速度爆弾、シュリーク",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fake Water",
+  "ja": "偽物の水",
+  "note": ""
+ },
+ {
+  "en": "Fake Lightning",
+  "ja": "偽物の雷",
+  "note": ""
+ },
+ {
+  "en": "Real Dynamic",
+  "ja": "本物のダイナミック",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real Entropy",
+  "ja": "本物のエントロピー",
+  "note": ""
+ },
+ {
+  "en": "Fake Dynamic",
+  "ja": "偽物のダイナミック",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fake Entropy",
+  "ja": "偽物のエントロピー",
+  "note": ""
+ },
+ {
+  "en": "Real White + Death",
+  "ja": "本物の白、デス",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fake White + Death",
+  "ja": "偽物の白、デス",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real Black + Death",
+  "ja": "本物の黒、デス",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fake Black + Death",
+  "ja": "偽物の黒、デス",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real White + Allag",
+  "ja": "本物の白、アラグ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fake White + Allag",
+  "ja": "偽物の白、アラグ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Real Black + Allag",
+  "ja": "本物の黒、アラグ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fake Black + Allag",
+  "ja": "偽物の黒、アラグ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Stand in White ({whitePos})",
+  "ja": "白に入る、{whitePos}",
+  "note": ""
+ },
+ {
+  "en": "Stand in Black ({blackPos})",
+  "ja": "黒に入る、{blackPos}",
+  "note": ""
+ },
+ {
+  "en": "Stack",
+  "ja": "頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread",
+  "ja": "散開",
+  "note": ""
+ },
+ {
+  "en": "Stack with {stacks}",
+  "ja": "{stacks}と頭割り",
+  "note": ""
+ },
+ {
+  "en": "{stillness ? 'Stillness' : 'Motion'} and Stack",
+  "ja": "{stillness ? '止まる' : '動く'}、頭割り",
+  "note": ""
+ },
+ {
+  "en": "{stillness ? 'Stillness' : 'Motion'} and Spread",
+  "ja": "{stillness ? '止まる' : '動く'}、散開",
+  "note": ""
+ },
+ {
+  "en": "{stillness ? 'Stillness' : 'Motion'} and Stack with {stacks}",
+  "ja": "{stillness ? '止まる' : '動く'}、{stacks}と頭割り",
+  "note": ""
+ },
+ {
+  "en": "{fakeThunder ? 'Fake' : 'Real'} Thunder, {fakeShriek ? 'Fake' : 'Real'} Gaze",
+  "ja": "{fakeThunder ? '偽物' : '本物'}の雷、{fakeShriek ? '偽物' : '本物'}の視線",
+  "note": ""
+ },
+ {
+  "en": "{fakeThunder ? 'Fake' : 'Real'} Thunder, {fakeShriek ? 'Fake' : 'Real'} Gaze on YOU",
+  "ja": "{fakeThunder ? '偽物' : '本物'}の雷、自分に{fakeShriek ? '偽物' : '本物'}の視線",
+  "note": ""
+ },
+ {
+  "en": "{isDonut ? 'Stack for Donut' : 'Stack then Move'}",
+  "ja": "{isDonut ? 'ドーナツで頭割り' : '頭割り、そのあと動く'}",
+  "note": ""
+ },
+ {
+  "en": "Stay",
+  "ja": "そのまま",
+  "note": ""
+ },
+ {
+  "en": "Stack {fakeIce ? 'In Ice' : 'Out of Ice'}",
+  "ja": "{fakeIce ? '氷の中' : '氷の外'}で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread {fakeIce ? 'In Ice' : 'Out of Ice'}",
+  "ja": "{fakeIce ? '氷の中' : '氷の外'}で散開",
+  "note": ""
+ },
+ {
+  "en": "Stack {fakeIce ? 'In Ice' : 'Out of Ice'} (with {stacks})",
+  "ja": "{fakeIce ? '氷の中' : '氷の外'}で{stacks}と頭割り",
+  "note": ""
+ },
+ {
+  "en": "{stillness ? 'Stillness' : 'Motion'} and Stack {fakeIce ? 'In Ice' : 'Out of Ice'}",
+  "ja": "{stillness ? '止まる' : '動く'}、{fakeIce ? '氷の中' : '氷の外'}で頭割り",
+  "note": ""
+ },
+ {
+  "en": "{stillness ? 'Stillness' : 'Motion'} and Spread {fakeIce ? 'In Ice' : 'Out of Ice'}",
+  "ja": "{stillness ? '止まる' : '動く'}、{fakeIce ? '氷の中' : '氷の外'}で散開",
+  "note": ""
+ },
+ {
+  "en": "{stillness ? 'Stillness' : 'Motion'} and Stack {fakeIce ? 'In Ice' : 'Out of Ice'} (with {stacks})",
+  "ja": "{stillness ? '止まる' : '動く'}、{fakeIce ? '氷の中' : '氷の外'}で{stacks}と頭割り",
+  "note": ""
+ },
+ {
+  "en": "{fakeShriek ? 'Fake' : 'Real'} Gaze",
+  "ja": "{fakeShriek ? '偽物' : '本物'}の視線",
+  "note": ""
+ },
+ {
+  "en": "{fakeShriek ? 'Fake' : 'Real'} Gaze on YOU",
+  "ja": "自分に{fakeShriek ? '偽物' : '本物'}の視線",
+  "note": ""
+ },
+ {
+  "en": "{isDonut ? 'Donut' : 'Stack'}, Avoid Both",
+  "ja": "{isDonut ? 'ドーナツ' : '頭割り'}、両方避ける",
+  "note": ""
+ },
+ {
+  "en": "Move, Avoid Both",
+  "ja": "動く、両方避ける",
+  "note": ""
+ },
+ {
+  "en": "Stay out of Both",
+  "ja": "両方の外で待機",
+  "note": ""
+ },
+ {
+  "en": "{isDonut ? 'Donut' : 'Stack'}, Stand in Both",
+  "ja": "{isDonut ? 'ドーナツ' : '頭割り'}、両方の中に立つ",
+  "note": ""
+ },
+ {
+  "en": "Move, Into Both",
+  "ja": "動く、両方の中へ",
+  "note": ""
+ },
+ {
+  "en": "Stay in Both",
+  "ja": "両方の中で待機",
+  "note": ""
+ },
+ {
+  "en": "{isDonut ? 'Donut' : 'Stack'}, Fake Ice, Real Thunder",
+  "ja": "{isDonut ? 'ドーナツ' : '頭割り'}、偽物の氷、本物の雷",
+  "note": ""
+ },
+ {
+  "en": "Move Into Ice",
+  "ja": "氷の中へ動く",
+  "note": ""
+ },
+ {
+  "en": "Stay In Ice",
+  "ja": "氷の中で待機",
+  "note": ""
+ },
+ {
+  "en": "{isDonut ? 'Donut' : 'Stack'}, Real Ice, Fake Thunder",
+  "ja": "{isDonut ? 'ドーナツ' : '頭割り'}、本物の氷、偽物の雷",
+  "note": ""
+ },
+ {
+  "en": "Move Into Thunder",
+  "ja": "雷の中へ動く",
+  "note": ""
+ },
+ {
+  "en": "Stay in Thunder",
+  "ja": "雷の中で待機",
+  "note": ""
+ },
+ {
+  "en": "Raidwide, 4 Hits",
+  "ja": "全体攻撃、4回",
+  "note": ""
+ },
+ {
+  "en": "Flood",
+  "ja": "フラッド",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Start {cardinalStart}, {clockwise ? 'Clockwise' : 'CCW'}",
+  "ja": "{cardinalStart}から開始、{clockwise ? '時計回り' : '反時計回り'}",
+  "note": ""
+ },
+ {
+  "en": "Surprise Flare",
+  "ja": "サプライズフレア",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Surprise Holy",
+  "ja": "サプライズホーリー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Out",
+  "ja": "外",
+  "note": ""
+ },
+ {
+  "en": "In",
+  "ja": "中",
+  "note": ""
+ },
+ {
+  "en": "Move Out",
+  "ja": "外へ動く",
+  "note": ""
+ },
+ {
+  "en": "Away from {flareTank}",
+  "ja": "{flareTank}から離れる",
+  "note": ""
+ },
+ {
+  "en": "Elemental Towers",
+  "ja": "属性の塔",
+  "note": ""
+ },
+ {
+  "en": "Fire Last",
+  "ja": "炎は最後",
+  "note": ""
+ },
+ {
+  "en": "Lightning Last",
+  "ja": "雷は最後",
+  "note": ""
+ },
+ {
+  "en": "Ice Last",
+  "ja": "氷は最後",
+  "note": ""
+ },
+ {
+  "en": "No Debuff",
+  "ja": "デバフなし",
+  "note": ""
+ },
+ {
+  "en": "Double Fire",
+  "ja": "炎の塔2つ",
+  "note": ""
+ },
+ {
+  "en": "Double Ice",
+  "ja": "氷の塔2つ",
+  "note": ""
+ },
+ {
+  "en": "Double Lightning",
+  "ja": "雷の塔2つ",
+  "note": ""
+ },
+ {
+  "en": "Exaflares",
+  "ja": "エクサフレア",
+  "note": ""
+ },
+ {
+  "en": "Stack, Raidwide",
+  "ja": "頭割り、全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Quadruple Crossing",
+  "ja": "クアドラプル・クロッシング",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Quadruple Crossing - Leaping Left",
+  "ja": "クアドラプル・クロッシング、左へ跳躍",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Quadruple Crossing - Leaping Right",
+  "ja": "クアドラプル・クロッシング、右へ跳躍",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Bait - In",
+  "ja": "誘導、中",
+  "note": ""
+ },
+ {
+  "en": "Don't Bait - Out",
+  "ja": "誘導しない、外",
+  "note": ""
+ },
+ {
+  "en": "Dodge 1",
+  "ja": "1回目を避ける",
+  "note": ""
+ },
+ {
+  "en": "Dodge 2",
+  "ja": "2回目を避ける",
+  "note": ""
+ },
+ {
+  "en": "Left then Right",
+  "ja": "左、そのあと右",
+  "note": ""
+ },
+ {
+  "en": "Right then Left",
+  "ja": "右、そのあと左",
+  "note": ""
+ },
+ {
+  "en": "Left then Right ({whereClone})",
+  "ja": "左、そのあと右、{whereClone}",
+  "note": "分身の位置"
+ },
+ {
+  "en": "Right then Left ({whereClone})",
+  "ja": "右、そのあと左、{whereClone}",
+  "note": "分身の位置"
+ },
+ {
+  "en": "Left",
+  "ja": "左",
+  "note": ""
+ },
+ {
+  "en": "Right",
+  "ja": "右",
+  "note": ""
+ },
+ {
+  "en": "Kick on {hm.target} - Knock",
+  "ja": "{hm.target}にキック、ノックバック",
+  "note": ""
+ },
+ {
+  "en": "Punch on {hm.target}",
+  "ja": "{hm.target}にパンチ",
+  "note": ""
+ },
+ {
+  "en": "Party Stacks - West, In First",
+  "ja": "4人頭割り、西、中から",
+  "note": ""
+ },
+ {
+  "en": "Party Stacks - East, In First",
+  "ja": "4人頭割り、東、中から",
+  "note": ""
+ },
+ {
+  "en": "Party Stacks - West, Out First",
+  "ja": "4人頭割り、西、外から",
+  "note": ""
+ },
+ {
+  "en": "Party Stacks - East, Out First",
+  "ja": "4人頭割り、東、外から",
+  "note": ""
+ },
+ {
+  "en": "Tethers and Stacks",
+  "ja": "線と頭割り",
+  "note": ""
+ },
+ {
+  "en": "Bait Protean",
+  "ja": "扇誘導",
+  "note": ""
+ },
+ {
+  "en": "Start {cardinal}-{intercard.opposite()}",
+  "ja": "{cardinal}と{intercard.opposite()}から開始",
+  "note": ""
+ },
+ {
+  "en": "Start {intercard}-{cardinal.opposite()}",
+  "ja": "{intercard}と{cardinal.opposite()}から開始",
+  "note": ""
+ },
+ {
+  "en": "Watch Pounces",
+  "ja": "飛びかかりを見る",
+  "note": ""
+ },
+ {
+  "en": "Tank Cleaves",
+  "ja": "タンクに範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Buddy Later",
+  "ja": "後でペア",
+  "note": ""
+ },
+ {
+  "en": "Buddy",
+  "ja": "ペア",
+  "note": ""
+ },
+ {
+  "en": "Out of Middle",
+  "ja": "中央から離れる",
+  "note": ""
+ },
+ {
+  "en": "Out+Cardinals",
+  "ja": "外、十字",
+  "note": ""
+ },
+ {
+  "en": "In+Intercards",
+  "ja": "中、斜め",
+  "note": ""
+ },
+ {
+  "en": "Out+Intercards",
+  "ja": "外、斜め",
+  "note": ""
+ },
+ {
+  "en": "Take {towers} Towers",
+  "ja": "{towers}の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Take Stack",
+  "ja": "頭割りを受ける",
+  "note": ""
+ },
+ {
+  "en": "Don't Stack",
+  "ja": "頭割りしない",
+  "note": ""
+ },
+ {
+  "en": "Stacks on {stacks.target}",
+  "ja": "{stacks.target}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Stack with {stacks.target}",
+  "ja": "{stacks.target}と頭割り",
+  "note": ""
+ },
+ {
+  "en": "Avoid Stacks",
+  "ja": "頭割りを避ける",
+  "note": ""
+ },
+ {
+  "en": "Short Defamation",
+  "ja": "短い名誉罰",
+  "note": "Defamation。技名要確認"
+ },
+ {
+  "en": "Long Defamation",
+  "ja": "長い名誉罰",
+  "note": "Defamation。技名要確認"
+ },
+ {
+  "en": "Avoid Defamation",
+  "ja": "名誉罰を避ける",
+  "note": "Defamation。技名要確認"
+ },
+ {
+  "en": "Group {group} with {buddy}",
+  "ja": "{group}グループ、{buddy}と",
+  "note": ""
+ },
+ {
+  "en": "Pop with {buddy}",
+  "ja": "{buddy}と割る",
+  "note": ""
+ },
+ {
+  "en": "Group {currentGroup}: {first} and {second}",
+  "ja": "{currentGroup}グループ、{first}と{second}",
+  "note": ""
+ },
+ {
+  "en": "Bait Lines",
+  "ja": "直線誘導",
+  "note": ""
+ },
+ {
+  "en": "Bait Lines and Puddles",
+  "ja": "直線と床を誘導",
+  "note": ""
+ },
+ {
+  "en": "In and Partners",
+  "ja": "中でペア",
+  "note": ""
+ },
+ {
+  "en": "Out and Partners",
+  "ja": "外でペア",
+  "note": ""
+ },
+ {
+  "en": "In and Spread",
+  "ja": "中で散開",
+  "note": ""
+ },
+ {
+  "en": "Raidwide - Multi Hit",
+  "ja": "全体攻撃、連続",
+  "note": ""
+ },
+ {
+  "en": "Tank Buster - Multi Hit",
+  "ja": "タンク強攻撃、連続",
+  "note": ""
+ },
+ {
+  "en": "Out into Role Pairs",
+  "ja": "外でロールペア",
+  "note": ""
+ },
+ {
+  "en": "Knockback into Role Pairs",
+  "ja": "ノックバックでロールペア",
+  "note": ""
+ },
+ {
+  "en": "Out into Spreads",
+  "ja": "外で散開",
+  "note": ""
+ },
+ {
+  "en": "Knockback into Spreads",
+  "ja": "ノックバックで散開",
+  "note": ""
+ },
+ {
+  "en": "Knockback Towers",
+  "ja": "ノックバック塔",
+  "note": ""
+ },
+ {
+  "en": "Side Towers to Corners",
+  "ja": "横の塔、そのあと角",
+  "note": ""
+ },
+ {
+  "en": "Corner Towers to Center",
+  "ja": "角の塔、そのあと中央",
+  "note": ""
+ },
+ {
+  "en": "Center Tower to {safe}",
+  "ja": "中央の塔、そのあと{safe}",
+  "note": ""
+ },
+ {
+  "en": "{bombSafe} safe",
+  "ja": "{bombSafe}が安置",
+  "note": ""
+ },
+ {
+  "en": "{safe} safe, Get Hit By Boss",
+  "ja": "{safe}が安置、ボスの攻撃を受ける",
+  "note": ""
+ },
+ {
+  "en": "{safe} Safe, Long Fuse",
+  "ja": "{safe}が安置、長い導火線",
+  "note": "Fuse。技名要確認"
+ },
+ {
+  "en": "Short Fuse, Spread {safe}",
+  "ja": "短い導火線、{safe}で散開",
+  "note": "Fuse。技名要確認"
+ },
+ {
+  "en": "Pop Fuses Sequentially",
+  "ja": "順番に導火線を処理",
+  "note": "Fuse。技名要確認"
+ },
+ {
+  "en": "Short Fuse",
+  "ja": "短い導火線",
+  "note": "Fuse。技名要確認"
+ },
+ {
+  "en": "Long Fuse",
+  "ja": "長い導火線",
+  "note": "Fuse。技名要確認"
+ },
+ {
+  "en": "Knockback into Buddies",
+  "ja": "ノックバックでペア",
+  "note": ""
+ },
+ {
+  "en": "Knockback into Spread",
+  "ja": "ノックバックで散開",
+  "note": ""
+ }
+]

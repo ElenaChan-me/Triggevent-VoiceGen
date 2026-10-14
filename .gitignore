@@ -15,3 +15,5 @@ recordings/
 *.pth
 *.index
 config.toml
+config.*.toml
+!config.example.toml

@@ -25,7 +25,7 @@ UI_FILE = Path(__file__).with_name("ui.html")
 class App:
     def __init__(self, cfg: Config):
         self.cfg = cfg
-        self.items = script.select(script.load(cfg.script), cfg.select)
+        self.items = script.select(script.load(cfg.script), cfg.select, cfg.style)
         self.by_id = {i.id: i for i in self.items}
         self.engine = SharedEngine(cfg)
         self.pipeline = Pipeline(cfg, log=lambda _: None, engine=self.engine)

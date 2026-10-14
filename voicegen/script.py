@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .config import ConfigError, Select
+from .style import TAIL_ID, Style
 
 
 @dataclass(frozen=True)
@@ -24,8 +25,11 @@ def load(path: Path) -> dict:
         raise ConfigError(f"台本データが見つかりません: {path}") from None
 
 
-def select(script: dict, sel: Select) -> list[Item]:
-    """選んだコンテンツ・ジョブで必要なセリフを、重複なしで返す。空のリストは「すべて」を意味する。"""
+def select(script: dict, sel: Select, style: Style | None = None) -> list[Item]:
+    """選んだコンテンツ・ジョブで必要なセリフを、重複なしで返す。空のリストは「すべて」を意味する。
+
+    style を指定すると、読み上げの最後になるセリフに語尾を付ける。
+    """
     content_keys = [c["key"] for c in script["contents"]]
     job_keys = [j["abbr"] for j in script["jobs"]]
     for key in sel.contents:
@@ -41,6 +45,8 @@ def select(script: dict, sel: Select) -> list[Item]:
     tags: dict[str, list[str]] = {}
 
     def add(item_id: str, text: str, kind: str, tag: str = "") -> None:
+        if style is not None:
+            text = style.ending(text, kind)
         items.setdefault(item_id, Item(item_id, text, kind))
         if tag and tag not in tags.setdefault(item_id, []):
             tags[item_id].append(tag)
@@ -52,11 +58,17 @@ def select(script: dict, sel: Select) -> list[Item]:
             if line.get("id"):
                 add(line["id"], line["ja"], "line", content["key"])
                 continue
-            for part in line.get("parts", []):
+            parts = line.get("parts", [])
+            for n, part in enumerate(parts):
                 if part["type"] == "segment":
-                    add(part["id"], part["ja"], "segment", content["key"])
+                    if style is not None and n == len(parts) - 1:
+                        add(*style.terminal(part["id"], part["ja"]), "segment", content["key"])
+                    else:
+                        add(part["id"], part["ja"], "segment", content["key"])
                 for choice in part.get("choices", []):
                     add(choice["id"], choice["ja"], "choice", content["key"])
+            if style is not None and style.tail and parts and parts[-1]["type"] == "slot":
+                add(TAIL_ID, style.tail, "segment", content["key"])
     if sel.parts:
         for entries in script["parts"].values():
             for item_id, text in entries:

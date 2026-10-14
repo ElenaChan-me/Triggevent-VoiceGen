@@ -66,11 +66,21 @@ class Client:
             "outputSamplingRate": cfg.sample_rate,
             "outputStereo": False,
         })
+        if cfg.end_rise > 0:
+            raise_ending(query, cfg.end_rise, cfg.end_moras)
         wav = self._request("POST", "/synthesis", {"speaker": cfg.speaker},
                             json.dumps(query, ensure_ascii=False).encode("utf-8"))
         if wav[:4] != b"RIFF":
             raise VoicevoxError("VOICEVOX から WAV 以外のデータが返されました。")
         return wav
+
+
+def raise_ending(query: dict, rise: float, count: int) -> None:
+    """文末の音を少しずつ高くする。無声の音（高さ 0）は高さを持たないので飛ばす。"""
+    moras = [m for phrase in query.get("accent_phrases", []) for m in phrase.get("moras", []) if m.get("pitch", 0) > 0]
+    tail = moras[-count:]
+    for n, mora in enumerate(tail, 1):
+        mora["pitch"] += rise * n / len(tail)
 
 
 class Engine:

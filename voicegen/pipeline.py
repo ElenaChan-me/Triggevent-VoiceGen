@@ -39,6 +39,11 @@ def _write_key(meta: Path, key: str, **extra) -> None:
     meta.write_text(json.dumps({"key": key, **extra}, ensure_ascii=False), encoding="utf-8")
 
 
+def _settings(obj, unused: dict) -> dict:
+    # 後から足した設定は、使っていないときは鍵に入れない。入れると既存のパックがすべて作り直しになる
+    return {k: v for k, v in asdict(obj).items() if not (k in unused and v == unused[k])}
+
+
 def _model_stamp(path: Path | None) -> list:
     # モデルを差し替えたら作り直したいので、サイズと更新日時も鍵に含める
     if path is None or not path.is_file():
@@ -67,7 +72,8 @@ class Pipeline:
         return recordings.path_for(self.cfg, item.id) if self.uses_recording(item) else self.tts_dir / f"{item.id}.wav"
 
     def tts_key(self, item: Item) -> str:
-        return _key("tts", apply_readings(item.text, self.cfg.readings), asdict(self.cfg.voicevox) | {"engine": None})
+        vv = _settings(self.cfg.voicevox, {"end_rise": 0.0, "end_moras": 2})
+        return _key("tts", apply_readings(item.text, self.cfg.readings), vv | {"engine": None})
 
     def source_key(self, item: Item) -> str:
         if self.uses_recording(item):
@@ -87,7 +93,7 @@ class Pipeline:
 
     def post_key(self, item: Item) -> str:
         upstream = self.rvc_key(item) if self.cfg.rvc.enabled else self.source_key(item)
-        return _key("post", upstream, asdict(self.cfg.post) | {"ffmpeg": None})
+        return _key("post", upstream, _settings(self.cfg.post, {"extra_filter": ""}) | {"ffmpeg": None})
 
     def run_tts(self, items: list[Item]) -> int:
         self.tts_dir.mkdir(parents=True, exist_ok=True)
@@ -190,6 +196,7 @@ class Pipeline:
             "format": MANIFEST_FORMAT,
             "name": self.cfg.pack.name,
             "credit": self.cfg.pack.credit,
+            "style": self.cfg.style.name if self.cfg.style else None,
             "createdAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "generator": {
                 "voicegen": __version__,
@@ -200,7 +207,7 @@ class Pipeline:
         }
         self.pack_dir.mkdir(parents=True, exist_ok=True)
         # Triggevent が英語の読み上げ文から音声を探すための対応表。収録していない文も日本語で読めるよう台本全体を入れる
-        self._write_json(self.pack_dir / "callouts.json", mapping.build(load_script(self.cfg.script)))
+        self._write_json(self.pack_dir / "callouts.json", mapping.build(load_script(self.cfg.script), self.cfg.style))
         path = self.pack_dir / "manifest.json"
         self._write_json(path, manifest)
         return path

@@ -22,7 +22,7 @@ from .pipeline import Pipeline
 
 
 def _items(cfg: config.Config, only: list[str] | None, limit: int | None) -> list[script.Item]:
-    items = script.select(script.load(cfg.script), cfg.select)
+    items = script.select(script.load(cfg.script), cfg.select, cfg.style)
     if only:
         wanted = set(only)
         unknown = wanted - {i.id for i in items}

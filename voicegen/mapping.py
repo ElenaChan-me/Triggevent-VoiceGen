@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import re
 
+from .style import TAIL_ID, Style
+
 MAPPING_FORMAT = 1
 QUOTED = re.compile(r"'([^']*)'|\"([^\"]*)\"")
 
@@ -63,7 +65,7 @@ def literals(expr: str) -> list[str]:
     return [(m.group(1) if m.group(1) is not None else m.group(2)).strip() for m in QUOTED.finditer(expr)]
 
 
-def build(script: dict) -> dict:
+def build(script: dict, style: Style | None = None) -> dict:
     static = {}
     templates = []
     skipped = 0
@@ -71,9 +73,9 @@ def build(script: dict) -> dict:
         for line in content["lines"]:
             en = line["en"]
             if line.get("id"):
-                static.setdefault(en, {"id": line["id"], "ja": line["ja"]})
+                static.setdefault(en, {"id": line["id"], "ja": _styled(style, line["ja"], "line")})
                 continue
-            template = _template(line)
+            template = _template(line, style)
             if template is None:
                 skipped += 1
             elif all(t["en"] != en for t in templates):
@@ -81,13 +83,14 @@ def build(script: dict) -> dict:
     # 「全体攻撃」のような固定の文字が多いものから照合し、{安置} だけのような何にでも一致するものは最後にする
     templates.sort(key=lambda t: -sum(len(p["lit"].strip()) for p in t["enPieces"] if "lit" in p))
     names = {}
-    for key in ("dots", "cooldowns", "system"):
+    for key, kind in (("dots", "dot"), ("cooldowns", "cd"), ("system", "system")):
         for entry in script[key]:
-            names.setdefault(entry["ja"], {"id": entry["id"], "ja": entry["ja"]})
+            names.setdefault(entry["ja"], {"id": entry["id"], "ja": _styled(style, entry["ja"], kind)})
     # ゲームや Triggevent が英語で読み上げるもの
-    names.setdefault("Dots", {"id": "dot_brd", "ja": "DoT"})
-    names.setdefault("Test", {"id": "sys_test", "ja": "テスト"})
-    names.setdefault("test", {"id": "sys_test", "ja": "テスト"})
+    names.setdefault("Dots", {"id": "dot_brd", "ja": _styled(style, "DoT", "dot")})
+    test = _styled(style, "テスト", "system")
+    names.setdefault("Test", {"id": "sys_test", "ja": test})
+    names.setdefault("test", {"id": "sys_test", "ja": test})
     return {
         "format": MAPPING_FORMAT,
         "static": static,
@@ -100,7 +103,11 @@ def build(script: dict) -> dict:
     }
 
 
-def _template(line: dict) -> dict | None:
+def _styled(style: Style | None, text: str, kind: str) -> str:
+    return style.ending(text, kind) if style else text
+
+
+def _template(line: dict, style: Style | None = None) -> dict | None:
     en_pieces = split_placeholders(line["en"])
     ja_slots = [p for p in line["parts"] if p["type"] == "slot"]
     en_slots = [expr for kind, expr in en_pieces if kind == "slot"]
@@ -127,12 +134,20 @@ def _template(line: dict) -> dict | None:
         slots.append(slot)
     # 英語の並び順で可変部分の番号を引けるようにする
     order = {s["en"]: n for n, s in enumerate(slots)}
+    ja_pieces = [{"lit": p["ja"], "id": p["id"]} if p["type"] == "segment" else {"slot": n}
+                 for n, p in _slot_numbers(line["parts"])]
+    # 台本の select と同じ規則で、最後の部品を語尾付きのものに差し替える
+    if style is not None and ja_pieces:
+        last = ja_pieces[-1]
+        if "lit" in last:
+            last["id"], last["lit"] = style.terminal(last["id"], last["lit"])
+        elif style.tail:
+            ja_pieces.append({"lit": style.tail, "id": TAIL_ID})
     return {
         "en": line["en"],
         "ja": line["ja"],
         "enPieces": [{"lit": v} if k == "lit" else {"slot": order[i]} for i, (k, v) in _numbered(en_pieces)],
-        "jaPieces": [{"lit": p["ja"], "id": p["id"]} if p["type"] == "segment" else {"slot": n}
-                     for n, p in _slot_numbers(line["parts"])],
+        "jaPieces": ja_pieces,
         "slots": [{k: v for k, v in s.items() if k != "en"} for s in slots],
     }
 

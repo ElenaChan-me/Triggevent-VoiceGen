@@ -16,9 +16,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable, ContextManager
 
-from . import __version__, applio, audio, recordings, voicevox
+from . import __version__, applio, audio, mapping, recordings, voicevox
 from .config import Config
-from .script import Item, apply_readings
+from .script import Item, apply_readings, load as load_script
 
 MANIFEST_FORMAT = 1
 
@@ -199,11 +199,17 @@ class Pipeline:
             "entries": entries,
         }
         self.pack_dir.mkdir(parents=True, exist_ok=True)
+        # Triggevent が英語の読み上げ文から音声を探すための対応表。収録していない文も日本語で読めるよう台本全体を入れる
+        self._write_json(self.pack_dir / "callouts.json", mapping.build(load_script(self.cfg.script)))
         path = self.pack_dir / "manifest.json"
-        tmp = path.with_suffix(".json.tmp")
-        tmp.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
-        tmp.replace(path)
+        self._write_json(path, manifest)
         return path
+
+    @staticmethod
+    def _write_json(path: Path, data) -> None:
+        tmp = path.with_suffix(".json.tmp")
+        tmp.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        tmp.replace(path)
 
 
 class SharedEngine:

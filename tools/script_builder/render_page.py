@@ -14,7 +14,8 @@ for content in data['contents']:
         if not line.get('off'):
             line.pop('off', None)
 data['phrases'] = {k: {'kind': v['kind']} for k, v in data['phrases'].items()}
-payload = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\/')
+# 台本の文に「</」があっても <script> が途中で閉じないようにする
+payload = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', r'<\/')
 page = io.open(os.path.join(here, 'template.html'), encoding='utf-8').read().replace('/*DATA*/', payload)
 out = sys.argv[1] if len(sys.argv) > 1 else 'voice-script.html'
 io.open(out, 'w', encoding='utf-8', newline='\n').write(page)

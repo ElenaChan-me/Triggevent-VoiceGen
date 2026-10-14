@@ -362,5 +362,78 @@ class MappingTests(unittest.TestCase):
             self.assertIsNotNone(self.mapping.resolve(self.m, text), text)
 
 
+class StyleTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from voicegen import mapping, style
+        cls.mapping = mapping
+        cls.style = style
+        cls.cute = style.load(ROOT / "data" / "styles" / "cute.toml")
+        cls.data = script.load(ROOT / "data" / "script.json")
+
+    def test_endings(self):
+        e = self.cute.ending
+        self.assertIn(e("全体攻撃", "line"), ("全体攻撃くるよー", "全体攻撃くるよっ"))
+        self.assertEqual(e("塔を避ける", "line"), "塔を避けてね")
+        self.assertEqual(e("塔を踏む", "line"), "塔を踏んでね")
+        self.assertEqual(e("動く", "line"), "動いてね")
+        self.assertEqual(e("その場に残る", "line"), "その場に残ってね")
+        self.assertIn(e("動かない", "line"), ("動かないよー", "動かないよ"))
+        self.assertTrue(e("ディア", "dot").startswith("ディア、かけなおして"))
+        # 途中に入る部品や、記号だけのものは変えない
+        self.assertEqual(e("北", "part"), "北")
+        self.assertEqual(e("}", "line"), "}")
+        # 同じ文はいつも同じ語尾になる
+        self.assertEqual(e("散開", "line"), e("散開", "line"))
+        self.assertEqual(self.cute.terminal("S_1", "}"), ("S_1", "}"))
+        self.assertEqual(self.cute.terminal("S_1", "でペア"), ("S_1_e", "でペアになってね"))
+
+    def test_mapping_matches_selected_items(self):
+        sel = config.Select(contents=[], jobs=[], parts=True, system=True, jobless_dots=True)
+        items = {i.id: i.text for i in script.select(self.data, sel, self.cute)}
+        m = self.mapping.build(self.data, self.cute)
+        # 対応表が指すファイルは、すべて同じ文で生成対象に入っている
+        for t in m["templates"]:
+            for p in t["jaPieces"]:
+                if "lit" in p:
+                    self.assertEqual(items.get(p["id"]), p["lit"], p["id"])
+        for table in ("static", "names"):
+            for hit in m[table].values():
+                if hit["id"] in items:
+                    self.assertEqual(items[hit["id"]], hit["ja"], hit["id"])
+        ids, ja = self.mapping.resolve(m, "Buster on YOU")
+        self.assertEqual(ids, ["part_you", "S_9c9f3a36_e"])
+        self.assertTrue(ja.startswith("自分にタンク強攻撃くるよ"), ja)
+
+    def test_tail_follows_slot_at_end(self):
+        line = {"en": "Then {safe}", "ja": "そのあと{safe}",
+                "parts": [{"type": "segment", "id": "S_then", "ja": "そのあと"}, {"type": "slot", "kind": "direction", "expr": "safe"}]}
+        t = self.mapping._template(line, self.cute)
+        self.assertEqual(t["jaPieces"][-1], {"lit": self.cute.tail, "id": self.style.TAIL_ID})
+        self.assertEqual(t["jaPieces"][0]["id"], "S_then")
+
+    def test_bad_style_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "bad.toml"
+            for text in ('[[rules]]\nmatch = "("\nreplace = "x"\n',
+                         '[[rules]]\nmatch = "a$"\nreplace = "\\\\2"\n',
+                         '[[rules]]\nmatch = "a$"\nreplace = "x"\nkinds = ["part"]\n'):
+                path.write_text(text, encoding="utf-8")
+                with self.assertRaises(self.style.StyleError):
+                    self.style.load(path)
+            cfg = write_config(Path(tmp), 1, extra=["[post]", 'extra_filter = "anull;[a]anull"'])
+            with self.assertRaises(ConfigError):
+                config.load(cfg)
+
+    def test_raise_ending_skips_unvoiced(self):
+        from voicegen.voicevox import raise_ending
+        query = {"accent_phrases": [{"moras": [{"pitch": 5.0}, {"pitch": 5.0}, {"pitch": 0.0}]}]}
+        raise_ending(query, 0.2, 2)
+        pitches = [m["pitch"] for m in query["accent_phrases"][0]["moras"]]
+        self.assertAlmostEqual(pitches[0], 5.1)
+        self.assertAlmostEqual(pitches[1], 5.2)
+        self.assertEqual(pitches[2], 0.0)
+
+
 if __name__ == "__main__":
     unittest.main()

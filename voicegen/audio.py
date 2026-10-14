@@ -17,6 +17,7 @@ def filter_chain(cfg: Post) -> str:
     return ",".join([
         # 先頭の無音を詰め、反転してもう一度詰めることで末尾の無音も詰める
         trim, "areverse", trim, "areverse",
+        *([cfg.extra_filter] if cfg.extra_filter else []),
         f"loudnorm=I={cfg.loudness}:TP={cfg.true_peak}:LRA=11",
         f"adelay={cfg.pad_ms}:all=1",
         f"apad=pad_dur={pad}",

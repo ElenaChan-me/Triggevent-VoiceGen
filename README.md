@@ -85,6 +85,24 @@ Lines that TTS reads badly can be replaced with your own recording, which is the
 
 Copy `config.example.toml` to `config.toml`, pick a VOICEVOX style with `speakers`, check the selection with `list`, try a few lines with `generate --limit 10`, then enable RVC and run `generate`.
 
+## 話し方を変えたパック / Packs with a different speaking style
+
+同じ台本から、雰囲気の違うパックを作れます（例: 本気用の `mia` と、かわいい話し方の `mia-cute`）。設定ファイルをパックごとに分け、`--config` で選んで生成します。
+
+- `[style] file` で語尾の書き換え規則を指定します。`data/styles/cute.toml` は「全体攻撃くるよー」「散開してね」「塔を避けてね」のように語尾を変えます。
+  - 語尾を付けるのは読み上げの最後になる部分だけで、方角などの部品はそのまま使います。
+  - 最後が方角などで終わる読み上げには、語尾だけの音声（「だよー」）を後ろにつなげます。
+- `[voicevox] end_rise` で文末を少し上げ、`[post] extra_filter` で声の質感（柔らかさ・響き）を変えられます。
+- パックごとに `[paths] work` と `[recordings] dir` を分けてください。分けないと、作業ファイルや録音が混ざります。
+
+```powershell
+python -m voicegen --config config.cute.toml generate
+```
+
+できたパックを同じフォルダ（`output/`）に並べておくと、Triggevent JP の「ボイスパック」タブで切り替えられます。
+
+You can build several packs with different speaking styles from the same script by keeping one config file per pack and choosing it with `--config`. `[style] file` points to sentence-ending rules (see `data/styles/cute.toml`). Endings are added only to the part that ends a callout, and callouts that end with a direction get a short ending clip appended. `[voicevox] end_rise` raises the pitch at the end of sentences, and `[post] extra_filter` adds an ffmpeg filter to change the voice texture. Use a separate `work` and `recordings` folder for each pack. Packs placed side by side in `output/` can be switched from Triggevent JP's Voice Pack tab.
+
 ## 台本の作り直し / Rebuilding the script
 
 台本は `tools/script_builder/` のスクリプトで作ります（`data/source` で実行します）。

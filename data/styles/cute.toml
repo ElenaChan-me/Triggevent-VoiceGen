@@ -1,0 +1,112 @@
+# かわいい話し方（ふわふわ）の語尾。config.toml の [style] file で指定する。
+#
+# rules は上から順に試し、最初に当たったものを使う。match は文末に当たる正規表現、
+# replace は置き換え後の文（\1 などで match の括弧の中身を使える）。配列にすると文ごとに1つ選ぶ。
+# kinds は対象: line（セリフ）、dot（DoT のかけ直し）、cd（リキャスト完了）、system。
+# 「ー」は VOICEVOX で音を伸ばして読む。
+name = "cute"
+
+# 最後が方角や選択肢で終わる読み上げ（例: 「そのあと北」）の後ろに足す
+tail = "だよー"
+
+# すでに話し言葉の語尾になっているものはそのままにする
+skip = "(ね|よ|よー|ねー|な)$"
+
+# ---- DoT・リキャスト ----
+[[rules]]
+kinds = ["dot"]
+match = "$"
+replace = ["、かけなおしてね", "、かけなおしてねー"]
+
+[[rules]]
+kinds = ["cd"]
+match = "$"
+replace = ["、使えるよー", "、いけるよー"]
+
+[[rules]]
+kinds = ["system"]
+match = "$"
+replace = "だよー"
+
+# ---- 攻撃の予告：「くるよ」 ----
+[[rules]]
+match = "(攻撃|頭割り|ノックバック|範囲|ヒット|変化|分断|レーザー)$"
+replace = ["\\1くるよー", "\\1くるよっ"]
+
+# ---- 指示：する系の名詞 ----
+[[rules]]
+match = "(散開|誘導|処理|移動|待機|回避|集合|退避|分散|軽減)$"
+replace = ["\\1してね", "\\1してねー"]
+
+[[rules]]
+match = "ペア$"
+replace = "ペアになってね"
+
+# ---- 指示：動詞を「〜てね」に ----
+# 不規則なもの・読みでは決まらないものを先に置く
+[[rules]]
+match = "する$"
+replace = "してね"
+
+[[rules]]
+match = "(来|く)る$"
+replace = "きてね"
+
+[[rules]]
+match = "(行|い)く$"
+replace = "\\1ってね"
+
+[[rules]]
+match = "(見|い|出|寝|着|居)る$"
+replace = "\\1てね"
+
+[[rules]]
+match = "([えけげせぜてでねへべぺめれ]|[いきぎしじちぢにひびぴみり])る$"
+replace = "\\1てね"
+
+[[rules]]
+match = "る$"
+replace = "ってね"
+
+[[rules]]
+match = "く$"
+replace = "いてね"
+
+[[rules]]
+match = "ぐ$"
+replace = "いでね"
+
+[[rules]]
+match = "す$"
+replace = "してね"
+
+[[rules]]
+match = "[むぶぬ]$"
+replace = "んでね"
+
+[[rules]]
+match = "[つう]$"
+replace = "ってね"
+
+[[rules]]
+match = "置き$"
+replace = "置いてね"
+
+[[rules]]
+match = "へ$"
+replace = "へ行ってね"
+
+# ---- 状態・場所など：「だよ」 ----
+[[rules]]
+match = "なし$"
+replace = ["なしだよー", "なしだよ"]
+
+# 形容詞（近い・動かない）に「だよ」は付けない
+[[rules]]
+match = "い$"
+replace = ["いよー", "いよ"]
+
+# 文字か数字で終わるものは何でも「だよ」。記号だけの部品などは変えない
+[[rules]]
+match = "([\\w〜ー])$"
+replace = ["\\1だよー", "\\1だよ"]

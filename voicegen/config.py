@@ -5,6 +5,8 @@ import tomllib
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from . import style as style_mod
+
 
 class ConfigError(Exception):
     pass
@@ -31,6 +33,9 @@ class Voicevox:
     pre_phoneme: float
     post_phoneme: float
     sample_rate: int
+    # 文末を上げてかわいく聞かせる。最後の end_moras 音の高さを、最後の音で end_rise だけ上がるよう少しずつ上げる
+    end_rise: float = 0.0
+    end_moras: int = 2
 
 
 @dataclass(frozen=True)
@@ -56,6 +61,8 @@ class Post:
     pad_ms: int
     loudness: float
     true_peak: float
+    # 声の質感を変えるときに足す ffmpeg のフィルター（例: 高音を少し持ち上げて柔らかく響かせる）
+    extra_filter: str = ""
 
 
 @dataclass(frozen=True)
@@ -85,6 +92,7 @@ class Config:
     post: Post
     pack: Pack
     recordings: Recordings
+    style: style_mod.Style | None = None
     extra: dict = field(default_factory=dict)
 
 
@@ -137,6 +145,7 @@ def load(path: Path) -> Config:
     pack = raw.get("pack", {})
     readings = raw.get("readings", {})
     rec = raw.get("recordings", {})
+    sty = raw.get("style", {})
     if not all(isinstance(k, str) and isinstance(v, str) and k for k, v in readings.items()):
         raise ConfigError("[readings] は「置き換える文字 = 読み」の形で、文字列で指定してください。")
 
@@ -154,6 +163,19 @@ def load(path: Path) -> Config:
     extra_args = _get(rvc, "extra_args", list, [])
     if not all(isinstance(a, str) for a in extra_args):
         raise ConfigError("extra_args は文字列の配列で指定してください。")
+
+    extra_filter = _get(post, "extra_filter", str, "")
+    # 1本のフィルターの並びとしてだけ受け付ける。; や [ ] で別の入出力をつなげられると仕上げの処理が崩れる
+    if any(c in extra_filter for c in ";[]"):
+        raise ConfigError(f"extra_filter に ; や [ ] は使えません: {extra_filter!r}")
+
+    style = None
+    style_file = _path(base, _get(sty, "file", str, ""))
+    if style_file is not None:
+        try:
+            style = style_mod.load(style_file)
+        except style_mod.StyleError as e:
+            raise ConfigError(str(e)) from None
 
     name = _get(pack, "name", str, "voice")
     if not name or any(c in name for c in '\\/:*?"<>|'):
@@ -182,6 +204,8 @@ def load(path: Path) -> Config:
             pre_phoneme=_range("pre_phoneme", _get(vv, "pre_phoneme", float, 0.05), 0.0, 1.5),
             post_phoneme=_range("post_phoneme", _get(vv, "post_phoneme", float, 0.05), 0.0, 1.5),
             sample_rate=_get(vv, "sample_rate", int, 48000),
+            end_rise=_range("end_rise", _get(vv, "end_rise", float, 0.0), 0.0, 0.5),
+            end_moras=int(_range("end_moras", _get(vv, "end_moras", int, 2), 1, 6)),
         ),
         readings=dict(readings),
         rvc=Rvc(
@@ -204,6 +228,7 @@ def load(path: Path) -> Config:
             pad_ms=int(_range("pad_ms", _get(post, "pad_ms", int, 20), 0, 1000)),
             loudness=_range("loudness", _get(post, "loudness", float, -16.0), -40.0, -5.0),
             true_peak=_range("true_peak", _get(post, "true_peak", float, -1.5), -9.0, 0.0),
+            extra_filter=extra_filter.strip(),
         ),
         pack=Pack(name=name, credit=_get(pack, "credit", str, "")),
         recordings=Recordings(
@@ -211,4 +236,5 @@ def load(path: Path) -> Config:
             pitch=None if "pitch" not in rec else int(_range("recordings.pitch", _get(rec, "pitch", int), -24, 24)),
             max_seconds=int(_range("max_seconds", _get(rec, "max_seconds", int, 15), 1, 120)),
         ),
+        style=style,
     )

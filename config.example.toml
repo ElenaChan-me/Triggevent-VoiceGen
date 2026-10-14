@@ -27,6 +27,9 @@ volume = 1.0
 pre_phoneme = 0.05    # 前後の無音（秒）。仕上げで詰めるので短くてよい
 post_phoneme = 0.05
 sample_rate = 48000
+# 文末を上げる量（0.0〜0.5）と、上げる音の数。かわいい話し方のパックで使う
+end_rise = 0.0
+end_moras = 2
 
 # 合成するときだけ読みを置き換える（台本の文字は変えない）
 [readings]
@@ -65,8 +68,14 @@ trim_db = -50.0       # これより小さい音を無音とみなして前後�
 pad_ms = 20           # 詰めたあと前後に足す無音（ミリ秒）
 loudness = -16.0      # 音量の目標（LUFS）
 true_peak = -1.5
+# 声の質感を変える ffmpeg のフィルター（; と [ ] は使えない）。例: "highshelf=f=8000:g=3"
+extra_filter = ""
 
 [pack]
 name = "my-voice"
 # VOICEVOX は話者ごとにクレジット表記が必要（例: "VOICEVOX:四国めたん"）。RVC モデルの作者表記もここに書く。
 credit = ""
+
+# 語尾を書き換えるスタイル。使うときはコメントを外す（例: data/styles/cute.toml）
+# [style]
+# file = "data/styles/cute.toml"

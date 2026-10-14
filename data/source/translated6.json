@@ -1,0 +1,1237 @@
+[
+ {
+  "en": "Away",
+  "ja": "離れる",
+  "note": ""
+ },
+ {
+  "en": "{dir} safe",
+  "ja": "{dir}が安置",
+  "note": ""
+ },
+ {
+  "en": "Protean, Repeat",
+  "ja": "扇誘導、繰り返し",
+  "note": ""
+ },
+ {
+  "en": "Bait middle then out",
+  "ja": "中央で誘導、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "Tether on you",
+  "ja": "自分に線",
+  "note": ""
+ },
+ {
+  "en": "Stack with Partner",
+  "ja": "ペアで頭割り",
+  "note": ""
+ },
+ {
+  "en": "Raidwides and Bleed",
+  "ja": "連続全体攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Healer Stacks",
+  "ja": "ヒーラー頭割り",
+  "note": ""
+ },
+ {
+  "en": "Knockback from {safeSpot}",
+  "ja": "{safeSpot}からノックバック",
+  "note": ""
+ },
+ {
+  "en": "{safeSpot} safe",
+  "ja": "{safeSpot}が安置",
+  "note": ""
+ },
+ {
+  "en": "{event1.safeSpot} then {event2.safeSpot}",
+  "ja": "{event1.safeSpot}、そのあと{event2.safeSpot}",
+  "note": ""
+ },
+ {
+  "en": "Break Tether (with {otherTarget})",
+  "ja": "{otherTarget}との線を切る",
+  "note": ""
+ },
+ {
+  "en": "Donut",
+  "ja": "ドーナツ",
+  "note": ""
+ },
+ {
+  "en": "{safeSpot1}, {safeSpot2}, {safeSpot3}",
+  "ja": "{safeSpot1}、{safeSpot2}、{safeSpot3}",
+  "note": ""
+ },
+ {
+  "en": "{safeSpot}",
+  "ja": "{safeSpot}",
+  "note": ""
+ },
+ {
+  "en": "Error!",
+  "ja": "エラー",
+  "note": ""
+ },
+ {
+  "en": "{safeSpot1} and {safeSpot2} safe",
+  "ja": "{safeSpot1}と{safeSpot2}が安置",
+  "note": ""
+ },
+ {
+  "en": "Back then Front",
+  "ja": "後ろ、そのあと前",
+  "note": ""
+ },
+ {
+  "en": "Raidwide with DoT",
+  "ja": "全体攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Buster, Multiple Hits",
+  "ja": "タンク強攻撃、連続ヒット",
+  "note": ""
+ },
+ {
+  "en": "Raidwide, Multiple Hits",
+  "ja": "全体攻撃、連続ヒット",
+  "note": ""
+ },
+ {
+  "en": "Cleave",
+  "ja": "範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Exaflares and Buddies",
+  "ja": "エクサフレア、ペア",
+  "note": ""
+ },
+ {
+  "en": "Role Cleaves",
+  "ja": "ロール別の扇範囲",
+  "note": ""
+ },
+ {
+  "en": "Out and Healer Stacks Later",
+  "ja": "外、後でヒーラー頭割り",
+  "note": ""
+ },
+ {
+  "en": "In and Spread Later",
+  "ja": "中、後で散開",
+  "note": ""
+ },
+ {
+  "en": "Back then Front, {in ? \"In then Spread\" : \"Out then Stack\"}",
+  "ja": "後ろ、そのあと前、{in ? \"中、そのあと散開\" : \"外、そのあと頭割り\"}",
+  "note": ""
+ },
+ {
+  "en": "In then Spread",
+  "ja": "中、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Out then Stacks",
+  "ja": "外、そのあと頭割り",
+  "note": ""
+ },
+ {
+  "en": "Cleave Busters",
+  "ja": "範囲タンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "{firingOrder[0]}, {firingOrder[1]}, {firingOrder[2]}, {firingOrder[3]}",
+  "ja": "{firingOrder[0]}、{firingOrder[1]}、{firingOrder[2]}、{firingOrder[3]}",
+  "note": ""
+ },
+ {
+  "en": "{firingOrder[1]}",
+  "ja": "{firingOrder[1]}",
+  "note": ""
+ },
+ {
+  "en": "{firingOrder[2]}",
+  "ja": "{firingOrder[2]}",
+  "note": ""
+ },
+ {
+  "en": "{firingOrder[3]}",
+  "ja": "{firingOrder[3]}",
+  "note": ""
+ },
+ {
+  "en": "Test",
+  "ja": "テスト",
+  "note": ""
+ },
+ {
+  "en": "{testVar} {testVar2} {random}",
+  "ja": "{testVar} {testVar2} {random}",
+  "note": ""
+ },
+ {
+  "en": "Foo",
+  "ja": "フー",
+  "note": "UIテスト用のダミー"
+ },
+ {
+  "en": "Delay",
+  "ja": "ディレイ",
+  "note": "TTS遅延テスト用"
+ },
+ {
+  "en": "Top First",
+  "ja": "上から",
+  "note": ""
+ },
+ {
+  "en": "Bottom First",
+  "ja": "下から",
+  "note": ""
+ },
+ {
+  "en": "Left to Right",
+  "ja": "左、そのあと右",
+  "note": ""
+ },
+ {
+  "en": "Right to Left",
+  "ja": "右、そのあと左",
+  "note": ""
+ },
+ {
+  "en": "Buster, Knockback, Stack",
+  "ja": "タンク強攻撃、ノックバック、頭割り",
+  "note": ""
+ },
+ {
+  "en": "Buster, Knockback, Flare",
+  "ja": "タンク強攻撃、ノックバック、フレア",
+  "note": ""
+ },
+ {
+  "en": "Opposite Color from Party",
+  "ja": "みんなと反対の色",
+  "note": ""
+ },
+ {
+  "en": "Stack with Party",
+  "ja": "みんなと頭割り",
+  "note": ""
+ },
+ {
+  "en": "Shackles",
+  "ja": "枷",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Out 1",
+  "ja": "外1",
+  "note": ""
+ },
+ {
+  "en": "Out 2",
+  "ja": "外2",
+  "note": ""
+ },
+ {
+  "en": "Out 3",
+  "ja": "外3",
+  "note": ""
+ },
+ {
+  "en": "Out 4",
+  "ja": "外4",
+  "note": ""
+ },
+ {
+  "en": "In 1",
+  "ja": "中1",
+  "note": ""
+ },
+ {
+  "en": "In 2",
+  "ja": "中2",
+  "note": ""
+ },
+ {
+  "en": "In 3",
+  "ja": "中3",
+  "note": ""
+ },
+ {
+  "en": "In 4",
+  "ja": "中4",
+  "note": ""
+ },
+ {
+  "en": "Fire Safe",
+  "ja": "炎が安置",
+  "note": ""
+ },
+ {
+  "en": "{longshort} West Push",
+  "ja": "{longshort}、西へ押し出し",
+  "note": ""
+ },
+ {
+  "en": "{longshort} East Push",
+  "ja": "{longshort}、東へ押し出し",
+  "note": ""
+ },
+ {
+  "en": "{longshort} North Push",
+  "ja": "{longshort}、北へ押し出し",
+  "note": ""
+ },
+ {
+  "en": "{longshort} South Push",
+  "ja": "{longshort}、南へ押し出し",
+  "note": ""
+ },
+ {
+  "en": "Blue 1",
+  "ja": "青1",
+  "note": ""
+ },
+ {
+  "en": "Blue 2",
+  "ja": "青2",
+  "note": ""
+ },
+ {
+  "en": "Blue 3",
+  "ja": "青3",
+  "note": ""
+ },
+ {
+  "en": "Blue 4",
+  "ja": "青4",
+  "note": ""
+ },
+ {
+  "en": "Purple 1",
+  "ja": "紫1",
+  "note": ""
+ },
+ {
+  "en": "Purple 2",
+  "ja": "紫2",
+  "note": ""
+ },
+ {
+  "en": "Purple 3",
+  "ja": "紫3",
+  "note": ""
+ },
+ {
+  "en": "Purple 4",
+  "ja": "紫4",
+  "note": ""
+ },
+ {
+  "en": "Go In Front of Head",
+  "ja": "頭の前へ",
+  "note": ""
+ },
+ {
+  "en": "Go Behind Head",
+  "ja": "頭の後ろへ",
+  "note": ""
+ },
+ {
+  "en": "Stack on {event.getTarget()}",
+  "ja": "{event.getTarget()}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Get Away",
+  "ja": "離れる",
+  "note": ""
+ },
+ {
+  "en": "5",
+  "ja": "5",
+  "note": ""
+ },
+ {
+  "en": "6",
+  "ja": "6",
+  "note": ""
+ },
+ {
+  "en": "7",
+  "ja": "7",
+  "note": ""
+ },
+ {
+  "en": "8",
+  "ja": "8",
+  "note": ""
+ },
+ {
+  "en": "Go West",
+  "ja": "西へ",
+  "note": ""
+ },
+ {
+  "en": "Go East",
+  "ja": "東へ",
+  "note": ""
+ },
+ {
+  "en": "Go North",
+  "ja": "北へ",
+  "note": ""
+ },
+ {
+  "en": "Go South",
+  "ja": "南へ",
+  "note": ""
+ },
+ {
+  "en": "Middle then Shiva Circles",
+  "ja": "中央、そのあとシヴァ円",
+  "note": "シヴァ型の小円配置。呼び方要確認"
+ },
+ {
+  "en": "Middle then Out",
+  "ja": "中央、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "Shiva Circles",
+  "ja": "シヴァ円",
+  "note": "シヴァ型の小円配置。呼び方要確認"
+ },
+ {
+  "en": "Sides and Spread",
+  "ja": "横で散開",
+  "note": ""
+ },
+ {
+  "en": "Middle and Pairs",
+  "ja": "中央でペア",
+  "note": ""
+ },
+ {
+  "en": "Go Right",
+  "ja": "右へ",
+  "note": ""
+ },
+ {
+  "en": "Go Left",
+  "ja": "左へ",
+  "note": ""
+ },
+ {
+  "en": "Tethered to {birdspot} bird and {otherplayer}",
+  "ja": "{birdspot}の鳥と{otherplayer}に線",
+  "note": ""
+ },
+ {
+  "en": "Tethered to {otherplayer} ({birdspot} bird)",
+  "ja": "{otherplayer}と線、{birdspot}の鳥",
+  "note": ""
+ },
+ {
+  "en": "1 Stack (Cardinal)",
+  "ja": "頭割り1つ、十字",
+  "note": ""
+ },
+ {
+  "en": "2 Stacks (Intercard)",
+  "ja": "頭割り2つ、斜め",
+  "note": ""
+ },
+ {
+  "en": "4 Stacks (Middle)",
+  "ja": "頭割り4つ、中央",
+  "note": ""
+ },
+ {
+  "en": "{stacks} Stacks",
+  "ja": "頭割り{stacks}つ",
+  "note": ""
+ },
+ {
+  "en": "Half Raidwide",
+  "ja": "半数に全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Tankbuster on {target}",
+  "ja": "{target}にタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Tethers",
+  "ja": "線",
+  "note": ""
+ },
+ {
+  "en": "Rot",
+  "ja": "腐敗",
+  "note": ""
+ },
+ {
+  "en": "Both",
+  "ja": "両方",
+  "note": ""
+ },
+ {
+  "en": "Towers and Tethers",
+  "ja": "塔と線",
+  "note": ""
+ },
+ {
+  "en": "Protean, dodge in",
+  "ja": "扇誘導、中で避ける",
+  "note": ""
+ },
+ {
+  "en": "{mech1} into {mech2}, {safespot} safe",
+  "ja": "{mech1}、そのあと{mech2}、{safespot}が安置",
+  "note": ""
+ },
+ {
+  "en": "{direction} {cleavekb}",
+  "ja": "{direction} {cleavekb}",
+  "note": ""
+ },
+ {
+  "en": "Acting {role}",
+  "ja": "{role}役",
+  "note": ""
+ },
+ {
+  "en": "Orb Positions",
+  "ja": "玉の位置",
+  "note": ""
+ },
+ {
+  "en": "{element} safe ({safespot})",
+  "ja": "{element}が安置、{safespot}",
+  "note": ""
+ },
+ {
+  "en": "Tanks In",
+  "ja": "タンク中",
+  "note": ""
+ },
+ {
+  "en": "Tanks Out",
+  "ja": "タンク外",
+  "note": ""
+ },
+ {
+  "en": "Shared buster on {target}",
+  "ja": "{target}にタンク頭割り",
+  "note": ""
+ },
+ {
+  "en": "Bleed buster on {target}",
+  "ja": "{target}にタンク強攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Teal",
+  "ja": "青緑",
+  "note": ""
+ },
+ {
+  "en": "Purple",
+  "ja": "紫",
+  "note": ""
+ },
+ {
+  "en": "Soak tower {number}",
+  "ja": "{number}番の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Soak {towerspot} tower",
+  "ja": "{towerspot}の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "{number} set",
+  "ja": "{number}セット目",
+  "note": ""
+ },
+ {
+  "en": "Go Front",
+  "ja": "前へ",
+  "note": ""
+ },
+ {
+  "en": "Tankbuster on MT",
+  "ja": "MTにタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Spread then Bait then Light Parties",
+  "ja": "散開、誘導、そのあと4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Light Parties then Bait then Spread",
+  "ja": "4人頭割り、誘導、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Go Back then Front",
+  "ja": "後ろ、そのあと前",
+  "note": ""
+ },
+ {
+  "en": "Go Front then Back",
+  "ja": "前、そのあと後ろ",
+  "note": ""
+ },
+ {
+  "en": "Go Behind",
+  "ja": "背後へ",
+  "note": ""
+ },
+ {
+  "en": "Stay Behind",
+  "ja": "背後で待機",
+  "note": ""
+ },
+ {
+  "en": "Wait Behind then Cross",
+  "ja": "背後で待機、そのあと横切る",
+  "note": ""
+ },
+ {
+  "en": "Light Parties on Crystals",
+  "ja": "クリスタルで4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Light Parties in Safe Spots",
+  "ja": "安置で4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "{allSafeSpots}",
+  "ja": "{allSafeSpots}",
+  "note": ""
+ },
+ {
+  "en": "{nextSafeSpot}",
+  "ja": "{nextSafeSpot}",
+  "note": ""
+ },
+ {
+  "en": "Tiles",
+  "ja": "タイル",
+  "note": ""
+ },
+ {
+  "en": "Tiles Swapping",
+  "ja": "タイル入れ替え",
+  "note": ""
+ },
+ {
+  "en": "Go Front/Back",
+  "ja": "前か後ろへ",
+  "note": ""
+ },
+ {
+  "en": "Go Sides",
+  "ja": "横へ",
+  "note": ""
+ },
+ {
+  "en": "Sides, Clockwise",
+  "ja": "横、時計回り",
+  "note": ""
+ },
+ {
+  "en": "Sides, Counterclockwise",
+  "ja": "横、反時計回り",
+  "note": ""
+ },
+ {
+  "en": "Point Away Soon",
+  "ja": "もうすぐ外に向ける",
+  "note": ""
+ },
+ {
+  "en": "Light Parties in Safe Tiles",
+  "ja": "安全なタイルで4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread in Safe Spots, Bait",
+  "ja": "安置で散開、誘導",
+  "note": ""
+ },
+ {
+  "en": "Bait then Move to Safe Spot",
+  "ja": "誘導、そのあと安置へ",
+  "note": ""
+ },
+ {
+  "en": "Safe Spot, Dodge Cleave",
+  "ja": "安置へ、範囲攻撃を避ける",
+  "note": ""
+ },
+ {
+  "en": "Stack/Spread",
+  "ja": "頭割りか散開",
+  "note": ""
+ },
+ {
+  "en": "Bait then Move to Safe",
+  "ja": "誘導、そのあと安置へ",
+  "note": ""
+ },
+ {
+  "en": "Light Parties/Spreads",
+  "ja": "4人頭割りか散開",
+  "note": ""
+ },
+ {
+  "en": "Light Parties in Safe Spot",
+  "ja": "安置で4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Find Safe Spot, Dodge Cleave",
+  "ja": "安置を探す、範囲攻撃を避ける",
+  "note": ""
+ },
+ {
+  "en": "Check Debuff, Stack/Spread",
+  "ja": "デバフ確認、頭割りか散開",
+  "note": ""
+ },
+ {
+  "en": "Buster with Bleed",
+  "ja": "タンク強攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "{number}",
+  "ja": "{number}",
+  "note": ""
+ },
+ {
+  "en": "Sides then Front/Back",
+  "ja": "横、そのあと前か後ろ",
+  "note": ""
+ },
+ {
+  "en": "Spread to Safe Spots",
+  "ja": "安置へ散開",
+  "note": ""
+ },
+ {
+  "en": "Nothing (Stack)",
+  "ja": "何もなし、頭割り",
+  "note": ""
+ },
+ {
+  "en": "8, Left",
+  "ja": "8秒、左",
+  "note": ""
+ },
+ {
+  "en": "12, Left",
+  "ja": "12秒、左",
+  "note": ""
+ },
+ {
+  "en": "16, Left",
+  "ja": "16秒、左",
+  "note": ""
+ },
+ {
+  "en": "20, Left",
+  "ja": "20秒、左",
+  "note": ""
+ },
+ {
+  "en": "8, Right",
+  "ja": "8秒、右",
+  "note": ""
+ },
+ {
+  "en": "12, Right",
+  "ja": "12秒、右",
+  "note": ""
+ },
+ {
+  "en": "16, Right",
+  "ja": "16秒、右",
+  "note": ""
+ },
+ {
+  "en": "20, Right",
+  "ja": "20秒、右",
+  "note": ""
+ },
+ {
+  "en": "Switch Sides",
+  "ja": "反対側へ",
+  "note": ""
+ },
+ {
+  "en": "Face In Soon",
+  "ja": "もうすぐ内向き",
+  "note": ""
+ },
+ {
+  "en": "Face Out Soon",
+  "ja": "もうすぐ外向き",
+  "note": ""
+ },
+ {
+  "en": "Face In Now",
+  "ja": "今すぐ内向き",
+  "note": ""
+ },
+ {
+  "en": "Face Out Now",
+  "ja": "今すぐ外向き",
+  "note": ""
+ },
+ {
+  "en": "Healer stacks, West in, East out",
+  "ja": "ヒーラー頭割り、西は中、東は外",
+  "note": ""
+ },
+ {
+  "en": "Healer stacks, West out, East in",
+  "ja": "ヒーラー頭割り、西は外、東は中",
+  "note": ""
+ },
+ {
+  "en": "Bait middle, then {safe}",
+  "ja": "中央で誘導、そのあと{safe}",
+  "note": ""
+ },
+ {
+  "en": "Healer stacks, {safe1} {safe2}",
+  "ja": "ヒーラー頭割り、{safe1} {safe2}",
+  "note": ""
+ },
+ {
+  "en": "Start inner {start}",
+  "ja": "内側の{start}から開始",
+  "note": ""
+ },
+ {
+  "en": "Corners of inner untethered plus",
+  "ja": "線なし十字タイルの内側の角",
+  "note": ""
+ },
+ {
+  "en": "Corners of inner tethered cross",
+  "ja": "線ありバツタイルの内側の角",
+  "note": ""
+ },
+ {
+  "en": "AOE on you",
+  "ja": "自分に範囲",
+  "note": ""
+ },
+ {
+  "en": "{in}",
+  "ja": "{in}",
+  "note": ""
+ },
+ {
+  "en": "Go Far",
+  "ja": "離れる",
+  "note": ""
+ },
+ {
+  "en": "Get Close",
+  "ja": "近づく",
+  "note": ""
+ },
+ {
+  "en": "Center",
+  "ja": "中央",
+  "note": ""
+ },
+ {
+  "en": "Edge, in Circles",
+  "ja": "外周、円の中へ",
+  "note": ""
+ },
+ {
+  "en": "Dive",
+  "ja": "ダイブ",
+  "note": ""
+ },
+ {
+  "en": "Spread in Safe Spot",
+  "ja": "安置で散開",
+  "note": ""
+ },
+ {
+  "en": "Stack in Safe Spot",
+  "ja": "安置で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread and Knockback",
+  "ja": "散開、ノックバック",
+  "note": ""
+ },
+ {
+  "en": "Move in Soon",
+  "ja": "もうすぐ中へ",
+  "note": ""
+ },
+ {
+  "en": "Tethers and Baits",
+  "ja": "線と誘導",
+  "note": ""
+ },
+ {
+  "en": "Minotaur Tether",
+  "ja": "ミノタウロスの線",
+  "note": ""
+ },
+ {
+  "en": "Lightning Tether",
+  "ja": "雷の線",
+  "note": ""
+ },
+ {
+  "en": "Tethers and Towers",
+  "ja": "線と塔",
+  "note": ""
+ },
+ {
+  "en": "Stacks and Spreads",
+  "ja": "頭割りと散開",
+  "note": ""
+ },
+ {
+  "en": "{nextMechanic}",
+  "ja": "{nextMechanic}",
+  "note": ""
+ },
+ {
+  "en": "Bait Then Run",
+  "ja": "誘導、そのあと逃げる",
+  "note": ""
+ },
+ {
+  "en": "Famine",
+  "ja": "ファミン",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Take Tether {safe}",
+  "ja": "{safe}で線を取る",
+  "note": ""
+ },
+ {
+  "en": "No Tether - bait {lightningBait}",
+  "ja": "線なし、{lightningBait}で誘導",
+  "note": ""
+ },
+ {
+  "en": "Death",
+  "ja": "デス",
+  "note": "技名要確認"
+ },
+ {
+  "en": "{bad} unsafe, {clockwise ? \"Clockwise\" : \"Counterclockwise\"}",
+  "ja": "{bad}は危険、{clockwise ? \"時計回り\" : \"反時計回り\"}",
+  "note": ""
+ },
+ {
+  "en": "War",
+  "ja": "ウォー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Io Tether from {where}",
+  "ja": "{where}からイオの線",
+  "note": ""
+ },
+ {
+  "en": "Mino Tether",
+  "ja": "ミノタウロスの線",
+  "note": ""
+ },
+ {
+  "en": "{where} Mino Tether",
+  "ja": "{where}のミノタウロスの線",
+  "note": ""
+ },
+ {
+  "en": "Bird Tether",
+  "ja": "鳥の線",
+  "note": ""
+ },
+ {
+  "en": "{where} Bird Tether",
+  "ja": "{where}の鳥の線",
+  "note": ""
+ },
+ {
+  "en": "Quadruped",
+  "ja": "四足",
+  "note": ""
+ },
+ {
+  "en": "Serpent",
+  "ja": "蛇",
+  "note": ""
+ },
+ {
+  "en": "Look {safe}",
+  "ja": "{safe}を見る",
+  "note": ""
+ },
+ {
+  "en": "Spread with bleed",
+  "ja": "散開、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Heavy raidwide",
+  "ja": "強い全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Out, spread",
+  "ja": "外、散開",
+  "note": ""
+ },
+ {
+  "en": "In, spread",
+  "ja": "中、散開",
+  "note": ""
+ },
+ {
+  "en": "Double buster",
+  "ja": "両タンクにタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Light parties",
+  "ja": "4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Point tether out",
+  "ja": "線を外に向ける",
+  "note": ""
+ },
+ {
+  "en": "Tank tether on YOU",
+  "ja": "自分にタンク線",
+  "note": ""
+ },
+ {
+  "en": "Behind and Spread",
+  "ja": "背後で散開",
+  "note": ""
+ },
+ {
+  "en": "Behind and Stack",
+  "ja": "背後で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Flare, out soon",
+  "ja": "フレア、もうすぐ外へ",
+  "note": ""
+ },
+ {
+  "en": "Stack middle soon",
+  "ja": "もうすぐ中央で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Flare, out soon, {safe} safe",
+  "ja": "フレア、もうすぐ外へ、{safe}が安置",
+  "note": ""
+ },
+ {
+  "en": "Stack middle soon, {safe} safe",
+  "ja": "もうすぐ中央で頭割り、{safe}が安置",
+  "note": ""
+ },
+ {
+  "en": "{safe1} or {safe2}",
+  "ja": "{safe1}か{safe2}",
+  "note": ""
+ },
+ {
+  "en": "Between {safe}",
+  "ja": "{safe}の間",
+  "note": ""
+ },
+ {
+  "en": "Counterclockwise from {safe}",
+  "ja": "{safe}から反時計回り",
+  "note": ""
+ },
+ {
+  "en": "Clockwise from {safe}",
+  "ja": "{safe}から時計回り",
+  "note": ""
+ },
+ {
+  "en": "{event.getEntry().name()}",
+  "ja": "{event.getEntry().name()}",
+  "note": ""
+ },
+ {
+  "en": "Heal to Full Soon",
+  "ja": "もうすぐ全回復",
+  "note": ""
+ },
+ {
+  "en": "{firstSafe} then {secondSafe}",
+  "ja": "{firstSafe}、そのあと{secondSafe}",
+  "note": ""
+ },
+ {
+  "en": "Move to {secondSafe}",
+  "ja": "{secondSafe}へ移動",
+  "note": ""
+ },
+ {
+  "en": "Line Stack - Multiple Hits",
+  "ja": "直線頭割り、連続ヒット",
+  "note": ""
+ },
+ {
+  "en": "Buster - 3 Hits",
+  "ja": "タンク強攻撃、3回",
+  "note": ""
+ },
+ {
+  "en": "Northwest/Southeast Safe",
+  "ja": "北西と南東が安置",
+  "note": ""
+ },
+ {
+  "en": "Tethered to {buddy}, Northwest/Southeast Safe",
+  "ja": "{buddy}と線、北西と南東が安置",
+  "note": ""
+ },
+ {
+  "en": "Tethered to {buddy}, Northeast/Southwest Safe",
+  "ja": "{buddy}と線、北東と南西が安置",
+  "note": ""
+ },
+ {
+  "en": "Group Stacks",
+  "ja": "グループ頭割り",
+  "note": ""
+ },
+ {
+  "en": "Find Safe Spots",
+  "ja": "安置を探す",
+  "note": ""
+ },
+ {
+  "en": "Corners and Spread",
+  "ja": "角で散開",
+  "note": ""
+ },
+ {
+  "en": "Corners and Buddies",
+  "ja": "角でペア",
+  "note": ""
+ },
+ {
+  "en": "Chasing AoE on You",
+  "ja": "自分に追尾範囲",
+  "note": ""
+ },
+ {
+  "en": "Dodge Balls",
+  "ja": "玉を避ける",
+  "note": ""
+ },
+ {
+  "en": "Spread, Watch Floor",
+  "ja": "散開、床に注意",
+  "note": ""
+ },
+ {
+  "en": "Stack Middle",
+  "ja": "中央で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Stretch Tether, Avoid Meteors",
+  "ja": "線を伸ばす、メテオを避ける",
+  "note": ""
+ },
+ {
+  "en": "Avoid Explosions",
+  "ja": "爆発を避ける",
+  "note": ""
+ },
+ {
+  "en": "Stop Everything",
+  "ja": "全部止める",
+  "note": ""
+ },
+ {
+  "en": "Laser, Start West",
+  "ja": "レーザー、西から開始",
+  "note": ""
+ },
+ {
+  "en": "Laser, Start East",
+  "ja": "レーザー、東から開始",
+  "note": ""
+ },
+ {
+  "en": "Black Hole, Start West",
+  "ja": "ブラックホール、西から開始",
+  "note": ""
+ },
+ {
+  "en": "Black Hole, Start East",
+  "ja": "ブラックホール、東から開始",
+  "note": ""
+ },
+ {
+  "en": "Avoid Ground AoE",
+  "ja": "床範囲を避ける",
+  "note": ""
+ },
+ {
+  "en": "North Cleave",
+  "ja": "北に範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Middle Cleave",
+  "ja": "中央に範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "South Cleave",
+  "ja": "南に範囲攻撃",
+  "note": ""
+ }
+]

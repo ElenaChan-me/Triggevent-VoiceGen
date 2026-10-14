@@ -1,0 +1,201 @@
+import io
+import json
+import shutil
+import struct
+import subprocess
+import tempfile
+import threading
+import unittest
+import wave
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from urllib.parse import parse_qs, urlparse
+
+from voicegen import applio, audio, config, script
+from voicegen.config import ConfigError
+from voicegen.pipeline import Pipeline
+
+ROOT = Path(__file__).resolve().parents[1]
+SAMPLE_RATE = 48000
+
+
+def make_wav(seconds: float = 0.5, silence: float = 0.2) -> bytes:
+    """前後に無音がある 440Hz の音。"""
+    import math
+    frames = []
+    total = int(SAMPLE_RATE * (seconds + silence * 2))
+    for n in range(total):
+        t = n / SAMPLE_RATE
+        value = 0 if t < silence or t > silence + seconds else int(8000 * math.sin(2 * math.pi * 440 * t))
+        frames.append(struct.pack("<h", value))
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(SAMPLE_RATE)
+        w.writeframes(b"".join(frames))
+    return buf.getvalue()
+
+
+class FakeVoicevox(BaseHTTPRequestHandler):
+    texts: list = []
+
+    def log_message(self, *args):
+        pass
+
+    def _send(self, body: bytes, kind: str):
+        self.send_response(200)
+        self.send_header("Content-Type", kind)
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self):
+        if self.path == "/version":
+            self._send(b'"0.25.2"', "application/json")
+        else:
+            self.send_error(404)
+
+    def do_POST(self):
+        url = urlparse(self.path)
+        length = int(self.headers.get("Content-Length") or 0)
+        body = self.rfile.read(length) if length else b""
+        if url.path == "/audio_query":
+            FakeVoicevox.texts.append(parse_qs(url.query)["text"][0])
+            self._send(json.dumps({"accent_phrases": []}).encode(), "application/json")
+        elif url.path == "/synthesis":
+            query = json.loads(body)
+            assert query["outputSamplingRate"] == SAMPLE_RATE
+            self._send(make_wav(), "audio/wav")
+        else:
+            self.send_error(404)
+
+
+def write_config(base: Path, port: int, **overrides) -> Path:
+    text = f"""
+[paths]
+script = "{(ROOT / 'data' / 'script.json').as_posix()}"
+work = "work"
+output = "output"
+[select]
+contents = ["M9S"]
+jobs = ["WHM"]
+[voicevox]
+url = "http://127.0.0.1:{port}"
+speaker = 2
+[readings]
+"DPS" = "ディーピーエス"
+[pack]
+name = "test"
+credit = "VOICEVOX:テスト"
+"""
+    for line in overrides.get("extra", []):
+        text += line + "\n"
+    path = base / "config.toml"
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
+class ScriptTests(unittest.TestCase):
+    def setUp(self):
+        self.data = script.load(ROOT / "data" / "script.json")
+
+    def test_select_content_and_job_without_duplicates(self):
+        sel = config.Select(contents=["M9S"], jobs=["WHM"], parts=True, system=True, jobless_dots=False)
+        items = script.select(self.data, sel)
+        ids = [i.id for i in items]
+        self.assertEqual(len(ids), len(set(ids)))
+        kinds = {i.kind for i in items}
+        self.assertTrue({"line", "part", "dot", "cd", "system"} <= kinds)
+        # 白魔道士の DoT（ディア）は入り、ナイトだけのアクションは入らない
+        self.assertIn("ディア", [i.text for i in items if i.kind == "dot"])
+        pld_only = [c["id"] for c in self.data["cooldowns"] if c["jobs"] == ["PLD"]]
+        self.assertFalse(set(pld_only) & set(ids))
+
+    def test_unknown_names_are_rejected(self):
+        with self.assertRaises(ConfigError):
+            script.select(self.data, config.Select(["XYZ"], [], True, True, False))
+        with self.assertRaises(ConfigError):
+            script.select(self.data, config.Select([], ["ABC"], True, True, False))
+
+    def test_readings_replace_longest_first(self):
+        self.assertEqual(script.apply_readings("DPSとD", {"D": "ディー", "DPS": "ディーピーエス"}), "ディーピーエスとディー")
+
+
+class ConfigTests(unittest.TestCase):
+    def test_example_config_loads(self):
+        cfg = config.load(ROOT / "config.example.toml")
+        self.assertFalse(cfg.rvc.enabled)
+        self.assertEqual(cfg.voicevox.sample_rate, 48000)
+
+    def test_out_of_range_and_remote_url_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = write_config(Path(tmp), 1, extra=["[rvc]", 'enabled = true'])
+            with self.assertRaises(ConfigError):
+                config.load(path)  # model が無い
+            path.write_text('[voicevox]\nspeaker = 1\nspeed = 5.0\n', encoding="utf-8")
+            with self.assertRaises(ConfigError):
+                config.load(path)
+        with self.assertRaises(ConfigError):
+            from voicegen.voicevox import Client
+            Client("http://example.com:50021")
+
+
+class ApplioTests(unittest.TestCase):
+    def test_command_and_output_name(self):
+        rvc = config.Rvc(True, Path("C:/Applio"), Path("C:/m/a.pth"), None, 2, 0.5, 0.3, "rmvpe", 1.0, "contentvec", ["--split-audio"])
+        cmd = applio.build_command(rvc, Path("in"), Path("out"))
+        self.assertEqual(cmd[1:3], ["core.py", "batch_infer"])
+        # index が無いときは index_rate を 0 にする
+        self.assertEqual(cmd[cmd.index("--index-rate") + 1], "0.0")
+        self.assertEqual(cmd[cmd.index("--index-path") + 1], "")
+        self.assertEqual(cmd[-1], "--split-audio")
+        self.assertEqual(applio.output_name("L_1234.wav"), "L_1234_output.wav")
+
+
+@unittest.skipUnless(shutil.which("ffmpeg"), "ffmpeg が必要")
+class PipelineTests(unittest.TestCase):
+    def setUp(self):
+        FakeVoicevox.texts = []
+        self.server = ThreadingHTTPServer(("127.0.0.1", 0), FakeVoicevox)
+        threading.Thread(target=self.server.serve_forever, daemon=True).start()
+        self.tmp = tempfile.TemporaryDirectory()
+        self.base = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.server.shutdown()
+        self.server.server_close()
+        self.tmp.cleanup()
+
+    def test_generate_trims_and_caches(self):
+        cfg = config.load(write_config(self.base, self.server.server_address[1]))
+        items = script.select(script.load(cfg.script), cfg.select)[:5]
+        pipe = Pipeline(cfg, log=lambda _: None)
+        self.assertEqual(pipe.run_tts(items), 5)
+        self.assertEqual(pipe.run_rvc(items), 0)
+        self.assertEqual(pipe.run_post(items), 5)
+        manifest = json.loads(pipe.write_manifest(items).read_text(encoding="utf-8"))
+        self.assertEqual(len(manifest["entries"]), 5)
+        self.assertEqual(manifest["credit"], "VOICEVOX:テスト")
+
+        out = cfg.output / "test" / f"{items[0].id}.wav"
+        with wave.open(str(out)) as w:
+            self.assertEqual((w.getnchannels(), w.getframerate(), w.getsampwidth()), (1, 48000, 2))
+            duration = w.getnframes() / w.getframerate()
+        # 0.5 秒の音の前後 0.2 秒ずつの無音が詰められ、前後 20ms ずつ足されている
+        self.assertAlmostEqual(duration, 0.54, delta=0.03)
+
+        # 2 回目は何も作り直さない
+        self.assertEqual(pipe.run_tts(items), 0)
+        self.assertEqual(pipe.run_post(items), 0)
+
+        # 話速を変えると TTS から作り直し、仕上げもやり直す
+        path = write_config(self.base, self.server.server_address[1])
+        path.write_text(path.read_text(encoding="utf-8").replace("speaker = 2", "speaker = 2\nspeed = 1.3"), encoding="utf-8")
+        pipe2 = Pipeline(config.load(path), log=lambda _: None)
+        self.assertEqual(pipe2.run_tts(items), 5)
+        self.assertEqual(pipe2.run_post(items), 5)
+
+
+if __name__ == "__main__":
+    unittest.main()

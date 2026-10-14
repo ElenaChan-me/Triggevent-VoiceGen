@@ -1,0 +1,2220 @@
+{
+ "cooldowns": [
+  {
+   "key": "Rampart",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    7531
+   ],
+   "ja": [
+    "ランパート"
+   ]
+  },
+  {
+   "key": "Reprisal",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    7535
+   ],
+   "ja": [
+    "リプライザル"
+   ]
+  },
+  {
+   "key": "ArmsLength",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    7548
+   ],
+   "ja": [
+    "アームズレングス"
+   ]
+  },
+  {
+   "key": "HallowedGround",
+   "type": "INVULN",
+   "ids": [
+    30
+   ],
+   "ja": [
+    "インビンシブル"
+   ]
+  },
+  {
+   "key": "Sentinel",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    17,
+    36920
+   ],
+   "ja": [
+    "センチネル",
+    "エクストリームガード"
+   ]
+  },
+  {
+   "key": "Cover",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    27
+   ],
+   "ja": [
+    "かばう"
+   ]
+  },
+  {
+   "key": "FightOrFlight",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    20
+   ],
+   "ja": [
+    "ファイト・オア・フライト"
+   ]
+  },
+  {
+   "key": "Requiescat",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7383,
+    36921
+   ],
+   "ja": [
+    "レクイエスカット",
+    "インペラトル"
+   ]
+  },
+  {
+   "key": "DivineVeil",
+   "type": "PARTY_MIT",
+   "ids": [
+    3540
+   ],
+   "ja": [
+    "ディヴァインヴェール"
+   ]
+  },
+  {
+   "key": "PassageofArms",
+   "type": "PARTY_MIT",
+   "ids": [
+    7385
+   ],
+   "ja": [
+    "パッセージ・オブ・アームズ"
+   ]
+  },
+  {
+   "key": "CircleOfScorn",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    23
+   ],
+   "ja": [
+    "サークル・オブ・ドゥーム"
+   ]
+  },
+  {
+   "key": "Intervene",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16461
+   ],
+   "ja": [
+    "インターヴィーン"
+   ]
+  },
+  {
+   "key": "Expiacion",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25747
+   ],
+   "ja": [
+    "エクスピアシオン"
+   ]
+  },
+  {
+   "key": "Nebula",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    16148,
+    36935
+   ],
+   "ja": [
+    "ネビュラ",
+    "グレートネビュラ"
+   ]
+  },
+  {
+   "key": "Aurora",
+   "type": "HEAL",
+   "ids": [
+    16151
+   ],
+   "ja": [
+    "オーロラ"
+   ]
+  },
+  {
+   "key": "Superbolide",
+   "type": "INVULN",
+   "ids": [
+    16152
+   ],
+   "ja": [
+    "ボーライド"
+   ]
+  },
+  {
+   "key": "HeartofLight",
+   "type": "PARTY_MIT",
+   "ids": [
+    16160
+   ],
+   "ja": [
+    "ハート・オブ・ライト"
+   ]
+  },
+  {
+   "key": "HeartofStone",
+   "type": "PARTY_MIT",
+   "ids": [
+    16161
+   ],
+   "ja": [
+    "ハート・オブ・ストーン"
+   ]
+  },
+  {
+   "key": "HeartofCorundum",
+   "type": "PARTY_MIT",
+   "ids": [
+    25758
+   ],
+   "ja": [
+    "ハート・オブ・コランダム"
+   ]
+  },
+  {
+   "key": "Camouflage",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    16140
+   ],
+   "ja": [
+    "カモフラージュ"
+   ]
+  },
+  {
+   "key": "Bloodfest",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16164
+   ],
+   "ja": [
+    "ブラッドソイル"
+   ]
+  },
+  {
+   "key": "BowShock",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16159
+   ],
+   "ja": [
+    "バウショック"
+   ]
+  },
+  {
+   "key": "DangerZone",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16144,
+    16165
+   ],
+   "ja": [
+    "デンジャーゾーン",
+    "ブラスティングゾーン"
+   ]
+  },
+  {
+   "key": "DoubleDown",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25760
+   ],
+   "ja": [
+    "ダブルダウン"
+   ]
+  },
+  {
+   "key": "NoMercy",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16138
+   ],
+   "ja": [
+    "ノー・マーシー"
+   ]
+  },
+  {
+   "key": "Trajectory",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    36934
+   ],
+   "ja": [
+    "トラジェクトリー"
+   ]
+  },
+  {
+   "key": "InnerRelease",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7389
+   ],
+   "ja": [
+    "原初の解放"
+   ]
+  },
+  {
+   "key": "ThrillofBattle",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    40
+   ],
+   "ja": [
+    "スリル・オブ・バトル"
+   ]
+  },
+  {
+   "key": "Holmgang",
+   "type": "INVULN",
+   "ids": [
+    43
+   ],
+   "ja": [
+    "ホルムギャング"
+   ]
+  },
+  {
+   "key": "Vengeance",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    44,
+    36923
+   ],
+   "ja": [
+    "ヴェンジェンス",
+    "ダムネーション"
+   ]
+  },
+  {
+   "key": "RawIntuition",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    3551,
+    16464,
+    25751
+   ],
+   "ja": [
+    "原初の直感",
+    "原初の猛り",
+    "原初の血気"
+   ]
+  },
+  {
+   "key": "Upheaval",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7387,
+    25752
+   ],
+   "ja": [
+    "アップヒーバル",
+    "オロジェネシス"
+   ]
+  },
+  {
+   "key": "ShakeItOff",
+   "type": "PARTY_MIT",
+   "ids": [
+    7388
+   ],
+   "ja": [
+    "シェイクオフ"
+   ]
+  },
+  {
+   "key": "Equilibrium",
+   "type": "HEAL",
+   "ids": [
+    3552
+   ],
+   "ja": [
+    "エクリブリウム"
+   ]
+  },
+  {
+   "key": "Infuriate",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    52
+   ],
+   "ja": [
+    "ウォークライ"
+   ]
+  },
+  {
+   "key": "Onslaught",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    7386
+   ],
+   "ja": [
+    "オンスロート"
+   ]
+  },
+  {
+   "key": "DarkMissionary",
+   "type": "PARTY_MIT",
+   "ids": [
+    16471
+   ],
+   "ja": [
+    "ダークミッショナリー"
+   ]
+  },
+  {
+   "key": "DarkMind",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    3634
+   ],
+   "ja": [
+    "ダークマインド"
+   ]
+  },
+  {
+   "key": "ShadowWall",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    3636,
+    36927
+   ],
+   "ja": [
+    "シャドウウォール",
+    "シャドウヴィジル"
+   ]
+  },
+  {
+   "key": "LivingDead",
+   "type": "INVULN",
+   "ids": [
+    3638
+   ],
+   "ja": [
+    "リビングデッド"
+   ]
+  },
+  {
+   "key": "TheBlackestNight",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    7393
+   ],
+   "ja": [
+    "ブラックナイト"
+   ]
+  },
+  {
+   "key": "SaltedEarth",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3639
+   ],
+   "ja": [
+    "ソルトアース"
+   ]
+  },
+  {
+   "key": "AbyssalDrain",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3641,
+    3643
+   ],
+   "ja": [
+    "アビサルドレイン",
+    "カーヴ・アンド・スピット"
+   ]
+  },
+  {
+   "key": "Delirium",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3625,
+    7390
+   ],
+   "ja": [
+    "ブラッドウェポン",
+    "ブラッドデリリアム"
+   ]
+  },
+  {
+   "key": "LivingShadow",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16472
+   ],
+   "ja": [
+    "影身具現"
+   ]
+  },
+  {
+   "key": "Oblation",
+   "type": "PARTY_MIT",
+   "ids": [
+    25754
+   ],
+   "ja": [
+    "オブレーション"
+   ]
+  },
+  {
+   "key": "Shadowbringer",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25757
+   ],
+   "ja": [
+    "シャドウブリンガー"
+   ]
+  },
+  {
+   "key": "Shadowstride",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    36926
+   ],
+   "ja": [
+    "シャドウストライド"
+   ]
+  },
+  {
+   "key": "LucidDreaming",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    7562
+   ],
+   "ja": [
+    "ルーシッドドリーム"
+   ]
+  },
+  {
+   "key": "Benediction",
+   "type": "HEAL",
+   "ids": [
+    140
+   ],
+   "ja": [
+    "ベネディクション"
+   ]
+  },
+  {
+   "key": "Temperance",
+   "type": "PARTY_MIT",
+   "ids": [
+    16536
+   ],
+   "ja": [
+    "テンパランス"
+   ]
+  },
+  {
+   "key": "Pom",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    136
+   ],
+   "ja": [
+    "神速魔"
+   ]
+  },
+  {
+   "key": "Asylum",
+   "type": "HEAL",
+   "ids": [
+    3569
+   ],
+   "ja": [
+    "アサイラム"
+   ]
+  },
+  {
+   "key": "Aquaveil",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    25861
+   ],
+   "ja": [
+    "アクアヴェール"
+   ]
+  },
+  {
+   "key": "Bell",
+   "type": "HEAL",
+   "ids": [
+    25862
+   ],
+   "ja": [
+    "リタージー・オブ・ベル"
+   ]
+  },
+  {
+   "key": "Assize",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3571
+   ],
+   "ja": [
+    "アサイズ"
+   ]
+  },
+  {
+   "key": "AetherialShift",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    37008
+   ],
+   "ja": [
+    "エーテリアルシフト"
+   ]
+  },
+  {
+   "key": "Plenary",
+   "type": "HEAL",
+   "ids": [
+    7433
+   ],
+   "ja": [
+    "インドゥルゲンティア"
+   ]
+  },
+  {
+   "key": "Tetra",
+   "type": "HEAL",
+   "ids": [
+    3570
+   ],
+   "ja": [
+    "テトラグラマトン"
+   ]
+  },
+  {
+   "key": "ThinAir",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    7430
+   ],
+   "ja": [
+    "シンエアー"
+   ]
+  },
+  {
+   "key": "DivineBenison",
+   "type": "HEAL",
+   "ids": [
+    7432
+   ],
+   "ja": [
+    "ディヴァインベニゾン"
+   ]
+  },
+  {
+   "key": "SacredSoil",
+   "type": "PARTY_MIT",
+   "ids": [
+    188
+   ],
+   "ja": [
+    "野戦治療の陣"
+   ]
+  },
+  {
+   "key": "WhisperingDawn",
+   "type": "HEAL",
+   "ids": [
+    16537
+   ],
+   "ja": [
+    "光の囁き"
+   ]
+  },
+  {
+   "key": "FeyIllumination",
+   "type": "PARTY_MIT",
+   "ids": [
+    16538
+   ],
+   "ja": [
+    "フェイイルミネーション"
+   ]
+  },
+  {
+   "key": "FeyBlessing",
+   "type": "HEAL",
+   "ids": [
+    16543
+   ],
+   "ja": [
+    "フェイブレッシング"
+   ]
+  },
+  {
+   "key": "Expedient",
+   "type": "PARTY_UTILITY",
+   "ids": [
+    25868
+   ],
+   "ja": [
+    "疾風怒濤の計"
+   ]
+  },
+  {
+   "key": "ChainStratagem",
+   "type": "PARTY_BUFF",
+   "ids": [
+    7436
+   ],
+   "ja": [
+    "連環計"
+   ]
+  },
+  {
+   "key": "Protraction",
+   "type": "HEAL",
+   "ids": [
+    25867
+   ],
+   "ja": [
+    "生命回生法"
+   ]
+  },
+  {
+   "key": "Aetherflow",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    166
+   ],
+   "ja": [
+    "エーテルフロー"
+   ]
+  },
+  {
+   "key": "Dissipation",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    3587
+   ],
+   "ja": [
+    "転化"
+   ]
+  },
+  {
+   "key": "Recitation",
+   "type": "HEAL",
+   "ids": [
+    16542
+   ],
+   "ja": [
+    "秘策"
+   ]
+  },
+  {
+   "key": "DeploymentTactics",
+   "type": "PARTY_MIT",
+   "ids": [
+    3585
+   ],
+   "ja": [
+    "展開戦術"
+   ]
+  },
+  {
+   "key": "EmergencyTactics",
+   "type": "PARTY_MIT",
+   "ids": [
+    3586
+   ],
+   "ja": [
+    "応急戦術"
+   ]
+  },
+  {
+   "key": "Seraphism",
+   "type": "HEAL",
+   "ids": [
+    37014
+   ],
+   "ja": [
+    "セラフィズム"
+   ]
+  },
+  {
+   "key": "Seraph",
+   "type": "HEAL",
+   "ids": [
+    16545
+   ],
+   "ja": [
+    "サモン・セラフィム"
+   ]
+  },
+  {
+   "key": "Excogitation",
+   "type": "HEAL",
+   "ids": [
+    7434
+   ],
+   "ja": [
+    "深謀遠慮の策"
+   ]
+  },
+  {
+   "key": "Indomitability",
+   "type": "HEAL",
+   "ids": [
+    3583
+   ],
+   "ja": [
+    "不撓不屈の策"
+   ]
+  },
+  {
+   "key": "Phlegma",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    24313,
+    24307,
+    24289
+   ],
+   "ja": [
+    "フレグマIII",
+    "フレグマII",
+    "フレグマ"
+   ]
+  },
+  {
+   "key": "Krasis",
+   "type": "HEAL",
+   "ids": [
+    24317
+   ],
+   "ja": [
+    "クラーシス"
+   ]
+  },
+  {
+   "key": "Pepsis",
+   "type": "HEAL",
+   "ids": [
+    24301
+   ],
+   "ja": [
+    "ペプシス"
+   ]
+  },
+  {
+   "key": "Rhizomata",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    24309
+   ],
+   "ja": [
+    "リゾーマタ"
+   ]
+  },
+  {
+   "key": "Kerachole",
+   "type": "PARTY_MIT",
+   "ids": [
+    24298
+   ],
+   "ja": [
+    "ケーラコレ"
+   ]
+  },
+  {
+   "key": "Soteria",
+   "type": "HEAL",
+   "ids": [
+    24294
+   ],
+   "ja": [
+    "ソーテリア"
+   ]
+  },
+  {
+   "key": "Zoe",
+   "type": "HEAL",
+   "ids": [
+    24300
+   ],
+   "ja": [
+    "ゾーエ"
+   ]
+  },
+  {
+   "key": "Ixochole",
+   "type": "HEAL",
+   "ids": [
+    24299
+   ],
+   "ja": [
+    "イックソコレ"
+   ]
+  },
+  {
+   "key": "Icarus",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    24295
+   ],
+   "ja": [
+    "イカロス"
+   ]
+  },
+  {
+   "key": "Taurochole",
+   "type": "HEAL",
+   "ids": [
+    24303
+   ],
+   "ja": [
+    "タウロコレ"
+   ]
+  },
+  {
+   "key": "Haima",
+   "type": "SINGLE_TARGET_MIT",
+   "ids": [
+    24305
+   ],
+   "ja": [
+    "ハイマ"
+   ]
+  },
+  {
+   "key": "Panhaima",
+   "type": "PARTY_MIT",
+   "ids": [
+    24311
+   ],
+   "ja": [
+    "パンハイマ"
+   ]
+  },
+  {
+   "key": "Physis",
+   "type": "HEAL",
+   "ids": [
+    24302
+   ],
+   "ja": [
+    "ピュシスII"
+   ]
+  },
+  {
+   "key": "Holos",
+   "type": "PARTY_MIT",
+   "ids": [
+    24310
+   ],
+   "ja": [
+    "ホーリズム"
+   ]
+  },
+  {
+   "key": "Pneuma",
+   "type": "HEAL",
+   "ids": [
+    24318
+   ],
+   "ja": [
+    "プネウマ"
+   ]
+  },
+  {
+   "key": "Psyche",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    37033
+   ],
+   "ja": [
+    "プシュケー"
+   ]
+  },
+  {
+   "key": "Philosophia",
+   "type": "HEAL",
+   "ids": [
+    37035
+   ],
+   "ja": [
+    "フィロソフィア"
+   ]
+  },
+  {
+   "key": "Divination",
+   "type": "PARTY_BUFF",
+   "ids": [
+    16552
+   ],
+   "ja": [
+    "ディヴィネーション"
+   ]
+  },
+  {
+   "key": "AstralUmbralDraw",
+   "type": "PARTY_BUFF",
+   "ids": [
+    37017,
+    37018
+   ],
+   "ja": [
+    "アストラルドロー",
+    "アンブラルドロー"
+   ]
+  },
+  {
+   "key": "CelInt",
+   "type": "HEAL",
+   "ids": [
+    16556
+   ],
+   "ja": [
+    "星天交差"
+   ]
+  },
+  {
+   "key": "Copp",
+   "type": "HEAL",
+   "ids": [
+    16553
+   ],
+   "ja": [
+    "星天対抗"
+   ]
+  },
+  {
+   "key": "Lightspeed",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    3606
+   ],
+   "ja": [
+    "ライトスピード"
+   ]
+  },
+  {
+   "key": "Edig",
+   "type": "HEAL",
+   "ids": [
+    3614
+   ],
+   "ja": [
+    "ディグニティ"
+   ]
+  },
+  {
+   "key": "Synastry",
+   "type": "HEAL",
+   "ids": [
+    3612
+   ],
+   "ja": [
+    "シナストリー"
+   ]
+  },
+  {
+   "key": "Horoscope",
+   "type": "HEAL",
+   "ids": [
+    16557
+   ],
+   "ja": [
+    "ホロスコープ"
+   ]
+  },
+  {
+   "key": "Star",
+   "type": "HEAL",
+   "ids": [
+    7439
+   ],
+   "ja": [
+    "アーサリースター"
+   ]
+  },
+  {
+   "key": "Cunc",
+   "type": "PARTY_MIT",
+   "ids": [
+    3613
+   ],
+   "ja": [
+    "運命の輪"
+   ]
+  },
+  {
+   "key": "Exaltation",
+   "type": "SINGLE_TARGET_MIT",
+   "ids": [
+    25873
+   ],
+   "ja": [
+    "エクザルテーション"
+   ]
+  },
+  {
+   "key": "Neutral",
+   "type": "HEAL",
+   "ids": [
+    16559
+   ],
+   "ja": [
+    "ニュートラルセクト"
+   ]
+  },
+  {
+   "key": "Macrocosmos",
+   "type": "HEAL",
+   "ids": [
+    25874
+   ],
+   "ja": [
+    "マクロコスモス"
+   ]
+  },
+  {
+   "key": "Feint",
+   "type": "PARTY_MIT",
+   "ids": [
+    7549
+   ],
+   "ja": [
+    "牽制"
+   ]
+  },
+  {
+   "key": "TrickAttackNew",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    36958,
+    2258
+   ],
+   "ja": [
+    "百雷銃",
+    "だまし討ち"
+   ]
+  },
+  {
+   "key": "Mug",
+   "type": "PARTY_BUFF",
+   "ids": [
+    36957,
+    2248
+   ],
+   "ja": [
+    "毒盛の術",
+    "ぶんどる"
+   ]
+  },
+  {
+   "key": "Bunshin",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16493
+   ],
+   "ja": [
+    "分身の術"
+   ]
+  },
+  {
+   "key": "DreamAssassinate",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2246,
+    3566
+   ],
+   "ja": [
+    "終撃",
+    "夢幻三段"
+   ]
+  },
+  {
+   "key": "Kassatsu",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2264
+   ],
+   "ja": [
+    "活殺自在"
+   ]
+  },
+  {
+   "key": "Meisui",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16489
+   ],
+   "ja": [
+    "命水"
+   ]
+  },
+  {
+   "key": "Shadeshift",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2241
+   ],
+   "ja": [
+    "残影"
+   ]
+  },
+  {
+   "key": "Shukuchi",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2262
+   ],
+   "ja": [
+    "縮地"
+   ]
+  },
+  {
+   "key": "TCJ",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7403
+   ],
+   "ja": [
+    "天地人"
+   ]
+  },
+  {
+   "key": "BattleLitany",
+   "type": "PARTY_BUFF",
+   "ids": [
+    3557
+   ],
+   "ja": [
+    "バトルリタニー"
+   ]
+  },
+  {
+   "key": "DragonfireDive",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    96
+   ],
+   "ja": [
+    "ドラゴンダイブ"
+   ]
+  },
+  {
+   "key": "Jump",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    92,
+    16478
+   ],
+   "ja": [
+    "ジャンプ",
+    "ハイジャンプ"
+   ]
+  },
+  {
+   "key": "LanceCharge",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    85
+   ],
+   "ja": [
+    "ランスチャージ"
+   ]
+  },
+  {
+   "key": "LifeSurge",
+   "type": "HEAL",
+   "ids": [
+    83
+   ],
+   "ja": [
+    "ライフサージ"
+   ]
+  },
+  {
+   "key": "WingedGlide",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    36951
+   ],
+   "ja": [
+    "ウィンググライド"
+   ]
+  },
+  {
+   "key": "Brotherhood",
+   "type": "PARTY_BUFF",
+   "ids": [
+    7396
+   ],
+   "ja": [
+    "桃園結義"
+   ]
+  },
+  {
+   "key": "RiddleOfWind",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25766
+   ],
+   "ja": [
+    "疾風の極意"
+   ]
+  },
+  {
+   "key": "Mantra",
+   "type": "HEAL",
+   "ids": [
+    65
+   ],
+   "ja": [
+    "マントラ"
+   ]
+  },
+  {
+   "key": "PerfectBalance",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    69
+   ],
+   "ja": [
+    "踏鳴"
+   ]
+  },
+  {
+   "key": "RiddleOfEarth",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7394
+   ],
+   "ja": [
+    "金剛の極意"
+   ]
+  },
+  {
+   "key": "RiddleOfFire",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7395
+   ],
+   "ja": [
+    "紅蓮の極意"
+   ]
+  },
+  {
+   "key": "Thunderclap",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25762
+   ],
+   "ja": [
+    "抜重歩法"
+   ]
+  },
+  {
+   "key": "ArcaneCircle",
+   "type": "PARTY_BUFF",
+   "ids": [
+    24405
+   ],
+   "ja": [
+    "アルケインサークル"
+   ]
+  },
+  {
+   "key": "ArcaneCrest",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    24404
+   ],
+   "ja": [
+    "アルケインクレスト"
+   ]
+  },
+  {
+   "key": "Gluttony",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    24393
+   ],
+   "ja": [
+    "グラトニー"
+   ]
+  },
+  {
+   "key": "SoulSliceScythe",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    24380,
+    24381
+   ],
+   "ja": [
+    "ソウルスライス",
+    "ソウルサイズ"
+   ]
+  },
+  {
+   "key": "IngressEgress",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    24401,
+    24402
+   ],
+   "ja": [
+    "ヘルズイングレス",
+    "ヘルズイーグレス"
+   ]
+  },
+  {
+   "key": "MeikyoShisui",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7499
+   ],
+   "ja": [
+    "明鏡止水"
+   ]
+  },
+  {
+   "key": "Ikishoten",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16482
+   ],
+   "ja": [
+    "意気衝天"
+   ]
+  },
+  {
+   "key": "ThirdEye",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    7498,
+    36962
+   ],
+   "ja": [
+    "心眼",
+    "天眼通"
+   ]
+  },
+  {
+   "key": "HissatsuGurenSenei",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7496,
+    16481
+   ],
+   "ja": [
+    "必殺剣・紅蓮",
+    "必殺剣・閃影"
+   ]
+  },
+  {
+   "key": "Dreadwinder",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    34620,
+    34623
+   ],
+   "ja": [
+    "壱の蛇【強砕】",
+    "壱の大蛇【強砕】"
+   ]
+  },
+  {
+   "key": "SerpentsIre",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    34647
+   ],
+   "ja": [
+    "蛇の霊気"
+   ]
+  },
+  {
+   "key": "Slither",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    34646
+   ],
+   "ja": [
+    "蛇行"
+   ]
+  },
+  {
+   "key": "Addle",
+   "type": "PARTY_MIT",
+   "ids": [
+    7560
+   ],
+   "ja": [
+    "アドル"
+   ]
+  },
+  {
+   "key": "Swiftcast",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    7561
+   ],
+   "ja": [
+    "迅速魔"
+   ]
+  },
+  {
+   "key": "Embolden",
+   "type": "PARTY_BUFF",
+   "ids": [
+    7520
+   ],
+   "ja": [
+    "エンボルデン"
+   ]
+  },
+  {
+   "key": "Manafication",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7521
+   ],
+   "ja": [
+    "マナフィケーション"
+   ]
+  },
+  {
+   "key": "MagicBarrier",
+   "type": "PARTY_MIT",
+   "ids": [
+    25857
+   ],
+   "ja": [
+    "バマジク"
+   ]
+  },
+  {
+   "key": "Acceleration",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7518
+   ],
+   "ja": [
+    "アクセラレーション"
+   ]
+  },
+  {
+   "key": "Fleche",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7517
+   ],
+   "ja": [
+    "フレッシュ"
+   ]
+  },
+  {
+   "key": "ContreSixte",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7519
+   ],
+   "ja": [
+    "コントルシクスト"
+   ]
+  },
+  {
+   "key": "CorpsACorps",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7506
+   ],
+   "ja": [
+    "コル・ア・コル"
+   ]
+  },
+  {
+   "key": "DisplacementEngagement",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7515,
+    16527
+   ],
+   "ja": [
+    "デプラスマン",
+    "アンガジェマン"
+   ]
+  },
+  {
+   "key": "SearingLight",
+   "type": "PARTY_BUFF",
+   "ids": [
+    25801
+   ],
+   "ja": [
+    "シアリングライト"
+   ]
+  },
+  {
+   "key": "EnergyDrainSiphon",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16508,
+    16510
+   ],
+   "ja": [
+    "エナジードレイン",
+    "エナジーサイフォン"
+   ]
+  },
+  {
+   "key": "RadiantAegis",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    25799
+   ],
+   "ja": [
+    "守りの光"
+   ]
+  },
+  {
+   "key": "Amplifier",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25796
+   ],
+   "ja": [
+    "アンプリファイア"
+   ]
+  },
+  {
+   "key": "LeyLines",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3573
+   ],
+   "ja": [
+    "黒魔紋"
+   ]
+  },
+  {
+   "key": "Manafont",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    158
+   ],
+   "ja": [
+    "マナフォント"
+   ]
+  },
+  {
+   "key": "Manaward",
+   "type": "PERSONAL_MIT",
+   "ids": [
+    157
+   ],
+   "ja": [
+    "マバリア"
+   ]
+  },
+  {
+   "key": "Retrace",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    36988
+   ],
+   "ja": [
+    "魔紋再設置"
+   ]
+  },
+  {
+   "key": "Triplecast",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7421
+   ],
+   "ja": [
+    "三連魔"
+   ]
+  },
+  {
+   "key": "StarryMuse",
+   "type": "PARTY_BUFF",
+   "ids": [
+    34675
+   ],
+   "ja": [
+    "イマジンスカイ"
+   ]
+  },
+  {
+   "key": "SteelMuse",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    35348,
+    34674
+   ],
+   "ja": [
+    "イマジンウェポン",
+    "イマジンハンマー"
+   ]
+  },
+  {
+   "key": "LivingMuse",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    35347,
+    34670,
+    34671,
+    34672,
+    34673
+   ],
+   "ja": [
+    "イマジンアニマル",
+    "イマジンポンポン",
+    "イマジンウィング",
+    "イマジンクロー",
+    "イマジンファング"
+   ]
+  },
+  {
+   "key": "Smudge",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    34684
+   ],
+   "ja": [
+    "スマッジ"
+   ]
+  },
+  {
+   "key": "StandardStep",
+   "type": "PARTY_BUFF",
+   "ids": [
+    15997
+   ],
+   "ja": [
+    "スタンダードステップ"
+   ]
+  },
+  {
+   "key": "TechnicalStep",
+   "type": "PARTY_BUFF",
+   "ids": [
+    15998
+   ],
+   "ja": [
+    "テクニカルステップ"
+   ]
+  },
+  {
+   "key": "Devilment",
+   "type": "PARTY_BUFF",
+   "ids": [
+    16011
+   ],
+   "ja": [
+    "攻めのタンゴ"
+   ]
+  },
+  {
+   "key": "ShieldSamba",
+   "type": "PARTY_MIT",
+   "ids": [
+    16012
+   ],
+   "ja": [
+    "守りのサンバ"
+   ]
+  },
+  {
+   "key": "CuringWaltz",
+   "type": "HEAL",
+   "ids": [
+    16015
+   ],
+   "ja": [
+    "癒やしのワルツ"
+   ]
+  },
+  {
+   "key": "EnAvant",
+   "type": "PERSONAL_UTILITY",
+   "ids": [
+    16010
+   ],
+   "ja": [
+    "アン・アヴァン"
+   ]
+  },
+  {
+   "key": "Flourish",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16013
+   ],
+   "ja": [
+    "フラリッシュ"
+   ]
+  },
+  {
+   "key": "Troubadour",
+   "type": "PARTY_MIT",
+   "ids": [
+    7405
+   ],
+   "ja": [
+    "トルバドゥール"
+   ]
+  },
+  {
+   "key": "MagesBallad",
+   "type": "PARTY_BUFF",
+   "ids": [
+    114
+   ],
+   "ja": [
+    "賢人のバラード"
+   ]
+  },
+  {
+   "key": "ArmysPaeon",
+   "type": "PARTY_BUFF",
+   "ids": [
+    116
+   ],
+   "ja": [
+    "軍神のパイオン"
+   ]
+  },
+  {
+   "key": "WanderersMinuet",
+   "type": "PARTY_BUFF",
+   "ids": [
+    3559
+   ],
+   "ja": [
+    "旅神のメヌエット"
+   ]
+  },
+  {
+   "key": "Barrage",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    107
+   ],
+   "ja": [
+    "乱れ撃ち"
+   ]
+  },
+  {
+   "key": "Minne",
+   "type": "HEAL",
+   "ids": [
+    7408
+   ],
+   "ja": [
+    "地神のミンネ"
+   ]
+  },
+  {
+   "key": "RagingStrikes",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    101
+   ],
+   "ja": [
+    "猛者の撃"
+   ]
+  },
+  {
+   "key": "Sidewinder",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3562
+   ],
+   "ja": [
+    "サイドワインダー"
+   ]
+  },
+  {
+   "key": "Empyreal",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    3558
+   ],
+   "ja": [
+    "エンピリアルアロー"
+   ]
+  },
+  {
+   "key": "BattleVoice",
+   "type": "PARTY_BUFF",
+   "ids": [
+    118
+   ],
+   "ja": [
+    "バトルボイス"
+   ]
+  },
+  {
+   "key": "RadiantFinale",
+   "type": "PARTY_BUFF",
+   "ids": [
+    25785
+   ],
+   "ja": [
+    "光神のフィナーレ"
+   ]
+  },
+  {
+   "key": "Tactician",
+   "type": "PARTY_MIT",
+   "ids": [
+    16889
+   ],
+   "ja": [
+    "タクティシャン"
+   ]
+  },
+  {
+   "key": "BarrelStabilizer",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7414
+   ],
+   "ja": [
+    "バレルヒーター"
+   ]
+  },
+  {
+   "key": "Chainsaw",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    25788
+   ],
+   "ja": [
+    "回転のこぎり"
+   ]
+  },
+  {
+   "key": "DrillBio",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    16498,
+    16499
+   ],
+   "ja": [
+    "ドリル",
+    "バイオブラスト"
+   ]
+  },
+  {
+   "key": "Flamethrower",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    7418
+   ],
+   "ja": [
+    "フレイムスロアー"
+   ]
+  },
+  {
+   "key": "HotShotAirAnchor",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2872,
+    16500
+   ],
+   "ja": [
+    "ホットショット",
+    "エアアンカー"
+   ]
+  },
+  {
+   "key": "Reassemble",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2876
+   ],
+   "ja": [
+    "整備"
+   ]
+  },
+  {
+   "key": "Wildfire",
+   "type": "PERSONAL_BURST",
+   "ids": [
+    2878
+   ],
+   "ja": [
+    "ワイルドファイア"
+   ]
+  }
+ ],
+ "dots": [
+  {
+   "key": "AST_Combust",
+   "job": "AST",
+   "label": "Combust/II/III",
+   "ids": [
+    838,
+    843,
+    1881
+   ],
+   "ja": [
+    "コンバス",
+    "コンバラ",
+    "コンバガ"
+   ]
+  },
+  {
+   "key": "BLM_Thunder",
+   "job": "BLM",
+   "label": "Thunder/High Thunder",
+   "ids": [
+    161,
+    162,
+    163,
+    1210,
+    3871,
+    3872
+   ],
+   "ja": [
+    "サンダー",
+    "サンダラ",
+    "サンダガ",
+    "サンダジャ",
+    "ハイサンダー",
+    "ハイサンダラ"
+   ]
+  },
+  {
+   "key": "BLU_Bleeding",
+   "job": "BLU",
+   "label": "Bleeding",
+   "ids": [
+    1714
+   ],
+   "ja": [
+    "ペイン"
+   ]
+  },
+  {
+   "key": "BRD_CombinedDots",
+   "job": "BRD",
+   "label": "Bard DoTs",
+   "ids": [
+    1200,
+    1201,
+    124,
+    129
+   ],
+   "ja": [
+    "コースティックバイト",
+    "ストームバイト",
+    "ベノムバイト",
+    "ウィンドバイト"
+   ]
+  },
+  {
+   "key": "DRG_ChaosThrust",
+   "job": "DRG",
+   "label": "Chaos Thrust/Chaotic Spring",
+   "ids": [
+    118,
+    2719
+   ],
+   "ja": [
+    "桜華狂咲",
+    "桜華繚乱"
+   ]
+  },
+  {
+   "key": "MNK_Demolish",
+   "job": "MNK",
+   "label": "Demolish",
+   "ids": [
+    246
+   ],
+   "ja": [
+    "破砕拳"
+   ]
+  },
+  {
+   "key": "MNK_Twinsnakes",
+   "job": "MNK",
+   "label": "Twin Snakes",
+   "ids": [
+    3001
+   ],
+   "ja": [
+    "功力"
+   ]
+  },
+  {
+   "key": "NIN_ShadowFang",
+   "job": "NIN",
+   "label": "Shadow Fang",
+   "ids": [
+    508
+   ],
+   "ja": [
+    "影牙"
+   ]
+  },
+  {
+   "key": "PLD_GoringBlade",
+   "job": "PLD",
+   "label": "Goring/Valor",
+   "ids": [
+    725,
+    2721
+   ],
+   "ja": [
+    "ゴアブレード",
+    "ブレード・オブ・ヴァラー"
+   ]
+  },
+  {
+   "key": "WAR_StormsEye",
+   "job": "WAR",
+   "label": "Storm's Eye",
+   "ids": [
+    90,
+    2677
+   ],
+   "ja": [
+    "シュトルムブレハ",
+    "戦嵐"
+   ]
+  },
+  {
+   "key": "SAM_Higanbana",
+   "job": "SAM",
+   "label": "Higanbana",
+   "ids": [
+    1228
+   ],
+   "ja": [
+    "彼岸花"
+   ]
+  },
+  {
+   "key": "SAM_Fugetsu",
+   "job": "SAM",
+   "label": "Fugetsu",
+   "ids": [
+    1298
+   ],
+   "ja": [
+    "風月"
+   ]
+  },
+  {
+   "key": "SAM_Fuka",
+   "job": "SAM",
+   "label": "Fuka",
+   "ids": [
+    1299
+   ],
+   "ja": [
+    "風花"
+   ]
+  },
+  {
+   "key": "SCH_Bio",
+   "job": "SCH",
+   "label": "Bio/II/Biolysis",
+   "ids": [
+    179,
+    189,
+    1895
+   ],
+   "ja": [
+    "バイオ",
+    "バイオラ",
+    "蠱毒法"
+   ]
+  },
+  {
+   "key": "WHM_Aero",
+   "job": "WHM",
+   "label": "Aero/II/III/Dia",
+   "ids": [
+    143,
+    144,
+    798,
+    1871
+   ],
+   "ja": [
+    "エアロ",
+    "エアロラ",
+    "エアロガ",
+    "ディア"
+   ]
+  },
+  {
+   "key": "SGE_Dosis",
+   "job": "SGE",
+   "label": "Dosis",
+   "ids": [
+    2614,
+    2615,
+    2616,
+    3897
+   ],
+   "ja": [
+    "エウクラシア・ドシス",
+    "エウクラシア・ドシスII",
+    "エウクラシア・ドシスIII",
+    "エウクラシア・ディスクラシア"
+   ]
+  },
+  {
+   "key": "RPR_Death",
+   "job": "RPR",
+   "label": "Death's Design",
+   "ids": [
+    2586
+   ],
+   "ja": [
+    "デスデザイン"
+   ]
+  },
+  {
+   "key": "ASS_DotAction",
+   "job": "ADV",
+   "label": "Spirit Dart",
+   "ids": [
+    3359
+   ],
+   "ja": [
+    "継続ダメージ"
+   ]
+  }
+ ]
+}

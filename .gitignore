@@ -1,0 +1,16 @@
+# Claude Code local configuration
+CLAUDE.md
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 生成物・モデル（大きく、配布条件もモデルごとに異なるため Git に入れない）
+work/
+output/
+models/
+*.pth
+*.index
+config.toml

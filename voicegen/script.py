@@ -13,6 +13,8 @@ class Item:
     id: str
     text: str
     kind: str
+    # このセリフを使うコンテンツやジョブ（画面での絞り込み用）
+    tags: tuple[str, ...] = ()
 
 
 def load(path: Path) -> dict:
@@ -36,22 +38,25 @@ def select(script: dict, sel: Select) -> list[Item]:
     jobs = set(sel.jobs or job_keys)
 
     items: dict[str, Item] = {}
+    tags: dict[str, list[str]] = {}
 
-    def add(item_id: str, text: str, kind: str) -> None:
+    def add(item_id: str, text: str, kind: str, tag: str = "") -> None:
         items.setdefault(item_id, Item(item_id, text, kind))
+        if tag and tag not in tags.setdefault(item_id, []):
+            tags[item_id].append(tag)
 
     for content in script["contents"]:
         if content["key"] not in contents:
             continue
         for line in content["lines"]:
             if line.get("id"):
-                add(line["id"], line["ja"], "line")
+                add(line["id"], line["ja"], "line", content["key"])
                 continue
             for part in line.get("parts", []):
                 if part["type"] == "segment":
-                    add(part["id"], part["ja"], "segment")
+                    add(part["id"], part["ja"], "segment", content["key"])
                 for choice in part.get("choices", []):
-                    add(choice["id"], choice["ja"], "choice")
+                    add(choice["id"], choice["ja"], "choice", content["key"])
     if sel.parts:
         for entries in script["parts"].values():
             for item_id, text in entries:
@@ -59,13 +64,14 @@ def select(script: dict, sel: Select) -> list[Item]:
     for kind, key in (("dot", "dots"), ("cd", "cooldowns")):
         for entry in script[key]:
             if entry["jobs"] and jobs.intersection(entry["jobs"]):
-                add(entry["id"], entry["ja"], kind)
+                for job in sorted(jobs.intersection(entry["jobs"])):
+                    add(entry["id"], entry["ja"], kind, job)
             elif not entry["jobs"] and sel.jobless_dots:
                 add(entry["id"], entry["ja"], kind)
     if sel.system:
         for entry in script["system"]:
             add(entry["id"], entry["ja"], "system")
-    return list(items.values())
+    return [Item(i.id, i.text, i.kind, tuple(tags.get(i.id, ()))) for i in items.values()]
 
 
 def apply_readings(text: str, readings: dict[str, str]) -> str:

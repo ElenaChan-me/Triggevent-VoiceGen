@@ -197,5 +197,144 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(pipe2.run_post(items), 5)
 
 
+
+@unittest.skipUnless(shutil.which("ffmpeg"), "ffmpeg が必要")
+class RecordingTests(unittest.TestCase):
+    def setUp(self):
+        FakeVoicevox.texts = []
+        self.server = ThreadingHTTPServer(("127.0.0.1", 0), FakeVoicevox)
+        threading.Thread(target=self.server.serve_forever, daemon=True).start()
+        self.tmp = tempfile.TemporaryDirectory()
+        self.base = Path(self.tmp.name)
+        self.wav = self.base / "my_voice.wav"
+        self.wav.write_bytes(make_wav(0.8, 0.1))
+
+    def tearDown(self):
+        self.server.shutdown()
+        self.server.server_close()
+        self.tmp.cleanup()
+
+    def load(self, *extra):
+        return config.load(write_config(self.base, self.server.server_address[1], extra=list(extra)))
+
+    def test_recording_replaces_tts(self):
+        from voicegen import recordings
+        cfg = self.load()
+        items = script.select(script.load(cfg.script), cfg.select)[:3]
+        recordings.save(cfg, items[0].id, self.wav)
+        pipe = Pipeline(cfg, log=lambda _: None)
+        self.assertEqual(pipe.run_tts(items), 2)  # 録音のあるセリフは合成しない
+        self.assertEqual(len(FakeVoicevox.texts), 2)
+        self.assertEqual(pipe.run_post(items), 3)
+        manifest = json.loads(pipe.write_manifest(items).read_text(encoding="utf-8"))
+        self.assertEqual(manifest["entries"][items[0].id]["source"], "recording")
+        self.assertEqual(manifest["entries"][items[1].id]["source"], "tts")
+
+        # 録音を差し替えると、そのセリフだけ仕上げをやり直す
+        self.wav.write_bytes(make_wav(0.3, 0.1))
+        recordings.save(cfg, items[0].id, self.wav)
+        self.assertEqual(pipe.run_post(items), 1)
+        # 録音を消すと TTS に戻り、合成し直す
+        recordings.delete(cfg, items[0].id)
+        self.assertEqual(pipe.run_tts(items), 1)
+
+    def test_bad_ids_are_rejected(self):
+        from voicegen import recordings
+        cfg = self.load()
+        for bad in ("../x", "a/b", "", "x" * 65):
+            with self.assertRaises(ValueError):
+                recordings.path_for(cfg, bad)
+
+    def test_rvc_splits_batches_by_pitch(self):
+        from unittest import mock
+        from voicegen import recordings
+        applio_dir = self.base / "Applio"
+        (applio_dir / ".venv" / "Scripts").mkdir(parents=True)
+        (applio_dir / ".venv" / "Scripts" / "python.exe").write_bytes(b"")
+        (applio_dir / "core.py").write_text("", encoding="utf-8")
+        (self.base / "voice.pth").write_bytes(b"model")
+        cfg = self.load("[rvc]", "enabled = true", f'applio = "{applio_dir.as_posix()}"', 'model = "voice.pth"', "pitch = 3",
+                        "[recordings]", "pitch = -5")
+        items = script.select(script.load(cfg.script), cfg.select)[:3]
+        recordings.save(cfg, items[0].id, self.wav)
+        pipe = Pipeline(cfg, log=lambda _: None)
+        pipe.run_tts(items)
+        calls = []
+
+        def fake_convert(rvc_cfg, src, dst, log):
+            calls.append((rvc_cfg.pitch, sorted(p.name for p in src.iterdir())))
+            for p in src.iterdir():
+                shutil.copyfile(p, dst / applio.output_name(p.name))
+
+        with mock.patch.object(applio, "convert", side_effect=fake_convert):
+            self.assertEqual(pipe.run_rvc(items), 3)
+        self.assertEqual(sorted(c[0] for c in calls), [-5, 3])
+        self.assertEqual(dict(calls)[-5], [f"{items[0].id}.wav"])
+        with mock.patch.object(applio, "convert", side_effect=fake_convert):
+            self.assertEqual(pipe.run_rvc(items), 0)
+
+
+@unittest.skipUnless(shutil.which("ffmpeg"), "ffmpeg が必要")
+class ServerTests(unittest.TestCase):
+    def setUp(self):
+        import urllib.request
+        from voicegen import server
+        FakeVoicevox.texts = []
+        self.tmp = tempfile.TemporaryDirectory()
+        self.base = Path(self.tmp.name)
+        self.vv = ThreadingHTTPServer(("127.0.0.1", 0), FakeVoicevox)
+        threading.Thread(target=self.vv.serve_forever, daemon=True).start()
+        cfg = config.load(write_config(self.base, self.vv.server_address[1]))
+        self.app = server.App(cfg)
+        self.http = ThreadingHTTPServer(("127.0.0.1", 0), None)
+        self.origin = f"http://127.0.0.1:{self.http.server_address[1]}"
+        self.http.RequestHandlerClass = server.make_handler(self.app, self.origin)
+        threading.Thread(target=self.http.serve_forever, daemon=True).start()
+        self.urllib = urllib.request
+
+    def tearDown(self):
+        self.http.shutdown()
+        self.http.server_close()
+        self.app.engine.close()
+        self.vv.shutdown()
+        self.vv.server_close()
+        self.tmp.cleanup()
+
+    def call(self, method, path, body=None, origin=None):
+        import urllib.error
+        headers = {"Origin": origin or self.origin}
+        req = self.urllib.Request(self.origin + path, data=body, method=method, headers=headers)
+        try:
+            with self.urllib.urlopen(req) as res:
+                return res.status, res.read()
+        except urllib.error.HTTPError as e:
+            return e.code, e.read()
+
+    def test_record_generate_and_delete(self):
+        status, body = self.call("GET", "/api/items")
+        self.assertEqual(status, 200)
+        item_id = json.loads(body)[0]["id"]
+        status, body = self.call("POST", f"/api/recording/{item_id}", make_wav())
+        self.assertEqual(status, 200)
+        self.assertTrue(json.loads(body)["recorded"])
+        status, body = self.call("POST", f"/api/generate/{item_id}")
+        self.assertEqual(status, 200, body)
+        result = json.loads(body)
+        self.assertTrue(result["hasResult"] and result["current"])
+        self.assertEqual(FakeVoicevox.texts, [])  # 録音を使うので TTS は呼ばない
+        status, body = self.call("GET", f"/audio/result/{item_id}.wav")
+        self.assertEqual((status, body[:4]), (200, b"RIFF"))
+        status, body = self.call("DELETE", f"/api/recording/{item_id}")
+        self.assertFalse(json.loads(body)["recorded"])
+
+    def test_rejects_other_sites_and_unknown_ids(self):
+        status, _ = self.call("POST", "/api/generate/L_00000000", origin="https://evil.example")
+        self.assertEqual(status, 403)
+        status, _ = self.call("POST", "/api/recording/..%2F..%2Fx", b"x")
+        self.assertEqual(status, 404)
+        status, _ = self.call("GET", "/audio/result/..%2Fconfig.toml")
+        self.assertEqual(status, 404)
+
+
 if __name__ == "__main__":
     unittest.main()

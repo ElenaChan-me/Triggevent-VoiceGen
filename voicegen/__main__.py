@@ -5,6 +5,10 @@
     python -m voicegen generate              TTS → RVC → 仕上げ → manifest.json
     python -m voicegen generate --stage tts  指定した段階だけ実行（tts / rvc / post）
     python -m voicegen generate --only L_1a2b3c4d S_...   一部のセリフだけ作る（試聴用）
+    python -m voicegen find 散開              セリフを検索して ID を表示
+    python -m voicegen ui                    セリフを選んで自分の声を録音・作り直す画面を開く
+    python -m voicegen record L_1a2b3c4d 録音.wav   録音ファイルを取り込む（TTS の代わりに使う）
+    python -m voicegen record L_1a2b3c4d --delete  録音を消して TTS に戻す
 """
 from __future__ import annotations
 
@@ -13,7 +17,7 @@ import collections
 import sys
 from pathlib import Path
 
-from . import applio, audio, config, script, voicevox
+from . import applio, audio, config, recordings, script, server, voicevox
 from .pipeline import Pipeline
 
 
@@ -57,6 +61,35 @@ def cmd_generate(cfg: config.Config, args) -> None:
         print(f"ボイスパック: {path.parent}")
 
 
+def cmd_find(cfg: config.Config, args) -> None:
+    pipe = Pipeline(cfg)
+    words = args.text.lower()
+    hits = [i for i in _items(cfg, None, None) if words in i.text.lower() or words in i.id.lower()]
+    for item in hits[:args.max]:
+        source = "録音" if pipe.uses_recording(item) else "TTS"
+        print(f"{item.id}	{source}	{item.text}")
+    if len(hits) > args.max:
+        print(f"…ほか {len(hits) - args.max} 件（--max で表示件数を増やせます）")
+
+
+def cmd_record(cfg: config.Config, args) -> None:
+    item = next((i for i in _items(cfg, None, None) if i.id == args.id), None)
+    if item is None:
+        raise config.ConfigError(f"選択中の台本に無い ID です: {args.id}")
+    if args.delete:
+        print("録音を消しました。" if recordings.delete(cfg, item.id) else "録音はありませんでした。")
+        return
+    if args.file is None:
+        raise config.ConfigError("取り込む録音ファイルを指定してください（または --delete）。")
+    path = recordings.save(cfg, item.id, args.file)
+    print(f"「{item.text}」の録音を取り込みました: {path}")
+    print(f"作り直すには: python -m voicegen generate --only {item.id}")
+
+
+def cmd_ui(cfg: config.Config, args) -> None:
+    server.serve(cfg, args.port, open_browser=not args.no_browser)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="voicegen", description="Triggevent JP のボイスパックを作る")
     parser.add_argument("--config", type=Path, default=Path("config.toml"), help="設定ファイル（既定: config.toml）")
@@ -67,12 +100,24 @@ def main(argv: list[str] | None = None) -> int:
     gen.add_argument("--stage", choices=["tts", "rvc", "post"], help="指定した段階だけ実行する")
     gen.add_argument("--only", nargs="+", metavar="ID", help="指定した ID のセリフだけ作る")
     gen.add_argument("--limit", type=int, help="先頭から指定した件数だけ作る")
+    find = sub.add_parser("find", help="セリフを検索して ID を表示")
+    find.add_argument("text", help="セリフや ID の一部")
+    find.add_argument("--max", type=int, default=50, help="表示する件数（既定: 50）")
+    rec = sub.add_parser("record", help="自分の録音を取り込む（TTS の代わりに RVC に通す）")
+    rec.add_argument("id", help="セリフ ID")
+    rec.add_argument("file", nargs="?", type=Path, help="録音ファイル（WAV・MP3・WebM など）")
+    rec.add_argument("--delete", action="store_true", help="録音を消して TTS に戻す")
+    ui = sub.add_parser("ui", help="セリフを選んで録音・作り直しをする画面を開く")
+    ui.add_argument("--port", type=int, default=8765, help="待ち受けるポート（既定: 8765。0 なら空いているポート）")
+    ui.add_argument("--no-browser", action="store_true", help="ブラウザを自動で開かない")
     args = parser.parse_args(argv)
 
     try:
         cfg = config.load(args.config)
-        {"speakers": cmd_speakers, "list": cmd_list, "generate": cmd_generate}[args.command](cfg, args)
-    except (config.ConfigError, voicevox.VoicevoxError, applio.RvcError, audio.AudioError) as e:
+        commands = {"speakers": cmd_speakers, "list": cmd_list, "generate": cmd_generate,
+                    "find": cmd_find, "record": cmd_record, "ui": cmd_ui}
+        commands[args.command](cfg, args)
+    except (config.ConfigError, voicevox.VoicevoxError, applio.RvcError, audio.AudioError, ValueError, OSError) as e:
         print(f"エラー: {e}", file=sys.stderr)
         return 1
     return 0

@@ -58,6 +58,31 @@ The script is the Japanese version of Triggevent JP's callouts. Each stage is ca
 
 段階を指定して実行することもできます（`--stage tts` / `rvc` / `post`）。特定のセリフだけ作るときは `--only <ID>` を使います。
 
+## 自分の声で直す / Fixing lines with your own voice
+
+TTS の読み方がおかしいセリフは、自分で読んだ声を RVC に通して差し替えられます。録音があるセリフは、VOICEVOX の代わりに録音が使われます。
+
+1. 録音スタジオの画面を開きます（ブラウザで `http://127.0.0.1:8765` が開きます）。
+   ```powershell
+   python -m voicegen ui
+   ```
+2. セリフを検索し、「● 録音」で読み上げて「■ 停止」で止めます（Esc でも止まります）。
+   - 「録音後に作り直す」がオンなら、そのまま RVC にかけて仕上がりを再生します。
+   - 「▶ TTS」「▶ 録音」「▶ 仕上がり」で聞き比べられます。
+   - 「録音を消す」で VOICEVOX に戻せます。
+3. 声の高さが VOICEVOX の話者と違う場合は、`[recordings] pitch` で録音だけ RVC の pitch を変えられます。
+
+録音は `recordings/<セリフID>.wav` に保存されます（Git には入りません）。ほかのソフトで録音したファイルは、コマンドでも取り込めます。
+
+```powershell
+python -m voicegen find 全体攻撃                  # ID を調べる
+python -m voicegen record L_402ac15b 録音.wav      # 取り込む
+python -m voicegen generate --only L_402ac15b      # 作り直す
+python -m voicegen record L_402ac15b --delete      # 録音を消して TTS に戻す
+```
+
+Lines that TTS reads badly can be replaced with your own recording, which is then converted with RVC. Run `python -m voicegen ui` to open a local recording studio in the browser (only reachable from this PC), or import files with `record`. Recordings are stored in `recordings/` and are not committed.
+
 Copy `config.example.toml` to `config.toml`, pick a VOICEVOX style with `speakers`, check the selection with `list`, try a few lines with `generate --limit 10`, then enable RVC and run `generate`.
 
 ## 台本の作り直し / Rebuilding the script

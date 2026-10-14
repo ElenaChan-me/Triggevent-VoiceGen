@@ -51,6 +51,13 @@ volume_envelope = 1.0
 embedder = "contentvec"
 extra_args = []       # Applio の batch_infer にそのまま渡す追加の引数
 
+# 自分で録音した声（python -m voicegen ui や record で取り込む）。録音があるセリフは TTS の代わりに使う
+[recordings]
+dir = "recordings"
+# RVC の pitch を録音だけ別にする（半音）。自分の声と VOICEVOX の話者の高さが違うときに使う。消すと [rvc] と同じ
+# pitch = 0
+max_seconds = 15      # 1 セリフの録音の上限（秒）
+
 [post]
 ffmpeg = "ffmpeg"
 sample_rate = 48000

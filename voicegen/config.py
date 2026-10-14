@@ -59,6 +59,14 @@ class Post:
 
 
 @dataclass(frozen=True)
+class Recordings:
+    dir: Path
+    # 自分の声と VOICEVOX の話者では高さが違うので、RVC の pitch を別に指定できるようにする。None なら [rvc] と同じ
+    pitch: int | None
+    max_seconds: int
+
+
+@dataclass(frozen=True)
 class Pack:
     name: str
     credit: str
@@ -76,6 +84,7 @@ class Config:
     rvc: Rvc
     post: Post
     pack: Pack
+    recordings: Recordings
     extra: dict = field(default_factory=dict)
 
 
@@ -127,6 +136,7 @@ def load(path: Path) -> Config:
     post = raw.get("post", {})
     pack = raw.get("pack", {})
     readings = raw.get("readings", {})
+    rec = raw.get("recordings", {})
     if not all(isinstance(k, str) and isinstance(v, str) and k for k, v in readings.items()):
         raise ConfigError("[readings] は「置き換える文字 = 読み」の形で、文字列で指定してください。")
 
@@ -196,4 +206,9 @@ def load(path: Path) -> Config:
             true_peak=_range("true_peak", _get(post, "true_peak", float, -1.5), -9.0, 0.0),
         ),
         pack=Pack(name=name, credit=_get(pack, "credit", str, "")),
+        recordings=Recordings(
+            dir=_path(base, _get(rec, "dir", str, "recordings")),
+            pitch=None if "pitch" not in rec else int(_range("recordings.pitch", _get(rec, "pitch", int), -24, 24)),
+            max_seconds=int(_range("max_seconds", _get(rec, "max_seconds", int, 15), 1, 120)),
+        ),
     )

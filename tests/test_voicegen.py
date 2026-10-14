@@ -145,7 +145,7 @@ class ApplioTests(unittest.TestCase):
     def test_command_and_output_name(self):
         rvc = config.Rvc(True, Path("C:/Applio"), Path("C:/m/a.pth"), None, 2, 0.5, 0.3, "rmvpe", 1.0, "contentvec", ["--split-audio"])
         cmd = applio.build_command(rvc, Path("in"), Path("out"))
-        self.assertEqual(cmd[1:3], ["core.py", "batch_infer"])
+        self.assertEqual(cmd[1:3], ["core.py", "batch-infer"])
         # index が無いときは index_rate を 0 にする
         self.assertEqual(cmd[cmd.index("--index-rate") + 1], "0.0")
         self.assertEqual(cmd[cmd.index("--index-path") + 1], "")
@@ -334,6 +334,32 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(status, 404)
         status, _ = self.call("GET", "/audio/result/..%2Fconfig.toml")
         self.assertEqual(status, 404)
+
+class MappingTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from voicegen import mapping
+        cls.mapping = mapping
+        cls.m = mapping.build(script.load(ROOT / "data" / "script.json"))
+
+    def test_resolves_static_names_and_templates(self):
+        r = self.mapping.resolve
+        self.assertEqual(r(self.m, "Raidwide"), (["L_402ac15b"], "全体攻撃"))
+        self.assertEqual(r(self.m, "Test"), (["sys_test"], "テスト"))
+        ids, ja = r(self.m, "Buster on YOU")
+        self.assertEqual((ids[0], ja), ("part_you", "自分にタンク強攻撃"))
+        ids, ja = r(self.m, "Buster on Lily Tayler")
+        self.assertIsNone(ids[0])  # プレイヤー名は収録できない
+        self.assertEqual(ja, "Lily Taylerにタンク強攻撃")
+        # 何にでも一致する {xxx} だけのテンプレートは入れない
+        self.assertIsNone(r(self.m, "completely unknown text"))
+
+    def test_every_template_round_trips(self):
+        for t in self.m["templates"]:
+            values = [s["choices"][-1]["en"] if s["kind"] == "choice" else
+                      {"direction": "Southwest", "number": "3", "player": "YOU"}.get(s["kind"], "Foo") for s in t["slots"]]
+            text = "".join(p["lit"] if "lit" in p else values[p["slot"]] for p in t["enPieces"])
+            self.assertIsNotNone(self.mapping.resolve(self.m, text), text)
 
 
 if __name__ == "__main__":

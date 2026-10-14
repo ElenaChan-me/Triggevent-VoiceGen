@@ -22,7 +22,7 @@ def output_name(input_name: str) -> str:
 
 def build_command(cfg: Rvc, input_dir: Path, output_dir: Path) -> list[str]:
     cmd = [
-        str(python_path(cfg)), "core.py", "batch_infer",
+        str(python_path(cfg)), "core.py", "batch-infer",
         "--input-folder", str(input_dir),
         "--output-folder", str(output_dir),
         "--pth-path", str(cfg.model),

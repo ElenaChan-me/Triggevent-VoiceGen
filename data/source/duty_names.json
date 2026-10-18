@@ -1,0 +1,2610 @@
+[
+{
+"key": "Odin",
+"zone": 394,
+"name": "闘神オーディン討滅戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "討滅戦"
+},
+{
+"key": "UWU",
+"zone": 777,
+"name": "絶アルテマウェポン破壊作戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "絶"
+},
+{
+"key": "P1S",
+"zone": 1003,
+"name": "万魔殿パンデモニウム零式：辺獄編1",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P2S",
+"zone": 1005,
+"name": "万魔殿パンデモニウム零式：辺獄編2",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P3S",
+"zone": 1007,
+"name": "万魔殿パンデモニウム零式：辺獄編3",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P4S",
+"zone": 1009,
+"name": "万魔殿パンデモニウム零式：辺獄編4",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P5N",
+"zone": 1081,
+"name": "万魔殿パンデモニウム：煉獄編1",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P6N",
+"zone": 1083,
+"name": "万魔殿パンデモニウム：煉獄編2",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P7N",
+"zone": 1085,
+"name": "万魔殿パンデモニウム：煉獄編3",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P8N",
+"zone": 1087,
+"name": "万魔殿パンデモニウム：煉獄編4",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P5S",
+"zone": 1082,
+"name": "万魔殿パンデモニウム零式：煉獄編1",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P6S",
+"zone": 1084,
+"name": "万魔殿パンデモニウム零式：煉獄編2",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P7S",
+"zone": 1086,
+"name": "万魔殿パンデモニウム零式：煉獄編3",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P8S",
+"zone": 1088,
+"name": "万魔殿パンデモニウム零式：煉獄編4",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "EndsingerEx",
+"zone": 998,
+"name": "終極の戦い",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "BarbarEx",
+"zone": 1072,
+"name": "極バルバリシア討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "Dragonsong",
+"zone": 968,
+"name": "絶竜詩戦争",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "絶"
+},
+{
+"key": "ASS_Criterion",
+"zone": 1075,
+"name": "アナザーダンジョン 異聞シラディハ水道",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "その他"
+},
+{
+"key": "ASS_Savage",
+"zone": 1076,
+"name": "アナザーダンジョン 異聞シラディハ水道 零式",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "その他"
+},
+{
+"key": "O1S",
+"zone": 752,
+"name": "次元の狭間オメガ零式：シグマ編1",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O2S",
+"zone": 753,
+"name": "次元の狭間オメガ零式：シグマ編2",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O3S",
+"zone": 754,
+"name": "次元の狭間オメガ零式：シグマ編3",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O4S",
+"zone": 755,
+"name": "次元の狭間オメガ零式：シグマ編4",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O5S",
+"zone": 695,
+"name": "次元の狭間オメガ零式：デルタ編1",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O6S",
+"zone": 696,
+"name": "次元の狭間オメガ零式：デルタ編2",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O7S",
+"zone": 697,
+"name": "次元の狭間オメガ零式：デルタ編3",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O8S",
+"zone": 698,
+"name": "次元の狭間オメガ零式：デルタ編4",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O9S",
+"zone": 802,
+"name": "次元の狭間オメガ零式：アルファ編1",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O10S",
+"zone": 803,
+"name": "次元の狭間オメガ零式：アルファ編2",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O11S",
+"zone": 804,
+"name": "次元の狭間オメガ零式：アルファ編3",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "O12S",
+"zone": 805,
+"name": "次元の狭間オメガ零式：アルファ編4",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "零式"
+},
+{
+"key": "RubicanteEx",
+"zone": 1096,
+"name": "極ルビカンテ討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "Aglaia",
+"zone": 1054,
+"name": "輝ける神域 アグライア",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "アライアンス"
+},
+{
+"key": "Euphrosyne",
+"zone": 1118,
+"name": "喜びの神域 エウプロシュネ",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "アライアンス"
+},
+{
+"key": "UCoB",
+"zone": 733,
+"name": "絶バハムート討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "絶"
+},
+{
+"key": "OmegaProtocol",
+"zone": 1122,
+"name": "絶オメガ検証戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "絶"
+},
+{
+"key": "P9N",
+"zone": 1147,
+"name": "万魔殿パンデモニウム：天獄編1",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P10N",
+"zone": 1149,
+"name": "万魔殿パンデモニウム：天獄編2",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P11N",
+"zone": 1151,
+"name": "万魔殿パンデモニウム：天獄編3",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P12N",
+"zone": 1153,
+"name": "万魔殿パンデモニウム：天獄編4",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "P9S",
+"zone": 1148,
+"name": "万魔殿パンデモニウム零式：天獄編1",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P10S",
+"zone": 1150,
+"name": "万魔殿パンデモニウム零式：天獄編2",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P11S",
+"zone": 1152,
+"name": "万魔殿パンデモニウム零式：天獄編3",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "P12S",
+"zone": 1154,
+"name": "万魔殿パンデモニウム零式：天獄編4",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "零式"
+},
+{
+"key": "GolbezEx",
+"zone": 1141,
+"name": "極ゴルベーザ討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "ZeromusEx",
+"zone": 1169,
+"name": "極ゼロムス討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "DtEx1",
+"zone": 1196,
+"name": "極ヴァリガルマンダ討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "DtEx2",
+"zone": 1201,
+"name": "極ゾラージャ討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "DtEx3",
+"zone": 1243,
+"name": "極エターナルクイーン討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "DtEx4",
+"zone": 1271,
+"name": "極ゼレニア討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "DtEx5",
+"zone": 1296,
+"name": "極永遠の闇討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "DtEx6",
+"zone": 1308,
+"name": "極グラシャラボラス討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "DtEx7",
+"zone": 1362,
+"name": "極エヌオー討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "極"
+},
+{
+"key": "ByakkoUn",
+"zone": 1239,
+"name": "幻白虎征魂戦",
+"official": false,
+"expac": "黄金のレガシー",
+"kind": "幻"
+},
+{
+"key": "SuzakuUn",
+"zone": 1272,
+"name": "幻朱雀征魂戦",
+"official": false,
+"expac": "黄金のレガシー",
+"kind": "幻"
+},
+{
+"key": "SeiryuUn",
+"zone": 1302,
+"name": "幻青龍征魂戦",
+"official": false,
+"expac": "黄金のレガシー",
+"kind": "幻"
+},
+{
+"key": "TsukuyomiUn",
+"zone": 1318,
+"name": "幻ツクヨミ討滅戦",
+"official": false,
+"expac": "黄金のレガシー",
+"kind": "幻"
+},
+{
+"key": "ShinryuUn",
+"zone": 1372,
+"name": "幻神龍討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "幻"
+},
+{
+"key": "Ihuykatumu",
+"zone": 1167,
+"name": "濁流遡上 イフイカ・トゥム",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "WorqorZormor",
+"zone": 1193,
+"name": "山嶺登頂 ウォーコー・ゾーモー",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "SkydeepCenote",
+"zone": 1194,
+"name": "遺産踏査 天深きセノーテ",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "Vanguard",
+"zone": 1198,
+"name": "外征前哨 ヴァンガード",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "Origenics",
+"zone": 1208,
+"name": "魂魄工廠 オリジェニクス",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "Alexandria",
+"zone": 1199,
+"name": "記憶幻想 アレクサンドリア",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "StrayboroughDeadwalk",
+"zone": 1204,
+"name": "悪夢遊園 ストレイバロー",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "Yuweyawata",
+"zone": 1242,
+"name": "廃地討究 ユウェヤーワータ",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "Underkeep",
+"zone": 1266,
+"name": "王城旧跡 アンダーキープ",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "MesoTerminal",
+"zone": 1292,
+"name": "永久幽界 メインターミナル",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "Mistwake",
+"zone": 1314,
+"name": "遺忘行路 ミストウェイク",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ダンジョン"
+},
+{
+"key": "WorqorLarDor",
+"zone": 1195,
+"name": "ヴァリガルマンダ討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "討滅戦"
+},
+{
+"key": "Everkeep",
+"zone": 1200,
+"name": "ゾラージャ討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "討滅戦"
+},
+{
+"key": "Interphos",
+"zone": 1202,
+"name": "エターナルクイーン討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "討滅戦"
+},
+{
+"key": "HellOnRails",
+"zone": 1307,
+"name": "グラシャラボラス討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "討滅戦"
+},
+{
+"key": "TheUnmaking",
+"zone": 1361,
+"name": "エヌオー討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "討滅戦"
+},
+{
+"key": "M1N",
+"zone": 1225,
+"name": "至天の座アルカディア：ライトヘビー級1",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M2N",
+"zone": 1227,
+"name": "至天の座アルカディア：ライトヘビー級2",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M3N",
+"zone": 1229,
+"name": "至天の座アルカディア：ライトヘビー級3",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M4N",
+"zone": 1231,
+"name": "至天の座アルカディア：ライトヘビー級4",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M1S",
+"zone": 1226,
+"name": "至天の座アルカディア零式：ライトヘビー級1",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M2S",
+"zone": 1228,
+"name": "至天の座アルカディア零式：ライトヘビー級2",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M3S",
+"zone": 1230,
+"name": "至天の座アルカディア零式：ライトヘビー級3",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M4S",
+"zone": 1232,
+"name": "至天の座アルカディア零式：ライトヘビー級4",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M5N",
+"zone": 1256,
+"name": "至天の座アルカディア：クルーザー級1",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M6N",
+"zone": 1258,
+"name": "至天の座アルカディア：クルーザー級2",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M7N",
+"zone": 1260,
+"name": "至天の座アルカディア：クルーザー級3",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M8N",
+"zone": 1262,
+"name": "至天の座アルカディア：クルーザー級4",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M5S",
+"zone": 1257,
+"name": "至天の座アルカディア零式：クルーザー級1",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M6S",
+"zone": 1259,
+"name": "至天の座アルカディア零式：クルーザー級2",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M7S",
+"zone": 1261,
+"name": "至天の座アルカディア零式：クルーザー級3",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M8S",
+"zone": 1263,
+"name": "至天の座アルカディア零式：クルーザー級4",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M9N",
+"zone": 1320,
+"name": "至天の座アルカディア：ヘビー級1",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M10N",
+"zone": 1322,
+"name": "至天の座アルカディア：ヘビー級2",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M11N",
+"zone": 1324,
+"name": "至天の座アルカディア：ヘビー級3",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M12N",
+"zone": 1326,
+"name": "至天の座アルカディア：ヘビー級4",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "ノーマル"
+},
+{
+"key": "M9S",
+"zone": 1321,
+"name": "至天の座アルカディア零式：ヘビー級1",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M10S",
+"zone": 1323,
+"name": "至天の座アルカディア零式：ヘビー級2",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M11S",
+"zone": 1325,
+"name": "至天の座アルカディア零式：ヘビー級3",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "M12S",
+"zone": 1327,
+"name": "至天の座アルカディア零式：ヘビー級4",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "零式"
+},
+{
+"key": "FRU",
+"zone": 1238,
+"name": "絶もうひとつの未来",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "絶"
+},
+{
+"key": "CodCar",
+"zone": 1241,
+"name": "滅暗闇の雲激闘戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "アライアンス"
+},
+{
+"key": "TEA",
+"zone": 887,
+"name": "絶アレキサンダー討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "絶"
+},
+{
+"key": "TheWorldOfDarkness",
+"zone": 151,
+"name": "クリスタルタワー：闇の世界",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "アライアンス"
+},
+{
+"key": "AmdaporKeep",
+"zone": 167,
+"name": "邪教排撃 古城アムダプール",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "AmdaporKeepHard",
+"zone": 189,
+"name": "邪念排撃 古城アムダプール (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheAurumVale",
+"zone": 1331,
+"name": "霧中行軍 オーラムヴェイル",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheAurumVale73",
+"zone": 172,
+"name": "霧中行軍 オーラムヴェイル（旧）",
+"official": false,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "BrayfloxsLongstop",
+"zone": 1041,
+"name": "奪還支援 ブレイフロクスの野営地",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "CuttersCry",
+"zone": 1303,
+"name": "流砂迷宮 カッターズクライ",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "CuttersCry72",
+"zone": 170,
+"name": "流砂迷宮 カッターズクライ（旧）",
+"official": false,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "HalataliHard",
+"zone": 360,
+"name": "剣闘領域 ハラタリ修練所 (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "HaukkeManor",
+"zone": 1040,
+"name": "名門屋敷 ハウケタ御用邸",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "HaukkeManorHard",
+"zone": 350,
+"name": "妖異屋敷 ハウケタ御用邸 (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "HullbreakerIsle",
+"zone": 361,
+"name": "財宝伝説 ハルブレーカー・アイル",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "PharosSirius",
+"zone": 160,
+"name": "怪鳥巨塔 シリウス大灯台",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "SastashaHard",
+"zone": 387,
+"name": "逆襲要害 サスタシャ浸食洞 (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "Snowcloak",
+"zone": 1062,
+"name": "氷結潜窟 スノークローク大氷壁",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheLostCityOfAmdapor",
+"zone": 363,
+"name": "腐敗遺跡 古アムダプール市街",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheStoneVigil",
+"zone": 1042,
+"name": "城塞攻略 ストーンヴィジル",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheStoneVigilHard",
+"zone": 365,
+"name": "城塞奪回 ストーンヴィジル (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheSunkenTempleOfQarn",
+"zone": 1267,
+"name": "遺跡探索 カルン埋没寺院",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheSunkenTempleOfQarn71",
+"zone": 163,
+"name": "遺跡探索 カルン埋没寺院（旧）",
+"official": false,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheSunkenTempleOfQarnHard",
+"zone": 367,
+"name": "遺跡救援 カルン埋没寺院 (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheTamTaraDeepcroftHard",
+"zone": 373,
+"name": "惨劇霊殿 タムタラの墓所 (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheWanderersPalaceHard",
+"zone": 188,
+"name": "武装聖域 ワンダラーパレス (Hard)",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ダンジョン"
+},
+{
+"key": "TheBindingCoilOfBahamutTurn1",
+"zone": 241,
+"name": "大迷宮バハムート：邂逅編1",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheFinalCoilOfBahamutTurn1",
+"zone": 193,
+"name": "大迷宮バハムート：真成編1",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheFinalCoilOfBahamutTurn2",
+"zone": 194,
+"name": "大迷宮バハムート：真成編2",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheFinalCoilOfBahamutTurn3",
+"zone": 195,
+"name": "大迷宮バハムート：真成編3",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheFinalCoilOfBahamutTurn4",
+"zone": 196,
+"name": "大迷宮バハムート：真成編4",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheBindingCoilOfBahamutTurn2",
+"zone": 242,
+"name": "大迷宮バハムート：邂逅編2",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheBindingCoilOfBahamutTurn4",
+"zone": 244,
+"name": "大迷宮バハムート：邂逅編4",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheBindingCoilOfBahamutTurn5",
+"zone": 245,
+"name": "大迷宮バハムート：邂逅編5",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheSecondCoilOfBahamutTurn1",
+"zone": 355,
+"name": "大迷宮バハムート：侵攻編1",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheSecondCoilOfBahamutTurn2",
+"zone": 356,
+"name": "大迷宮バハムート：侵攻編2",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheSecondCoilOfBahamutTurn3",
+"zone": 357,
+"name": "大迷宮バハムート：侵攻編3",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheSecondCoilOfBahamutTurn4",
+"zone": 358,
+"name": "大迷宮バハムート：侵攻編4",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "ノーマル"
+},
+{
+"key": "TheWhorleaterExtreme",
+"zone": 359,
+"name": "極リヴァイアサン討滅戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "極"
+},
+{
+"key": "TheAkhAfahAmphitheatreExtreme",
+"zone": 378,
+"name": "極シヴァ討滅戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "極"
+},
+{
+"key": "TheAkhAfahAmphitheatreHard",
+"zone": 377,
+"name": "真シヴァ討滅戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "討滅戦"
+},
+{
+"key": "TheNavelExtreme",
+"zone": 296,
+"name": "極タイタン討滅戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "極"
+},
+{
+"key": "TheNavelHard",
+"zone": 293,
+"name": "真タイタン討滅戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "討滅戦"
+},
+{
+"key": "TheNavel",
+"zone": 1046,
+"name": "タイタン討伐戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "討滅戦"
+},
+{
+"key": "TheMinstrelsBalladUltimasBane",
+"zone": 348,
+"name": "究極幻想 アルテマウェポン破壊作戦",
+"official": true,
+"expac": "新生エオルゼア",
+"kind": "極"
+},
+{
+"key": "DunScaith",
+"zone": 627,
+"name": "影の国ダン・スカー",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "アライアンス"
+},
+{
+"key": "TheWeepingCityOfMhach",
+"zone": 556,
+"name": "禁忌都市マハ",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "アライアンス"
+},
+{
+"key": "TheAetherochemicalResearchFacility",
+"zone": 1110,
+"name": "蒼天聖戦 魔科学研究所",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "BaelsarsWall",
+"zone": 1114,
+"name": "巨大防壁 バエサルの長城",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "TheFractalContinuum",
+"zone": 430,
+"name": "博物戦艦 フラクタル・コンティニアム",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "TheGreatGubalLibraryHard",
+"zone": 578,
+"name": "稀書回収 グブラ幻想図書館 (Hard)",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "SohmAl",
+"zone": 1064,
+"name": "霊峰踏破 ソーム・アル",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "SohmAlHard",
+"zone": 617,
+"name": "霊峰浄化 ソーム・アル (Hard)",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "TheLostCityOfAmdaporHard",
+"zone": 519,
+"name": "神聖遺跡 古アムダプール市街 (Hard)",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "TheVault",
+"zone": 1066,
+"name": "強硬突入 イシュガルド教皇庁",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "Xelphatol",
+"zone": 1113,
+"name": "峻厳渓谷 ゼルファトル",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ダンジョン"
+},
+{
+"key": "AlexanderTheBreathOfTheCreator",
+"zone": 581,
+"name": "機工城アレキサンダー：天動編2",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ノーマル"
+},
+{
+"key": "AlexanderTheBreathOfTheCreatorSavage",
+"zone": 585,
+"name": "機工城アレキサンダー零式：天動編2",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheHeartOfTheCreatorSavage",
+"zone": 586,
+"name": "機工城アレキサンダー零式：天動編3",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheSoulOfTheCreator",
+"zone": 583,
+"name": "機工城アレキサンダー：天動編4",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ノーマル"
+},
+{
+"key": "AlexanderTheSoulOfTheCreatorSavage",
+"zone": 587,
+"name": "機工城アレキサンダー零式：天動編4",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheFistOfTheFatherSavage",
+"zone": 449,
+"name": "機工城アレキサンダー零式：起動編1",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheCuffOfTheFatherSavage",
+"zone": 450,
+"name": "機工城アレキサンダー零式：起動編2",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheArmOfTheFather",
+"zone": 444,
+"name": "機工城アレキサンダー：起動編3",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ノーマル"
+},
+{
+"key": "AlexanderTheArmOfTheFatherSavage",
+"zone": 451,
+"name": "機工城アレキサンダー零式：起動編3",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheBurdenOfTheFatherSavage",
+"zone": 452,
+"name": "機工城アレキサンダー零式：起動編4",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheFistOfTheSonSavage",
+"zone": 529,
+"name": "機工城アレキサンダー零式：律動編1",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheCuffOfTheSon",
+"zone": 521,
+"name": "機工城アレキサンダー：律動編2",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ノーマル"
+},
+{
+"key": "AlexanderTheCuffOfTheSonSavage",
+"zone": 530,
+"name": "機工城アレキサンダー零式：律動編2",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheArmOfTheSonSavage",
+"zone": 531,
+"name": "機工城アレキサンダー零式：律動編3",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheBurdenOfTheSon",
+"zone": 523,
+"name": "機工城アレキサンダー：律動編4",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "ノーマル"
+},
+{
+"key": "AlexanderTheBurdenOfTheSonSavage",
+"zone": 532,
+"name": "機工城アレキサンダー零式：律動編4",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "AlexanderTheEyesOfTheCreatorSavage",
+"zone": 584,
+"name": "機工城アレキサンダー零式：天動編1",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "零式"
+},
+{
+"key": "TheLimitlessBlueExtreme",
+"zone": 447,
+"name": "極ビスマルク討滅戦",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "極"
+},
+{
+"key": "ContainmentBayS1T7Extreme",
+"zone": 524,
+"name": "極魔神セフィロト討滅戦",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "極"
+},
+{
+"key": "ContainmentBayS1T7",
+"zone": 517,
+"name": "魔神セフィロト討滅戦",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "討滅戦"
+},
+{
+"key": "ContainmentBayP1T6Extreme",
+"zone": 577,
+"name": "極女神ソフィア討滅戦",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "極"
+},
+{
+"key": "TheMinstrelsBalladThordansReign",
+"zone": 448,
+"name": "蒼天幻想 ナイツ・オブ・ラウンド討滅戦",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "極"
+},
+{
+"key": "ContainmentBayZ1T9Extreme",
+"zone": 638,
+"name": "極鬼神ズルワーン討滅戦",
+"official": true,
+"expac": "蒼天のイシュガルド",
+"kind": "極"
+},
+{
+"key": "TheOrbonneMonastery",
+"zone": 826,
+"name": "楽欲の僧院 オーボンヌ",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "アライアンス"
+},
+{
+"key": "TheRidoranaLighthouse",
+"zone": 776,
+"name": "封じられた聖塔 リドルアナ",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "アライアンス"
+},
+{
+"key": "TheRoyalCityOfRabanastre",
+"zone": 734,
+"name": "失われた都 ラバナスタ",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "アライアンス"
+},
+{
+"key": "AlaMhigo",
+"zone": 1146,
+"name": "紅蓮決戦 アラミゴ",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "BardamsMettle",
+"zone": 1143,
+"name": "伝統試練 バルダム覇道",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "CastrumAbania",
+"zone": 1145,
+"name": "巨砲要塞 カストルム・アバニア",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "DomaCastle",
+"zone": 1144,
+"name": "解放決戦 ドマ城",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheDrownedCityOfSkalla",
+"zone": 1172,
+"name": "水没遺構 スカラ",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheFractalContinuumHard",
+"zone": 743,
+"name": "暴走戦艦 フラクタル・コンティニアム (Hard)",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheGhimlytDark",
+"zone": 1174,
+"name": "境界戦線 ギムリトダーク",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "HellsLid",
+"zone": 742,
+"name": "紅玉火山 獄之蓋",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "KuganeCastle",
+"zone": 662,
+"name": "悪党成敗 クガネ城",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "ShisuiOfTheVioletTides",
+"zone": 1367,
+"name": "海底宮殿 紫水宮",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "ShisuiOfTheVioletTides74",
+"zone": 616,
+"name": "海底宮殿 紫水宮（旧）",
+"official": false,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheSirensongSea",
+"zone": 1142,
+"name": "漂流海域 セイレーン海",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "SaintMociannesArboretumHard",
+"zone": 788,
+"name": "草木汚染 聖モシャーヌ植物園 (Hard)",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheSwallowsCompass",
+"zone": 768,
+"name": "風水霊殿 ガンエン廟",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheTempleOfTheFist",
+"zone": 663,
+"name": "壊神修行 星導山寺院",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "TheBurn",
+"zone": 1173,
+"name": "永久焦土 ザ・バーン",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ダンジョン"
+},
+{
+"key": "AlphascapeV20",
+"zone": 799,
+"name": "次元の狭間オメガ：アルファ編2",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "AlphascapeV30",
+"zone": 800,
+"name": "次元の狭間オメガ：アルファ編3",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "AlphascapeV40",
+"zone": 801,
+"name": "次元の狭間オメガ：アルファ編4",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "DeltascapeV10",
+"zone": 691,
+"name": "次元の狭間オメガ：デルタ編1",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "DeltascapeV20",
+"zone": 692,
+"name": "次元の狭間オメガ：デルタ編2",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "DeltascapeV30",
+"zone": 693,
+"name": "次元の狭間オメガ：デルタ編3",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "DeltascapeV40",
+"zone": 694,
+"name": "次元の狭間オメガ：デルタ編4",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "SigmascapeV10",
+"zone": 748,
+"name": "次元の狭間オメガ：シグマ編1",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "SigmascapeV20",
+"zone": 749,
+"name": "次元の狭間オメガ：シグマ編2",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "SigmascapeV30",
+"zone": 750,
+"name": "次元の狭間オメガ：シグマ編3",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "SigmascapeV40",
+"zone": 751,
+"name": "次元の狭間オメガ：シグマ編4",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "AlphascapeV10",
+"zone": 798,
+"name": "次元の狭間オメガ：アルファ編1",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "ノーマル"
+},
+{
+"key": "TheJadeStoaExtreme",
+"zone": 758,
+"name": "極白虎征魂戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "TheJadeStoa",
+"zone": 746,
+"name": "白虎征魂戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "EmanationExtreme",
+"zone": 720,
+"name": "極ラクシュミ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "Emanation",
+"zone": 719,
+"name": "ラクシュミ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "TheGreatHuntExtreme",
+"zone": 762,
+"name": "極リオレウス狩猟戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "TheGreatHunt",
+"zone": 761,
+"name": "リオレウス狩猟戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "TheWreathOfSnakesExtreme",
+"zone": 825,
+"name": "極青龍征魂戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "TheWreathOfSnakes",
+"zone": 824,
+"name": "青龍征魂戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "TheMinstrelsBalladShinryusDomain",
+"zone": 730,
+"name": "極神龍討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "TheRoyalMenagerie",
+"zone": 679,
+"name": "神龍討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "ThePoolOfTributeExtreme",
+"zone": 677,
+"name": "極スサノオ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "ThePoolOfTribute",
+"zone": 674,
+"name": "スサノオ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "HellsKierExtreme",
+"zone": 811,
+"name": "極朱雀征魂戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "HellsKier",
+"zone": 810,
+"name": "朱雀征魂戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "TheMinstrelsBalladTsukuyomisPain",
+"zone": 779,
+"name": "極ツクヨミ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "極"
+},
+{
+"key": "CastrumFluminis",
+"zone": 778,
+"name": "ツクヨミ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "KuganeOhashi",
+"zone": 806,
+"name": "真ヨウジンボウ討滅戦",
+"official": true,
+"expac": "紅蓮のリベレーター",
+"kind": "討滅戦"
+},
+{
+"key": "TheCopiedFactory",
+"zone": 882,
+"name": "複製サレタ工場廃墟",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "アライアンス"
+},
+{
+"key": "ThePuppetsBunker",
+"zone": 917,
+"name": "人形タチノ軍事基地",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "アライアンス"
+},
+{
+"key": "TheTowerAtParadigmsBreach",
+"zone": 966,
+"name": "希望ノ砲台：「塔」",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "アライアンス"
+},
+{
+"key": "AkadaemiaAnyder",
+"zone": 841,
+"name": "創造機関 アナイダアカデミア",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "Amaurot",
+"zone": 838,
+"name": "終末幻想 アーモロート",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "AnamnesisAnyder",
+"zone": 898,
+"name": "黒風海底 アニドラス・アナムネーシス",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "DohnMheg",
+"zone": 821,
+"name": "水妖幻園 ドォーヌ・メグ",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheHeroesGauntlet",
+"zone": 916,
+"name": "漆黒決戦 ノルヴラント",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "HolminsterSwitch",
+"zone": 837,
+"name": "殺戮郷村 ホルミンスター",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "MalikahsWell",
+"zone": 836,
+"name": "爽涼離宮 マリカの大井戸",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "MatoyasRelict",
+"zone": 933,
+"name": "魔術工房 マトーヤのアトリエ",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "MtGulg",
+"zone": 822,
+"name": "偽造天界 グルグ火山",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "Paglthan",
+"zone": 938,
+"name": "黄金平原 パガルザン",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheQitanaRavel",
+"zone": 823,
+"name": "古跡探索 キタンナ神影洞",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheGrandCosmos",
+"zone": 884,
+"name": "魔法宮殿 グラン・コスモス",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheTwinning",
+"zone": 840,
+"name": "異界遺構 シルクス・ツイニング",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ダンジョン"
+},
+{
+"key": "EdensPromiseLitany",
+"zone": 943,
+"name": "希望の園エデン：再生編2",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensPromiseLitanySavage",
+"zone": 947,
+"name": "希望の園エデン零式：再生編2",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensPromiseAnamorphosis",
+"zone": 944,
+"name": "希望の園エデン：再生編3",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensPromiseAnamorphosisSavage",
+"zone": 948,
+"name": "希望の園エデン零式：再生編3",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensPromiseEternity",
+"zone": 945,
+"name": "希望の園エデン：再生編4",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensPromiseEternitySavage",
+"zone": 949,
+"name": "希望の園エデン零式：再生編4",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensGateResurrection",
+"zone": 849,
+"name": "希望の園エデン：覚醒編1",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensGateResurrectionSavage",
+"zone": 853,
+"name": "希望の園エデン零式：覚醒編1",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensGateDescent",
+"zone": 850,
+"name": "希望の園エデン：覚醒編2",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensGateDescentSavage",
+"zone": 854,
+"name": "希望の園エデン零式：覚醒編2",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensGateInundation",
+"zone": 851,
+"name": "希望の園エデン：覚醒編3",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensGateInundationSavage",
+"zone": 855,
+"name": "希望の園エデン零式：覚醒編3",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensGateSepulture",
+"zone": 852,
+"name": "希望の園エデン：覚醒編4",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensGateSepultureSavage",
+"zone": 856,
+"name": "希望の園エデン零式：覚醒編4",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensVerseFulmination",
+"zone": 902,
+"name": "希望の園エデン：共鳴編1",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensVerseFulminationSavage",
+"zone": 906,
+"name": "希望の園エデン零式：共鳴編1",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensVerseFuror",
+"zone": 903,
+"name": "希望の園エデン：共鳴編2",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensVerseFurorSavage",
+"zone": 907,
+"name": "希望の園エデン零式：共鳴編2",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensVerseIconoclasm",
+"zone": 904,
+"name": "希望の園エデン：共鳴編3",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensVerseIconoclasmSavage",
+"zone": 908,
+"name": "希望の園エデン零式：共鳴編3",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensVerseRefulgence",
+"zone": 905,
+"name": "希望の園エデン：共鳴編4",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensVerseRefulgenceSavage",
+"zone": 909,
+"name": "希望の園エデン零式：共鳴編4",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "EdensPromiseUmbra",
+"zone": 942,
+"name": "希望の園エデン：再生編1",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "ノーマル"
+},
+{
+"key": "EdensPromiseUmbraSavage",
+"zone": 946,
+"name": "希望の園エデン零式：再生編1",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "零式"
+},
+{
+"key": "TheCloudDeckExtreme",
+"zone": 951,
+"name": "極ダイヤウェポン捕獲作戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "TheCloudDeck",
+"zone": 950,
+"name": "ダイヤウェポン捕獲作戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "CastrumMarinumExtreme",
+"zone": 935,
+"name": "極エメラルドウェポン破壊作戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "CastrumMarinum",
+"zone": 934,
+"name": "エメラルドウェポン破壊作戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "TheMinstrelsBalladHadessElegy",
+"zone": 885,
+"name": "極ハーデス討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "TheDyingGasp",
+"zone": 847,
+"name": "ハーデス討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "TheCrownOfTheImmaculateExtreme",
+"zone": 848,
+"name": "極イノセンス討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "TheCrownOfTheImmaculate",
+"zone": 846,
+"name": "イノセンス討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "TheWhorleaterUnreal",
+"zone": 972,
+"name": "幻リヴァイアサン討滅戦",
+"official": false,
+"expac": "漆黒のヴィランズ",
+"kind": "幻"
+},
+{
+"key": "CinderDriftExtreme",
+"zone": 912,
+"name": "極ルビーウェポン破壊作戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "CinderDrift",
+"zone": 897,
+"name": "ルビーウェポン破壊作戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "TheAkhAfahAmphitheatreUnreal",
+"zone": 930,
+"name": "幻シヴァ討滅戦",
+"official": false,
+"expac": "漆黒のヴィランズ",
+"kind": "幻"
+},
+{
+"key": "TheNavelUnreal",
+"zone": 953,
+"name": "幻タイタン討滅戦",
+"official": false,
+"expac": "漆黒のヴィランズ",
+"kind": "幻"
+},
+{
+"key": "TheDancingPlagueExtreme",
+"zone": 858,
+"name": "極ティターニア討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "TheDancingPlague",
+"zone": 845,
+"name": "ティターニア討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "MemoriaMiseraExtreme",
+"zone": 913,
+"name": "極シタデル・ボズヤ追憶戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "TheSeatOfSacrificeExtreme",
+"zone": 923,
+"name": "極ウォーリア・オブ・ライト討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "極"
+},
+{
+"key": "TheSeatOfSacrifice",
+"zone": 922,
+"name": "ウォーリア・オブ・ライト討滅戦",
+"official": true,
+"expac": "漆黒のヴィランズ",
+"kind": "討滅戦"
+},
+{
+"key": "Thaleia",
+"zone": 1178,
+"name": "華めく神域 タレイア",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "アライアンス"
+},
+{
+"key": "TheAetherfont",
+"zone": 1126,
+"name": "星霊間欠 ハーム島",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AloaloIsland",
+"zone": 1176,
+"name": "ヴァリアントダンジョン アロアロ島",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AlzadaalsLegacy",
+"zone": 1050,
+"name": "近東秘宝 アルザダール海底遺跡群",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AnotherAloaloIslandSavage",
+"zone": 1180,
+"name": "アナザーダンジョン 異聞アロアロ島 零式",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AnotherAloaloIsland",
+"zone": 1179,
+"name": "アナザーダンジョン 異聞アロアロ島",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AnotherMountRokkonSavage",
+"zone": 1156,
+"name": "アナザーダンジョン 異聞六根山 零式",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AnotherMountRokkon",
+"zone": 1155,
+"name": "アナザーダンジョン 異聞六根山",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "KtisisHyperboreia",
+"zone": 974,
+"name": "創造環境 ヒュペルボレア造物院",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "LapisManalis",
+"zone": 1097,
+"name": "雪山冥洞 ラピス・マナリス",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "MountRokkon",
+"zone": 1137,
+"name": "ヴァリアントダンジョン 六根山",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "Smileton",
+"zone": 976,
+"name": "楽園都市 スマイルトン",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheStigmaDreamscape",
+"zone": 986,
+"name": "電脳夢想 スティグマ・フォー",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheAitiascope",
+"zone": 978,
+"name": "星海潜航 アイティオン星晶鏡",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheDeadEnds",
+"zone": 973,
+"name": "最終幻想 レムナント",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheFellCourtOfTroia",
+"zone": 1070,
+"name": "異界孤城 トロイアコート",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheLunarSubterrane",
+"zone": 1164,
+"name": "深淵潜行 月の地下渓谷",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheSildihnSubterrane",
+"zone": 1069,
+"name": "ヴァリアントダンジョン シラディハ水道",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheTowerOfBabil",
+"zone": 969,
+"name": "魔導神門 バブイルの塔",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "TheTowerOfZot",
+"zone": 952,
+"name": "異形楼閣 ゾットの塔",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "Vanaspati",
+"zone": 970,
+"name": "終末樹海 ヴァナスパティ",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ダンジョン"
+},
+{
+"key": "AsphodelosTheFirstCircle",
+"zone": 1002,
+"name": "万魔殿パンデモニウム：辺獄編1",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "AsphodelosTheSecondCircle",
+"zone": 1004,
+"name": "万魔殿パンデモニウム：辺獄編2",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "AsphodelosTheThirdCircle",
+"zone": 1006,
+"name": "万魔殿パンデモニウム：辺獄編3",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "AsphodelosTheFourthCircle",
+"zone": 1008,
+"name": "万魔殿パンデモニウム：辺獄編4",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "ノーマル"
+},
+{
+"key": "TheGildedAraya",
+"zone": 1136,
+"name": "アスラ討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "StormsCrown",
+"zone": 1071,
+"name": "バルバリシア討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "TheFinalDay",
+"zone": 997,
+"name": "終焉の戦い",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "TheVoidcastDais",
+"zone": 1140,
+"name": "ゴルベーザ討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "TheMinstrelsBalladHydaelynsCall",
+"zone": 996,
+"name": "極ハイデリン討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "TheMothercrystal",
+"zone": 995,
+"name": "ハイデリン討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "MountOrdeals",
+"zone": 1095,
+"name": "ルビカンテ討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "ContainmentBayS1T7Unreal",
+"zone": 1090,
+"name": "幻セフィロト討滅戦",
+"official": false,
+"expac": "暁月のフィナーレ",
+"kind": "幻"
+},
+{
+"key": "ContainmentBayP1T6Unreal",
+"zone": 1121,
+"name": "幻女神ソフィア討滅戦",
+"official": false,
+"expac": "暁月のフィナーレ",
+"kind": "幻"
+},
+{
+"key": "TheSingularityReactorUnreal",
+"zone": 1175,
+"name": "幻ナイツ・オブ・ラウンド討滅戦",
+"official": false,
+"expac": "暁月のフィナーレ",
+"kind": "幻"
+},
+{
+"key": "UltimasBaneUnreal",
+"zone": 1035,
+"name": "幻アルテマウェポン破壊作戦",
+"official": false,
+"expac": "暁月のフィナーレ",
+"kind": "幻"
+},
+{
+"key": "TheAbyssalFracture",
+"zone": 1168,
+"name": "ゼロムス討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "TheMinstrelsBalladZodiarksFall",
+"zone": 993,
+"name": "極ゾディアーク討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "極"
+},
+{
+"key": "TheDarkInside",
+"zone": 992,
+"name": "ゾディアーク討滅戦",
+"official": true,
+"expac": "暁月のフィナーレ",
+"kind": "討滅戦"
+},
+{
+"key": "ContainmentBayZ1T9Unreal",
+"zone": 1157,
+"name": "幻鬼神ズルワーン討滅戦",
+"official": false,
+"expac": "暁月のフィナーレ",
+"kind": "幻"
+},
+{
+"key": "JeunoTheFirstWalk",
+"zone": 1248,
+"name": "ジュノ：ザ・ファーストウォーク",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "アライアンス"
+},
+{
+"key": "WindurstTheThirdWalk",
+"zone": 1368,
+"name": "ウィンダス：ザ・サードウォーク",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "アライアンス"
+},
+{
+"key": "DMU",
+"zone": 1363,
+"name": "絶妖星乱舞",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "絶"
+}
+]

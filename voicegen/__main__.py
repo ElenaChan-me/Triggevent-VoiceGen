@@ -91,7 +91,7 @@ def cmd_ui(cfg: config.Config, args) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="voicegen", description="Triggevent JP のボイスパックを作る")
+    parser = argparse.ArgumentParser(prog="voicegen", description="Triggevent Plus のボイスパックを作る")
     parser.add_argument("--config", type=Path, default=Path("config.toml"), help="設定ファイル（既定: config.toml）")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("speakers", help="VOICEVOX の話者とスタイル ID を表示")

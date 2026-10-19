@@ -1,7 +1,7 @@
-"""Triggevent JP のソースから読み上げ（TTS）文を抜き出し、callouts_clean.json を作る。
+"""Triggevent Plus のソースから読み上げ（TTS）文を抜き出し、callouts_clean.json を作る。
 
 使い方（data/source で実行）:
-    python ../../tools/script_builder/extract.py callouts_clean.json <Triggevent-JP のフォルダ>
+    python ../../tools/script_builder/extract.py callouts_clean.json <Triggevent Plus のフォルダ>
 """
 import collections
 import json
@@ -9,7 +9,16 @@ import os
 import re
 import sys
 
-ROOT = sys.argv[2] if len(sys.argv) > 2 else os.path.join('..', '..', '..', 'Triggevent-JP')
+def _default_root():
+    # 改名前のフォルダ名のままの環境もあるので、両方を探す
+    for name in ('Triggevent-Plus', 'Triggevent-JP'):
+        path = os.path.join('..', '..', '..', name)
+        if os.path.isdir(path):
+            return path
+    return os.path.join('..', '..', '..', 'Triggevent-Plus')
+
+
+ROOT = sys.argv[2] if len(sys.argv) > 2 else _default_root()
 CALL = re.compile(r'(new\s+ModifiableCallout\s*(?:<[^>]*>)?|ModifiableCallout\s*\.\s*(?:<[^>]*>\s*)?(\w+))\s*\(')
 REPO = re.compile(r'@CalloutRepo\(\s*name\s*=\s*"([^"]*)"(?:\s*,\s*duty\s*=\s*KnownDuty\.(\w+))?')
 # 呼び出しのタイミングを決めるだけで、読み上げ文を持たないファクトリー

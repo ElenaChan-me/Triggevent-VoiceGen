@@ -1,8 +1,8 @@
 # Triggevent-VoiceGen
 
-Triggevent JP の読み上げ（コールアウト）を、VOICEVOX で読ませた音声を RVC（Applio）で好きな声に変換して、ボイスパックとして書き出すツールです。
+Triggevent Plus の読み上げ（コールアウト）を、VOICEVOX で読ませた音声を RVC（Applio）で好きな声に変換して、ボイスパックとして書き出すツールです。
 
-A tool that reads Triggevent JP callouts with VOICEVOX, converts the voice with RVC (Applio), and writes the result as a voice pack.
+A tool that reads Triggevent Plus callouts with VOICEVOX, converts the voice with RVC (Applio), and writes the result as a voice pack.
 
 ## 流れ / How it works
 
@@ -10,14 +10,14 @@ A tool that reads Triggevent JP callouts with VOICEVOX, converts the voice with 
 台本 (data/script.json) → VOICEVOX で読み上げ → Applio (RVC) で声質変換 → ffmpeg で仕上げ → output/<名前>/
 ```
 
-- **台本の中身:** 台本は Triggevent JP の読み上げ文を日本語にしたものです。
+- **台本の中身:** 台本は Triggevent Plus の読み上げ文を日本語にしたものです。
   - 名前や方角が入る文は、固定の部分と部品（方角・数字・「自分」）に分かれています。
   - DoT 名とリキャスト名はジョブ別に分かれています。
 - **作り直す範囲:** 各段階の結果は `work/` に保存されます。文や設定が変わったセリフだけを作り直します。
 - **仕上げ:** 前後の無音を詰め、音量をそろえて、48kHz・16bit・モノラルの WAV にします。
 - **manifest.json:** ボイスパックには `manifest.json` が付きます。セリフの ID・ファイル・文・クレジット・生成に使った設定が入っています。
 
-The script is the Japanese version of Triggevent JP's callouts. Each stage is cached under `work/`, and only lines whose text or settings changed are regenerated. Output files are 48 kHz, 16-bit, mono WAV with a `manifest.json`.
+The script is the Japanese version of Triggevent Plus's callouts. Each stage is cached under `work/`, and only lines whose text or settings changed are regenerated. Output files are 48 kHz, 16-bit, mono WAV with a `manifest.json`.
 
 ## 必要なもの / Requirements
 
@@ -99,15 +99,15 @@ Copy `config.example.toml` to `config.toml`, pick a VOICEVOX style with `speaker
 python -m voicegen --config config.cute.toml generate
 ```
 
-できたパックを同じフォルダ（`output/`）に並べておくと、Triggevent JP の「ボイスパック」タブで切り替えられます。
+できたパックを同じフォルダ（`output/`）に並べておくと、Triggevent Plus の「ボイスパック」タブで切り替えられます。
 
-You can build several packs with different speaking styles from the same script by keeping one config file per pack and choosing it with `--config`. `[style] file` points to sentence-ending rules (see `data/styles/cute.toml`). Endings are added only to the part that ends a callout, and callouts that end with a direction get a short ending clip appended. `[voicevox] end_rise` raises the pitch at the end of sentences, and `[post] extra_filter` adds an ffmpeg filter to change the voice texture. Use a separate `work` and `recordings` folder for each pack. Packs placed side by side in `output/` can be switched from Triggevent JP's Voice Pack tab.
+You can build several packs with different speaking styles from the same script by keeping one config file per pack and choosing it with `--config`. `[style] file` points to sentence-ending rules (see `data/styles/cute.toml`). Endings are added only to the part that ends a callout, and callouts that end with a direction get a short ending clip appended. `[voicevox] end_rise` raises the pitch at the end of sentences, and `[post] extra_filter` adds an ffmpeg filter to change the voice texture. Use a separate `work` and `recordings` folder for each pack. Packs placed side by side in `output/` can be switched from Triggevent Plus's Voice Pack tab.
 
 ## 台本の作り直し / Rebuilding the script
 
 台本は `tools/script_builder/` のスクリプトで作ります（`data/source` で実行します）。
 
-- **`extract.py`:** Triggevent JP のソースから読み上げ文を抜き出します。
+- **`extract.py`:** Triggevent Plus のソースから読み上げ文を抜き出します。
 - **`names.py` / `jobs.py`:** DoT・リキャストの日本語名と、使うジョブをゲームデータ（XIVAPI）から取得します。
 - **`build.py`:** 翻訳（`translated*.json`）と組み合わせて `data/script.json` を作ります。
 - **`render_page.py`:** 収録・確認用の HTML ページを作ります。

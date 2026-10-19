@@ -11,6 +11,12 @@ __pycache__/
 work/
 output/
 models/
+recordings/
 *.pth
 *.index
 config.toml
+config.*.toml
+!config.example.toml
+
+# 配布用の zip
+dist/

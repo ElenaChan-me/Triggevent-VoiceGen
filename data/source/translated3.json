@@ -1,0 +1,1637 @@
+[
+ {
+  "en": "Double Tankbuster",
+  "ja": "タンク2人に強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Double Tankbuster, Large",
+  "ja": "タンク2人に強攻撃、大範囲",
+  "note": ""
+ },
+ {
+  "en": "Out, Watch Bats, In",
+  "ja": "外、コウモリを見て、中",
+  "note": ""
+ },
+ {
+  "en": "Raidwide - Arena Change",
+  "ja": "全体攻撃、フィールド変化",
+  "note": ""
+ },
+ {
+  "en": "Move Away",
+  "ja": "離れる",
+  "note": ""
+ },
+ {
+  "en": "Start {initialSafe}",
+  "ja": "{initialSafe}から",
+  "note": ""
+ },
+ {
+  "en": "Move {initialSafe.opposite()}",
+  "ja": "{initialSafe.opposite()}へ移動",
+  "note": ""
+ },
+ {
+  "en": "Start {initialSafe}, Wide",
+  "ja": "{initialSafe}から、広範囲",
+  "note": ""
+ },
+ {
+  "en": "Move {initialSafe.opposite()}, Wide",
+  "ja": "{initialSafe.opposite()}へ移動、広範囲",
+  "note": ""
+ },
+ {
+  "en": "Marker",
+  "ja": "マーカー",
+  "note": ""
+ },
+ {
+  "en": "Dodge Lines",
+  "ja": "直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Tank Towers",
+  "ja": "タンクは塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Avoid Towers",
+  "ja": "塔を避ける",
+  "note": ""
+ },
+ {
+  "en": "Towers and Baits",
+  "ja": "塔と誘導",
+  "note": ""
+ },
+ {
+  "en": "Role Groups",
+  "ja": "ロールで分かれる",
+  "note": ""
+ },
+ {
+  "en": "Rotate, Dodge Cleaves",
+  "ja": "回って扇範囲を避ける",
+  "note": ""
+ },
+ {
+  "en": "Tower Groups",
+  "ja": "塔のグループへ",
+  "note": ""
+ },
+ {
+  "en": "Buddies, In, Cardinals",
+  "ja": "ペア、中、十字",
+  "note": ""
+ },
+ {
+  "en": "Buddies, In, Intercards",
+  "ja": "ペア、中、斜め",
+  "note": ""
+ },
+ {
+  "en": "Spread, Out, Cardinals",
+  "ja": "散開、外、十字",
+  "note": ""
+ },
+ {
+  "en": "Spread, Out, Intercards",
+  "ja": "散開、外、斜め",
+  "note": ""
+ },
+ {
+  "en": "Dodge Clones, Out of Middle",
+  "ja": "分身を避けて、中央から離れる",
+  "note": ""
+ },
+ {
+  "en": "Close Stacks",
+  "ja": "近くで頭割り",
+  "note": ""
+ },
+ {
+  "en": "Far Stacks",
+  "ja": "遠くで頭割り",
+  "note": ""
+ },
+ {
+  "en": "Close Stacks, Dodge Lines",
+  "ja": "近くで頭割り、直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Far Stacks, Dodge Lines",
+  "ja": "遠くで頭割り、直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Multi Stack",
+  "ja": "連続頭割り",
+  "note": ""
+ },
+ {
+  "en": "Tank Buster on {event.target}",
+  "ja": "{event.target}にタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Adds",
+  "ja": "雑魚",
+  "note": ""
+ },
+ {
+  "en": "Tethered to {tetherLocation}",
+  "ja": "線は{tetherLocation}",
+  "note": ""
+ },
+ {
+  "en": "Touch Green, First",
+  "ja": "緑に触る、1番目",
+  "note": ""
+ },
+ {
+  "en": "Touch Yellow, First",
+  "ja": "黄色に触る、1番目",
+  "note": ""
+ },
+ {
+  "en": "Touch Green, Second",
+  "ja": "緑に触る、2番目",
+  "note": ""
+ },
+ {
+  "en": "Touch Yellow, Second",
+  "ja": "黄色に触る、2番目",
+  "note": ""
+ },
+ {
+  "en": "Touch Green, Third",
+  "ja": "緑に触る、3番目",
+  "note": ""
+ },
+ {
+  "en": "Touch Yellow, Third",
+  "ja": "黄色に触る、3番目",
+  "note": ""
+ },
+ {
+  "en": "Attack Green",
+  "ja": "緑を攻撃",
+  "note": ""
+ },
+ {
+  "en": "Attack Yellow",
+  "ja": "黄色を攻撃",
+  "note": ""
+ },
+ {
+  "en": "Cleaves",
+  "ja": "範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Spread Between Lines",
+  "ja": "直線の間で散開",
+  "note": ""
+ },
+ {
+  "en": "Stack Between Lines",
+  "ja": "直線の間で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread Behind Adds",
+  "ja": "雑魚の後ろで散開",
+  "note": ""
+ },
+ {
+  "en": "Stack Behind Adds",
+  "ja": "雑魚の後ろで頭割り",
+  "note": ""
+ },
+ {
+  "en": "Rotate",
+  "ja": "回る",
+  "note": ""
+ },
+ {
+  "en": "Start {safeSpots[0]}",
+  "ja": "{safeSpots[0]}から",
+  "note": ""
+ },
+ {
+  "en": "{safeSpots[i]}",
+  "ja": "{safeSpots[i]}",
+  "note": ""
+ },
+ {
+  "en": "{safeSpots[-1]}",
+  "ja": "{safeSpots[-1]}",
+  "note": ""
+ },
+ {
+  "en": "Start {firstQuadrant}",
+  "ja": "{firstQuadrant}から",
+  "note": ""
+ },
+ {
+  "en": "Then {secondQuadrant}",
+  "ja": "そのあと{secondQuadrant}",
+  "note": ""
+ },
+ {
+  "en": "{secondQuadrant}",
+  "ja": "{secondQuadrant}",
+  "note": ""
+ },
+ {
+  "en": "Intercards",
+  "ja": "斜め",
+  "note": ""
+ },
+ {
+  "en": "DPS Marked",
+  "ja": "DPSにマーカー",
+  "note": ""
+ },
+ {
+  "en": "Supports Marked",
+  "ja": "タンクヒーラーにマーカー",
+  "note": ""
+ },
+ {
+  "en": "{supportCount} Supports, {dpsCount} DPS",
+  "ja": "タンクヒーラー{supportCount}、DPS{dpsCount}",
+  "note": ""
+ },
+ {
+  "en": "Out, {safe}",
+  "ja": "外、{safe}",
+  "note": ""
+ },
+ {
+  "en": "In, {safe}",
+  "ja": "中、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Off Platform, Cleave",
+  "ja": "足場の外へ、範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Marker on YOU",
+  "ja": "自分にマーカー",
+  "note": ""
+ },
+ {
+  "en": "Markers on {targets}",
+  "ja": "{targets}にマーカー",
+  "note": ""
+ },
+ {
+  "en": "Partner Towers",
+  "ja": "ペアで塔",
+  "note": ""
+ },
+ {
+  "en": "{currentTetherLocation}",
+  "ja": "{currentTetherLocation}",
+  "note": ""
+ },
+ {
+  "en": "In {rightSafe ? 'Right' : 'Left'}",
+  "ja": "中、{rightSafe ? '右' : '左'}",
+  "note": ""
+ },
+ {
+  "en": "Out {rightSafe ? 'Right' : 'Left'}",
+  "ja": "外、{rightSafe ? '右' : '左'}",
+  "note": ""
+ },
+ {
+  "en": "Sides {rightSafe ? 'Right' : 'Left'}",
+  "ja": "横、{rightSafe ? '右' : '左'}",
+  "note": ""
+ },
+ {
+  "en": "Center {rightSafe ? 'Right' : 'Left'}",
+  "ja": "中央、{rightSafe ? '右' : '左'}",
+  "note": ""
+ },
+ {
+  "en": "Long Tether with {partner}",
+  "ja": "{partner}と長い線",
+  "note": ""
+ },
+ {
+  "en": "Short Tether with {partner}",
+  "ja": "{partner}と短い線",
+  "note": ""
+ },
+ {
+  "en": "2-Tower {twoTower}",
+  "ja": "2人塔、{twoTower}",
+  "note": ""
+ },
+ {
+  "en": "Enrage Tower",
+  "ja": "時間切れの塔",
+  "note": ""
+ },
+ {
+  "en": "Leave Platform",
+  "ja": "足場から離れる",
+  "note": ""
+ },
+ {
+  "en": "Multi Hit Raidwide",
+  "ja": "連続全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "In, Tanks Out, Party In",
+  "ja": "中、タンク外、パーティ中",
+  "note": ""
+ },
+ {
+  "en": "In, Tanks In, Party Out",
+  "ja": "中、タンク中、パーティ外",
+  "note": ""
+ },
+ {
+  "en": "Out, Tanks Out, Party In",
+  "ja": "外、タンク外、パーティ中",
+  "note": ""
+ },
+ {
+  "en": "Out, Tanks In, Party Out",
+  "ja": "外、タンク中、パーティ外",
+  "note": ""
+ },
+ {
+  "en": "{safeCorners} Corners Safe",
+  "ja": "{safeCorners}の角が安置",
+  "note": ""
+ },
+ {
+  "en": "Drop Seed",
+  "ja": "種を置く",
+  "note": ""
+ },
+ {
+  "en": "Dodge Tendrils",
+  "ja": "ツタを避ける",
+  "note": ""
+ },
+ {
+  "en": "Interrupt Winding",
+  "ja": "詠唱中断、ワインディング",
+  "note": "技名要確認（Winding Wildwinds）"
+ },
+ {
+  "en": "Hide Behind Monster",
+  "ja": "モンスターの後ろに隠れる",
+  "note": ""
+ },
+ {
+  "en": "{safe} safe",
+  "ja": "{safe}が安置",
+  "note": ""
+ },
+ {
+  "en": "{clockwise ? 'Clockwise' : 'Counter-Clockwise'}",
+  "ja": "{clockwise ? '時計回り' : '反時計回り'}",
+  "note": ""
+ },
+ {
+  "en": "Stack into Clocks",
+  "ja": "頭割り、そのあと時計配置",
+  "note": ""
+ },
+ {
+  "en": "Clocks",
+  "ja": "時計配置",
+  "note": ""
+ },
+ {
+  "en": "Go North, Raidwide",
+  "ja": "北へ、全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "In at {where}",
+  "ja": "{where}で中",
+  "note": ""
+ },
+ {
+  "en": "Out from {where}",
+  "ja": "{where}から外",
+  "note": ""
+ },
+ {
+  "en": "Out and Spread",
+  "ja": "外で散開",
+  "note": ""
+ },
+ {
+  "en": "Dodge 3 to 1",
+  "ja": "3から1へ避ける",
+  "note": ""
+ },
+ {
+  "en": "Tethers near Walls",
+  "ja": "線は壁際へ",
+  "note": ""
+ },
+ {
+  "en": "Flare on you",
+  "ja": "自分にフレア",
+  "note": ""
+ },
+ {
+  "en": "Flare on {event.target}",
+  "ja": "{event.target}にフレア",
+  "note": ""
+ },
+ {
+  "en": "Seed on you",
+  "ja": "自分に種",
+  "note": ""
+ },
+ {
+  "en": "Big Raidwide",
+  "ja": "強い全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Drop Seed into Partners",
+  "ja": "種を置いて、ペア",
+  "note": ""
+ },
+ {
+  "en": "Bait Puddles into Partners",
+  "ja": "床誘導、そのあとペア",
+  "note": ""
+ },
+ {
+  "en": "Place Seed",
+  "ja": "種を置く",
+  "note": ""
+ },
+ {
+  "en": "Bait Puddles then Stack",
+  "ja": "床誘導、そのあと頭割り",
+  "note": ""
+ },
+ {
+  "en": "In at {where} then Dodge",
+  "ja": "{where}で中、そのあと避ける",
+  "note": ""
+ },
+ {
+  "en": "Out from {where} then Dodge",
+  "ja": "{where}から外、そのあと避ける",
+  "note": ""
+ },
+ {
+  "en": "Dodge Left",
+  "ja": "左へ避ける",
+  "note": ""
+ },
+ {
+  "en": "Dodge Right",
+  "ja": "右へ避ける",
+  "note": ""
+ },
+ {
+  "en": "In at {where} then Out",
+  "ja": "{where}で中、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "Out from {where} then Out",
+  "ja": "{where}から外、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "In at {where} then Tower",
+  "ja": "{where}で中、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "Out from {where} then Tower",
+  "ja": "{where}から外、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "Close Buster",
+  "ja": "近くでタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Far Buster",
+  "ja": "遠くでタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "KB from {kbFrom}",
+  "ja": "{kbFrom}からノックバック",
+  "note": ""
+ },
+ {
+  "en": "Partners Stocked",
+  "ja": "ペアをストック",
+  "note": ""
+ },
+ {
+  "en": "Light Parties Stocked",
+  "ja": "4人頭割りをストック",
+  "note": ""
+ },
+ {
+  "en": "Mousse on {targets}",
+  "ja": "{targets}にムース",
+  "note": "技名要確認（Sticky Mousse）"
+ },
+ {
+  "en": "Place Bomb in Bad",
+  "ja": "爆弾を危険側に置く",
+  "note": ""
+ },
+ {
+  "en": "Place Bomb in Safe",
+  "ja": "爆弾を安置側に置く",
+  "note": ""
+ },
+ {
+  "en": "Wave 1",
+  "ja": "第1波",
+  "note": ""
+ },
+ {
+  "en": "Wave 2",
+  "ja": "第2波",
+  "note": ""
+ },
+ {
+  "en": "Wave 3",
+  "ja": "第3波",
+  "note": ""
+ },
+ {
+  "en": "Wave 4",
+  "ja": "第4波",
+  "note": ""
+ },
+ {
+  "en": "Later: Spread",
+  "ja": "後で散開",
+  "note": ""
+ },
+ {
+  "en": "Later: Stack on {stackOn}",
+  "ja": "後で{stackOn}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Later: Stack on {stackOn} then spread",
+  "ja": "後で{stackOn}に頭割り、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Avoid Fire on {longSpreadOn}",
+  "ja": "{longSpreadOn}の炎を避ける",
+  "note": ""
+ },
+ {
+  "en": "Avoid Water",
+  "ja": "水を避ける",
+  "note": ""
+ },
+ {
+  "en": "Avoid Lines",
+  "ja": "直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Light Parties in Water, Avoid Lines",
+  "ja": "水の中で4人頭割り、直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Spread on Land, Avoid Lines",
+  "ja": "陸で散開、直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Wait Outside Tower",
+  "ja": "塔の外で待機",
+  "note": ""
+ },
+ {
+  "en": "Move into Tower",
+  "ja": "塔に入る",
+  "note": ""
+ },
+ {
+  "en": "Fly to Platform",
+  "ja": "足場へ飛ぶ",
+  "note": ""
+ },
+ {
+  "en": "Tankbuster with Bleed",
+  "ja": "タンク強攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "A Side Stocked",
+  "ja": "Aサイドをストック",
+  "note": ""
+ },
+ {
+  "en": "B Side Stocked",
+  "ja": "Bサイドをストック",
+  "note": ""
+ },
+ {
+  "en": "East then West Role Stacks",
+  "ja": "東、そのあと西、ロール頭割り",
+  "note": ""
+ },
+ {
+  "en": "West Role Stacks",
+  "ja": "西でロール頭割り",
+  "note": ""
+ },
+ {
+  "en": "West then East Role Stacks",
+  "ja": "西、そのあと東、ロール頭割り",
+  "note": ""
+ },
+ {
+  "en": "East Role Stacks",
+  "ja": "東でロール頭割り",
+  "note": ""
+ },
+ {
+  "en": "East then West Light Parties",
+  "ja": "東、そのあと西、4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "West Light Parties",
+  "ja": "西で4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "West then East Light Parties",
+  "ja": "西、そのあと東、4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "East Light Parties",
+  "ja": "東で4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Long Timer",
+  "ja": "長いタイマー",
+  "note": ""
+ },
+ {
+  "en": "Short Timer",
+  "ja": "短いタイマー",
+  "note": ""
+ },
+ {
+  "en": "In then Out",
+  "ja": "中、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "Out then In",
+  "ja": "外、そのあと中",
+  "note": ""
+ },
+ {
+  "en": "In, Dodge",
+  "ja": "中、避ける",
+  "note": ""
+ },
+ {
+  "en": "Out, Dodge",
+  "ja": "外、避ける",
+  "note": ""
+ },
+ {
+  "en": "In, Wrong Hit",
+  "ja": "中、被弾ミス",
+  "note": ""
+ },
+ {
+  "en": "Out, Wrong Hit",
+  "ja": "外、被弾ミス",
+  "note": ""
+ },
+ {
+  "en": "Dodge, Wrong Hit",
+  "ja": "避ける、被弾ミス",
+  "note": ""
+ },
+ {
+  "en": "First Alpha",
+  "ja": "1番目、アルファ",
+  "note": ""
+ },
+ {
+  "en": "First Beta",
+  "ja": "1番目、ベータ",
+  "note": ""
+ },
+ {
+  "en": "Second Alpha",
+  "ja": "2番目、アルファ",
+  "note": ""
+ },
+ {
+  "en": "Second Beta",
+  "ja": "2番目、ベータ",
+  "note": ""
+ },
+ {
+  "en": "Third Alpha",
+  "ja": "3番目、アルファ",
+  "note": ""
+ },
+ {
+  "en": "Third Beta",
+  "ja": "3番目、ベータ",
+  "note": ""
+ },
+ {
+  "en": "Fourth Alpha",
+  "ja": "4番目、アルファ",
+  "note": ""
+ },
+ {
+  "en": "Fourth Beta",
+  "ja": "4番目、ベータ",
+  "note": ""
+ },
+ {
+  "en": "Touch {partner}",
+  "ja": "{partner}に触る",
+  "note": ""
+ },
+ {
+  "en": "Start {safe}",
+  "ja": "{safe}から",
+  "note": ""
+ },
+ {
+  "en": "Move {safe}",
+  "ja": "{safe}へ移動",
+  "note": ""
+ },
+ {
+  "en": "Stay {safe}",
+  "ja": "そのまま{safe}",
+  "note": ""
+ },
+ {
+  "en": "North/South Safe",
+  "ja": "南北が安置",
+  "note": ""
+ },
+ {
+  "en": "East/West Safe",
+  "ja": "東西が安置",
+  "note": ""
+ },
+ {
+  "en": "North/South In",
+  "ja": "南北、中",
+  "note": ""
+ },
+ {
+  "en": "East/West In",
+  "ja": "東西、中",
+  "note": ""
+ },
+ {
+  "en": "North/South Out",
+  "ja": "南北、外",
+  "note": ""
+ },
+ {
+  "en": "East/West Out",
+  "ja": "東西、外",
+  "note": ""
+ },
+ {
+  "en": "Between {safe1} and {safe2}",
+  "ja": "{safe1}と{safe2}の間",
+  "note": ""
+ },
+ {
+  "en": "Inside, Avoid Lines",
+  "ja": "内側、直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Outside, Avoid Lines",
+  "ja": "外側、直線を避ける",
+  "note": ""
+ },
+ {
+  "en": "Inside, Stay { baitOut ? 'In' : 'Out'}",
+  "ja": "内側、{ baitOut ? '中' : '外'}で待機",
+  "note": ""
+ },
+ {
+  "en": "Inside, Bait { baitOut ? 'Out' : 'In' }",
+  "ja": "内側、{ baitOut ? '外' : '中' }で誘導",
+  "note": ""
+ },
+ {
+  "en": "Outside, Stay { baitOut ? 'In' : 'Out'}",
+  "ja": "外側、{ baitOut ? '中' : '外'}で待機",
+  "note": ""
+ },
+ {
+  "en": "Outside, Bait { baitOut ? 'Out' : 'In' }",
+  "ja": "外側、{ baitOut ? '外' : '中' }で誘導",
+  "note": ""
+ },
+ {
+  "en": "Outside, Baiters { baitOut ? 'Out' : 'In'}",
+  "ja": "外側、誘導役は{ baitOut ? '外' : '中'}",
+  "note": ""
+ },
+ {
+  "en": "Inside, Baiters { baitOut ? 'Out' : 'In'}",
+  "ja": "内側、誘導役は{ baitOut ? '外' : '中'}",
+  "note": ""
+ },
+ {
+  "en": "Stand on Cardinals, Multiple Hits",
+  "ja": "十字に立つ、連続攻撃",
+  "note": ""
+ },
+ {
+  "en": "Buddies {safeSide}",
+  "ja": "ペア、{safeSide}",
+  "note": ""
+ },
+ {
+  "en": "Spread {safeSide}",
+  "ja": "散開、{safeSide}",
+  "note": ""
+ },
+ {
+  "en": "Clock Positions",
+  "ja": "時計配置",
+  "note": ""
+ },
+ {
+  "en": "Fail",
+  "ja": "失敗",
+  "note": ""
+ },
+ {
+  "en": "1 Long",
+  "ja": "1、長い",
+  "note": ""
+ },
+ {
+  "en": "2 Long",
+  "ja": "2、長い",
+  "note": ""
+ },
+ {
+  "en": "2 Short",
+  "ja": "2、短い",
+  "note": ""
+ },
+ {
+  "en": "3 Short",
+  "ja": "3、短い",
+  "note": ""
+ },
+ {
+  "en": "Spark 2 - {sides}",
+  "ja": "スパーク2、{sides}",
+  "note": "技名要確認（Spark II）"
+ },
+ {
+  "en": "Spark 3 - {corners}",
+  "ja": "スパーク3、{corners}",
+  "note": "技名要確認（Spark III）"
+ },
+ {
+  "en": "Buddies {safeSide} with {buddies}",
+  "ja": "{buddies}とペア、{safeSide}",
+  "note": ""
+ },
+ {
+  "en": "West",
+  "ja": "西",
+  "note": ""
+ },
+ {
+  "en": "East",
+  "ja": "東",
+  "note": ""
+ },
+ {
+  "en": "Go {positive}",
+  "ja": "{positive}へ",
+  "note": ""
+ },
+ {
+  "en": "Go {negative}",
+  "ja": "{negative}へ",
+  "note": ""
+ },
+ {
+  "en": "Remote Current",
+  "ja": "リモートカレント",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Proximate Current",
+  "ja": "プロキシメイトカレント",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Spinning",
+  "ja": "回転",
+  "note": ""
+ },
+ {
+  "en": "Roundhouse - Spread",
+  "ja": "ラウンドハウス、散開",
+  "note": "技名要確認（Roundhouse Conductor）"
+ },
+ {
+  "en": "Get Hit by Protean",
+  "ja": "扇に当たる",
+  "note": ""
+ },
+ {
+  "en": "Dodge Proteans",
+  "ja": "扇を避ける",
+  "note": ""
+ },
+ {
+  "en": "Cover",
+  "ja": "かばう",
+  "note": ""
+ },
+ {
+  "en": "Multiple Raidwides, Get Knocked South",
+  "ja": "連続全体攻撃、南へノックバックされる",
+  "note": ""
+ },
+ {
+  "en": "{westSafeDirection} {westSafeEdge ? 'Side' : 'Corner'} and {eastSafeDirection} {eastSafeEdge ? 'Side' : 'Corner'}",
+  "ja": "{westSafeDirection}{westSafeEdge ? 'の辺' : 'の角'}と{eastSafeDirection}{eastSafeEdge ? 'の辺' : 'の角'}",
+  "note": ""
+ },
+ {
+  "en": "Middle",
+  "ja": "中央",
+  "note": ""
+ },
+ {
+  "en": "Tethers to Tanks then Spread",
+  "ja": "線をタンクへ、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Grab Tethers",
+  "ja": "線を取る",
+  "note": ""
+ },
+ {
+  "en": "Give Tethers Away",
+  "ja": "線を渡す",
+  "note": ""
+ },
+ {
+  "en": "Grab Bombs from Tanks",
+  "ja": "タンクから爆弾を取る",
+  "note": ""
+ },
+ {
+  "en": "Later: East Safe then West",
+  "ja": "後で東が安置、そのあと西",
+  "note": ""
+ },
+ {
+  "en": "Later: West Safe then East",
+  "ja": "後で西が安置、そのあと東",
+  "note": ""
+ },
+ {
+  "en": "Later: Knockback West then East",
+  "ja": "後で西でノックバック、そのあと東",
+  "note": ""
+ },
+ {
+  "en": "Later: Knockback East then West",
+  "ja": "後で東でノックバック、そのあと西",
+  "note": ""
+ },
+ {
+  "en": "East Safe then West",
+  "ja": "東が安置、そのあと西",
+  "note": ""
+ },
+ {
+  "en": "West Safe then East",
+  "ja": "西が安置、そのあと東",
+  "note": ""
+ },
+ {
+  "en": "Knockback West then East",
+  "ja": "西でノックバック、そのあと東",
+  "note": ""
+ },
+ {
+  "en": "Knockback East then West",
+  "ja": "東でノックバック、そのあと西",
+  "note": ""
+ },
+ {
+  "en": "Bait Middle",
+  "ja": "中央で誘導",
+  "note": ""
+ },
+ {
+  "en": "{safe} safe, In",
+  "ja": "{safe}が安置、中",
+  "note": ""
+ },
+ {
+  "en": "{safe} safe, Out",
+  "ja": "{safe}が安置、外",
+  "note": ""
+ },
+ {
+  "en": "Spread in Cardinals",
+  "ja": "十字で散開",
+  "note": ""
+ },
+ {
+  "en": "Spread in Intercards",
+  "ja": "斜めで散開",
+  "note": ""
+ },
+ {
+  "en": "Buddy in Cardinals",
+  "ja": "十字でペア",
+  "note": ""
+ },
+ {
+  "en": "Buddy in Intercards",
+  "ja": "斜めでペア",
+  "note": ""
+ },
+ {
+  "en": "Short Positron",
+  "ja": "短いプラス",
+  "note": "Positron＝プラス電荷、表記要確認"
+ },
+ {
+  "en": "Short Negatron",
+  "ja": "短いマイナス",
+  "note": "Negatron＝マイナス電荷、表記要確認"
+ },
+ {
+  "en": "Long Positron",
+  "ja": "長いプラス",
+  "note": "Positron＝プラス電荷、表記要確認"
+ },
+ {
+  "en": "Long Negatron",
+  "ja": "長いマイナス",
+  "note": "Negatron＝マイナス電荷、表記要確認"
+ },
+ {
+  "en": "Bait {baitLocations}",
+  "ja": "{baitLocations}で誘導",
+  "note": ""
+ },
+ {
+  "en": "Soak {towers} Towers",
+  "ja": "{towers}の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Soak {towers} Tower",
+  "ja": "{towers}の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Out of Middle, Arena Splitting",
+  "ja": "中央から離れる、フィールド分断",
+  "note": ""
+ },
+ {
+  "en": "North",
+  "ja": "北",
+  "note": ""
+ },
+ {
+  "en": "North-Middle",
+  "ja": "北中央",
+  "note": ""
+ },
+ {
+  "en": "South-Middle",
+  "ja": "南中央",
+  "note": ""
+ },
+ {
+  "en": "South",
+  "ja": "南",
+  "note": ""
+ },
+ {
+  "en": "{{remaining.collect { ['South', 'South-Middle', 'North-Middle', 'North'][it] } }}",
+  "ja": "{{remaining.collect { ['南', '南中央', '北中央', '北'][it] } }}",
+  "note": ""
+ },
+ {
+  "en": "Raidwides",
+  "ja": "全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Front/Middle",
+  "ja": "前と中央",
+  "note": ""
+ },
+ {
+  "en": "Middle/Back",
+  "ja": "中央と後ろ",
+  "note": ""
+ },
+ {
+  "en": "East safe",
+  "ja": "東が安置",
+  "note": ""
+ },
+ {
+  "en": "West safe",
+  "ja": "西が安置",
+  "note": ""
+ },
+ {
+  "en": "{safe}",
+  "ja": "{safe}",
+  "note": ""
+ },
+ {
+  "en": "East then West",
+  "ja": "東、そのあと西",
+  "note": ""
+ },
+ {
+  "en": "West then East",
+  "ja": "西、そのあと東",
+  "note": ""
+ },
+ {
+  "en": "East, stay east",
+  "ja": "東、そのまま東",
+  "note": ""
+ },
+ {
+  "en": "West, stay west",
+  "ja": "西、そのまま西",
+  "note": ""
+ },
+ {
+  "en": "Intercardinals then cardinals",
+  "ja": "斜め、そのあと十字",
+  "note": ""
+ },
+ {
+  "en": "Cardinals then intercardinals",
+  "ja": "十字、そのあと斜め",
+  "note": ""
+ },
+ {
+  "en": "Inter then Cardinal",
+  "ja": "斜め、そのあと十字",
+  "note": ""
+ },
+ {
+  "en": "Cardinal then inter",
+  "ja": "十字、そのあと斜め",
+  "note": ""
+ },
+ {
+  "en": "Start South West",
+  "ja": "南西から",
+  "note": ""
+ },
+ {
+  "en": "Start South East",
+  "ja": "南東から",
+  "note": ""
+ },
+ {
+  "en": "Later: Dodge Forwards",
+  "ja": "後で前へ避ける",
+  "note": ""
+ },
+ {
+  "en": "Later: Dodge Backwards",
+  "ja": "後で後ろへ避ける",
+  "note": ""
+ },
+ {
+  "en": "Dodge Forwards",
+  "ja": "前へ避ける",
+  "note": ""
+ },
+ {
+  "en": "Dodge Backwards",
+  "ja": "後ろへ避ける",
+  "note": ""
+ },
+ {
+  "en": "Stocking Aero",
+  "ja": "エアロをストック",
+  "note": ""
+ },
+ {
+  "en": "Stocking Death",
+  "ja": "デスをストック",
+  "note": ""
+ },
+ {
+  "en": "Stacks, Tanks in Front",
+  "ja": "頭割り、タンクは前",
+  "note": ""
+ },
+ {
+  "en": "Flare",
+  "ja": "フレア",
+  "note": ""
+ },
+ {
+  "en": "Light Party Stacks",
+  "ja": "4人頭割り",
+  "note": ""
+ },
+ {
+  "en": "Wild Charges",
+  "ja": "ワイルドチャージ",
+  "note": ""
+ },
+ {
+  "en": "Look Away",
+  "ja": "背を向ける",
+  "note": ""
+ },
+ {
+  "en": "Dodge Lasers",
+  "ja": "レーザーを避ける",
+  "note": ""
+ },
+ {
+  "en": "Corners",
+  "ja": "角",
+  "note": ""
+ },
+ {
+  "en": "Look Out",
+  "ja": "外を向く",
+  "note": ""
+ },
+ {
+  "en": "Interrupt Adds",
+  "ja": "雑魚の詠唱中断",
+  "note": ""
+ },
+ {
+  "en": "Prepare for Swaps",
+  "ja": "交代の準備",
+  "note": ""
+ },
+ {
+  "en": "Towers",
+  "ja": "塔",
+  "note": ""
+ },
+ {
+  "en": "Drop Bramble",
+  "ja": "イバラを置く",
+  "note": ""
+ },
+ {
+  "en": "Avoid Brambles",
+  "ja": "イバラを避ける",
+  "note": ""
+ },
+ {
+  "en": "Break Tether",
+  "ja": "線を切る",
+  "note": ""
+ },
+ {
+  "en": "Sides then In",
+  "ja": "横、そのあと中",
+  "note": ""
+ },
+ {
+  "en": "In then Sides",
+  "ja": "中、そのあと横",
+  "note": ""
+ },
+ {
+  "en": "In then Tower",
+  "ja": "中、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "Out and Tower",
+  "ja": "外、塔",
+  "note": ""
+ },
+ {
+  "en": "In then {rotationSafe}",
+  "ja": "中、そのあと{rotationSafe}",
+  "note": ""
+ },
+ {
+  "en": "Out and {rotationSafe}",
+  "ja": "外、{rotationSafe}",
+  "note": ""
+ },
+ {
+  "en": "Tank Buster",
+  "ja": "タンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Chasing AoE",
+  "ja": "追尾範囲",
+  "note": ""
+ },
+ {
+  "en": "Front Corners and Partners",
+  "ja": "前の角でペア",
+  "note": ""
+ },
+ {
+  "en": "Middle and Partners",
+  "ja": "中央でペア",
+  "note": ""
+ },
+ {
+  "en": "Front Corners and Bait Twister",
+  "ja": "前の角、竜巻誘導",
+  "note": ""
+ },
+ {
+  "en": "Out and Bait Twister",
+  "ja": "外、竜巻誘導",
+  "note": ""
+ },
+ {
+  "en": "Middle and Bait Twister",
+  "ja": "中央、竜巻誘導",
+  "note": ""
+ },
+ {
+  "en": "Spread Soon",
+  "ja": "まもなく散開",
+  "note": ""
+ },
+ {
+  "en": "Move Soon",
+  "ja": "まもなく動く",
+  "note": ""
+ },
+ {
+  "en": "Move!",
+  "ja": "動いて！",
+  "note": ""
+ },
+ {
+  "en": "Light Party Stacks then Eruptions",
+  "ja": "4人頭割り、そのあと噴火",
+  "note": ""
+ },
+ {
+  "en": "Tank Tower and Cleaves",
+  "ja": "タンク塔と範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Line Stacks, In Front of Party",
+  "ja": "直線頭割り、パーティの前へ",
+  "note": ""
+ },
+ {
+  "en": "Line Stacks, Behind Tank",
+  "ja": "直線頭割り、タンクの後ろへ",
+  "note": ""
+ },
+ {
+  "en": "Spread, Up",
+  "ja": "散開、上へ",
+  "note": "上下の意味要確認（Calamity's Frost）"
+ },
+ {
+  "en": "Spread, Down",
+  "ja": "散開、下へ",
+  "note": "上下の意味要確認（Calamity's Fulgur）"
+ },
+ {
+  "en": "Start {start}, Rotate {{ clockwise ? 'Clockwise' : 'Counter-clockwise' }}",
+  "ja": "{start}から、{{ clockwise ? '時計回り' : '反時計回り' }}",
+  "note": ""
+ },
+ {
+  "en": "Kill {end} feather",
+  "ja": "{end}の羽を倒す",
+  "note": ""
+ },
+ {
+  "en": "Row {safeRow} Safe - Go Up",
+  "ja": "{safeRow}列目が安置、上へ",
+  "note": ""
+ },
+ {
+  "en": "Find Safe Row, Go Up",
+  "ja": "安置の列を探して上へ",
+  "note": ""
+ },
+ {
+  "en": "Tank Tower, Knockback",
+  "ja": "タンクは塔、ノックバック",
+  "note": ""
+ },
+ {
+  "en": "Avoid Tower, Knockback",
+  "ja": "塔を避ける、ノックバック",
+  "note": ""
+ },
+ {
+  "en": "Tank Buster - Avoid Party",
+  "ja": "タンク強攻撃、パーティから離れる",
+  "note": ""
+ },
+ {
+  "en": "Healer Stacks - Avoid Tanks",
+  "ja": "ヒーラー頭割り、タンクから離れる",
+  "note": ""
+ },
+ {
+  "en": "Cone, North Corners",
+  "ja": "扇範囲、北の角",
+  "note": ""
+ },
+ {
+  "en": "Cone, {safe}",
+  "ja": "扇範囲、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Start West",
+  "ja": "西から",
+  "note": ""
+ },
+ {
+  "en": "Start East",
+  "ja": "東から",
+  "note": ""
+ },
+ {
+  "en": "Cross",
+  "ja": "十字範囲",
+  "note": ""
+ },
+ {
+  "en": "Tank Tethers",
+  "ja": "タンクは線を取る",
+  "note": ""
+ },
+ {
+  "en": "Spread on Tiles",
+  "ja": "タイルの上で散開",
+  "note": ""
+ },
+ {
+  "en": "Stack - Multiple Hits",
+  "ja": "頭割り、連続攻撃",
+  "note": ""
+ },
+ {
+  "en": "Avoid Balls, Follow Donuts",
+  "ja": "玉を避けて、ドーナツについていく",
+  "note": ""
+ },
+ {
+  "en": "Watch Swords",
+  "ja": "剣を見る",
+  "note": ""
+ },
+ {
+  "en": "Swords Mirroring",
+  "ja": "剣が鏡写し",
+  "note": ""
+ },
+ {
+  "en": "Watch Tracks",
+  "ja": "軌道を見る",
+  "note": ""
+ },
+ {
+  "en": "Watch Swords and Tracks",
+  "ja": "剣と軌道を見る",
+  "note": ""
+ },
+ {
+  "en": "Take Stacks Sequentially",
+  "ja": "順番に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Left/{safe}",
+  "ja": "左、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Right/{safe}",
+  "ja": "右、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Back Left/{safe}",
+  "ja": "左後ろ、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Back Right/{safe}",
+  "ja": "右後ろ、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Front Left/{safe}",
+  "ja": "左前、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Front Right/{safe}",
+  "ja": "右前、{safe}",
+  "note": ""
+ },
+ {
+  "en": "Left/{safe} and Out",
+  "ja": "左、{safe}、外",
+  "note": ""
+ },
+ {
+  "en": "Left/{safe} and In",
+  "ja": "左、{safe}、中",
+  "note": ""
+ },
+ {
+  "en": "Right/{safe} and Out",
+  "ja": "右、{safe}、外",
+  "note": ""
+ },
+ {
+  "en": "Right/{safe} and In",
+  "ja": "右、{safe}、中",
+  "note": ""
+ },
+ {
+  "en": "Knock Buddy Back",
+  "ja": "ペアをノックバック",
+  "note": ""
+ },
+ {
+  "en": "Get Knocked Back",
+  "ja": "ノックバックされる",
+  "note": ""
+ },
+ {
+  "en": "Break Chains (with {buddy})",
+  "ja": "{buddy}と鎖を切る",
+  "note": ""
+ }
+]

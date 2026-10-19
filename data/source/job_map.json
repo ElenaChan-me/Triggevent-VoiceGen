@@ -1,0 +1,1639 @@
+{
+ "jobs": [
+  {
+   "abbr": "PLD",
+   "name": "ナイト",
+   "className": "剣術士",
+   "role": "タンク"
+  },
+  {
+   "abbr": "WAR",
+   "name": "戦士",
+   "className": "斧術士",
+   "role": "タンク"
+  },
+  {
+   "abbr": "DRK",
+   "name": "暗黒騎士",
+   "className": null,
+   "role": "タンク"
+  },
+  {
+   "abbr": "GNB",
+   "name": "ガンブレイカー",
+   "className": null,
+   "role": "タンク"
+  },
+  {
+   "abbr": "MNK",
+   "name": "モンク",
+   "className": "格闘士",
+   "role": "近接DPS"
+  },
+  {
+   "abbr": "DRG",
+   "name": "竜騎士",
+   "className": "槍術士",
+   "role": "近接DPS"
+  },
+  {
+   "abbr": "NIN",
+   "name": "忍者",
+   "className": "双剣士",
+   "role": "近接DPS"
+  },
+  {
+   "abbr": "SAM",
+   "name": "侍",
+   "className": null,
+   "role": "近接DPS"
+  },
+  {
+   "abbr": "RPR",
+   "name": "リーパー",
+   "className": null,
+   "role": "近接DPS"
+  },
+  {
+   "abbr": "VPR",
+   "name": "ヴァイパー",
+   "className": null,
+   "role": "近接DPS"
+  },
+  {
+   "abbr": "BRD",
+   "name": "吟遊詩人",
+   "className": "弓術士",
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "BLM",
+   "name": "黒魔道士",
+   "className": "呪術士",
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "SMN",
+   "name": "召喚士",
+   "className": "巴術士",
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "MCH",
+   "name": "機工士",
+   "className": null,
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "RDM",
+   "name": "赤魔道士",
+   "className": null,
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "BLU",
+   "name": "青魔道士",
+   "className": null,
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "DNC",
+   "name": "踊り子",
+   "className": null,
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "PCT",
+   "name": "ピクトマンサー",
+   "className": null,
+   "role": "遠隔DPS"
+  },
+  {
+   "abbr": "WHM",
+   "name": "白魔道士",
+   "className": "幻術士",
+   "role": "ヒーラー"
+  },
+  {
+   "abbr": "SCH",
+   "name": "学者",
+   "className": "巴術士",
+   "role": "ヒーラー"
+  },
+  {
+   "abbr": "AST",
+   "name": "占星術師",
+   "className": null,
+   "role": "ヒーラー"
+  },
+  {
+   "abbr": "SGE",
+   "name": "賢者",
+   "className": null,
+   "role": "ヒーラー"
+  }
+ ],
+ "cooldowns": {
+  "17": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "20": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "23": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "27": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "30": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "40": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "43": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "44": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "52": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "65": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "69": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "83": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "85": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "92": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "96": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "101": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "107": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "114": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "116": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "118": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "136": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "140": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "157": {
+   "jobs": [
+    "BLM"
+   ],
+   "role": false
+  },
+  "158": {
+   "jobs": [
+    "BLM"
+   ],
+   "role": false
+  },
+  "166": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "188": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "2241": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "2246": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "2248": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "2258": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "2262": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "2264": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "2872": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "2876": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "2878": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "3540": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "3551": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "3552": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "3557": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "3558": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "3559": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "3562": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "3566": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "3569": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "3570": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "3571": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "3573": {
+   "jobs": [
+    "BLM"
+   ],
+   "role": false
+  },
+  "3583": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "3585": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "3586": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "3587": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "3606": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "3612": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "3613": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "3614": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "3625": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "3634": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "3636": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "3638": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "3639": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "3641": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "3643": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "7383": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "7385": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "7386": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "7387": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "7388": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "7389": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "7390": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "7393": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "7394": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "7395": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "7396": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "7403": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "7405": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "7408": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "7414": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "7418": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "7421": {
+   "jobs": [
+    "BLM"
+   ],
+   "role": false
+  },
+  "7430": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "7432": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "7433": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "7434": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "7436": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "7439": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "7496": {
+   "jobs": [
+    "SAM"
+   ],
+   "role": false
+  },
+  "7498": {
+   "jobs": [
+    "SAM"
+   ],
+   "role": false
+  },
+  "7499": {
+   "jobs": [
+    "SAM"
+   ],
+   "role": false
+  },
+  "7506": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7515": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7517": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7518": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7519": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7520": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7521": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "7531": {
+   "jobs": [
+    "DRK",
+    "GNB",
+    "PLD",
+    "WAR"
+   ],
+   "role": true
+  },
+  "7535": {
+   "jobs": [
+    "DRK",
+    "GNB",
+    "PLD",
+    "WAR"
+   ],
+   "role": true
+  },
+  "7548": {
+   "jobs": [
+    "BRD",
+    "DNC",
+    "DRG",
+    "DRK",
+    "GNB",
+    "MCH",
+    "MNK",
+    "NIN",
+    "PLD",
+    "RPR",
+    "SAM",
+    "VPR",
+    "WAR"
+   ],
+   "role": true
+  },
+  "7549": {
+   "jobs": [
+    "DRG",
+    "MNK",
+    "NIN",
+    "RPR",
+    "SAM",
+    "VPR"
+   ],
+   "role": true
+  },
+  "7560": {
+   "jobs": [
+    "BLM",
+    "BLU",
+    "PCT",
+    "RDM",
+    "SCH",
+    "SMN"
+   ],
+   "role": true
+  },
+  "7561": {
+   "jobs": [
+    "AST",
+    "BLM",
+    "BLU",
+    "PCT",
+    "RDM",
+    "SCH",
+    "SGE",
+    "SMN",
+    "WHM"
+   ],
+   "role": true
+  },
+  "7562": {
+   "jobs": [
+    "AST",
+    "BLM",
+    "BLU",
+    "PCT",
+    "RDM",
+    "SCH",
+    "SGE",
+    "SMN",
+    "WHM"
+   ],
+   "role": true
+  },
+  "15997": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "15998": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "16010": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "16011": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "16012": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "16013": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "16015": {
+   "jobs": [
+    "DNC"
+   ],
+   "role": false
+  },
+  "16138": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16140": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16144": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16148": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16151": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16152": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16159": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16160": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16161": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16164": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16165": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "16461": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "16464": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "16471": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "16472": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "16478": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "16481": {
+   "jobs": [
+    "SAM"
+   ],
+   "role": false
+  },
+  "16482": {
+   "jobs": [
+    "SAM"
+   ],
+   "role": false
+  },
+  "16489": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "16493": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "16498": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "16499": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "16500": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "16508": {
+   "jobs": [
+    "SCH",
+    "SMN"
+   ],
+   "role": false
+  },
+  "16510": {
+   "jobs": [
+    "SMN"
+   ],
+   "role": false
+  },
+  "16527": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "16536": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "16537": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "16538": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "16542": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "16543": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "16545": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "16552": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "16553": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "16556": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "16557": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "16559": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "16889": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "24289": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24294": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24295": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24298": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24299": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24300": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24301": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24302": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24303": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24305": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24307": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24309": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24310": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24311": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24313": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24317": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24318": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "24380": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "24381": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "24393": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "24401": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "24402": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "24404": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "24405": {
+   "jobs": [
+    "RPR"
+   ],
+   "role": false
+  },
+  "25747": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "25751": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "25752": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "25754": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "25757": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "25758": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "25760": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "25762": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "25766": {
+   "jobs": [
+    "MNK"
+   ],
+   "role": false
+  },
+  "25785": {
+   "jobs": [
+    "BRD"
+   ],
+   "role": false
+  },
+  "25788": {
+   "jobs": [
+    "MCH"
+   ],
+   "role": false
+  },
+  "25796": {
+   "jobs": [
+    "BLM"
+   ],
+   "role": false
+  },
+  "25799": {
+   "jobs": [
+    "SCH",
+    "SMN"
+   ],
+   "role": false
+  },
+  "25801": {
+   "jobs": [
+    "SMN"
+   ],
+   "role": false
+  },
+  "25857": {
+   "jobs": [
+    "RDM"
+   ],
+   "role": false
+  },
+  "25861": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "25862": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "25867": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "25868": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "25873": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "25874": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "34620": {
+   "jobs": [
+    "VPR"
+   ],
+   "role": false
+  },
+  "34623": {
+   "jobs": [
+    "VPR"
+   ],
+   "role": false
+  },
+  "34646": {
+   "jobs": [
+    "VPR"
+   ],
+   "role": false
+  },
+  "34647": {
+   "jobs": [
+    "VPR"
+   ],
+   "role": false
+  },
+  "34670": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "34671": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "34672": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "34673": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "34674": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "34675": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "34684": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "35347": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "35348": {
+   "jobs": [
+    "PCT"
+   ],
+   "role": false
+  },
+  "36920": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "36921": {
+   "jobs": [
+    "PLD"
+   ],
+   "role": false
+  },
+  "36923": {
+   "jobs": [
+    "WAR"
+   ],
+   "role": false
+  },
+  "36926": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "36927": {
+   "jobs": [
+    "DRK"
+   ],
+   "role": false
+  },
+  "36934": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "36935": {
+   "jobs": [
+    "GNB"
+   ],
+   "role": false
+  },
+  "36951": {
+   "jobs": [
+    "DRG"
+   ],
+   "role": false
+  },
+  "36957": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "36958": {
+   "jobs": [
+    "NIN"
+   ],
+   "role": false
+  },
+  "36962": {
+   "jobs": [
+    "SAM"
+   ],
+   "role": false
+  },
+  "36988": {
+   "jobs": [
+    "BLM"
+   ],
+   "role": false
+  },
+  "37008": {
+   "jobs": [
+    "WHM"
+   ],
+   "role": false
+  },
+  "37014": {
+   "jobs": [
+    "SCH"
+   ],
+   "role": false
+  },
+  "37017": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "37018": {
+   "jobs": [
+    "AST"
+   ],
+   "role": false
+  },
+  "37033": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  },
+  "37035": {
+   "jobs": [
+    "SGE"
+   ],
+   "role": false
+  }
+ },
+ "dots": {
+  "838": [
+   "AST"
+  ],
+  "843": [
+   "AST"
+  ],
+  "1881": [
+   "AST"
+  ],
+  "161": [
+   "BLM"
+  ],
+  "162": [
+   "BLM"
+  ],
+  "163": [
+   "BLM"
+  ],
+  "1210": [
+   "BLM"
+  ],
+  "3871": [
+   "BLM"
+  ],
+  "3872": [
+   "BLM"
+  ],
+  "1714": [
+   "BLU"
+  ],
+  "1200": [
+   "BRD"
+  ],
+  "1201": [
+   "BRD"
+  ],
+  "124": [
+   "BRD"
+  ],
+  "129": [
+   "BRD"
+  ],
+  "118": [
+   "DRG"
+  ],
+  "2719": [
+   "DRG"
+  ],
+  "246": [
+   "MNK"
+  ],
+  "3001": [
+   "MNK"
+  ],
+  "508": [
+   "NIN"
+  ],
+  "725": [
+   "PLD"
+  ],
+  "2721": [
+   "PLD"
+  ],
+  "90": [
+   "WAR"
+  ],
+  "2677": [
+   "WAR"
+  ],
+  "1228": [
+   "SAM"
+  ],
+  "1298": [
+   "SAM"
+  ],
+  "1299": [
+   "SAM"
+  ],
+  "179": [
+   "SCH"
+  ],
+  "189": [
+   "SCH"
+  ],
+  "1895": [
+   "SCH"
+  ],
+  "143": [
+   "WHM"
+  ],
+  "144": [
+   "WHM"
+  ],
+  "798": [
+   "WHM"
+  ],
+  "1871": [
+   "WHM"
+  ],
+  "2614": [
+   "SGE"
+  ],
+  "2615": [
+   "SGE"
+  ],
+  "2616": [
+   "SGE"
+  ],
+  "3897": [
+   "SGE"
+  ],
+  "2586": [
+   "RPR"
+  ],
+  "3359": []
+ }
+}

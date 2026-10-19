@@ -1,0 +1,366 @@
+<title>Triggevent Plus 収録台本</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 収録ブースの進行表：左にコンテンツ選択、右に「録るべきセリフ」。ハブと同じ 白・水色 / 黒・赤 */
+:root {
+  --bg: #F5FAFD; --surface: #FFFFFF; --surface-alt: #E6F4FB; --line: #CBE2EF;
+  --fg: #1D2B36; --sub: #5B6B77; --accent: #1679A8; --accent-fill: #2EA7E0; --on-accent: #FFFFFF;
+  --chip-dir: #D4EEFA; --chip-player: #FFF0D9; --chip-choice: #E7F6E9; --chip-other: #EFEFF2;
+  --font-body: "Zen Kaku Gothic New", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121212; --surface: #1B1B1B; --surface-alt: #262626; --line: #363636;
+  --fg: #EDEDED; --sub: #A3A3A3; --accent: #FF6B72; --accent-fill: #E23B44; --on-accent: #FFFFFF;
+  --chip-dir: #3A1C1F; --chip-player: #3A2C12; --chip-choice: #1C3322; --chip-other: #2A2A2E;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #121212; --surface: #1B1B1B; --surface-alt: #262626; --line: #363636;
+  --fg: #EDEDED; --sub: #A3A3A3; --accent: #FF6B72; --accent-fill: #E23B44; --on-accent: #FFFFFF;
+  --chip-dir: #3A1C1F; --chip-player: #3A2C12; --chip-choice: #1C3322; --chip-other: #2A2A2E;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 14px; line-height: 1.6; }
+.wrap { max-width: 1280px; margin: 0 auto; padding-inline: 16px; padding-block: 24px 48px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; text-wrap: balance; letter-spacing: .02em; }
+h2 { font-size: 1.15rem; margin: 0 0 8px; text-wrap: balance; }
+h3 { font-size: 1rem; margin: 0 0 6px; }
+.lead { color: var(--sub); margin: 0 0 20px; max-width: 70ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-variant-numeric: tabular-nums; }
+.stats div { display: flex; flex-direction: column; }
+.stats b { font-size: 1.3rem; }
+.stats span { color: var(--sub); font-size: .8rem; letter-spacing: .04em; }
+details.guide { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; margin-bottom: 20px; }
+details.guide summary { cursor: pointer; font-weight: 700; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 12px; }
+.guide-grid > div { min-width: 0; }
+.guide ul { margin: 0; padding-left: 1.2em; }
+.layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+aside { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px; position: sticky; top: env(safe-area-inset-top, 0px); max-height: calc(100vh - 24px); overflow: auto; }
+@media (max-width: 860px) { aside { position: static; max-height: none; } }
+.group-title { font-size: .75rem; color: var(--sub); letter-spacing: .06em; margin: 12px 0 4px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.group-title:first-child { margin-top: 0; }
+label.opt { display: flex; gap: 8px; align-items: flex-start; padding: 3px 4px; border-radius: 4px; cursor: pointer; }
+label.opt:hover { background: var(--surface-alt); }
+label.opt input { margin-top: 4px; accent-color: var(--accent-fill); }
+label.opt small { color: var(--sub); font-variant-numeric: tabular-nums; margin-left: auto; padding-left: 8px; white-space: nowrap; }
+.linkbtn { background: none; border: 0; color: var(--accent); cursor: pointer; font: inherit; font-size: .75rem; padding: 0; }
+.linkbtn:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent-fill); outline-offset: 2px; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 12px; flex-wrap: wrap; }
+.tabs button { background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 12px; font: inherit; color: var(--sub); cursor: pointer; }
+.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent-fill); font-weight: 700; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-bottom: 12px; }
+.toolbar input[type=search] { flex: 1 1 220px; min-width: 0; padding: 7px 10px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--fg); font: inherit; }
+.btn { background: var(--accent-fill); color: var(--on-accent); border: 0; border-radius: 4px; padding: 7px 14px; font: inherit; font-weight: 700; cursor: pointer; }
+.btn.ghost { background: var(--surface); color: var(--fg); border: 1px solid var(--line); font-weight: 500; }
+.count { color: var(--sub); font-variant-numeric: tabular-nums; }
+.toast { color: var(--accent); font-size: .85rem; }
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .75rem; color: var(--sub); letter-spacing: .04em; font-weight: 500; position: sticky; top: 0; background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+td.id { font-family: var(--font-mono); font-size: .8rem; white-space: nowrap; }
+td.ja { font-weight: 500; font-size: 1rem; }
+td.en { color: var(--sub); font-size: .8rem; }
+td.num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.kind { font-size: .72rem; padding: 1px 6px; border-radius: 3px; background: var(--surface-alt); white-space: nowrap; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.chip { border-radius: 3px; padding: 1px 6px; font-size: .85rem; }
+.chip.seg { background: var(--surface-alt); }
+.chip.direction { background: var(--chip-dir); }
+.chip.number { background: var(--chip-dir); }
+.chip.player { background: var(--chip-player); }
+.chip.choice { background: var(--chip-choice); }
+.chip.other { background: var(--chip-other); }
+.chip code { font-family: var(--font-mono); font-size: .72rem; color: var(--sub); margin-left: 4px; }
+.note { color: var(--accent); font-size: .78rem; }
+.off { color: var(--sub); font-size: .72rem; }
+.content-block { margin-bottom: 24px; }
+.content-block h2 small { color: var(--sub); font-weight: 400; font-size: .8rem; margin-left: 8px; }
+.empty { padding: 32px 16px; text-align: center; color: var(--sub); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: .8rem; color: var(--sub); margin-bottom: 12px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <h1>Triggevent Plus 収録台本</h1>
+  <p class="lead">Triggevent Plus の読み上げ（TTS）を収録した音声に差し替えるための台本です。左でコンテンツと使うジョブ・クラスを選ぶと、必要なセリフだけを重複なしで一覧にします。同じセリフは1回録れば、すべてのコンテンツで使い回せます。</p>
+
+  <div class="stats" id="stats"></div>
+
+  <details class="guide" open>
+    <summary>収録のしかた</summary>
+    <div class="guide-grid">
+      <div>
+        <h3>ファイル</h3>
+        <ul>
+          <li>1セリフ1ファイル。ファイル名は「ファイル名」列の値＋拡張子（例: <code>L_1a2b3c4d.wav</code>）。</li>
+          <li>WAV（48kHz・16bit・モノラル）を推奨。OGG でも可。</li>
+          <li>前後の無音は 50ms 以内に詰める。音量はファイル間でそろえる（ピーク -1dBFS 程度）。</li>
+        </ul>
+      </div>
+      <div>
+        <h3>読み方</h3>
+        <ul>
+          <li>戦闘中に一瞬で聞き取れるよう、はっきり・やや速めに。</li>
+          <li>「、」は短い間。語尾は上げずに言い切る。</li>
+          <li>同じ人・同じ距離・同じテンションでそろえる（つなぎ合わせても違和感が出ないように）。</li>
+        </ul>
+      </div>
+      <div>
+        <h3>可変部分（部品）</h3>
+        <ul>
+          <li>名前や方角が入る読み上げは、固定の部分（<span class="chip seg">にタンク強攻撃</span>）と部品（<span class="chip direction">方角</span> <span class="chip number">数字</span> <span class="chip choice">選択肢</span>）をつないで再生します。</li>
+          <li>固定の部分は、前に何かが入る前提で自然につながるように読む（「が安置」などは助詞から読み始める）。</li>
+          <li><span class="chip player">プレイヤー名</span> と <span class="chip other">その他</span> は収録できないため、その部分だけ TTS で読み上げます（対象が自分なら部品「自分」を使用）。</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <div class="layout">
+    <aside aria-label="収録するコンテンツの選択">
+      <div id="picker"></div>
+    </aside>
+    <main style="min-width:0">
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tab-list" aria-selected="true">収録リスト</button>
+        <button role="tab" id="tab-script" aria-selected="false">コンテンツ別の台本</button>
+        <button role="tab" id="tab-jobs" aria-selected="false">ジョブ別</button>
+      </div>
+      <div class="toolbar">
+        <input type="search" id="q" placeholder="セリフ・原文・ファイル名で絞り込み" aria-label="絞り込み">
+        <span class="count" id="count"></span>
+        <button class="btn" id="copy">収録リストをコピー（TSV）</button>
+        <span class="toast" id="toast" role="status"></span>
+      </div>
+      <div id="view"></div>
+    </main>
+  </div>
+</div>
+
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const SLOT_LABEL = { direction: '方角', number: '数字', player: 'プレイヤー名', choice: '選択肢', other: 'その他' };
+  const KIND_LABEL = { line: 'セリフ', segment: '固定部分', choice: '選択肢', part: '部品', dot: 'DoT', cd: 'リキャスト', sys: 'システム' };
+  const EXTRA = [
+    { key: '_parts', name: '部品（方角・数字・自分）', note: '可変の読み上げで使う' },
+    { key: '_nojob', name: 'ジョブ共通の DoT', note: 'ヴァリアントダンジョンなど' },
+    { key: '_sys', name: 'システム', note: 'TTS のテストなど' },
+  ];
+  const state = { selected: new Set(['_parts', '_sys']), tab: 'list', q: '' };
+  const JOB = new Map(D.jobs.map(j => [j.abbr, j]));
+  const jobLabel = abbr => { const j = JOB.get(abbr); return j ? (j.className ? `${j.name}（${j.className}）` : j.name) : abbr; };
+  // DoT・リキャストは使うジョブを1つでも選んでいれば収録対象にする
+  const jobItems = () => D.dots.map(d => ({ ...d, kind: 'dot' })).concat(D.cooldowns.map(c => ({ ...c, kind: 'cd' })));
+  const wanted = item => item.jobs.length ? item.jobs.some(j => state.selected.has('job:' + j)) : state.selected.has('_nojob');
+  try {
+    const saved = JSON.parse(localStorage.getItem('voice-script-selection-v2') || 'null');
+    if (Array.isArray(saved)) state.selected = new Set(saved);
+  } catch (e) { /* 保存できない環境では既定の選択で表示する */ }
+  if (![...state.selected].some(k => !k.startsWith('_') && !k.startsWith('job:'))) state.selected.add(D.contents[0].key);
+
+  function save() {
+    try { localStorage.setItem('voice-script-selection-v2', JSON.stringify([...state.selected])); } catch (e) { /* 無視 */ }
+  }
+
+  function partsList() {
+    const out = [];
+    const names = { direction: '方角', number: '数字', player: '自分' };
+    for (const [k, items] of Object.entries(D.parts)) {
+      for (const [id, ja] of items) out.push({ id, ja, kind: 'part', where: names[k] });
+    }
+    return out;
+  }
+
+  // 選択中のコンテンツで必要な収録ファイル（重複なし）
+  function neededItems() {
+    const map = new Map();
+    const add = (id, ja, kind, where, en) => {
+      const cur = map.get(id);
+      if (cur) { cur.uses++; if (where && !cur.where.includes(where)) cur.where.push(where); return; }
+      map.set(id, { id, ja, kind, uses: 1, where: where ? [where] : [], en: en || '' });
+    };
+    for (const c of D.contents) {
+      if (!state.selected.has(c.key)) continue;
+      for (const l of c.lines) {
+        if (l.id) add(l.id, l.ja, 'line', c.key, l.en);
+        else for (const p of l.parts) {
+          if (p.type === 'segment') add(p.id, p.ja, 'segment', c.key, l.en);
+          else if (p.choices) for (const ch of p.choices) add(ch.id, ch.ja, 'choice', c.key, l.en);
+        }
+      }
+    }
+    if (state.selected.has('_parts')) for (const p of partsList()) add(p.id, p.ja, 'part', p.where);
+    for (const it of jobItems()) if (wanted(it)) add(it.id, it.ja, it.kind, '', it.note || (it.role ? 'ロールアクション' : it.jobs.map(jobLabel).join('・')));
+    if (state.selected.has('_sys')) for (const d of D.system) add(d.id, d.ja, 'sys', '', d.note);
+    return [...map.values()];
+  }
+
+  function matches(text) {
+    if (!state.q) return true;
+    return text.toLowerCase().includes(state.q.toLowerCase());
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function renderStats() {
+    const lines = D.contents.reduce((n, c) => n + c.lines.length, 0);
+    const kinds = { line: 0, segment: 0, choice: 0 };
+    for (const p of Object.values(D.phrases)) kinds[p.kind]++;
+    const parts = partsList().length;
+    document.getElementById('stats').innerHTML = [
+      [D.contents.length, 'コンテンツ'], [lines, '読み上げ文'], [kinds.line, 'セリフ'], [kinds.segment + kinds.choice, '固定部分・選択肢'],
+      [parts, '部品'], [D.dots.length + D.cooldowns.length, 'DoT・リキャスト名'],
+    ].map(([n, l]) => `<div><b>${n.toLocaleString()}</b><span>${l}</span></div>`).join('');
+  }
+
+  function renderPicker() {
+    const byExpac = new Map();
+    for (const c of D.contents) {
+      if (!byExpac.has(c.expac)) byExpac.set(c.expac, []);
+      byExpac.get(c.expac).push(c);
+    }
+    let html = `<div class="group-title"><span>共通</span></div>`;
+    html += EXTRA.map(e => opt(e.key, e.name, countFor(e.key), e.note)).join('');
+    const byRole = new Map();
+    for (const j of D.jobs) { if (!byRole.has(j.role)) byRole.set(j.role, []); byRole.get(j.role).push(j); }
+    html += `<div class="group-title"><span>ジョブ・クラス（DoT・リキャスト）</span></div>`;
+    for (const [role, list] of byRole) {
+      html += `<div class="group-title"><span>${esc(role)}</span><button class="linkbtn" data-role="${esc(role)}">すべて選択</button></div>`;
+      html += list.map(j => opt('job:' + j.abbr, jobLabel(j.abbr), jobItems().filter(i => i.jobs.includes(j.abbr)).length, '')).join('');
+    }
+    for (const [expac, list] of byExpac) {
+      html += `<div class="group-title"><span>${esc(expac)}</span><button class="linkbtn" data-all="${esc(expac)}">すべて選択</button></div>`;
+      html += list.map(c => opt(c.key, c.name, c.lines.length, c.kind)).join('');
+    }
+    const picker = document.getElementById('picker');
+    picker.innerHTML = html;
+    picker.querySelectorAll('input').forEach(i => i.addEventListener('change', () => {
+      if (i.checked) state.selected.add(i.value); else state.selected.delete(i.value);
+      save(); render();
+    }));
+    picker.querySelectorAll('[data-role]').forEach(b => b.addEventListener('click', () => {
+      const keys = byRole.get(b.dataset.role).map(j => 'job:' + j.abbr);
+      const all = keys.every(k => state.selected.has(k));
+      for (const k of keys) { if (all) state.selected.delete(k); else state.selected.add(k); }
+      save(); renderPicker(); render();
+    }));
+    picker.querySelectorAll('[data-all]').forEach(b => b.addEventListener('click', () => {
+      const list = byExpac.get(b.dataset.all);
+      const all = list.every(c => state.selected.has(c.key));
+      for (const c of list) { if (all) state.selected.delete(c.key); else state.selected.add(c.key); }
+      save(); renderPicker(); render();
+    }));
+  }
+
+  function countFor(key) {
+    if (key === '_parts') return partsList().length;
+    if (key === '_nojob') return D.dots.filter(d => !d.jobs.length).length;
+    return D.system.length;
+  }
+
+  function opt(key, name, n, sub) {
+    const id = 'c-' + key;
+    return `<label class="opt" for="${id}"><input type="checkbox" id="${id}" value="${esc(key)}" ${state.selected.has(key) ? 'checked' : ''}>` +
+      `<span>${esc(name)}${sub ? `<br><span class="off">${esc(sub)}</span>` : ''}</span><small>${n}</small></label>`;
+  }
+
+  function renderList() {
+    const items = neededItems().filter(i => matches(i.ja + ' ' + i.id + ' ' + i.en));
+    const order = { sys: 0, part: 1, line: 2, segment: 3, choice: 4, dot: 5, cd: 6 };
+    items.sort((a, b) => order[a.kind] - order[b.kind] || b.uses - a.uses || a.ja.localeCompare(b.ja, 'ja'));
+    document.getElementById('count').textContent = `${items.length.toLocaleString()} ファイル`;
+    if (!items.length) return `<div class="table-wrap"><div class="empty">左でコンテンツを選ぶと、録るセリフがここに並びます。</div></div>`;
+    const rows = items.slice(0, 3000).map(i => `<tr>
+      <td class="id">${esc(i.id)}</td>
+      <td class="ja">${esc(i.ja)}${i.en ? `<div class="off">${esc(i.en)}</div>` : ''}</td>
+      <td><span class="kind">${KIND_LABEL[i.kind]}</span></td>
+      <td class="num">${i.uses}</td></tr>`).join('');
+    return `<div class="table-wrap"><table><thead><tr><th>ファイル名</th><th>セリフ</th><th>種類</th><th>使用数</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
+  function renderScript() {
+    const blocks = [];
+    let total = 0;
+    for (const c of D.contents) {
+      if (!state.selected.has(c.key)) continue;
+      const lines = c.lines.filter(l => matches(l.ja + ' ' + l.en + ' ' + (l.desc || '') + ' ' + (l.id || '')));
+      if (!lines.length) continue;
+      total += lines.length;
+      const rows = lines.map(l => {
+        let body;
+        if (l.id) body = `<span class="chip seg">${esc(l.ja)}<code>${esc(l.id)}</code></span>`;
+        else body = `<div class="chips">` + l.parts.map(p => {
+          if (p.type === 'segment') return `<span class="chip seg">${esc(p.ja)}<code>${esc(p.id)}</code></span>`;
+          if (p.choices) return p.choices.map(ch => `<span class="chip choice">${esc(ch.ja)}<code>${esc(ch.id)}</code></span>`).join('<span class="off">または</span>');
+          return `<span class="chip ${p.kind}" title="${esc(p.expr)}">［${SLOT_LABEL[p.kind]}］</span>`;
+        }).join('') + `</div>`;
+        return `<tr><td>${esc(l.desc || '')}${l.off ? '<div class="off">既定で無効</div>' : ''}</td>
+          <td class="ja">${esc(l.ja)}${l.note ? `<div class="note">${esc(l.note)}</div>` : ''}</td>
+          <td>${body}</td><td class="en">${esc(l.en)}</td></tr>`;
+      }).join('');
+      blocks.push(`<section class="content-block"><h2>${esc(c.name)}<small>${lines.length} 件</small></h2>
+        <div class="table-wrap"><table><thead><tr><th>ギミック</th><th>読み上げ（日本語）</th><th>収録する内容</th><th>原文</th></tr></thead><tbody>${rows}</tbody></table></div></section>`);
+    }
+    document.getElementById('count').textContent = `${total.toLocaleString()} 件`;
+    const legend = `<div class="legend"><span><span class="chip seg">固定</span> 録る部分</span><span><span class="chip choice">選択肢</span> どちらか一方が入る</span><span><span class="chip direction">［方角］</span><span class="chip number">［数字］</span> 部品を再生</span><span><span class="chip player">［プレイヤー名］</span><span class="chip other">［その他］</span> TTS で読む</span></div>`;
+    return blocks.length ? legend + blocks.join('') : `<div class="table-wrap"><div class="empty">左でコンテンツを選ぶと、台本がここに並びます。</div></div>`;
+  }
+
+  function renderJobs() {
+    const blocks = [];
+    let total = 0;
+    for (const j of D.jobs) {
+      if (!state.selected.has('job:' + j.abbr)) continue;
+      const items = jobItems().filter(i => i.jobs.includes(j.abbr) && matches(i.ja + ' ' + i.id));
+      if (!items.length) continue;
+      total += items.length;
+      const rows = items.map(i => `<tr><td><span class="kind">${i.kind === 'dot' ? 'DoT' : 'リキャスト'}</span></td>
+        <td class="ja">${esc(i.ja)}${i.note ? `<div class="note">${esc(i.note)}</div>` : ''}</td>
+        <td class="id">${esc(i.id)}</td>
+        <td>${i.role ? '<span class="off">ロールアクション（同じロールで共通）</span>' : (i.jobs.length > 1 ? `<span class="off">${esc(i.jobs.map(jobLabel).join('・'))} と共通</span>` : '')}</td></tr>`).join('');
+      blocks.push(`<section class="content-block"><h2>${esc(jobLabel(j.abbr))}<small>${esc(j.role)}・${items.length} 件</small></h2>
+        <div class="table-wrap"><table><thead><tr><th>種類</th><th>読み上げ</th><th>ファイル名</th><th>共通</th></tr></thead><tbody>${rows}</tbody></table></div></section>`);
+    }
+    document.getElementById('count').textContent = `${total.toLocaleString()} 件`;
+    const lead = `<p class="lead">DoT は切れる直前に DoT 名を、リキャストは使えるようになったときにアビリティ名を読み上げます（どちらもゲーム内の日本語名）。ロールアクションなど複数のジョブで同じものは、1回録れば共通で使えます。</p>`;
+    return blocks.length ? lead + blocks.join('') : `<div class="table-wrap"><div class="empty">左の「ジョブ・クラス」で使うジョブを選ぶと、DoT とリキャストのセリフがここに並びます。</div></div>`;
+  }
+
+  function render() {
+    document.getElementById('view').innerHTML = state.tab === 'list' ? renderList() : state.tab === 'jobs' ? renderJobs() : renderScript();
+    document.getElementById('copy').hidden = state.tab !== 'list';
+  }
+
+  document.getElementById('tab-list').addEventListener('click', () => setTab('list'));
+  document.getElementById('tab-script').addEventListener('click', () => setTab('script'));
+  document.getElementById('tab-jobs').addEventListener('click', () => setTab('jobs'));
+  function setTab(t) {
+    state.tab = t;
+    document.getElementById('tab-list').setAttribute('aria-selected', t === 'list');
+    document.getElementById('tab-script').setAttribute('aria-selected', t === 'script');
+    document.getElementById('tab-jobs').setAttribute('aria-selected', t === 'jobs');
+    render();
+  }
+  document.getElementById('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
+  document.getElementById('copy').addEventListener('click', async () => {
+    const items = neededItems();
+    const tsv = ['ファイル名\tセリフ\t種類\t使用数\t原文'].concat(items.map(i => [i.id, i.ja, KIND_LABEL[i.kind], i.uses, i.en].join('\t'))).join('\n');
+    const toast = document.getElementById('toast');
+    try { await navigator.clipboard.writeText(tsv); toast.textContent = `${items.length} 件をコピーしました。表計算ソフトに貼り付けられます。`; }
+    catch (e) { toast.textContent = 'コピーできませんでした。表を選択してコピーしてください。'; }
+  });
+
+  renderStats();
+  renderPicker();
+  render();
+})();
+</script>

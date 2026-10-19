@@ -1,0 +1,1387 @@
+[
+ {
+  "en": "One with {buddy}",
+  "ja": "1番、{buddy}とペア",
+  "note": ""
+ },
+ {
+  "en": "1",
+  "ja": "1",
+  "note": ""
+ },
+ {
+  "en": "Two with {buddy}",
+  "ja": "2番、{buddy}とペア",
+  "note": ""
+ },
+ {
+  "en": "Take tether",
+  "ja": "線を取る",
+  "note": ""
+ },
+ {
+  "en": "2",
+  "ja": "2",
+  "note": ""
+ },
+ {
+  "en": "Three with {buddy}, First Tethers",
+  "ja": "3番、{buddy}とペア、最初に線を取る",
+  "note": ""
+ },
+ {
+  "en": "3",
+  "ja": "3",
+  "note": ""
+ },
+ {
+  "en": "Four with {buddy}",
+  "ja": "4番、{buddy}とペア",
+  "note": ""
+ },
+ {
+  "en": "Take tower",
+  "ja": "塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "4",
+  "ja": "4",
+  "note": ""
+ },
+ {
+  "en": "One - Missile Now",
+  "ja": "1番、すぐミサイル",
+  "note": ""
+ },
+ {
+  "en": "Missile Now then Cannon",
+  "ja": "すぐミサイル、そのあとキャノン",
+  "note": ""
+ },
+ {
+  "en": "2 - Stay Stacked",
+  "ja": "2番、まとまったまま",
+  "note": ""
+ },
+ {
+  "en": "Missile Now",
+  "ja": "すぐミサイル",
+  "note": ""
+ },
+ {
+  "en": "3 - Stay Stacked",
+  "ja": "3番、まとまったまま",
+  "note": ""
+ },
+ {
+  "en": "Four",
+  "ja": "4番",
+  "note": ""
+ },
+ {
+  "en": "4 - Stay Stacked",
+  "ja": "4番、まとまったまま",
+  "note": ""
+ },
+ {
+  "en": "Go Far, Bait Tankbusters",
+  "ja": "遠くへ、タンク強攻撃を誘導",
+  "note": ""
+ },
+ {
+  "en": "Cleave Baits",
+  "ja": "範囲攻撃の誘導",
+  "note": ""
+ },
+ {
+  "en": "Position for Cleave",
+  "ja": "範囲攻撃の位置へ",
+  "note": ""
+ },
+ {
+  "en": "Avoid Cleaves",
+  "ja": "範囲攻撃を避ける",
+  "note": ""
+ },
+ {
+  "en": "Bait Cleaves",
+  "ja": "範囲攻撃を誘導",
+  "note": ""
+ },
+ {
+  "en": "Attack M",
+  "ja": "オメガMを攻撃",
+  "note": ""
+ },
+ {
+  "en": "Attack F",
+  "ja": "オメガFを攻撃",
+  "note": ""
+ },
+ {
+  "en": "On Male",
+  "ja": "オメガMの足元",
+  "note": ""
+ },
+ {
+  "en": "Out of Both",
+  "ja": "両方から離れる",
+  "note": ""
+ },
+ {
+  "en": "Sides of Male",
+  "ja": "オメガMの横",
+  "note": ""
+ },
+ {
+  "en": "On Female",
+  "ja": "オメガFの足元",
+  "note": ""
+ },
+ {
+  "en": "Circle, Close to {tetherBuddy}",
+  "ja": "丸、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "Square, Close to {tetherBuddy}",
+  "ja": "四角、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "Triangle, Close to {tetherBuddy}",
+  "ja": "三角、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "X, Close to {tetherBuddy}",
+  "ja": "バツ、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "Circle, far from {tetherBuddy}",
+  "ja": "丸、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "Square, far from {tetherBuddy}",
+  "ja": "四角、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "Triangle, far from {tetherBuddy}",
+  "ja": "三角、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "X, far from {tetherBuddy}",
+  "ja": "バツ、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "Eye Laser",
+  "ja": "アイレーザー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Knockback Stacks",
+  "ja": "ノックバック頭割り",
+  "note": ""
+ },
+ {
+  "en": "Close Stacks on {stackPlayers[0]} and {stackPlayers[1]}",
+  "ja": "{stackPlayers[0]}と{stackPlayers[1]}に近くで頭割り",
+  "note": ""
+ },
+ {
+  "en": "Far Stacks on {stackPlayers[0]} and {stackPlayers[1]}",
+  "ja": "{stackPlayers[0]}と{stackPlayers[1]}に遠くで頭割り",
+  "note": ""
+ },
+ {
+  "en": "{swapper} and {swapee} Swap",
+  "ja": "{swapper}と{swapee}が交代",
+  "note": ""
+ },
+ {
+  "en": "No Swap",
+  "ja": "交代なし",
+  "note": ""
+ },
+ {
+  "en": "Limitless Synergy",
+  "ja": "リミットレスシナジー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Give Tethers to Tanks",
+  "ja": "線をタンクに渡す",
+  "note": ""
+ },
+ {
+  "en": "Out for Flare",
+  "ja": "フレアで外へ",
+  "note": ""
+ },
+ {
+  "en": "In, Dodge Hand",
+  "ja": "中へ、手を避ける",
+  "note": ""
+ },
+ {
+  "en": "Sniper Soon",
+  "ja": "まもなくスナイパー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "High-Power Sniper - Stack on {nothings[0]} or {nothings[1]}",
+  "ja": "強スナイパー、{nothings[0]}か{nothings[1]}に重なる",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Nothing - Stack on {hpSnipers[0]} or {hpSnipers[1]}",
+  "ja": "何もなし、{hpSnipers[0]}か{hpSnipers[1]}に重なる",
+  "note": ""
+ },
+ {
+  "en": "Blue has Defa",
+  "ja": "青に名誉罰",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Red has Defa",
+  "ja": "赤に名誉罰",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Defa in Blue",
+  "ja": "青で名誉罰",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Pass Rot then Spread",
+  "ja": "腐敗を渡す、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Spread for Rot",
+  "ja": "腐敗で散開",
+  "note": ""
+ },
+ {
+  "en": "Stack in Blue",
+  "ja": "青で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Defa in Red",
+  "ja": "赤で名誉罰",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Stack in Red",
+  "ja": "赤で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Red Rot, Stack",
+  "ja": "赤腐敗、頭割り",
+  "note": ""
+ },
+ {
+  "en": "Get Defa from {blueDefa ? \"Blue\" : \"Red\"}",
+  "ja": "{blueDefa ? \"青\" : \"赤\"}から名誉罰をもらう",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Get Rot, Shrink Tether",
+  "ja": "腐敗をもらう、線を縮める",
+  "note": ""
+ },
+ {
+  "en": "Stack between {blueDefa ? \"Red\" : \"Blue\"}",
+  "ja": "{blueDefa ? \"赤\" : \"青\"}の間で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Watch Rots",
+  "ja": "腐敗を見る",
+  "note": ""
+ },
+ {
+  "en": "Get Rot, Stretch Tether",
+  "ja": "腐敗をもらう、線を伸ばす",
+  "note": ""
+ },
+ {
+  "en": "Stretch Tether, Watch Rots",
+  "ja": "線を伸ばす、腐敗を見る",
+  "note": ""
+ },
+ {
+  "en": "Monitor, Boss Cleaving {bossMonitor}",
+  "ja": "モニターあり、ボスは{bossMonitor}を攻撃",
+  "note": ""
+ },
+ {
+  "en": "No Monitor, Boss Cleaving {bossMonitor}",
+  "ja": "モニターなし、ボスは{bossMonitor}を攻撃",
+  "note": ""
+ },
+ {
+  "en": "Stacks on {stacks}",
+  "ja": "{stacks}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread Outside",
+  "ja": "外で散開",
+  "note": ""
+ },
+ {
+  "en": "In Now then Stacks",
+  "ja": "すぐ中へ、そのあと頭割り",
+  "note": ""
+ },
+ {
+  "en": "Stacks Outside",
+  "ja": "外で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Heavy Raidwide",
+  "ja": "強い全体攻撃",
+  "note": ""
+ },
+ {
+  "en": "Near World, Tethered to {buddy}",
+  "ja": "ニアワールド、{buddy}と線",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Distant World, Tethered to {buddy}",
+  "ja": "ファーワールド、{buddy}と線",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Remote with {buddy}, they have Near",
+  "ja": "{buddy}とリモート、相手がニアワールド",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Remote with {buddy}, they have Distant",
+  "ja": "{buddy}とリモート、相手がファーワールド",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Local with {buddy}",
+  "ja": "{buddy}とローカル",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Bait then Monitor",
+  "ja": "誘導、そのあとモニター",
+  "note": ""
+ },
+ {
+  "en": "Move In, No Monitor",
+  "ja": "中へ、モニターなし",
+  "note": ""
+ },
+ {
+  "en": "Get Hit by Monitor",
+  "ja": "モニターに当たる",
+  "note": ""
+ },
+ {
+  "en": "{rightMonitor ? \"Right\" : \"Left\"} Monitor on You",
+  "ja": "自分に{rightMonitor ? \"右\" : \"左\"}モニター",
+  "note": ""
+ },
+ {
+  "en": "Don't Stack - {rightMonitor ? \"Right\" : \"Left\"} Monitor on You",
+  "ja": "重ならない、自分に{rightMonitor ? \"右\" : \"左\"}モニター",
+  "note": ""
+ },
+ {
+  "en": "Near World",
+  "ja": "ニアワールド",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Distant World",
+  "ja": "ファーワールド",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Marker on You and Buddy",
+  "ja": "自分と相方にマーカー",
+  "note": ""
+ },
+ {
+  "en": "Marker on You, Not on Buddy",
+  "ja": "自分にマーカー、相方はなし",
+  "note": ""
+ },
+ {
+  "en": "Knockback - Square, Close to {tetherBuddy}",
+  "ja": "ノックバック、四角、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "Knockback - Triangle, Close to {tetherBuddy}",
+  "ja": "ノックバック、三角、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "Knockback - X, Close to {tetherBuddy}",
+  "ja": "ノックバック、バツ、{tetherBuddy}の近く",
+  "note": ""
+ },
+ {
+  "en": "Knockback - Circle, far from {tetherBuddy}",
+  "ja": "ノックバック、丸、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "Knockback - Square, far from {tetherBuddy}",
+  "ja": "ノックバック、四角、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "Knockback - Triangle, far from {tetherBuddy}",
+  "ja": "ノックバック、三角、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "Knockback - X, far from {tetherBuddy}",
+  "ja": "ノックバック、バツ、{tetherBuddy}から遠く",
+  "note": ""
+ },
+ {
+  "en": "One Stack",
+  "ja": "スタック1つ",
+  "note": "デバフのスタック数"
+ },
+ {
+  "en": "No Stacks",
+  "ja": "スタックなし",
+  "note": "デバフのスタック数"
+ },
+ {
+  "en": "Slow Pattern",
+  "ja": "遅いパターン",
+  "note": ""
+ },
+ {
+  "en": "Fast then Wait",
+  "ja": "早い、そのあと待機",
+  "note": ""
+ },
+ {
+  "en": "{['Close', 'Mid', 'Far'][dist1]} {dir1} then {['Close', 'Mid', 'Far'][dist2]} {dir2}",
+  "ja": "{['近く', '中間', '遠く'][dist1]} {dir1}、そのあと{['近く', '中間', '遠く'][dist2]} {dir2}",
+  "note": ""
+ },
+ {
+  "en": "{['Close', 'Mid', 'Far'][dist2]} {dir2}",
+  "ja": "{['近く', '中間', '遠く'][dist2]} {dir2}",
+  "note": ""
+ },
+ {
+  "en": "Short Near",
+  "ja": "短いニア",
+  "note": ""
+ },
+ {
+  "en": "Short Distant",
+  "ja": "短いファー",
+  "note": ""
+ },
+ {
+  "en": "Long Near",
+  "ja": "長いニア",
+  "note": ""
+ },
+ {
+  "en": "Long Distant",
+  "ja": "長いファー",
+  "note": ""
+ },
+ {
+  "en": "Nothing - {dynamisStacks} stacks",
+  "ja": "何もなし、ダイナミス{dynamisStacks}スタック",
+  "note": ""
+ },
+ {
+  "en": "Raidwide and Knockback",
+  "ja": "全体攻撃とノックバック",
+  "note": ""
+ },
+ {
+  "en": "{state.player.job.tank ? \"Close for Buster\" : \"Party Stack\"}",
+  "ja": "{state.player.job.tank ? \"近づいてタンク強攻撃\" : \"全員で頭割り\"}",
+  "note": ""
+ },
+ {
+  "en": "Exasquares",
+  "ja": "エクサスクエア",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Corners First then In",
+  "ja": "先に角、そのあと中",
+  "note": ""
+ },
+ {
+  "en": "Stay In",
+  "ja": "中のまま",
+  "note": ""
+ },
+ {
+  "en": "In First then Out",
+  "ja": "先に中、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "Stay Spread",
+  "ja": "散開のまま",
+  "note": ""
+ },
+ {
+  "en": "{state.player.job.tank ? \"Stand in Front\" : \"Stand Behind Tanks\"}",
+  "ja": "{state.player.job.tank ? \"前に立つ\" : \"タンクの後ろに立つ\"}",
+  "note": ""
+ },
+ {
+  "en": "Bait Middle, Then {startAt}, Rotate {clockwise ? \"Clockwise\" : \"Counter-Clockwise\"}",
+  "ja": "中央で誘導、そのあと{startAt}、{clockwise ? \"時計回り\" : \"反時計回り\"}",
+  "note": ""
+ },
+ {
+  "en": "Bait Middle then Out",
+  "ja": "中央で誘導、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "{state.player.job.caster ? \"Spread Outside and LB\" : \"Spread Outside\"}",
+  "ja": "{state.player.job.caster ? \"外で散開、LB\" : \"外で散開\"}",
+  "note": ""
+ },
+ {
+  "en": "Ranged LB Next",
+  "ja": "次は遠隔LB",
+  "note": ""
+ },
+ {
+  "en": "Flare on You",
+  "ja": "自分にフレア",
+  "note": ""
+ },
+ {
+  "en": "{state.player.job.tank ? \"Tank LB Now\" : \"Raidwide\"}",
+  "ja": "{state.player.job.tank ? \"今タンクLB\" : \"全体攻撃\"}",
+  "note": ""
+ },
+ {
+  "en": "{state.player.job.healer ? \"Healer LB Now\" : \"Wait for Healer LB\"}",
+  "ja": "{state.player.job.healer ? \"今ヒーラーLB\" : \"ヒーラーLB待ち\"}",
+  "note": ""
+ },
+ {
+  "en": "Marker, First Set",
+  "ja": "マーカー、1組目",
+  "note": ""
+ },
+ {
+  "en": "Interrupt {event.source}",
+  "ja": "{event.source}を詠唱中断",
+  "note": ""
+ },
+ {
+  "en": "Pair Cleaves",
+  "ja": "ペアで扇範囲",
+  "note": ""
+ },
+ {
+  "en": "Puddle on you",
+  "ja": "自分に床",
+  "note": ""
+ },
+ {
+  "en": "Red Circle with {partner}",
+  "ja": "赤丸、{partner}と",
+  "note": ""
+ },
+ {
+  "en": "Green Triangle with {partner}",
+  "ja": "緑三角、{partner}と",
+  "note": ""
+ },
+ {
+  "en": "Purple Square with {partner}",
+  "ja": "紫四角、{partner}と",
+  "note": ""
+ },
+ {
+  "en": "Blue Cross with {partner}",
+  "ja": "青バツ、{partner}と",
+  "note": ""
+ },
+ {
+  "en": "Cleave Bait",
+  "ja": "範囲攻撃を誘導",
+  "note": ""
+ },
+ {
+  "en": "Northeast/Southwest Safe",
+  "ja": "北東と南西が安置",
+  "note": ""
+ },
+ {
+  "en": "Southeast/Northwest Safe",
+  "ja": "南東と北西が安置",
+  "note": ""
+ },
+ {
+  "en": "Buster on {event.target}, then 3 hits",
+  "ja": "{event.target}にタンク強攻撃、そのあと3連撃",
+  "note": ""
+ },
+ {
+  "en": "Blue Marker",
+  "ja": "青マーカー",
+  "note": ""
+ },
+ {
+  "en": "Take Tether",
+  "ja": "線を取る",
+  "note": ""
+ },
+ {
+  "en": "Thordan {wheresThordan}",
+  "ja": "トールダン{wheresThordan}",
+  "note": ""
+ },
+ {
+  "en": "{sword1} and {sword2}",
+  "ja": "{sword1}と{sword2}",
+  "note": ""
+ },
+ {
+  "en": "Look away",
+  "ja": "背を向ける",
+  "note": ""
+ },
+ {
+  "en": "Counterclockwise",
+  "ja": "反時計回り",
+  "note": ""
+ },
+ {
+  "en": "Meteor on you",
+  "ja": "自分にメテオ",
+  "note": ""
+ },
+ {
+  "en": "Meteor role",
+  "ja": "メテオのロール",
+  "note": ""
+ },
+ {
+  "en": "Non-meteor role",
+  "ja": "メテオなしのロール",
+  "note": ""
+ },
+ {
+  "en": "Soak First Tower",
+  "ja": "1番目の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Knockback Immune in Tower",
+  "ja": "塔でノックバック無効",
+  "note": ""
+ },
+ {
+  "en": "Take knockback into tower",
+  "ja": "ノックバックで塔に入る",
+  "note": ""
+ },
+ {
+  "en": "Drop Meteors",
+  "ja": "メテオを置く",
+  "note": ""
+ },
+ {
+  "en": "Back then Left",
+  "ja": "後ろ、そのあと左",
+  "note": ""
+ },
+ {
+  "en": "Back then Right",
+  "ja": "後ろ、そのあと右",
+  "note": ""
+ },
+ {
+  "en": "One",
+  "ja": "1番",
+  "note": ""
+ },
+ {
+  "en": "Two",
+  "ja": "2番",
+  "note": ""
+ },
+ {
+  "en": "Three",
+  "ja": "3番",
+  "note": ""
+ },
+ {
+  "en": "Pick Spots",
+  "ja": "位置を決める",
+  "note": ""
+ },
+ {
+  "en": "West and Face In",
+  "ja": "西で内向き",
+  "note": ""
+ },
+ {
+  "en": "East and Face Out",
+  "ja": "東で外向き",
+  "note": ""
+ },
+ {
+  "en": "Bait Geirskogul",
+  "ja": "ゲイルスコグルを誘導",
+  "note": ""
+ },
+ {
+  "en": "Place Tower {where}, then {first} then {second}",
+  "ja": "{where}に塔を置く、そのあと{first}、そのあと{second}",
+  "note": ""
+ },
+ {
+  "en": "Stack, {first}, {second}, then soak tower",
+  "ja": "頭割り、{first}、{second}、そのあと塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Stack, {first}, {second}",
+  "ja": "頭割り、{first}、{second}",
+  "note": ""
+ },
+ {
+  "en": "Place Tower {where}",
+  "ja": "{where}に塔を置く",
+  "note": ""
+ },
+ {
+  "en": "Soak tower, bait, then stack",
+  "ja": "塔を踏む、誘導、そのあと頭割り",
+  "note": ""
+ },
+ {
+  "en": "{first} then {second}",
+  "ja": "{first}、そのあと{second}",
+  "note": ""
+ },
+ {
+  "en": "Out of front",
+  "ja": "前方から離れる",
+  "note": ""
+ },
+ {
+  "en": "Red",
+  "ja": "赤",
+  "note": ""
+ },
+ {
+  "en": "Blue",
+  "ja": "青",
+  "note": ""
+ },
+ {
+  "en": "Twister",
+  "ja": "ツイスター",
+  "note": ""
+ },
+ {
+  "en": "Lightning",
+  "ja": "雷",
+  "note": ""
+ },
+ {
+  "en": "Green Marker",
+  "ja": "緑マーカー",
+  "note": ""
+ },
+ {
+  "en": "Liquid Heaven",
+  "ja": "リキッドヘヴン",
+  "note": "技名要確認"
+ },
+ {
+  "en": "In with Lightning",
+  "ja": "雷と一緒に中へ",
+  "note": ""
+ },
+ {
+  "en": "Doom",
+  "ja": "死の宣告",
+  "note": ""
+ },
+ {
+  "en": "Red Circle (Doom)",
+  "ja": "赤丸、死の宣告",
+  "note": ""
+ },
+ {
+  "en": "Green Triangle",
+  "ja": "緑三角",
+  "note": ""
+ },
+ {
+  "en": "Green Triangle (Doom)",
+  "ja": "緑三角、死の宣告",
+  "note": ""
+ },
+ {
+  "en": "Purple Square",
+  "ja": "紫四角",
+  "note": ""
+ },
+ {
+  "en": "Purple Square (Doom)",
+  "ja": "紫四角、死の宣告",
+  "note": ""
+ },
+ {
+  "en": "Blue Cross",
+  "ja": "青バツ",
+  "note": ""
+ },
+ {
+  "en": "Shared Buster",
+  "ja": "タンク頭割り",
+  "note": ""
+ },
+ {
+  "en": "Nidd Buster, Hraes Cleave",
+  "ja": "ニーズヘッグがタンク強攻撃、フレースヴェルグが範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Hraes Buster, Nidd Cleave",
+  "ja": "フレースヴェルグがタンク強攻撃、ニーズヘッグが範囲攻撃",
+  "note": ""
+ },
+ {
+  "en": "Busters",
+  "ja": "両方タンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Left, near Hraesvelgr",
+  "ja": "左、フレースヴェルグの近く",
+  "note": ""
+ },
+ {
+  "en": "Right, near Hraesvelgr",
+  "ja": "右、フレースヴェルグの近く",
+  "note": ""
+ },
+ {
+  "en": "Left, away from Hraesvelgr",
+  "ja": "左、フレースヴェルグから離れる",
+  "note": ""
+ },
+ {
+  "en": "Right, away from Hraesvelgr",
+  "ja": "右、フレースヴェルグから離れる",
+  "note": ""
+ },
+ {
+  "en": "Get hit by Hraesvelgr",
+  "ja": "フレースヴェルグの攻撃に当たる",
+  "note": ""
+ },
+ {
+  "en": "Get hit by Nidhogg",
+  "ja": "ニーズヘッグの攻撃に当たる",
+  "note": ""
+ },
+ {
+  "en": "Stop Moving Soon",
+  "ja": "まもなく止まる",
+  "note": ""
+ },
+ {
+  "en": "Stop Moving",
+  "ja": "止まる",
+  "note": ""
+ },
+ {
+  "en": "Exaflare",
+  "ja": "エクサフレア",
+  "note": ""
+ },
+ {
+  "en": "Fire - Out",
+  "ja": "炎、外",
+  "note": ""
+ },
+ {
+  "en": "Ice - In",
+  "ja": "氷、中",
+  "note": ""
+ },
+ {
+  "en": "Gigaflare",
+  "ja": "ギガフレア",
+  "note": ""
+ },
+ {
+  "en": "South Plant",
+  "ja": "南に設置",
+  "note": ""
+ },
+ {
+  "en": "South Then North",
+  "ja": "南、そのあと北",
+  "note": ""
+ },
+ {
+  "en": "South Then West",
+  "ja": "南、そのあと西",
+  "note": ""
+ },
+ {
+  "en": "South Then East",
+  "ja": "南、そのあと東",
+  "note": ""
+ },
+ {
+  "en": "Northwest Plant",
+  "ja": "北西に設置",
+  "note": ""
+ },
+ {
+  "en": "Northeast Plant",
+  "ja": "北東に設置",
+  "note": ""
+ },
+ {
+  "en": "Downtime Pattern",
+  "ja": "ダウンタイムありのパターン",
+  "note": ""
+ },
+ {
+  "en": "Frontal on {event.target}",
+  "ja": "{event.target}に前方範囲",
+  "note": ""
+ },
+ {
+  "en": "Death Sentence on {event.target}!",
+  "ja": "{event.target}にデスセンテンス",
+  "note": "技名要確認"
+ },
+ {
+  "en": "In, Stack",
+  "ja": "中、頭割り",
+  "note": ""
+ },
+ {
+  "en": "In, Out",
+  "ja": "中、外",
+  "note": ""
+ },
+ {
+  "en": "Stack, Out",
+  "ja": "頭割り、外",
+  "note": ""
+ },
+ {
+  "en": "Stack, In",
+  "ja": "頭割り、中",
+  "note": ""
+ },
+ {
+  "en": "Spread, Out",
+  "ja": "散開、外",
+  "note": ""
+ },
+ {
+  "en": "Spread, In",
+  "ja": "散開、中",
+  "note": ""
+ },
+ {
+  "en": "Away from Tank and Stack",
+  "ja": "タンクから離れて頭割り",
+  "note": ""
+ },
+ {
+  "en": "Spread Away from Tank",
+  "ja": "タンクから離れて散開",
+  "note": ""
+ },
+ {
+  "en": "Flatten on {event.Target}",
+  "ja": "{event.Target}にフラッテン",
+  "note": "技名要確認"
+ },
+ {
+  "en": "In, Spread, Neuro Spread",
+  "ja": "中、散開、ニューロリンクで散開",
+  "note": ""
+ },
+ {
+  "en": "Spread, In, Neuro, Spread",
+  "ja": "散開、中、ニューロリンク、散開",
+  "note": ""
+ },
+ {
+  "en": "In, Out, Spread",
+  "ja": "中、外、散開",
+  "note": ""
+ },
+ {
+  "en": "Out, Spread, Stack",
+  "ja": "外、散開、頭割り",
+  "note": ""
+ },
+ {
+  "en": "In, Spread, Stack",
+  "ja": "中、散開、頭割り",
+  "note": ""
+ },
+ {
+  "en": "Out, Stack, Spread",
+  "ja": "外、頭割り、散開",
+  "note": ""
+ },
+ {
+  "en": "Cover {jailnum}",
+  "ja": "{jailnum}をカバー",
+  "note": "ジェイルの穴埋め"
+ },
+ {
+  "en": "Mistral on you",
+  "ja": "自分にミストラルソング",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Slipstream",
+  "ja": "スリップストリーム",
+  "note": ""
+ },
+ {
+  "en": "Fetters",
+  "ja": "フェッターズ",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Searing Wind on {event.target}",
+  "ja": "{event.target}にシアリングウィンド",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Ultima",
+  "ja": "アルテマ",
+  "note": ""
+ },
+ {
+  "en": "Homing Laser on {event.target}",
+  "ja": "{event.target}にホーミングレーザー",
+  "note": ""
+ },
+ {
+  "en": "Left Laser",
+  "ja": "左レーザー",
+  "note": ""
+ },
+ {
+  "en": "Middle Laser",
+  "ja": "中央レーザー",
+  "note": ""
+ },
+ {
+  "en": "Right Laser",
+  "ja": "右レーザー",
+  "note": ""
+ },
+ {
+  "en": "{primal1}, {primal2}, {primal3}",
+  "ja": "{primal1}、{primal2}、{primal3}",
+  "note": ""
+ },
+ {
+  "en": "{primal2}",
+  "ja": "{primal2}",
+  "note": ""
+ },
+ {
+  "en": "{primal3}",
+  "ja": "{primal3}",
+  "note": ""
+ },
+ {
+  "en": "Big Donut",
+  "ja": "大きいドーナツ",
+  "note": ""
+ },
+ {
+  "en": "Out of Front",
+  "ja": "前方から離れる",
+  "note": ""
+ },
+ {
+  "en": "Cardinal Safe",
+  "ja": "十字が安置",
+  "note": ""
+ },
+ {
+  "en": "Keep Moving",
+  "ja": "動き続ける",
+  "note": ""
+ },
+ {
+  "en": "Intercard Safe",
+  "ja": "斜めが安置",
+  "note": ""
+ },
+ {
+  "en": "Get Under Green",
+  "ja": "緑の下へ",
+  "note": ""
+ },
+ {
+  "en": "Get Under Boss",
+  "ja": "ボスの下へ",
+  "note": ""
+ },
+ {
+  "en": "Three Puffs",
+  "ja": "泡3つ",
+  "note": "Puff の訳語要確認"
+ },
+ {
+  "en": "Four Puffs and Tethers",
+  "ja": "泡4つと線",
+  "note": "Puff の訳語要確認"
+ },
+ {
+  "en": "{where} Blue Tether",
+  "ja": "{where}の青い線",
+  "note": ""
+ },
+ {
+  "en": "{where} Yellow Tether",
+  "ja": "{where}の黄色い線",
+  "note": ""
+ },
+ {
+  "en": "Eight Puffs",
+  "ja": "泡8つ",
+  "note": "Puff の訳語要確認"
+ },
+ {
+  "en": "Dodge Glowing Orb Patterns",
+  "ja": "光る玉のパターンを避ける",
+  "note": ""
+ },
+ {
+  "en": "Under Boss, Dodge Orb Patterns",
+  "ja": "ボスの下、玉のパターンを避ける",
+  "note": ""
+ },
+ {
+  "en": "Raidwide and Heavy",
+  "ja": "全体攻撃とヘヴィ",
+  "note": ""
+ },
+ {
+  "en": "Heavy Autos",
+  "ja": "強いオートアタック",
+  "note": ""
+ },
+ {
+  "en": "Inside Lines, Watch Charges",
+  "ja": "線の内側、突進を見る",
+  "note": ""
+ },
+ {
+  "en": "Line Stack, Tank in Front",
+  "ja": "直線頭割り、タンクが前",
+  "note": ""
+ },
+ {
+  "en": "Stack on {stack} then Spread",
+  "ja": "{stack}に頭割り、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Spread then Stack on {stack}",
+  "ja": "散開、そのあと{stack}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Bait then Spread",
+  "ja": "誘導、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "Spread then Bait",
+  "ja": "散開、そのあと誘導",
+  "note": ""
+ },
+ {
+  "en": "Stack on {stack}",
+  "ja": "{stack}に頭割り",
+  "note": ""
+ },
+ {
+  "en": "Avoid Lines and Orbs",
+  "ja": "直線と玉を避ける",
+  "note": ""
+ },
+ {
+  "en": "Get Hit By Two Silver Orbs",
+  "ja": "銀の玉に2回当たる",
+  "note": ""
+ },
+ {
+  "en": "Get Hit By Two Gold Orbs",
+  "ja": "金の玉に2回当たる",
+  "note": ""
+ },
+ {
+  "en": "Get Hit By Silver and Gold",
+  "ja": "銀と金に1回ずつ当たる",
+  "note": ""
+ },
+ {
+  "en": "Wait In Middle for Chain",
+  "ja": "中央で鎖を待つ",
+  "note": ""
+ },
+ {
+  "en": "Break Chain",
+  "ja": "鎖を切る",
+  "note": ""
+ },
+ {
+  "en": "Stay Out",
+  "ja": "外のまま",
+  "note": ""
+ },
+ {
+  "en": "Soak Tower then Out",
+  "ja": "塔を踏む、そのあと外",
+  "note": ""
+ },
+ {
+  "en": "Stand in Front",
+  "ja": "前に立つ",
+  "note": ""
+ },
+ {
+  "en": "Stand Behind",
+  "ja": "後ろに立つ",
+  "note": ""
+ },
+ {
+  "en": "Watch Portals",
+  "ja": "ポータルを見る",
+  "note": ""
+ },
+ {
+  "en": "Cut Wires in Debuff Order",
+  "ja": "デバフ順にワイヤーを切る",
+  "note": ""
+ },
+ {
+  "en": "First Brand",
+  "ja": "ブランド1番",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Second Brand",
+  "ja": "ブランド2番",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Third Brand",
+  "ja": "ブランド3番",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Fourth Brand",
+  "ja": "ブランド4番",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Start {startingCorner}",
+  "ja": "{startingCorner}から開始",
+  "note": ""
+ },
+ {
+  "en": "Portals and Baits",
+  "ja": "ポータルと誘導",
+  "note": ""
+ },
+ {
+  "en": "West Counterclockwise",
+  "ja": "西、反時計回り",
+  "note": ""
+ },
+ {
+  "en": "West Clockwise",
+  "ja": "西、時計回り",
+  "note": ""
+ },
+ {
+  "en": "East Counterclockwise",
+  "ja": "東、反時計回り",
+  "note": ""
+ },
+ {
+  "en": "East Clockwise",
+  "ja": "東、時計回り",
+  "note": ""
+ },
+ {
+  "en": "Watch Portals, Find Safe",
+  "ja": "ポータルを見て安置を探す",
+  "note": ""
+ },
+ {
+  "en": "Wires and Baits",
+  "ja": "ワイヤーと誘導",
+  "note": ""
+ },
+ {
+  "en": "Cut Wire 1 then Bait",
+  "ja": "ワイヤー1を切る、そのあと誘導",
+  "note": ""
+ },
+ {
+  "en": "Cut Wire 2 then Bait",
+  "ja": "ワイヤー2を切る、そのあと誘導",
+  "note": ""
+ },
+ {
+  "en": "Bait then Cut Wire 3",
+  "ja": "誘導、そのあとワイヤー3を切る",
+  "note": ""
+ },
+ {
+  "en": "Bait then Cut Wire 4",
+  "ja": "誘導、そのあとワイヤー4を切る",
+  "note": ""
+ }
+]

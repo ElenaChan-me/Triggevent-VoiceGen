@@ -54,7 +54,7 @@ def _model_stamp(path: Path | None) -> list:
 
 class Pipeline:
     def __init__(self, cfg: Config, log: Callable[[str], None] = print,
-                 engine: Callable[[], ContextManager[voicevox.Client]] | None = None):
+                 engine: Callable[[], ContextManager[voicevox.Client]] | None = None, subdir: str | None = None):
         self.cfg = cfg
         self.log = log
         # 画面から1件ずつ作るときは、エンジンを毎回起動し直さないよう外から渡す
@@ -63,6 +63,9 @@ class Pipeline:
         self.rvc_dir = cfg.work / "rvc"
         self.post_dir = cfg.work / "post"
         self.pack_dir = cfg.output / cfg.pack.name
+        # プレイヤー名のように台本に無い音声は、パックの中の別フォルダに置く
+        if subdir:
+            self.pack_dir = self.pack_dir / subdir
 
     # ---- 元の声 ----
     def uses_recording(self, item: Item) -> bool:

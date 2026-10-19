@@ -14,7 +14,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from . import applio, audio, recordings, script, voicevox
+from . import applio, audio, names, recordings, script, voicevox
 from .config import Config, ConfigError
 from .pipeline import Pipeline, SharedEngine
 
@@ -29,6 +29,7 @@ class App:
         self.by_id = {i.id: i for i in self.items}
         self.engine = SharedEngine(cfg)
         self.pipeline = Pipeline(cfg, log=lambda _: None, engine=self.engine)
+        self.names = Pipeline(cfg, log=lambda _: None, engine=self.engine, subdir="names")
         # RVC は GPU を使い、manifest も書き換えるので、作り直しは1件ずつ順番に行う
         self.lock = threading.Lock()
 
@@ -65,6 +66,17 @@ class App:
             self.pipeline.run_all([item])
             self.pipeline.write_manifest(self.items)
         return self.status(item)
+
+    def make_names(self, pack: str, requested: list) -> dict:
+        """Triggevent Plus から頼まれたプレイヤー名の音声を作る。作るのはこのサーバーの設定のパックだけ。"""
+        if pack != self.cfg.pack.name:
+            raise PermissionError(f"このサーバーはパック「{self.cfg.pack.name}」用です（頼まれたのは「{pack}」）。")
+        items = names.items(requested)
+        todo = [i for i in items if not self.names.is_current(i)]
+        if todo:
+            with self.lock:
+                self.names.run_all(todo)
+        return {"pack": self.cfg.pack.name, "generated": len(todo), "ready": [i.id for i in items if self.names.is_current(i)]}
 
     def audio_path(self, kind: str, item: script.Item) -> Path:
         p = self.pipeline
@@ -141,6 +153,8 @@ def make_handler(app: App, origin: str):
             if self._foreign():
                 return
             parts = self._route()
+            if parts == ["api", "names"]:
+                return self._names()
             if len(parts) != 3 or parts[0] != "api" or parts[1] not in ("recording", "generate"):
                 return self._error(HTTPStatus.NOT_FOUND, "見つかりません。")
             try:
@@ -154,6 +168,23 @@ def make_handler(app: App, origin: str):
                     self._json(app.regenerate(item))
             except (ConfigError, voicevox.VoicevoxError, applio.RvcError, audio.AudioError, ValueError) as e:
                 self._error(HTTPStatus.BAD_REQUEST, str(e))
+            except Exception:
+                traceback.print_exc()
+                self._error(HTTPStatus.INTERNAL_SERVER_ERROR, "予期しないエラーが発生しました。コンソールを確認してください。")
+
+        def _names(self):
+            length = int(self.headers.get("Content-Length") or 0)
+            if length <= 0 or length > 64 * 1024:
+                return self._error(HTTPStatus.BAD_REQUEST, "名前の一覧が空か、大きすぎます。")
+            try:
+                body = json.loads(self.rfile.read(length))
+                self._json(app.make_names(str(body.get("pack", "")), list(body.get("names", []))))
+            except PermissionError as e:
+                self._error(HTTPStatus.CONFLICT, str(e))
+            except (ValueError, TypeError, AttributeError) as e:
+                self._error(HTTPStatus.BAD_REQUEST, str(e))
+            except (ConfigError, voicevox.VoicevoxError, applio.RvcError, audio.AudioError) as e:
+                self._error(HTTPStatus.BAD_GATEWAY, str(e))
             except Exception:
                 traceback.print_exc()
                 self._error(HTTPStatus.INTERNAL_SERVER_ERROR, "予期しないエラーが発生しました。コンソールを確認してください。")

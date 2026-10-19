@@ -335,6 +335,30 @@ class ServerTests(unittest.TestCase):
         status, _ = self.call("GET", "/audio/result/..%2Fconfig.toml")
         self.assertEqual(status, 404)
 
+    def test_names_are_generated_into_pack(self):
+        from voicegen import names
+        pack = self.app.cfg.pack.name
+        body = json.dumps({"pack": pack, "names": ["Lily Tayler", "Lily Tayler"]}).encode()
+        status, res = self.call("POST", "/api/names", body)
+        self.assertEqual(status, 200, res)
+        result = json.loads(res)
+        self.assertEqual(result["ready"], ["name_08234852e9"])
+        self.assertEqual(FakeVoicevox.texts[-1:], ["Lily"])  # 名だけを読む
+        self.assertTrue((self.app.cfg.output / pack / "names" / "name_08234852e9.wav").is_file())
+        # 2回目は作り直さない
+        status, res = self.call("POST", "/api/names", body)
+        self.assertEqual(json.loads(res)["generated"], 0)
+
+    def test_names_reject_other_packs_and_bad_names(self):
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": "other", "names": ["Lily Tayler"]}).encode())
+        self.assertEqual(status, 409)
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": self.app.cfg.pack.name, "names": ["../x"]}).encode())
+        self.assertEqual(status, 400)
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": "x", "names": ["Lily Tayler"]}).encode(),
+                              origin="https://evil.example")
+        self.assertEqual(status, 403)
+
+
 class MappingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

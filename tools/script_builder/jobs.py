@@ -1,7 +1,7 @@
 """DoT・リキャストの読み上げを、使うジョブ・クラスごとに分ける。ゲームデータ（XIVAPI）の ClassJob / ClassJobCategory を使う。"""
 import json, urllib.request
 
-UA = {'User-Agent': 'Triggevent-JP voice script builder'}
+UA = {'User-Agent': 'Triggevent-Plus voice script builder'}
 
 
 def get(url):

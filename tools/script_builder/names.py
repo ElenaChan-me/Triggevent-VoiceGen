@@ -1,5 +1,9 @@
-import re, json, urllib.request
-root=r'C:\Users\patop\Desktop\Workspace\Triggevent-JP\xivdata\src\main\java\gg\xp\xivdata\data'
+import os, re, json, sys, urllib.request
+# data/source で実行する。Triggevent Plus のフォルダは引数で指定でき、省略時は隣のフォルダを探す（改名前の名前も見る）
+_base = sys.argv[1] if len(sys.argv) > 1 else next(
+    (os.path.join('..', '..', '..', n) for n in ('Triggevent-Plus', 'Triggevent-JP') if os.path.isdir(os.path.join('..', '..', '..', n))),
+    os.path.join('..', '..', '..', 'Triggevent-Plus'))
+root = os.path.join(_base, 'xivdata', 'src', 'main', 'java', 'gg', 'xp', 'xivdata', 'data')
 NUM=r'(?:0x[0-9a-fA-F]+|\d+)L?'
 def entries(src):
     body=src[src.index('{')+1:]
@@ -31,7 +35,7 @@ def fetch(sheet, ids):
     for i in range(0,len(ids),100):
         chunk=ids[i:i+100]
         url=f"https://v2.xivapi.com/api/sheet/{sheet}?rows={','.join(map(str,chunk))}&fields=Name&language=ja"
-        req=urllib.request.Request(url, headers={'User-Agent':'Triggevent-JP voice script builder'})
+        req=urllib.request.Request(url, headers={'User-Agent':'Triggevent-Plus voice script builder'})
         data=json.load(urllib.request.urlopen(req))
         for r in data['rows']: out[r['row_id']]=r['fields']['Name']
     return out

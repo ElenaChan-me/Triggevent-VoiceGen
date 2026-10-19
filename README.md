@@ -58,6 +58,16 @@ The script is the Japanese version of Triggevent Plus's callouts. Each stage is 
 
 段階を指定して実行することもできます（`--stage tts` / `rvc` / `post`）。特定のセリフだけ作るときは `--only <ID>` を使います。
 
+配布用の zip（`voicepack-<名前>.zip`、XIVToolHub でインストールできる形）は `python -m voicegen package dist` で作ります。プレイヤー名の音声（`names`）は入れません。
+
+`python -m voicegen package dist` builds the distributable zip (`voicepack-<name>.zip`) that XIVToolHub can install. Player name clips are not included.
+
+### プレイヤー名 / Player names
+
+`python -m voicegen names "Lily Tayler"` で、パックの `names` フォルダに名前の音声を作ります（読むのは名だけです）。`python -m voicegen ui` を起動している間は、Triggevent Plus の設定で有効にすると、パーティが変わったときに自動で頼まれます（`/api/names`、127.0.0.1 のみ）。
+
+`python -m voicegen names "Lily Tayler"` creates name clips in the pack's `names` folder (first name only). While `ui` is running, Triggevent Plus can request them automatically via `/api/names` (127.0.0.1 only).
+
 ## 自分の声で直す / Fixing lines with your own voice
 
 TTS の読み方がおかしいセリフは、自分で読んだ声を RVC に通して差し替えられます。録音があるセリフは、VOICEVOX の代わりに録音が使われます。

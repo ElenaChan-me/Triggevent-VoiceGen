@@ -335,6 +335,60 @@ class ServerTests(unittest.TestCase):
         status, _ = self.call("GET", "/audio/result/..%2Fconfig.toml")
         self.assertEqual(status, 404)
 
+    def test_names_are_generated_into_pack(self):
+        from voicegen import names
+        pack = self.app.cfg.pack.name
+        body = json.dumps({"pack": pack, "names": ["Lily Tayler", "Lily Tayler"]}).encode()
+        status, res = self.call("POST", "/api/names", body)
+        self.assertEqual(status, 200, res)
+        result = json.loads(res)
+        self.assertEqual(result["ready"], ["name_08234852e9"])
+        self.assertEqual(FakeVoicevox.texts[-1:], ["Lily"])  # 名だけを読む
+        self.assertTrue((self.app.cfg.output / pack / "names" / "name_08234852e9.wav").is_file())
+        # 2回目は作り直さない
+        status, res = self.call("POST", "/api/names", body)
+        self.assertEqual(json.loads(res)["generated"], 0)
+
+    def test_names_reject_other_packs_and_bad_names(self):
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": "other", "names": ["Lily Tayler"]}).encode())
+        self.assertEqual(status, 409)
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": self.app.cfg.pack.name, "names": ["../x"]}).encode())
+        self.assertEqual(status, 400)
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": "x", "names": ["Lily Tayler"]}).encode(),
+                              origin="https://evil.example")
+        self.assertEqual(status, 403)
+
+
+class PackageTests(unittest.TestCase):
+    def test_zip_has_manifest_at_top_and_skips_names(self):
+        import zipfile
+        from voicegen import package
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            cfg = config.load(write_config(base, 1))
+            pack = cfg.output / cfg.pack.name
+            (pack / "names").mkdir(parents=True)
+            (pack / "names" / "name_0123456789.wav").write_bytes(make_wav())
+            (pack / "L_1.wav").write_bytes(make_wav())
+            (pack / "callouts.json").write_text("{}", encoding="utf-8")
+            (pack / "manifest.json").write_text(json.dumps({"entries": {"L_1": {"file": "L_1.wav"}}}), encoding="utf-8")
+            out = package.build(cfg, base / "dist")
+            self.assertEqual(out.name, f"voicepack-{cfg.pack.name}.zip")
+            with zipfile.ZipFile(out) as z:
+                self.assertEqual(sorted(z.namelist()), ["CREDITS.txt", "L_1.wav", "callouts.json", "manifest.json"])
+
+    def test_missing_audio_is_reported(self):
+        from voicegen import package
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            cfg = config.load(write_config(base, 1))
+            pack = cfg.output / cfg.pack.name
+            pack.mkdir(parents=True)
+            (pack / "manifest.json").write_text(json.dumps({"entries": {"L_1": {"file": "L_1.wav"}}}), encoding="utf-8")
+            with self.assertRaises(ConfigError):
+                package.build(cfg, base / "dist")
+
+
 class MappingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

@@ -359,6 +359,36 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(status, 403)
 
 
+class PackageTests(unittest.TestCase):
+    def test_zip_has_manifest_at_top_and_skips_names(self):
+        import zipfile
+        from voicegen import package
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            cfg = config.load(write_config(base, 1))
+            pack = cfg.output / cfg.pack.name
+            (pack / "names").mkdir(parents=True)
+            (pack / "names" / "name_0123456789.wav").write_bytes(make_wav())
+            (pack / "L_1.wav").write_bytes(make_wav())
+            (pack / "callouts.json").write_text("{}", encoding="utf-8")
+            (pack / "manifest.json").write_text(json.dumps({"entries": {"L_1": {"file": "L_1.wav"}}}), encoding="utf-8")
+            out = package.build(cfg, base / "dist")
+            self.assertEqual(out.name, f"voicepack-{cfg.pack.name}.zip")
+            with zipfile.ZipFile(out) as z:
+                self.assertEqual(sorted(z.namelist()), ["CREDITS.txt", "L_1.wav", "callouts.json", "manifest.json"])
+
+    def test_missing_audio_is_reported(self):
+        from voicegen import package
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            cfg = config.load(write_config(base, 1))
+            pack = cfg.output / cfg.pack.name
+            pack.mkdir(parents=True)
+            (pack / "manifest.json").write_text(json.dumps({"entries": {"L_1": {"file": "L_1.wav"}}}), encoding="utf-8")
+            with self.assertRaises(ConfigError):
+                package.build(cfg, base / "dist")
+
+
 class MappingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

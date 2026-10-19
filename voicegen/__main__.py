@@ -10,6 +10,7 @@
     python -m voicegen record L_1a2b3c4d 録音.wav   録音ファイルを取り込む（TTS の代わりに使う）
     python -m voicegen record L_1a2b3c4d --delete  録音を消して TTS に戻す
     python -m voicegen names "Lily Tayler" ...    プレイヤー名の音声を作る（Triggevent Plus は ui のサーバーに自動で頼む）
+    python -m voicegen package dist                 配布用の zip（voicepack-<名前>.zip）を作る
     python -m voicegen export-mapping callouts-ja.json  画面表示の日本語化に使う対応表を書き出す（Triggevent Plus に同梱する）
 """
 from __future__ import annotations
@@ -20,7 +21,7 @@ import json
 import sys
 from pathlib import Path
 
-from . import applio, audio, config, mapping, names, recordings, script, server, voicevox
+from . import applio, audio, config, mapping, names, package, recordings, script, server, voicevox
 from .pipeline import Pipeline
 
 
@@ -97,6 +98,11 @@ def cmd_names(cfg: config.Config, args) -> None:
         print(f"{n}	{item.id}	{item.text}")
 
 
+def cmd_package(cfg: config.Config, args) -> None:
+    out = package.build(cfg, Path(args.out))
+    print(f"{out} ({out.stat().st_size / 1024 / 1024:.1f} MB)")
+
+
 def cmd_export_mapping(cfg: config.Config, args) -> None:
     # 語尾のスタイルは付けない。画面表示とパックが無いときの読み上げに使う、素の日本語の対応表
     data = mapping.build(script.load(cfg.script))
@@ -127,6 +133,8 @@ def main(argv: list[str] | None = None) -> int:
     rec.add_argument("--delete", action="store_true", help="録音を消して TTS に戻す")
     nm = sub.add_parser("names", help="プレイヤー名の音声を作る")
     nm.add_argument("names", nargs="+", help="キャラクター名（例: \"Lily Tayler\"）")
+    pk = sub.add_parser("package", help="配布用の zip を作る")
+    pk.add_argument("out", nargs="?", default="dist", help="出力先のフォルダ")
     exp = sub.add_parser("export-mapping", help="画面表示の日本語化に使う対応表を書き出す")
     exp.add_argument("out", type=Path, help="書き出すファイル")
     ui = sub.add_parser("ui", help="セリフを選んで録音・作り直しをする画面を開く")
@@ -138,7 +146,7 @@ def main(argv: list[str] | None = None) -> int:
         cfg = config.load(args.config)
         commands = {"speakers": cmd_speakers, "list": cmd_list, "generate": cmd_generate,
                     "find": cmd_find, "record": cmd_record, "ui": cmd_ui,
-                    "export-mapping": cmd_export_mapping, "names": cmd_names}
+                    "export-mapping": cmd_export_mapping, "names": cmd_names, "package": cmd_package}
         commands[args.command](cfg, args)
     except (config.ConfigError, voicevox.VoicevoxError, applio.RvcError, audio.AudioError, ValueError, OSError) as e:
         print(f"エラー: {e}", file=sys.stderr)

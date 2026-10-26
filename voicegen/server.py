@@ -67,16 +67,35 @@ class App:
             self.pipeline.write_manifest(self.items)
         return self.status(item)
 
-    def make_names(self, pack: str, requested: list) -> dict:
-        """Triggevent Plus から頼まれたプレイヤー名の音声を作る。作るのはこのサーバーの設定のパックだけ。"""
+    def make_names(self, pack: str, requested: list, directory: str | None = None) -> dict:
+        """Triggevent Plus から頼まれたプレイヤー名の音声を作る。作るのはこのサーバーの設定のパックだけ。
+
+        directory はパックのフォルダ。XIVToolHub で入れたパックは出力先と違う場所にあるので、そのパックの names に置く。
+        書き込むのは、同じ名前のパックの manifest.json があるフォルダの names だけに限る。
+        """
         if pack != self.cfg.pack.name:
             raise PermissionError(f"このサーバーはパック「{self.cfg.pack.name}」用です（頼まれたのは「{pack}」）。")
+        pipe = self.names if not directory else self.names_for(Path(directory))
         items = names.items(requested)
-        todo = [i for i in items if not self.names.is_current(i)]
+        todo = [i for i in items if not pipe.is_current(i)]
         if todo:
             with self.lock:
-                self.names.run_all(todo)
-        return {"pack": self.cfg.pack.name, "generated": len(todo), "ready": [i.id for i in items if self.names.is_current(i)]}
+                pipe.run_all(todo)
+        return {"pack": self.cfg.pack.name, "generated": len(todo), "ready": [i.id for i in items if pipe.is_current(i)]}
+
+    def names_for(self, directory: Path) -> Pipeline:
+        if not directory.is_absolute():
+            raise ValueError("パックのフォルダは絶対パスで指定してください。")
+        manifest = directory / "manifest.json"
+        try:
+            name = json.loads(manifest.read_text(encoding="utf-8")).get("name")
+        except (OSError, ValueError) as e:
+            raise ValueError(f"パックのフォルダに manifest.json がありません: {directory}") from e
+        if name != self.cfg.pack.name:
+            raise PermissionError(f"{directory} はパック「{self.cfg.pack.name}」ではありません。")
+        pipe = Pipeline(self.cfg, log=lambda _: None, engine=self.engine, subdir="names")
+        pipe.pack_dir = directory.resolve() / "names"
+        return pipe
 
     def audio_path(self, kind: str, item: script.Item) -> Path:
         p = self.pipeline
@@ -178,7 +197,9 @@ def make_handler(app: App, origin: str):
                 return self._error(HTTPStatus.BAD_REQUEST, "名前の一覧が空か、大きすぎます。")
             try:
                 body = json.loads(self.rfile.read(length))
-                self._json(app.make_names(str(body.get("pack", "")), list(body.get("names", []))))
+                directory = body.get("directory")
+                self._json(app.make_names(str(body.get("pack", "")), list(body.get("names", [])),
+                                          str(directory) if directory else None))
             except PermissionError as e:
                 self._error(HTTPStatus.CONFLICT, str(e))
             except (ValueError, TypeError, AttributeError) as e:
@@ -221,7 +242,10 @@ def make_handler(app: App, origin: str):
 
 def serve(cfg: Config, port: int, open_browser: bool = True) -> None:
     app = App(cfg)
-    server = ThreadingHTTPServer(("127.0.0.1", port), None)
+    try:
+        server = ThreadingHTTPServer(("127.0.0.1", port), None)
+    except OSError as e:
+        raise SystemExit(f"ポート {port} を使えません（{e}）。--port で別の番号にし、Triggevent Plus の「VoiceGen URL」も合わせてください。")
     origin = f"http://127.0.0.1:{server.server_address[1]}"
     server.RequestHandlerClass = make_handler(app, origin)
     print(f"録音・修正の画面: {origin}  （終了するには Ctrl+C）")

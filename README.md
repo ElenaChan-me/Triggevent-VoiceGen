@@ -26,12 +26,14 @@ The script is the Japanese version of Triggevent Plus's callouts. Each stage is 
 - [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)（`config.toml` の `engine` にパスを書くと、自動で起動・終了します）
 - [Applio](https://github.com/IAHispano/Applio)（RVC を使う場合）と、RVC モデル（`.pth`、あれば `.index`）
 
-この PC では、ツールを `D:\VoiceGenTools` に置いています。
+ツールは好きな場所に置き、`config.toml` にその場所を書きます。Applio や RVC モデルは、日本語を含まないパス（例: `C:\Tools\Applio`）に置くと失敗しにくくなります。
 
-| ツール | 場所 | 補足 |
+| ツール | 置き場所の例 | 補足 |
 | --- | --- | --- |
-| Applio 3.6.5 | `D:\VoiceGenTools\Applio` | Python 3.12 と PyTorch 2.11（CUDA 12.8）の仮想環境 `.venv`。RTX 50 シリーズに対応 |
-| VOICEVOX ENGINE 0.25.2（CPU 版） | `D:\VoiceGenTools\voicevox_engine\windows-cpu` | |
+| Applio 3.6.5 | `C:\Tools\Applio` | `[rvc] applio` に書く。Python は `.venv` / `env` / `runtime` から探し、別の場所なら `[rvc] python` に書く。NVIDIA の GPU が無いと変換がとても遅い |
+| VOICEVOX ENGINE 0.25.2 | `C:\Tools\voicevox_engine\windows-cpu` | `[voicevox] engine` に `run.exe` を書くと自動で起動する |
+
+Install the tools anywhere and write their locations in `config.toml`; ASCII-only paths are safer for Applio and RVC models. Python 3.11 or later is required (`py -3.11 -m voicegen ...`).
 
 ## 使い方 / Usage
 

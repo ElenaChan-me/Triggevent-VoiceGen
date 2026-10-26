@@ -133,6 +133,9 @@ class ConfigTests(unittest.TestCase):
             path = write_config(Path(tmp), 1, extra=["[rvc]", 'enabled = true'])
             with self.assertRaises(ConfigError):
                 config.load(path)  # model が無い
+            path = write_config(Path(tmp), 1, extra=["[rvc]", 'enabled = true', 'model = "voice.pth"'])
+            with self.assertRaises(ConfigError):
+                config.load(path)  # applio が無い（開発者の PC の場所を既定にしない）
             path.write_text('[voicevox]\nspeaker = 1\nspeed = 5.0\n', encoding="utf-8")
             with self.assertRaises(ConfigError):
                 config.load(path)
@@ -142,6 +145,18 @@ class ConfigTests(unittest.TestCase):
 
 
 class ApplioTests(unittest.TestCase):
+    def test_python_is_found_for_each_install_style(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            rvc = config.Rvc(True, base, None, None, 0, 0.3, 0.33, "rmvpe", 1.0, "contentvec", [])
+            # 何も無いときは .venv を案内する
+            self.assertEqual(applio.python_path(rvc), base / ".venv" / "Scripts" / "python.exe")
+            (base / "env").mkdir()
+            (base / "env" / "python.exe").write_bytes(b"")
+            self.assertEqual(applio.python_path(rvc), base / "env" / "python.exe")
+            own = config.Rvc(True, base, None, None, 0, 0.3, 0.33, "rmvpe", 1.0, "contentvec", [], python=base / "py.exe")
+            self.assertEqual(applio.python_path(own), base / "py.exe")
+
     def test_command_and_output_name(self):
         rvc = config.Rvc(True, Path("C:/Applio"), Path("C:/m/a.pth"), None, 2, 0.5, 0.3, "rmvpe", 1.0, "contentvec", ["--split-audio"])
         cmd = applio.build_command(rvc, Path("in"), Path("out"))
@@ -348,6 +363,27 @@ class ServerTests(unittest.TestCase):
         # 2回目は作り直さない
         status, res = self.call("POST", "/api/names", body)
         self.assertEqual(json.loads(res)["generated"], 0)
+
+    def test_names_go_into_pack_installed_elsewhere(self):
+        pack = self.app.cfg.pack.name
+        installed = self.base / "hub" / "voicepack"
+        installed.mkdir(parents=True)
+        (installed / "manifest.json").write_text(json.dumps({"name": pack}), encoding="utf-8")
+        body = json.dumps({"pack": pack, "directory": str(installed), "names": ["Lily Tayler"]}).encode()
+        status, res = self.call("POST", "/api/names", body)
+        self.assertEqual(status, 200, res)
+        self.assertTrue((installed / "names" / "name_08234852e9.wav").is_file())
+        self.assertFalse((self.app.cfg.output / pack / "names" / "name_08234852e9.wav").exists())
+        # 別のパックのフォルダや、manifest.json の無いフォルダには書かない
+        other = self.base / "hub" / "other"
+        other.mkdir()
+        (other / "manifest.json").write_text(json.dumps({"name": "other"}), encoding="utf-8")
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": pack, "directory": str(other), "names": ["Lily Tayler"]}).encode())
+        self.assertEqual(status, 409)
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": pack, "directory": str(self.base), "names": ["Lily Tayler"]}).encode())
+        self.assertEqual(status, 400)
+        status, _ = self.call("POST", "/api/names", json.dumps({"pack": pack, "directory": "relative/dir", "names": ["Lily Tayler"]}).encode())
+        self.assertEqual(status, 400)
 
     def test_names_reject_other_packs_and_bad_names(self):
         status, _ = self.call("POST", "/api/names", json.dumps({"pack": "other", "names": ["Lily Tayler"]}).encode())

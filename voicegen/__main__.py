@@ -18,8 +18,13 @@ from __future__ import annotations
 import argparse
 import collections
 import json
+import shutil
 import sys
 from pathlib import Path
+
+# 設定ファイルの読み込み（tomllib）に 3.11 以降が要る。古いと理由の分からないエラーになるので先に止める
+if sys.version_info < (3, 11):
+    sys.exit("Python 3.11 以降が必要です（今は %d.%d）。py -3.11 -m voicegen ... のように実行してください。" % sys.version_info[:2])
 
 from . import applio, audio, config, mapping, names, package, recordings, script, server, voicevox
 from .pipeline import Pipeline
@@ -55,6 +60,9 @@ def cmd_generate(cfg: config.Config, args) -> None:
     items = _items(cfg, args.only, args.limit)
     pipe = Pipeline(cfg)
     stages = [args.stage] if args.stage else ["tts", "rvc", "post"]
+    # 仕上げは最後の段階なので、ffmpeg が無いと全部の TTS を終えてから失敗する。先に確かめる
+    if "post" in stages and shutil.which(cfg.post.ffmpeg) is None and not Path(cfg.post.ffmpeg).is_file():
+        raise audio.AudioError(f"ffmpeg が見つかりません: {cfg.post.ffmpeg}（PATH に追加するか、[post] ffmpeg に場所を書いてください）")
     if "tts" in stages:
         pipe.run_tts(items)
     if "rvc" in stages:

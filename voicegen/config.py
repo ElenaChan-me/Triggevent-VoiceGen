@@ -51,6 +51,8 @@ class Rvc:
     volume_envelope: float
     embedder: str
     extra_args: list[str]
+    # Applio の Python。空なら Applio のフォルダから探す
+    python: Path | None = None
 
 
 @dataclass(frozen=True)
@@ -154,6 +156,9 @@ def load(path: Path) -> Config:
     index = _path(base, _get(rvc, "index", str, ""))
     if rvc_enabled and model is None:
         raise ConfigError("[rvc] enabled = true のときは model（.pth）を指定してください。")
+    applio_dir = _path(base, _get(rvc, "applio", str, ""))
+    if rvc_enabled and applio_dir is None:
+        raise ConfigError("[rvc] enabled = true のときは applio（Applio をインストールしたフォルダ）を指定してください。")
     f0 = _get(rvc, "f0_method", str, "rmvpe")
     if f0 not in F0_METHODS:
         raise ConfigError(f"f0_method は {sorted(F0_METHODS)} のいずれかを指定してください: {f0}")
@@ -210,7 +215,7 @@ def load(path: Path) -> Config:
         readings=dict(readings),
         rvc=Rvc(
             enabled=rvc_enabled,
-            applio=_path(base, _get(rvc, "applio", str, "D:/VoiceGenTools/Applio")),
+            applio=applio_dir or base,
             model=model,
             index=index,
             pitch=int(_range("pitch", _get(rvc, "pitch", int, 0), -24, 24)),
@@ -220,6 +225,7 @@ def load(path: Path) -> Config:
             volume_envelope=_range("volume_envelope", _get(rvc, "volume_envelope", float, 1.0), 0.0, 1.0),
             embedder=embedder,
             extra_args=list(extra_args),
+            python=_path(base, _get(rvc, "python", str, "")),
         ),
         post=Post(
             ffmpeg=_get(post, "ffmpeg", str, "ffmpeg"),

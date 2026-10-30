@@ -18,7 +18,8 @@ jobless_dots = false  # ジョブに属さない DoT（ヴァリアントダン�
 [voicevox]
 url = "http://127.0.0.1:50021"
 # 起動していないときに自動で起動するエンジン（不要なら空にして、自分で起動しておく）
-engine = "D:/VoiceGenTools/voicevox_engine/windows-cpu/run.exe"
+# 例: engine = "C:/Tools/voicevox_engine/windows-cpu/run.exe"
+engine = ""
 speaker = 2           # スタイル ID。python -m voicegen speakers で一覧を表示できる
 speed = 1.15          # 話速（0.5〜2.0）。戦闘中に聞くので少し速めにしている
 pitch = 0.0           # 音高（-0.15〜0.15）
@@ -43,7 +44,10 @@ end_moras = 2
 
 [rvc]
 enabled = false       # モデルが決まったら true にする
-applio = "D:/VoiceGenTools/Applio"
+# Applio をインストールしたフォルダ（例: "C:/Tools/Applio"）。日本語を含まない場所に置くと失敗しにくい
+applio = ""
+# Applio の Python。空なら Applio のフォルダの .venv / env / runtime から探す
+python = ""
 model = "models/voice.pth"
 index = "models/voice.index"   # 無い場合は空文字にする
 pitch = 0             # 半音単位（-24〜24）

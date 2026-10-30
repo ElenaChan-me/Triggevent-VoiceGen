@@ -138,4 +138,7 @@ VOICEVOX は偽のサーバーで代用するので、エンジンが無くて�
 - **RVC モデル:** 声の持ち主とモデル作者から利用の許可を得たモデルだけを使ってください。実在の人物の声を本人の許可なく使わないでください。
 - **クレジット表記:** `[pack] credit` に書いた内容は `manifest.json` に入ります。
 
+- **配布しているボイスパック:** [Releases](https://github.com/ElenaChan-me/Triggevent-VoiceGen/releases/latest) の `voicepack-mia.zip`（VOICEVOX:四国めたん / RVC: みあ）と `voicepack-tsukino.zip`（VOICEVOX:冥鳴ひまり / RVC: つきの）は、Triggevent Plus の読み上げに使うためのものです。各話者・モデルの規約に従い、ほかの用途の素材として再配布しないでください。
+
 Each VOICEVOX speaker has its own terms (most require a "VOICEVOX:speaker" credit). Only use RVC models you have permission to use, and never imitate a real person's voice without their consent.
+The released voice packs are for Triggevent Plus callouts only; do not redistribute them as general-purpose voice material.

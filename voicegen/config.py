@@ -244,3 +244,17 @@ def load(path: Path) -> Config:
         ),
         style=style,
     )
+
+
+def find_for_pack(folder: Path, name: str) -> Path:
+    """パック名から設定ファイルを探す。Triggevent Plus は使っているパックの名前しか知らないので、これで選ぶ。"""
+    for path in sorted(folder.glob("config*.toml")):
+        if path.name == "config.example.toml":
+            continue
+        try:
+            pack = tomllib.loads(path.read_text(encoding="utf-8")).get("pack", {})
+        except (OSError, tomllib.TOMLDecodeError):
+            continue
+        if isinstance(pack, dict) and pack.get("name") == name:
+            return path
+    raise ConfigError(f"パック「{name}」の設定ファイル（config*.toml）が見つかりません: {folder}")

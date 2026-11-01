@@ -68,7 +68,15 @@ Install the tools anywhere and write their locations in `config.toml`; ASCII-onl
 
 `python -m voicegen names "Lily Tayler"` で、パックの `names` フォルダに名前の音声を作ります（読むのは名だけです）。`python -m voicegen ui` を起動している間は、Triggevent Plus の設定で有効にすると、パーティが変わったときに自動で頼まれます（`/api/names`、127.0.0.1 のみ）。
 
+Triggevent Plus の「VoiceGen のフォルダ（自動で起動）」にこのフォルダを登録すると、サーバーを手で起動しなくても、名前が必要になったときに Triggevent Plus が `python -m voicegen --pack <パック名> ui --no-browser --parent-pid <PID>` で起動します。
+
+- `--pack` は、`[pack] name` が一致する `config*.toml` を選びます。
+- `--parent-pid` を付けると、起動元が終わったときに VOICEVOX を止めてからサーバーも終わります。
+- フォルダに `.venv` があればその Python を、無ければ PATH の `python` を使います。
+- サーバーのログは `work/voicegen-server.log` に出ます。
+
 `python -m voicegen names "Lily Tayler"` creates name clips in the pack's `names` folder (first name only). While `ui` is running, Triggevent Plus can request them automatically via `/api/names` (127.0.0.1 only).
+If this folder is set as "VoiceGen folder" in Triggevent Plus, it starts the server itself when needed (`--pack` picks the matching `config*.toml`, `--parent-pid` stops the server and VOICEVOX when Triggevent Plus exits). The server log is written to `work/voicegen-server.log`.
 
 ## 自分の声で直す / Fixing lines with your own voice
 

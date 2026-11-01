@@ -143,6 +143,22 @@ class ConfigTests(unittest.TestCase):
             from voicegen.voicevox import Client
             Client("http://example.com:50021")
 
+    def test_config_is_found_by_pack_name(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            main = write_config(base, 1)
+            other = base / "config.tsukino.toml"
+            other.write_text(main.read_text(encoding="utf-8").replace('name = "test"', 'name = "tsukino"'), encoding="utf-8")
+            # 例の設定は選ばない
+            (base / "config.example.toml").write_text('[pack]\nname = "example"\n', encoding="utf-8")
+            (base / "config.broken.toml").write_text("[pack\n", encoding="utf-8")
+            self.assertEqual(config.find_for_pack(base, "test"), main)
+            self.assertEqual(config.find_for_pack(base, "tsukino"), other)
+            with self.assertRaises(ConfigError):
+                config.find_for_pack(base, "example")
+            with self.assertRaises(ConfigError):
+                config.find_for_pack(base, "missing")
+
 
 class ApplioTests(unittest.TestCase):
     def test_python_is_found_for_each_install_style(self):
@@ -287,6 +303,22 @@ class RecordingTests(unittest.TestCase):
         self.assertEqual(dict(calls)[-5], [f"{items[0].id}.wav"])
         with mock.patch.object(applio, "convert", side_effect=fake_convert):
             self.assertEqual(pipe.run_rvc(items), 0)
+
+
+class ParentWatchTests(unittest.TestCase):
+    def test_wait_for_exit_returns_when_parent_ends(self):
+        import sys
+        import time
+        from voicegen import server
+        child = subprocess.Popen([sys.executable, "-c", "import time; time.sleep(0.5)"])
+        started = time.monotonic()
+        server.wait_for_exit(child.pid)
+        self.assertIsNotNone(child.wait(timeout=5))
+        self.assertGreater(time.monotonic() - started, 0.2)
+        # すでに終わったプロセスでは待たない
+        started = time.monotonic()
+        server.wait_for_exit(child.pid)
+        self.assertLess(time.monotonic() - started, 5)
 
 
 @unittest.skipUnless(shutil.which("ffmpeg"), "ffmpeg が必要")

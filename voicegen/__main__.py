@@ -7,6 +7,7 @@
     python -m voicegen generate --only L_1a2b3c4d S_...   一部のセリフだけ作る（試聴用）
     python -m voicegen find 散開              セリフを検索して ID を表示
     python -m voicegen ui                    セリフを選んで自分の声を録音・作り直す画面を開く
+    python -m voicegen --pack tsukino ui     パック名から設定ファイル（config*.toml）を選んで開く
     python -m voicegen record L_1a2b3c4d 録音.wav   録音ファイルを取り込む（TTS の代わりに使う）
     python -m voicegen record L_1a2b3c4d --delete  録音を消して TTS に戻す
     python -m voicegen names "Lily Tayler" ...    プレイヤー名の音声を作る（Triggevent Plus は ui のサーバーに自動で頼む）
@@ -119,12 +120,13 @@ def cmd_export_mapping(cfg: config.Config, args) -> None:
 
 
 def cmd_ui(cfg: config.Config, args) -> None:
-    server.serve(cfg, args.port, open_browser=not args.no_browser)
+    server.serve(cfg, args.port, open_browser=not args.no_browser, parent_pid=args.parent_pid)
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="voicegen", description="Triggevent Plus のボイスパックを作る")
-    parser.add_argument("--config", type=Path, default=Path("config.toml"), help="設定ファイル（既定: config.toml）")
+    parser.add_argument("--config", type=Path, help="設定ファイル（既定: config.toml）")
+    parser.add_argument("--pack", help="パック名から設定ファイル（config*.toml）を選ぶ。--config と一緒には使えない")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("speakers", help="VOICEVOX の話者とスタイル ID を表示")
     sub.add_parser("list", help="生成対象のセリフ数を表示")
@@ -148,10 +150,13 @@ def main(argv: list[str] | None = None) -> int:
     ui = sub.add_parser("ui", help="セリフを選んで録音・作り直しをする画面を開く")
     ui.add_argument("--port", type=int, default=8765, help="待ち受けるポート（既定: 8765。0 なら空いているポート）")
     ui.add_argument("--no-browser", action="store_true", help="ブラウザを自動で開かない")
+    ui.add_argument("--parent-pid", type=int, help="このプロセスが終わったらサーバーも止める（Triggevent Plus から起動するとき）")
     args = parser.parse_args(argv)
 
     try:
-        cfg = config.load(args.config)
+        if args.pack and args.config:
+            raise config.ConfigError("--pack と --config は一緒に指定できません。")
+        cfg = config.load(config.find_for_pack(Path.cwd(), args.pack) if args.pack else args.config or Path("config.toml"))
         commands = {"speakers": cmd_speakers, "list": cmd_list, "generate": cmd_generate,
                     "find": cmd_find, "record": cmd_record, "ui": cmd_ui,
                     "export-mapping": cmd_export_mapping, "names": cmd_names, "package": cmd_package}

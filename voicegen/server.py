@@ -5,8 +5,11 @@
 from __future__ import annotations
 
 import json
+import os
+import sys
 import tempfile
 import threading
+import time
 import traceback
 import webbrowser
 from http import HTTPStatus
@@ -19,6 +22,8 @@ from .config import Config, ConfigError
 from .pipeline import Pipeline, SharedEngine
 
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024
+# 起動元が終わったかを確かめる間隔（Windows 以外）
+PARENT_POLL_SECONDS = 2
 UI_FILE = Path(__file__).with_name("ui.html")
 
 
@@ -240,7 +245,29 @@ def make_handler(app: App, origin: str):
     return Handler
 
 
-def serve(cfg: Config, port: int, open_browser: bool = True) -> None:
+def wait_for_exit(pid: int) -> None:
+    """pid のプロセスが終わるまで待つ。すでに無ければすぐ戻る。"""
+    if sys.platform == "win32":
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        synchronize, infinite = 0x00100000, 0xFFFFFFFF
+        handle = kernel32.OpenProcess(synchronize, False, pid)
+        if not handle:
+            return
+        try:
+            kernel32.WaitForSingleObject(handle, infinite)
+        finally:
+            kernel32.CloseHandle(handle)
+        return
+    while True:
+        try:
+            os.kill(pid, 0)
+        except OSError:
+            return
+        time.sleep(PARENT_POLL_SECONDS)
+
+
+def serve(cfg: Config, port: int, open_browser: bool = True, parent_pid: int | None = None) -> None:
     app = App(cfg)
     try:
         server = ThreadingHTTPServer(("127.0.0.1", port), None)
@@ -251,6 +278,14 @@ def serve(cfg: Config, port: int, open_browser: bool = True) -> None:
     print(f"録音・修正の画面: {origin}  （終了するには Ctrl+C）")
     if open_browser:
         webbrowser.open(origin)
+    if parent_pid:
+        # Triggevent Plus から起動したときは、Triggevent が終わったら VOICEVOX も止めて一緒に終わる。
+        # 強制終了されると VOICEVOX が残るので、自分で抜けて finally の後片付けを通す
+        def stop_with_parent():
+            wait_for_exit(parent_pid)
+            print("起動元のプロセスが終了したので、サーバーを止めます。")
+            server.shutdown()
+        threading.Thread(target=stop_with_parent, daemon=True).start()
     try:
         server.serve_forever()
     except KeyboardInterrupt:

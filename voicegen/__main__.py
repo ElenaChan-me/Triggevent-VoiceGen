@@ -11,6 +11,7 @@
     python -m voicegen record L_1a2b3c4d 録音.wav   録音ファイルを取り込む（TTS の代わりに使う）
     python -m voicegen record L_1a2b3c4d --delete  録音を消して TTS に戻す
     python -m voicegen names "Lily Tayler" ...    プレイヤー名の音声を作る（Triggevent Plus は ui のサーバーに自動で頼む）
+    python -m voicegen lines "北東が安置" ...      台本に無い読み上げの音声を作る（Triggevent Plus は ui のサーバーに自動で頼む）
     python -m voicegen package dist                 配布用の zip（voicepack-<名前>.zip）を作る
     python -m voicegen export-mapping callouts-ja.json  画面表示の日本語化に使う対応表を書き出す（Triggevent Plus に同梱する）
 """
@@ -27,7 +28,7 @@ from pathlib import Path
 if sys.version_info < (3, 11):
     sys.exit("Python 3.11 以降が必要です（今は %d.%d）。py -3.11 -m voicegen ... のように実行してください。" % sys.version_info[:2])
 
-from . import applio, audio, config, mapping, names, package, recordings, script, server, voicevox
+from . import applio, audio, config, lines, mapping, names, package, recordings, script, server, voicevox
 from .pipeline import Pipeline
 
 
@@ -107,6 +108,13 @@ def cmd_names(cfg: config.Config, args) -> None:
         print(f"{n}	{item.id}	{item.text}")
 
 
+def cmd_lines(cfg: config.Config, args) -> None:
+    items = lines.items(args.lines)
+    Pipeline(cfg, subdir="lines").run_all(items)
+    for item in items:
+        print(f"{item.id}\t{item.text}")
+
+
 def cmd_package(cfg: config.Config, args) -> None:
     out = package.build(cfg, Path(args.out))
     print(f"{out} ({out.stat().st_size / 1024 / 1024:.1f} MB)")
@@ -143,6 +151,8 @@ def main(argv: list[str] | None = None) -> int:
     rec.add_argument("--delete", action="store_true", help="録音を消して TTS に戻す")
     nm = sub.add_parser("names", help="プレイヤー名の音声を作る")
     nm.add_argument("names", nargs="+", help="キャラクター名（例: \"Lily Tayler\"）")
+    ln = sub.add_parser("lines", help="台本に無い読み上げの音声を作る（日本語の文）")
+    ln.add_argument("lines", nargs="+", help="読み上げる日本語の文（例: \"北東が安置\"）")
     pk = sub.add_parser("package", help="配布用の zip を作る")
     pk.add_argument("out", nargs="?", default="dist", help="出力先のフォルダ")
     exp = sub.add_parser("export-mapping", help="画面表示の日本語化に使う対応表を書き出す")
@@ -159,7 +169,8 @@ def main(argv: list[str] | None = None) -> int:
         cfg = config.load(config.find_for_pack(Path.cwd(), args.pack) if args.pack else args.config or Path("config.toml"))
         commands = {"speakers": cmd_speakers, "list": cmd_list, "generate": cmd_generate,
                     "find": cmd_find, "record": cmd_record, "ui": cmd_ui,
-                    "export-mapping": cmd_export_mapping, "names": cmd_names, "package": cmd_package}
+                    "export-mapping": cmd_export_mapping, "names": cmd_names, "lines": cmd_lines,
+                    "package": cmd_package}
         commands[args.command](cfg, args)
     except (config.ConfigError, voicevox.VoicevoxError, applio.RvcError, audio.AudioError, ValueError, OSError) as e:
         print(f"エラー: {e}", file=sys.stderr)

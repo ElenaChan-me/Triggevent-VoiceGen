@@ -24673,6 +24673,161 @@
    ]
   },
   {
+   "key": "None",
+   "name": "共通の読み上げ（汎用トリガーなど）",
+   "expac": "共通",
+   "kind": "共通",
+   "lines": [
+    {
+     "desc": "Dummy Callout to Test UI",
+     "en": "Test",
+     "ja": "テスト",
+     "note": "",
+     "off": false,
+     "id": "L_63b560db"
+    },
+    {
+     "desc": "Dummy Callout to Test Variables",
+     "en": "{testVar} {testVar2} {random}",
+     "ja": "{testVar} {testVar2} {random}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "testVar"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "testVar2"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "random"
+      }
+     ]
+    },
+    {
+     "desc": "Dummy Callout to Test Icons",
+     "en": "Foo",
+     "ja": "フー",
+     "note": "UIテスト用のダミー",
+     "off": false,
+     "id": "L_6ce2c331"
+    },
+    {
+     "desc": "Dummy Callout to Test Tts Delay",
+     "en": "Delay",
+     "ja": "ディレイ",
+     "note": "TTS遅延テスト用",
+     "off": false,
+     "id": "L_340632c0"
+    },
+    {
+     "desc": "Generic: Raidwide",
+     "en": "Raidwide",
+     "ja": "全体攻撃",
+     "note": "",
+     "off": false,
+     "id": "L_402ac15b"
+    },
+    {
+     "desc": "Generic: Circle around enemy",
+     "en": "Get Out",
+     "ja": "外へ",
+     "note": "",
+     "off": false,
+     "id": "L_b1a8fa9e"
+    },
+    {
+     "desc": "Generic: Donut",
+     "en": "In",
+     "ja": "中",
+     "note": "",
+     "off": false,
+     "id": "L_0869071c"
+    },
+    {
+     "desc": "Generic: Line",
+     "en": "Avoid Lines",
+     "ja": "直線を避ける",
+     "note": "",
+     "off": false,
+     "id": "L_94a78cf6"
+    },
+    {
+     "desc": "Generic: Cone",
+     "en": "Away from Front",
+     "ja": "前方から離れる",
+     "note": "",
+     "off": false,
+     "id": "L_dee4382a"
+    },
+    {
+     "desc": "Generic: Cross",
+     "en": "Cross",
+     "ja": "十字範囲",
+     "note": "",
+     "off": false,
+     "id": "L_0e3536c5"
+    },
+    {
+     "desc": "Generic: Single target on tank",
+     "en": "Buster on {event.target}",
+     "ja": "{event.target}にタンク強攻撃",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_9c9f3a36",
+       "ja": "にタンク強攻撃"
+      }
+     ]
+    },
+    {
+     "desc": "Generic: Attack on player",
+     "en": "{event.ability} on {event.target}",
+     "ja": "{event.target}に{event.ability}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_de3d1ecc",
+       "ja": "に"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "event.ability"
+      }
+     ]
+    },
+    {
+     "desc": "Generic: Notice when entering a duty without dedicated triggers",
+     "en": "No dedicated triggers here, using generic callouts",
+     "ja": "このコンテンツは専用のトリガーが無いので、汎用の読み上げを使います",
+     "note": "",
+     "off": false,
+     "id": "L_d856497c"
+    }
+   ]
+  },
+  {
    "key": "O1S",
    "name": "次元の狭間オメガ零式：シグマ編1",
    "expac": "紅蓮のリベレーター",
@@ -73221,6 +73376,2378 @@
      "id": "L_286f4438"
     }
    ]
+  },
+  {
+   "key": "TheFinalVerseQuantum",
+   "name": "詩想エミネントグリーフ討滅戦",
+   "expac": "黄金のレガシー",
+   "kind": "討滅戦",
+   "lines": [
+    {
+     "desc": "Boss HP Difference",
+     "en": "Check Boss HP Difference",
+     "ja": "ボスのHP差を確認",
+     "note": "",
+     "off": false,
+     "id": "L_f90a72ce"
+    },
+    {
+     "desc": "Petrification",
+     "en": "Petrification on {event.target}",
+     "ja": "{event.target}に石化",
+     "note": "技名要確認",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_5fb57b93",
+       "ja": "に石化"
+      }
+     ]
+    },
+    {
+     "desc": "Hysteria",
+     "en": "Hysteria on {event.target}",
+     "ja": "{event.target}にヒステリー",
+     "note": "技名要確認",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_91ff677b",
+       "ja": "にヒステリー"
+      }
+     ]
+    },
+    {
+     "desc": "Vengeance Expiring",
+     "en": "Refresh Vengeance",
+     "ja": "ヴェンジェンスを付け直す",
+     "note": "技名要確認",
+     "off": false,
+     "id": "L_a86cba5a"
+    },
+    {
+     "desc": "Abyssal/Scourging Blaze (Pattern)",
+     "en": "{frontBack}-{leftRight}, for later",
+     "ja": "{frontBack}{leftRight}、あとで",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "frontBack"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "leftRight"
+      },
+      {
+       "type": "segment",
+       "id": "S_df045200",
+       "ja": "あとで"
+      }
+     ]
+    },
+    {
+     "desc": "Abyssal/Scourging Blaze (Exaflares)",
+     "en": "{frontBack}-{leftRight}, Avoid Exaflares",
+     "ja": "{frontBack}{leftRight}、エクサフレアを避ける",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "frontBack"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "leftRight"
+      },
+      {
+       "type": "segment",
+       "id": "S_75638baf",
+       "ja": "エクサフレアを避ける"
+      }
+     ]
+    },
+    {
+     "desc": "Bounds of Sin (Single Walls)",
+     "en": "{dir} + {inOut}",
+     "ja": "{dir}、{inOut}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "inOut"
+      }
+     ]
+    },
+    {
+     "desc": "Bounds of Sin (Double Walls)",
+     "en": "{dir1}/{dir2} + {inOut}",
+     "ja": "{dir1}か{dir2}、{inOut}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir1"
+      },
+      {
+       "type": "segment",
+       "id": "S_288c9e07",
+       "ja": "か"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir2"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "inOut"
+      }
+     ]
+    },
+    {
+     "desc": "Light Partner Stack",
+     "en": "Stack with Dark Partner",
+     "ja": "闇のペアと頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_48b8f233"
+    },
+    {
+     "desc": "Dark Partner Stack",
+     "en": "Stack with Light Partner",
+     "ja": "光のペアと頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_236e1c62"
+    },
+    {
+     "desc": "Blade of First Light",
+     "en": "{mech1}, then {mech2}",
+     "ja": "{mech1}、そのあと{mech2}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "mech1"
+      },
+      {
+       "type": "segment",
+       "id": "S_22ce2ee2",
+       "ja": "そのあと"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "mech2"
+      }
+     ]
+    },
+    {
+     "desc": "Ball of Fire (Move)",
+     "en": "Move Away",
+     "ja": "離れる",
+     "note": "",
+     "off": false,
+     "id": "L_e5caa1bf"
+    },
+    {
+     "desc": "Searing Chains (Stack)",
+     "en": "Stack Middle for Chains",
+     "ja": "中央で頭割り、鎖",
+     "note": "",
+     "off": false,
+     "id": "L_39cf16c8"
+    },
+    {
+     "desc": "Burning Chains (Break)",
+     "en": "Break Chains",
+     "ja": "鎖を切る",
+     "note": "",
+     "off": false,
+     "id": "L_8731bde7"
+    },
+    {
+     "desc": "Searing Chains (Break)",
+     "en": "Break Chains, then Raidwide with Bleed",
+     "ja": "鎖を切る、そのあと全体攻撃、継続ダメージあり",
+     "note": "",
+     "off": false,
+     "id": "L_91326736"
+    },
+    {
+     "desc": "Spinelash (On You)",
+     "en": "Stack on You, Tank in Front",
+     "ja": "自分に頭割り、タンクが前",
+     "note": "",
+     "off": false,
+     "id": "L_2b92db02"
+    },
+    {
+     "desc": "Spinelash",
+     "en": "Stack on {event.target}, Tank in Front",
+     "ja": "{event.target}に頭割り、タンクが前",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_ef21f8e1",
+       "ja": "に頭割り、タンクが前"
+      }
+     ]
+    },
+    {
+     "desc": "Vodoriga Minion",
+     "en": "Kill Add",
+     "ja": "雑魚を倒す",
+     "note": "",
+     "off": false,
+     "id": "L_951bab2e"
+    },
+    {
+     "desc": "Arcane Font",
+     "en": "Kill Towers",
+     "ja": "塔を倒す",
+     "note": "",
+     "off": false,
+     "id": "L_c0133e9e"
+    },
+    {
+     "desc": "Flameborn",
+     "en": "Bait Flameborn",
+     "ja": "フレイムボーンを誘導",
+     "note": "技名要確認",
+     "off": false,
+     "id": "L_1d4a726c"
+    },
+    {
+     "desc": "Shackles of Sanctity",
+     "en": "Shackles",
+     "ja": "枷",
+     "note": "技名要確認",
+     "off": false,
+     "id": "L_8839dc75"
+    },
+    {
+     "desc": "Hellish Earth (Tether on You)",
+     "en": "Tether on You",
+     "ja": "自分に線",
+     "note": "",
+     "off": false,
+     "id": "L_1dbd3383"
+    },
+    {
+     "desc": "Hellish Earth (Tether)",
+     "en": "Tether on {player}",
+     "ja": "{player}に線",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "player"
+      },
+      {
+       "type": "segment",
+       "id": "S_c1557621",
+       "ja": "に線"
+      }
+     ]
+    },
+    {
+     "desc": "Hellish Earth",
+     "en": "Raidwide + Draw In",
+     "ja": "全体攻撃と引き寄せ",
+     "note": "",
+     "off": false,
+     "id": "L_c8b58662"
+    },
+    {
+     "desc": "Eruption",
+     "en": "Bait Puddles x3",
+     "ja": "床誘導、3回",
+     "note": "",
+     "off": false,
+     "id": "L_92065c68"
+    },
+    {
+     "desc": "Manifold Lashings (Tankbuster)",
+     "en": "3x Tankbuster with Bleed",
+     "ja": "3回タンク強攻撃、継続ダメージあり",
+     "note": "",
+     "off": false,
+     "id": "L_b88c3c05"
+    },
+    {
+     "desc": "Manifold Lashings (Laser, Left)",
+     "en": "Front-left/Back-right, Avoid Laser",
+     "ja": "左前か右後ろ、レーザーを避ける",
+     "note": "",
+     "off": false,
+     "id": "L_1af7f912"
+    },
+    {
+     "desc": "Manifold Lashings (Laser, Right)",
+     "en": "Front-right/Back-left, Avoid Laser",
+     "ja": "右前か左後ろ、レーザーを避ける",
+     "note": "",
+     "off": false,
+     "id": "L_6370eac5"
+    },
+    {
+     "desc": "Manifold Lashings (Laser, Unknown)",
+     "en": "Avoid Laser",
+     "ja": "レーザーを避ける",
+     "note": "",
+     "off": false,
+     "id": "L_521a4129"
+    },
+    {
+     "desc": "Unholy Darkness",
+     "en": "Raidwide with Bleed",
+     "ja": "全体攻撃、継続ダメージあり",
+     "note": "",
+     "off": false,
+     "id": "L_54c3fc78"
+    },
+    {
+     "desc": "Crime and Punishment",
+     "en": "Get Dark Vengeance",
+     "ja": "闇のヴェンジェンスを取る",
+     "note": "技名要確認",
+     "off": false,
+     "id": "L_bfc99b05"
+    },
+    {
+     "desc": "Sin Bearer (On You)",
+     "en": "Sin Bearer on You",
+     "ja": "自分に罪の担い手",
+     "note": "技名要確認",
+     "off": false,
+     "id": "L_e0b57d6b"
+    },
+    {
+     "desc": "Sin Bearer",
+     "en": "Sin Bearer on {event.target}",
+     "ja": "{event.target}に罪の担い手",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_9f0d90ad",
+       "ja": "に罪の担い手"
+      }
+     ]
+    },
+    {
+     "desc": "Sin Bearer (Pass)",
+     "en": "Pass Sin Bearer",
+     "ja": "罪の担い手を渡す",
+     "note": "",
+     "off": false,
+     "id": "L_7267ac54"
+    },
+    {
+     "desc": "Doom",
+     "en": "Cleanse {event.target}",
+     "ja": "{event.target}をエスナ",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_790e7dc9",
+       "ja": "をエスナ"
+      }
+     ]
+    },
+    {
+     "desc": "Eminent Grief Drain Aether (Swap)",
+     "en": "Get Light Vengeance",
+     "ja": "光のヴェンジェンスを取る",
+     "note": "",
+     "off": false,
+     "id": "L_b288a0ac"
+    },
+    {
+     "desc": "Eminent Grief Drain Aether (Sin Bearer)",
+     "en": "Stay Dark Vengeance",
+     "ja": "闇のヴェンジェンスのまま",
+     "note": "",
+     "off": false,
+     "id": "L_cf562ed6"
+    },
+    {
+     "desc": "Flameborn Self-Destruct",
+     "en": "Raidwide",
+     "ja": "全体攻撃",
+     "note": "",
+     "off": false,
+     "id": "L_402ac15b"
+    },
+    {
+     "desc": "Borrowed Time",
+     "en": "{event.target} Dead, Swap",
+     "ja": "{event.target}が戦闘不能、交代",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_fac6747a",
+       "ja": "が戦闘不能、交代"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "TheOccultCrescentSouthHorn",
+   "name": "蜃気楼の島 クレセントアイル：南征編",
+   "expac": "黄金のレガシー",
+   "kind": "フィールド",
+   "lines": [
+    {
+     "desc": "Decisive Battle",
+     "en": "Raidwide",
+     "ja": "全体攻撃",
+     "note": "",
+     "off": false,
+     "id": "L_402ac15b"
+    },
+    {
+     "desc": "Boss Tether",
+     "en": "Tethered to {boss}",
+     "ja": "{boss}と線",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "boss"
+      },
+      {
+       "type": "segment",
+       "id": "S_c198e332",
+       "ja": "と線"
+      }
+     ]
+    },
+    {
+     "desc": "Slice 'n' Dice (On You)",
+     "en": "Tank Cleave on You",
+     "ja": "自分にタンク範囲攻撃",
+     "note": "",
+     "off": false,
+     "id": "L_d54ed2d1"
+    },
+    {
+     "desc": "Slice 'n' Dice (On You, With Firestrike)",
+     "en": "Tank Cleave on You, Avoid Line Stack",
+     "ja": "自分にタンク扇、直線頭割りを避ける",
+     "note": "",
+     "off": false,
+     "id": "L_d06107f5"
+    },
+    {
+     "desc": "Slice 'n' Dice (Not On You)",
+     "en": "Tank Cleaves on {players}",
+     "ja": "{players}にタンク扇",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "players"
+      },
+      {
+       "type": "segment",
+       "id": "S_7538239a",
+       "ja": "にタンク扇"
+      }
+     ]
+    },
+    {
+     "desc": "Three-Body Problem",
+     "en": "Out of Hitbox",
+     "ja": "ボスの当たり判定の外へ",
+     "note": "",
+     "off": false,
+     "id": "L_cefa9346"
+    },
+    {
+     "desc": "Nova Ooze (Initial)",
+     "en": "+{count} Red",
+     "ja": "赤が{count}増える",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_ea4fd710",
+       "ja": "赤が"
+      },
+      {
+       "type": "slot",
+       "kind": "number",
+       "expr": "count"
+      },
+      {
+       "type": "segment",
+       "id": "S_6c1a9beb",
+       "ja": "増える"
+      }
+     ]
+    },
+    {
+     "desc": "Ice Ooze (Initial)",
+     "en": "+{count} Blue",
+     "ja": "青が{count}増える",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_67dab95a",
+       "ja": "青が"
+      },
+      {
+       "type": "slot",
+       "kind": "number",
+       "expr": "count"
+      },
+      {
+       "type": "segment",
+       "id": "S_6c1a9beb",
+       "ja": "増える"
+      }
+     ]
+    },
+    {
+     "desc": "Nova/Ice Ooze 1",
+     "en": "{hit} for Ooze",
+     "ja": "スライムは{hit}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_910570d0",
+       "ja": "スライムは"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "hit"
+      }
+     ]
+    },
+    {
+     "desc": "Nova/Ice Ooze 1 (No Debuff)",
+     "en": "Red: {red}, Blue: {blue}",
+     "ja": "赤{red}、青{blue}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_72776ab6",
+       "ja": "赤"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "red"
+      },
+      {
+       "type": "segment",
+       "id": "S_845d1da8",
+       "ja": "青"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "blue"
+      }
+     ]
+    },
+    {
+     "desc": "Nova/Ice Ooze 2-4: Get Hit",
+     "en": "{dir} for Ooze",
+     "ja": "スライムは{dir}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_910570d0",
+       "ja": "スライムは"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      }
+     ]
+    },
+    {
+     "desc": "Nova/Ice Ooze 2-4: Safe Spot",
+     "en": "{dir}",
+     "ja": "{dir}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      }
+     ]
+    },
+    {
+     "desc": "Nova/Ice Ooze 2-4: Safe Spots",
+     "en": "{dir1} / {dir2} Safe Spots",
+     "ja": "{dir1}か{dir2}が安置",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir1"
+      },
+      {
+       "type": "segment",
+       "id": "S_288c9e07",
+       "ja": "か"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir2"
+      },
+      {
+       "type": "segment",
+       "id": "S_0cd4779d",
+       "ja": "が安置"
+      }
+     ]
+    },
+    {
+     "desc": "Delta Attack",
+     "en": "Big Raidwide",
+     "ja": "強い全体攻撃",
+     "note": "",
+     "off": false,
+     "id": "L_06991e71"
+    },
+    {
+     "desc": "Firestrike (On You)",
+     "en": "Line Stack on You",
+     "ja": "自分に直線頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_f803efc0"
+    },
+    {
+     "desc": "Firestrike (Not On You)",
+     "en": "Line Stacks on {players}",
+     "ja": "{players}に直線頭割り",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "players"
+      },
+      {
+       "type": "segment",
+       "id": "S_195809af",
+       "ja": "に直線頭割り"
+      }
+     ]
+    },
+    {
+     "desc": "Firestrike 2 (On You)",
+     "en": "Line Stack on You, Avoid Tank Cleave",
+     "ja": "自分に直線頭割り、タンク扇を避ける",
+     "note": "",
+     "off": false,
+     "id": "L_37fe79f6"
+    },
+    {
+     "desc": "Snowball Flight",
+     "en": "Wild Charge Positions",
+     "ja": "ワイルドチャージの配置",
+     "note": "",
+     "off": false,
+     "id": "L_f419cb42"
+    },
+    {
+     "desc": "Snowball Flight: Knockback",
+     "en": "Knockback",
+     "ja": "ノックバック",
+     "note": "",
+     "off": false,
+     "id": "L_6e4bef98"
+    },
+    {
+     "desc": "Snowball Tether (On You)",
+     "en": "Tether: Knockback to {dir}, then Stack at Wall",
+     "ja": "線あり、{dir}へノックバック、そのあと壁で頭割り",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_354cf5e1",
+       "ja": "線あり"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_f1e5b035",
+       "ja": "へノックバック、そのあと壁で頭割り"
+      }
+     ]
+    },
+    {
+     "desc": "Snowball Tether (Not On You)",
+     "en": "Knockback to Snowball, then Stack at Wall",
+     "ja": "雪玉へノックバック、そのあと壁で頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_b75beca4"
+    },
+    {
+     "desc": "Six-handed Fistfight",
+     "en": "Out of Middle, Group Positions",
+     "ja": "中央から離れる、グループの配置",
+     "note": "",
+     "off": false,
+     "id": "L_1755b322"
+    },
+    {
+     "desc": "Collateral Damage",
+     "en": "Dodge Two Jets, then Spread",
+     "ja": "噴射を2つ避ける、そのあと散開",
+     "note": "",
+     "off": false,
+     "id": "L_be0cc4d6"
+    },
+    {
+     "desc": "Collateral Damage: Spread",
+     "en": "Spread",
+     "ja": "散開",
+     "note": "",
+     "off": false,
+     "id": "L_7e0ac454"
+    },
+    {
+     "desc": "Ray of Dangers Near",
+     "en": "Out",
+     "ja": "外",
+     "note": "",
+     "off": false,
+     "id": "L_0e0faa1d"
+    },
+    {
+     "desc": "Ray of Expulsion Afar",
+     "en": "In, then Knockback",
+     "ja": "中、そのあとノックバック",
+     "note": "",
+     "off": false,
+     "id": "L_241d0aab"
+    },
+    {
+     "desc": "Occult Chisel (On You)",
+     "en": "Buster on You",
+     "ja": "自分にタンク強攻撃",
+     "note": "",
+     "off": false,
+     "id": "L_56e75e1e"
+    },
+    {
+     "desc": "Occult Chisel (Not On You)",
+     "en": "Tankbusters on {players}",
+     "ja": "{players}にタンク強攻撃",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "players"
+      },
+      {
+       "type": "segment",
+       "id": "S_9c9f3a36",
+       "ja": "にタンク強攻撃"
+      }
+     ]
+    },
+    {
+     "desc": "Rotate (Left, In Front)",
+     "en": "Left, then Get Behind",
+     "ja": "左、そのあと背後へ",
+     "note": "",
+     "off": false,
+     "id": "L_cc9b592f"
+    },
+    {
+     "desc": "Rotate (Right, In Front)",
+     "en": "Right, then Get Behind",
+     "ja": "右、そのあと背後へ",
+     "note": "",
+     "off": false,
+     "id": "L_d8a89e15"
+    },
+    {
+     "desc": "Rotate (Left, Behind)",
+     "en": "Left",
+     "ja": "左",
+     "note": "",
+     "off": false,
+     "id": "L_df3ee667"
+    },
+    {
+     "desc": "Rotate (Right, Behind)",
+     "en": "Right",
+     "ja": "右",
+     "note": "",
+     "off": false,
+     "id": "L_851cdd60"
+    },
+    {
+     "desc": "Rotate (Left, Second)",
+     "en": "Left (Behind Boss)",
+     "ja": "左、ボスの背後",
+     "note": "",
+     "off": false,
+     "id": "L_5f3b0e7e"
+    },
+    {
+     "desc": "Rotate (Right, Second)",
+     "en": "Right (Behind Boss)",
+     "ja": "右、ボスの背後",
+     "note": "",
+     "off": false,
+     "id": "L_2afc8a50"
+    },
+    {
+     "desc": "Cometeor of Dangers Near (Direction)",
+     "en": "{dir} & Out",
+     "ja": "{dir}で外",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_39c92899",
+       "ja": "で外"
+      }
+     ]
+    },
+    {
+     "desc": "Cometeor of Expulsion Afar (Direction)",
+     "en": "{dir} & In, then Knockback",
+     "ja": "{dir}で中、そのあとノックバック",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_026f1893",
+       "ja": "で中、そのあとノックバック"
+      }
+     ]
+    },
+    {
+     "desc": "Cometeor of Dangers Near (Meteor on You)",
+     "en": "Meteor on You, Out",
+     "ja": "自分にメテオ、外",
+     "note": "",
+     "off": false,
+     "id": "L_287c7319"
+    },
+    {
+     "desc": "Cometeor of Expulsion Afar (Meteor on You)",
+     "en": "Meteor on You, In, then Knockback",
+     "ja": "自分にメテオ、中、そのあとノックバック",
+     "note": "",
+     "off": false,
+     "id": "L_33ee1cbe"
+    },
+    {
+     "desc": "Cometeor of Dangers Near (Meteor on You, Direction)",
+     "en": "Meteor on You, Go {dir} & Out",
+     "ja": "自分にメテオ、{dir}で外",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_43c7950c",
+       "ja": "自分にメテオ"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_39c92899",
+       "ja": "で外"
+      }
+     ]
+    },
+    {
+     "desc": "Cometeor of Expulsion Afar (Meteor on You, Direction)",
+     "en": "Meteor on You, Go {dir} & In, then Knockback",
+     "ja": "自分にメテオ、{dir}で中、そのあとノックバック",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_43c7950c",
+       "ja": "自分にメテオ"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_026f1893",
+       "ja": "で中、そのあとノックバック"
+      }
+     ]
+    },
+    {
+     "desc": "Portentous Comet (Launch North, Near)",
+     "en": "Go South Out, then Stack Launch Marker on You",
+     "ja": "南で外、そのあと自分に打ち上げの頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_1f5ccd68"
+    },
+    {
+     "desc": "Portentous Comet (Launch North, Afar)",
+     "en": "Go South In (Knockback), then Stack Launch Marker on You",
+     "ja": "南で中、ノックバック、そのあと自分に打ち上げの頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_c45ac07c"
+    },
+    {
+     "desc": "Portentous Comet (Launch South, Near)",
+     "en": "Go North Out, then Stack Launch Marker on You",
+     "ja": "北で外、そのあと自分に打ち上げの頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_4cf865c9"
+    },
+    {
+     "desc": "Portentous Comet (Launch South, Afar)",
+     "en": "Go North In (Knockback), then Stack Launch Marker on You",
+     "ja": "北で中、ノックバック、そのあと自分に打ち上げの頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_e8328e60"
+    },
+    {
+     "desc": "Portentous Comet (Meteor on You)",
+     "en": "Stack, Launch over Boss",
+     "ja": "頭割り、ボスを越えて打ち上げ",
+     "note": "",
+     "off": false,
+     "id": "L_d056442a"
+    },
+    {
+     "desc": "Portentous Comet (No Meteor)",
+     "en": "Stack, Launch towards Boss",
+     "ja": "頭割り、ボスに向かって打ち上げ",
+     "note": "",
+     "off": false,
+     "id": "L_a1ca7aaf"
+    },
+    {
+     "desc": "Summon",
+     "en": "Add Positions and Out",
+     "ja": "雑魚の配置、外",
+     "note": "",
+     "off": false,
+     "id": "L_97c74824"
+    },
+    {
+     "desc": "Gravity of Dangers Near",
+     "en": "{dir} Out, then Towers",
+     "ja": "{dir}で外、そのあと塔",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_8fe943af",
+       "ja": "で外、そのあと塔"
+      }
+     ]
+    },
+    {
+     "desc": "Gravity of Dangers Near (Towers Unknown)",
+     "en": "Go Towers Side and Out",
+     "ja": "塔の側で外",
+     "note": "",
+     "off": false,
+     "id": "L_b6569935"
+    },
+    {
+     "desc": "Gravity of Expulsion Afar",
+     "en": "{dir} In, then Knockback, then Towers",
+     "ja": "{dir}で中、ノックバック、そのあと塔",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_f7260c52",
+       "ja": "で中、ノックバック、そのあと塔"
+      }
+     ]
+    },
+    {
+     "desc": "Gravity of Expulsion Afar (Towers Unknown)",
+     "en": "Go Towers Side and In, then Knockback",
+     "ja": "塔の側で中、そのあとノックバック",
+     "note": "",
+     "off": false,
+     "id": "L_36da896d"
+    },
+    {
+     "desc": "Gravity: Towers (Front Right)",
+     "en": "Get Towers, then Front Right",
+     "ja": "塔を踏む、そのあと右前",
+     "note": "",
+     "off": false,
+     "id": "L_e5daf9fd"
+    },
+    {
+     "desc": "Gravity: Towers (Back Left)",
+     "en": "Get Towers, then Back Left",
+     "ja": "塔を踏む、そのあと左後ろ",
+     "note": "",
+     "off": false,
+     "id": "L_0479d7af"
+    },
+    {
+     "desc": "Gravity: Towers (Corner Unknown)",
+     "en": "Get Towers, then Safe Corner",
+     "ja": "塔を踏む、そのあと安全な角",
+     "note": "",
+     "off": false,
+     "id": "L_1d0e3408"
+    },
+    {
+     "desc": "Erase Gravity: Safe Corner (Front Right, Early)",
+     "en": "Front Right (Later)",
+     "ja": "あとで右前",
+     "note": "",
+     "off": false,
+     "id": "L_ab89bd25"
+    },
+    {
+     "desc": "Erase Gravity: Safe Corner (Back Left, Early)",
+     "en": "Back Left (Later)",
+     "ja": "あとで左後ろ",
+     "note": "",
+     "off": false,
+     "id": "L_d6dc0651"
+    },
+    {
+     "desc": "Tower Explosion (Front Right)",
+     "en": "Front Right",
+     "ja": "右前",
+     "note": "",
+     "off": false,
+     "id": "L_afacce07"
+    },
+    {
+     "desc": "Tower Explosion (Back Left)",
+     "en": "Back Left",
+     "ja": "左後ろ",
+     "note": "",
+     "off": false,
+     "id": "L_1410040b"
+    },
+    {
+     "desc": "Tower Explosion (Corner Unknown)",
+     "en": "Avoid Falling Statues",
+     "ja": "落ちてくる像を避ける",
+     "note": "",
+     "off": false,
+     "id": "L_a1d4727e"
+    },
+    {
+     "desc": "Unseal: Tanks Close",
+     "en": "Tanks Close (Party Far) x3",
+     "ja": "タンクは近く、パーティは遠く、3回",
+     "note": "",
+     "off": false,
+     "id": "L_8182bfed"
+    },
+    {
+     "desc": "Unseal: Tanks Far",
+     "en": "Tanks Far (Party Close) x3",
+     "ja": "タンクは遠く、パーティは近く、3回",
+     "note": "",
+     "off": false,
+     "id": "L_66ccfb8b"
+    },
+    {
+     "desc": "Assassin's Dagger: Pattern 1",
+     "en": "Flipped Y Daggers",
+     "ja": "反転したY字の短剣",
+     "note": "",
+     "off": false,
+     "id": "L_382b1852"
+    },
+    {
+     "desc": "Assassin's Dagger: Pattern 2",
+     "en": "Y Daggers",
+     "ja": "Y字の短剣",
+     "note": "",
+     "off": false,
+     "id": "L_de82078e"
+    },
+    {
+     "desc": "Critical Axeblow",
+     "en": "Out, Square Corner",
+     "ja": "外、四角の角",
+     "note": "",
+     "off": false,
+     "id": "L_2e000f1d"
+    },
+    {
+     "desc": "Critical Lanceblow",
+     "en": "In, between Squares",
+     "ja": "中、四角の間",
+     "note": "",
+     "off": false,
+     "id": "L_fbb5f14c"
+    },
+    {
+     "desc": "Forked Fury (Tank)",
+     "en": "Near and Far Tank Cleave, then 2 Tank Autos",
+     "ja": "近くと遠くにタンク扇、そのあとタンクにオートアタック2回",
+     "note": "",
+     "off": false,
+     "id": "L_ee13438b"
+    },
+    {
+     "desc": "Forked Fury",
+     "en": "Be on Boss Hitbox, Avoid Tank Cleaves",
+     "ja": "ボスの当たり判定に入る、タンク扇を避ける",
+     "note": "",
+     "off": false,
+     "id": "L_aa7d0084"
+    },
+    {
+     "desc": "Aura Burst: Canisters",
+     "en": "Attack Yellow Canisters (Axe)",
+     "ja": "黄色のキャニスターを攻撃、斧",
+     "note": "",
+     "off": false,
+     "id": "L_ab7f8e81"
+    },
+    {
+     "desc": "Holy: Canisters",
+     "en": "Attack Blue Canisters (Lance)",
+     "ja": "青のキャニスターを攻撃、槍",
+     "note": "",
+     "off": false,
+     "id": "L_c5ddb22a"
+    },
+    {
+     "desc": "Sage's Staff",
+     "en": "Line Stack at Staff",
+     "ja": "杖で直線頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_fc7c0cdf"
+    },
+    {
+     "desc": "Rune Axe: Big AoE on You (First)",
+     "en": "Big AoE on You, Go to Wall by Purple Circle",
+     "ja": "自分に大きい範囲、紫の円のそばの壁へ",
+     "note": "",
+     "off": false,
+     "id": "L_1f42394b"
+    },
+    {
+     "desc": "Rune Axe: Small AoE on You (First)",
+     "en": "Small AoE on You, Stay Square, then Between Squares",
+     "ja": "自分に小さい範囲、四角に残る、そのあと四角の間",
+     "note": "",
+     "off": false,
+     "id": "L_29a1c0f4"
+    },
+    {
+     "desc": "Rune Axe: Big AoE on You (Second)",
+     "en": "Big AoE on You (Later)",
+     "ja": "あとで自分に大きい範囲",
+     "note": "",
+     "off": false,
+     "id": "L_12249555"
+    },
+    {
+     "desc": "Rune Axe: Small AoE on You (Second)",
+     "en": "Small AoE on You (Later)",
+     "ja": "あとで自分に小さい範囲",
+     "note": "",
+     "off": false,
+     "id": "L_d2f51246"
+    },
+    {
+     "desc": "Ruinous Rune 1: Big AoE (Not On You)",
+     "en": "Big AoE on {event.target}, Be on Square",
+     "ja": "{event.target}に大きい範囲、四角に乗る",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_67caadd7",
+       "ja": "に大きい範囲、四角に乗る"
+      }
+     ]
+    },
+    {
+     "desc": "Ruinous Rune 1: Small AoEs (Not On You)",
+     "en": "Small AoEs on {players}",
+     "ja": "{players}に小さい範囲",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "players"
+      },
+      {
+       "type": "segment",
+       "id": "S_8d6a93be",
+       "ja": "に小さい範囲"
+      }
+     ]
+    },
+    {
+     "desc": "Ruinous Rune 2: AoEs (Not On You)",
+     "en": "AoEs on {players}",
+     "ja": "{players}に範囲",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "players"
+      },
+      {
+       "type": "segment",
+       "id": "S_474642be",
+       "ja": "に範囲"
+      }
+     ]
+    },
+    {
+     "desc": "Rune Axe: Critical Lanceblow (Small AoE)",
+     "en": "Stay for AoE, then In, Between Squares",
+     "ja": "範囲を受けてから中、四角の間",
+     "note": "",
+     "off": false,
+     "id": "L_c58d7d9b"
+    },
+    {
+     "desc": "Small Ruinous Rune: Lanceblow Reminder (Big AoE Next)",
+     "en": "In, Between Squares, then To Wall",
+     "ja": "中、四角の間、そのあと壁へ",
+     "note": "",
+     "off": false,
+     "id": "L_fd844241"
+    },
+    {
+     "desc": "Small Ruinous Rune: Lanceblow Reminder (Small AoE Next)",
+     "en": "In, Between Squares, then Solo Square",
+     "ja": "中、四角の間、そのあと1人で四角",
+     "note": "",
+     "off": false,
+     "id": "L_fb2c90c8"
+    },
+    {
+     "desc": "Small Ruinous Rune: Lanceblow Reminder",
+     "en": "In, between Squares, then On Square",
+     "ja": "中、四角の間、そのあと四角に乗る",
+     "note": "",
+     "off": false,
+     "id": "L_c4e09f80"
+    },
+    {
+     "desc": "Ruinous Rune 2: Small AoE on You",
+     "en": "Small AoE on You, Be on Square (Solo)",
+     "ja": "自分に小さい範囲、1人で四角に乗る",
+     "note": "",
+     "off": false,
+     "id": "L_e6418fdf"
+    },
+    {
+     "desc": "Ruinous Rune 2: Avoid Small AoEs",
+     "en": "On Square, Avoid {players}",
+     "ja": "四角に乗る、{players}を避ける",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_c593c64f",
+       "ja": "四角に乗る"
+      },
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "players"
+      },
+      {
+       "type": "segment",
+       "id": "S_629a2923",
+       "ja": "を避ける"
+      }
+     ]
+    },
+    {
+     "desc": "Lancepoint: Short",
+     "en": "Short Stack on You (17)",
+     "ja": "自分に短い頭割り、17秒",
+     "note": "",
+     "off": false,
+     "id": "L_9ceb10ab"
+    },
+    {
+     "desc": "Lancepoint: Medium",
+     "en": "Medium Stack on You (25)",
+     "ja": "自分に中くらいの頭割り、25秒",
+     "note": "",
+     "off": false,
+     "id": "L_c12695d3"
+    },
+    {
+     "desc": "Lancepoint: Long",
+     "en": "Long Stack on You (33)",
+     "ja": "自分に長い頭割り、33秒",
+     "note": "",
+     "off": false,
+     "id": "L_48a3e88c"
+    },
+    {
+     "desc": "Lancelight: Northeast Off",
+     "en": "Northeast Off",
+     "ja": "北東はオフ",
+     "note": "",
+     "off": false,
+     "id": "L_8699de4f"
+    },
+    {
+     "desc": "Lancelight: Northeast On",
+     "en": "Northeast On",
+     "ja": "北東はオン",
+     "note": "",
+     "off": false,
+     "id": "L_2ca627ee"
+    },
+    {
+     "desc": "Lancelight: South Off",
+     "en": "South Off",
+     "ja": "南はオフ",
+     "note": "",
+     "off": false,
+     "id": "L_d3e89314"
+    },
+    {
+     "desc": "Lancelight: South On",
+     "en": "South On",
+     "ja": "南はオン",
+     "note": "",
+     "off": false,
+     "id": "L_71c41065"
+    },
+    {
+     "desc": "Lancelight: Northwest Off",
+     "en": "Northwest Off",
+     "ja": "北西はオフ",
+     "note": "",
+     "off": false,
+     "id": "L_8fce3c6a"
+    },
+    {
+     "desc": "Imitation Star",
+     "en": "Raidwide with Bleed",
+     "ja": "全体攻撃、継続ダメージあり",
+     "note": "",
+     "off": false,
+     "id": "L_54c3fc78"
+    },
+    {
+     "desc": "Draconiform Motion",
+     "en": "Sides",
+     "ja": "横",
+     "note": "",
+     "off": false,
+     "id": "L_a7d20fd2"
+    },
+    {
+     "desc": "Imitation Rain 1/5: Direction",
+     "en": "{dir} Later",
+     "ja": "あとで{dir}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_df045200",
+       "ja": "あとで"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 1/5: Direction (Wicked Water)",
+     "en": "{dir} Later, then Get Hit {dir}",
+     "ja": "あとで{dir}、そのあと{dir}で当たる",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_df045200",
+       "ja": "あとで"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_22ce2ee2",
+       "ja": "そのあと"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_e595f0f6",
+       "ja": "で当たる"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 7: Circles First",
+     "en": "Circles First",
+     "ja": "円が先",
+     "note": "",
+     "off": false,
+     "id": "L_199d9725"
+    },
+    {
+     "desc": "Imitation Rain 7: Crosses First",
+     "en": "Crosses First",
+     "ja": "十字が先",
+     "note": "",
+     "off": false,
+     "id": "L_cfc8f428"
+    },
+    {
+     "desc": "Dread Deluge (On You)",
+     "en": "Tankbuster with Bleed on You",
+     "ja": "自分にタンク強攻撃、継続ダメージあり",
+     "note": "",
+     "off": false,
+     "id": "L_e65a6a93"
+    },
+    {
+     "desc": "Dread Deluge",
+     "en": "Tankbuster with Bleed",
+     "ja": "タンク強攻撃、継続ダメージあり",
+     "note": "",
+     "off": false,
+     "id": "L_4bbaf013"
+    },
+    {
+     "desc": "Imitation Rain 2: Frigid Twister Reminder",
+     "en": "Avoid Twister",
+     "ja": "竜巻を避ける",
+     "note": "",
+     "off": false,
+     "id": "L_ff11b69a"
+    },
+    {
+     "desc": "Frigid Dive: Towers 2/4 (Intercard)",
+     "en": "Intercard Towers",
+     "ja": "斜めの塔",
+     "note": "",
+     "off": false,
+     "id": "L_3642b76e"
+    },
+    {
+     "desc": "Frigid Dive: Towers 2/4 (Cardinal)",
+     "en": "Cardinal Towers",
+     "ja": "十字の塔",
+     "note": "",
+     "off": false,
+     "id": "L_c47d38b9"
+    },
+    {
+     "desc": "Frigid Dive: Towers 2/4 (Unknown)",
+     "en": "Cardinal/Intercard Towers",
+     "ja": "十字か斜めの塔",
+     "note": "",
+     "off": false,
+     "id": "L_bca1c2ce"
+    },
+    {
+     "desc": "Frigid Dive: Direction",
+     "en": "{dir1}/{dir2} Dive, then Towers",
+     "ja": "{dir1}か{dir2}にダイブ、そのあと塔",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir1"
+      },
+      {
+       "type": "segment",
+       "id": "S_288c9e07",
+       "ja": "か"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir2"
+      },
+      {
+       "type": "segment",
+       "id": "S_c8a20bc2",
+       "ja": "にダイブ、そのあと塔"
+      }
+     ]
+    },
+    {
+     "desc": "Frigid Dive: Direction (Unknown)",
+     "en": "Boss Dive, then Towers",
+     "ja": "ボスがダイブ、そのあと塔",
+     "note": "",
+     "off": false,
+     "id": "L_87399cd9"
+    },
+    {
+     "desc": "Frigid Dive: Towers 1/3 (Then Intercard)",
+     "en": "{dir1}/{dir2} Towers, then Intercard Towers",
+     "ja": "{dir1}か{dir2}の塔、そのあと斜めの塔",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir1"
+      },
+      {
+       "type": "segment",
+       "id": "S_288c9e07",
+       "ja": "か"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir2"
+      },
+      {
+       "type": "segment",
+       "id": "S_95c7a4ae",
+       "ja": "の塔、そのあと斜めの塔"
+      }
+     ]
+    },
+    {
+     "desc": "Frigid Dive: Towers 1/3 (Then Cardinal)",
+     "en": "{dir1}/{dir2} Towers, then Cardinal Towers",
+     "ja": "{dir1}か{dir2}の塔、そのあと十字の塔",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir1"
+      },
+      {
+       "type": "segment",
+       "id": "S_288c9e07",
+       "ja": "か"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir2"
+      },
+      {
+       "type": "segment",
+       "id": "S_06d9c0e6",
+       "ja": "の塔、そのあと十字の塔"
+      }
+     ]
+    },
+    {
+     "desc": "Frigid Dive: Towers 1/3 (Unknown)",
+     "en": "Towers, then Cardinal/Intercard Towers",
+     "ja": "塔、そのあと十字か斜めの塔",
+     "note": "",
+     "off": false,
+     "id": "L_7e74a8cf"
+    },
+    {
+     "desc": "Wicked Water",
+     "en": "Wicked Water on You",
+     "ja": "自分にウィキッドウォーター",
+     "note": "技名要確認",
+     "off": false,
+     "id": "L_8789f50d"
+    },
+    {
+     "desc": "Wicked Water: Reminder",
+     "en": "Get Hit by Ice Explosion",
+     "ja": "氷の爆発に当たる",
+     "note": "",
+     "off": false,
+     "id": "L_cb4dd4c4"
+    },
+    {
+     "desc": "Gelid Gaol",
+     "en": "Break Gaols",
+     "ja": "ジェイルを壊す",
+     "note": "",
+     "off": false,
+     "id": "L_bd4b44d7"
+    },
+    {
+     "desc": "Imitation Rain 2: Twister Rotation",
+     "en": "{clock}",
+     "ja": "{clock}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "clock"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 2: Circles First",
+     "en": "Circles First + {clock}",
+     "ja": "円が先、{clock}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_199d9725",
+       "ja": "円が先"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "clock"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 2: Crosses First",
+     "en": "Crosses First + {clock}",
+     "ja": "十字が先、{clock}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_cfc8f428",
+       "ja": "十字が先"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "clock"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 6: Twister Rotation",
+     "en": "{dir}: {clock}",
+     "ja": "{dir}、{clock}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "clock"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 6: Circles First",
+     "en": "{dir}: Circles First + {clock}",
+     "ja": "{dir}、円が先、{clock}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_199d9725",
+       "ja": "円が先"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "clock"
+      }
+     ]
+    },
+    {
+     "desc": "Imitation Rain 6: Crosses First",
+     "en": "{dir}: Crosses First + {clock}",
+     "ja": "{dir}、十字が先、{clock}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      },
+      {
+       "type": "segment",
+       "id": "S_cfc8f428",
+       "ja": "十字が先"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "clock"
+      }
+     ]
+    },
+    {
+     "desc": "Towers 5/6: Vertical",
+     "en": "Get Vertical Towers",
+     "ja": "縦の塔を踏む",
+     "note": "",
+     "off": false,
+     "id": "L_9ae541bb"
+    },
+    {
+     "desc": "Towers 5/6: Vertical (Then Direction)",
+     "en": "Get Vertical Towers, then {dir}",
+     "ja": "縦の塔を踏む、そのあと{dir}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_688f663c",
+       "ja": "縦の塔を踏む、そのあと"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      }
+     ]
+    },
+    {
+     "desc": "Towers 5/6: Horizontal",
+     "en": "Get Horizontal Towers",
+     "ja": "横の塔を踏む",
+     "note": "",
+     "off": false,
+     "id": "L_5268383f"
+    },
+    {
+     "desc": "Towers 5/6: Horizontal (Then Direction)",
+     "en": "Get Horizontal Towers, then {dir}",
+     "ja": "横の塔を踏む、そのあと{dir}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_6c24752b",
+       "ja": "横の塔を踏む、そのあと"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      }
+     ]
+    },
+    {
+     "desc": "Towers 5/6: Unknown",
+     "en": "Get Towers",
+     "ja": "塔を踏む",
+     "note": "",
+     "off": false,
+     "id": "L_b43cdb9c"
+    },
+    {
+     "desc": "Towers 5/6: Unknown (Then Direction)",
+     "en": "Get Towers, then {dir}",
+     "ja": "塔を踏む、そのあと{dir}",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_cf01c8f4",
+       "ja": "塔を踏む、そのあと"
+      },
+      {
+       "type": "slot",
+       "kind": "direction",
+       "expr": "dir"
+      }
+     ]
+    },
+    {
+     "desc": "Tower Manticore: Left Hammer",
+     "en": "Right, then Left",
+     "ja": "右、そのあと左",
+     "note": "",
+     "off": false,
+     "id": "L_695a7ea2"
+    },
+    {
+     "desc": "Tower Manticore: Right Hammer",
+     "en": "Left, then Right",
+     "ja": "左、そのあと右",
+     "note": "",
+     "off": false,
+     "id": "L_f1f4c216"
+    },
+    {
+     "desc": "Pronged Passage: Paralyze III (Tank, Same Bridge)",
+     "en": "Interrupt {event.source}",
+     "ja": "{event.source}を詠唱中断",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "event.source"
+      },
+      {
+       "type": "segment",
+       "id": "S_c6cc4459",
+       "ja": "を詠唱中断"
+      }
+     ]
+    },
+    {
+     "desc": "Pronged Passage: Paralyze III (North)",
+     "en": "North: Interrupt {event.source}",
+     "ja": "北、{event.source}に詠唱中断",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_48c14622",
+       "ja": "北"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "event.source"
+      },
+      {
+       "type": "segment",
+       "id": "S_6820937b",
+       "ja": "に詠唱中断"
+      }
+     ]
+    },
+    {
+     "desc": "Pronged Passage: Paralyze III (South)",
+     "en": "South: Interrupt {event.source}",
+     "ja": "南、{event.source}に詠唱中断",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "segment",
+       "id": "S_e6ac67fb",
+       "ja": "南"
+      },
+      {
+       "type": "slot",
+       "kind": "other",
+       "expr": "event.source"
+      },
+      {
+       "type": "segment",
+       "id": "S_6820937b",
+       "ja": "に詠唱中断"
+      }
+     ]
+    },
+    {
+     "desc": "Pronged Passage: Arcane Spear",
+     "en": "Wild Charge (East), Stack in a Row",
+     "ja": "ワイルドチャージ、東、縦に並んで頭割り",
+     "note": "",
+     "off": false,
+     "id": "L_025b14f2"
+    },
+    {
+     "desc": "Pronged Passage: Dense Darkness (North)",
+     "en": "North: Raidwide, Dispel if Possible",
+     "ja": "北、全体攻撃、できればディスペル",
+     "note": "",
+     "off": false,
+     "id": "L_1f5e297f"
+    },
+    {
+     "desc": "Pronged Passage: Dense Darkness (South)",
+     "en": "South: Raidwide, Dispel if Possible",
+     "ja": "南、全体攻撃、できればディスペル",
+     "note": "",
+     "off": false,
+     "id": "L_bfaa34f6"
+    },
+    {
+     "desc": "Pronged Passage: Ancient Aero III",
+     "en": "Romeo's Ballad if Possible",
+     "ja": "できればロメオバラード",
+     "note": "サポートジョブのアクション名要確認",
+     "off": false,
+     "id": "L_81dec48b"
+    },
+    {
+     "desc": "Pronged Passage: Close Call to Detonate (North)",
+     "en": "Top Row, Bosses Apart",
+     "ja": "上の列、ボスを離す",
+     "note": "",
+     "off": false,
+     "id": "L_b7590504"
+    },
+    {
+     "desc": "Pronged Passage: Close Call to Detonate (South)",
+     "en": "Bottom Row, Bosses Apart",
+     "ja": "下の列、ボスを離す",
+     "note": "",
+     "off": false,
+     "id": "L_460006f7"
+    },
+    {
+     "desc": "Pronged Passage: Close Call to Detonate (Bridge Unknown)",
+     "en": "Move Bosses Apart",
+     "ja": "ボス同士を離す",
+     "note": "",
+     "off": false,
+     "id": "L_890d7fdd"
+    },
+    {
+     "desc": "Pronged Passage: Far Cry to Detonate (South)",
+     "en": "Top Row, Bosses Together",
+     "ja": "上の列、ボスをくっつける",
+     "note": "",
+     "off": false,
+     "id": "L_8882395e"
+    },
+    {
+     "desc": "Pronged Passage: Far Cry to Detonate (North)",
+     "en": "Bottom Row, Bosses Together",
+     "ja": "下の列、ボスをくっつける",
+     "note": "",
+     "off": false,
+     "id": "L_9416ddfb"
+    },
+    {
+     "desc": "Pronged Passage: Far Cry to Detonate (Bridge Unknown)",
+     "en": "Move Bosses Together",
+     "ja": "ボス同士を寄せる",
+     "note": "",
+     "off": false,
+     "id": "L_cd183882"
+    },
+    {
+     "desc": "Pronged Passage: Bombshell Drop (Tank)",
+     "en": "Pull Boss Away from Bombs",
+     "ja": "ボスを爆弾から離す",
+     "note": "",
+     "off": false,
+     "id": "L_2cba65ed"
+    },
+    {
+     "desc": "Pronged Passage: Bombshell Drop",
+     "en": "Kill Adds",
+     "ja": "雑魚を倒す",
+     "note": "",
+     "off": false,
+     "id": "L_951bab2e"
+    },
+    {
+     "desc": "Pronged Passage: Punishing Pounce",
+     "en": "Stack on {event.target}",
+     "ja": "{event.target}に頭割り",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_a65b9857",
+       "ja": "に頭割り"
+      }
+     ]
+    },
+    {
+     "desc": "Guardian Golem: Toxic Minerals",
+     "en": "Recuperation if Possible",
+     "ja": "できればリキュペレート",
+     "note": "サポートジョブのアクション名要確認",
+     "off": false,
+     "id": "L_137c391d"
+    },
+    {
+     "desc": "Guardian Berserker: Raging Slice",
+     "en": "Away from Front",
+     "ja": "前方から離れる",
+     "note": "",
+     "off": false,
+     "id": "L_dee4382a"
+    },
+    {
+     "desc": "Guardian Knight: Buster Knuckles",
+     "en": "Out, then In",
+     "ja": "外、そのあと中",
+     "note": "",
+     "off": false,
+     "id": "L_d5a86815"
+    },
+    {
+     "desc": "Guardian Knight: Earthquake",
+     "en": "In",
+     "ja": "中",
+     "note": "",
+     "off": false,
+     "id": "L_0869071c"
+    },
+    {
+     "desc": "Guardian Weapon: Whirl of Rage",
+     "en": "Out of Melee",
+     "ja": "近接の外",
+     "note": "",
+     "off": false,
+     "id": "L_5da7a471"
+    },
+    {
+     "desc": "Cloister Demon: Tidal Breath",
+     "en": "Get Behind",
+     "ja": "背後へ",
+     "note": "",
+     "off": false,
+     "id": "L_e3f85f6a"
+    },
+    {
+     "desc": "Crescent Berserker: Damage Up",
+     "en": "Dispel {event.target}",
+     "ja": "{event.target}にディスペル",
+     "note": "",
+     "off": true,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_bc2b30c1",
+       "ja": "にディスペル"
+      }
+     ]
+    },
+    {
+     "desc": "Hinkypunk: Dread Dive",
+     "en": "Buster on {event.target}",
+     "ja": "{event.target}にタンク強攻撃",
+     "note": "",
+     "off": false,
+     "parts": [
+      {
+       "type": "slot",
+       "kind": "player",
+       "expr": "event.target"
+      },
+      {
+       "type": "segment",
+       "id": "S_9c9f3a36",
+       "ja": "にタンク強攻撃"
+      }
+     ]
+    },
+    {
+     "desc": "Hinkypunk: Shades' Crossing",
+     "en": "Intercards",
+     "ja": "斜め",
+     "note": "",
+     "off": false,
+     "id": "L_a414231e"
+    },
+    {
+     "desc": "Death Claw: Vertical Crosshatch",
+     "en": "Sides, then Front/Back",
+     "ja": "横、そのあと前か後ろ",
+     "note": "",
+     "off": false,
+     "id": "L_bf46239b"
+    },
+    {
+     "desc": "Death Claw: Horizontal Crosshatch",
+     "en": "Front/Back, then Sides",
+     "ja": "前後、そのあと横",
+     "note": "",
+     "off": false,
+     "id": "L_0b4154c2"
+    },
+    {
+     "desc": "Sisyphus: Thunderous Memory (Cardinals Safe)",
+     "en": "Cardinals",
+     "ja": "十字",
+     "note": "",
+     "off": false,
+     "id": "L_bf034f06"
+    },
+    {
+     "desc": "Sisyphus: Resounding Memory (Out + Cardinals)",
+     "en": "Out+Cardinals",
+     "ja": "外、十字",
+     "note": "",
+     "off": false,
+     "id": "L_07266375"
+    },
+    {
+     "desc": "Sisyphus: Resounding Memory (Out + Intercards)",
+     "en": "Out+Intercards",
+     "ja": "外、斜め",
+     "note": "",
+     "off": false,
+     "id": "L_1c3eb05f"
+    },
+    {
+     "desc": "Sisyphus: Resounding Memory (In + Cardinals)",
+     "en": "In+Cardinals",
+     "ja": "中と十字",
+     "note": "",
+     "off": false,
+     "id": "L_82e7ec55"
+    },
+    {
+     "desc": "Sisyphus: Resounding Memory (In + Intercards)",
+     "en": "In+Intercards",
+     "ja": "中、斜め",
+     "note": "",
+     "off": false,
+     "id": "L_5853e2e6"
+    },
+    {
+     "desc": "Sisyphus: Thrice-come Thunder",
+     "en": "Dodge Expanding Rings",
+     "ja": "広がる輪を避ける",
+     "note": "",
+     "off": false,
+     "id": "L_ae00d570"
+    },
+    {
+     "desc": "Advanced Aevis: Triple Flight",
+     "en": "In, then Out, then Sides",
+     "ja": "中、そのあと外、そのあと横",
+     "note": "",
+     "off": false,
+     "id": "L_bf90f886"
+    },
+    {
+     "desc": "Advanced Aevis: Quarry Lake",
+     "en": "Look Away",
+     "ja": "背を向ける",
+     "note": "",
+     "off": false,
+     "id": "L_6354a221"
+    },
+    {
+     "desc": "Advanced Aevis: Breath Wing",
+     "en": "Out, then In, then Sides",
+     "ja": "外、そのあと中、そのあと横",
+     "note": "",
+     "off": false,
+     "id": "L_9da6fab6"
+    },
+    {
+     "desc": "Lifereaper: Sweeping Charge",
+     "en": "Follow Dash, then Get Behind",
+     "ja": "突進について行く、そのあと背後へ",
+     "note": "",
+     "off": false,
+     "id": "L_4f248a2b"
+    },
+    {
+     "desc": "Lifereaper: Menacing Charge",
+     "en": "Away After Dash",
+     "ja": "突進のあと離れる",
+     "note": "",
+     "off": false,
+     "id": "L_add1c975"
+    },
+    {
+     "desc": "Gilded Headstone: Erosive Eye (Look Towards)",
+     "en": "Look Towards",
+     "ja": "見る",
+     "note": "",
+     "off": false,
+     "id": "L_c88ba17e"
+    },
+    {
+     "desc": "Nammu: Encroaching Twin Tides",
+     "en": "In, then Out",
+     "ja": "中、そのあと外",
+     "note": "",
+     "off": false,
+     "id": "L_7c822975"
+    }
+   ]
   }
  ],
  "phrases": {
@@ -73242,6 +75769,7 @@
     "P8N",
     "RubicanteEx",
     "ASS_Criterion",
+    "None",
     "O1S",
     "O2S",
     "O3S",
@@ -73385,9 +75913,10 @@
     "MountOrdeals",
     "ContainmentBayS1T7Unreal",
     "TheSingularityReactorUnreal",
-    "TheDarkInside"
+    "TheDarkInside",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 159
+   "uses": 162
   },
   "L_f3915f74": {
    "id": "L_f3915f74",
@@ -73517,9 +76046,10 @@
     "LapisManalis",
     "ContainmentBayS1T7Unreal",
     "TheAbyssalFracture",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 41
+   "uses": 42
   },
   "L_aea6fe12": {
    "id": "L_aea6fe12",
@@ -73710,9 +76240,10 @@
     "AnotherAloaloIslandSavage",
     "AnotherAloaloIsland",
     "TheLunarSubterrane",
-    "TheSingularityReactorUnreal"
+    "TheSingularityReactorUnreal",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 54
+   "uses": 55
   },
   "L_bf391be3": {
    "id": "L_bf391be3",
@@ -73766,6 +76297,7 @@
     "EndsingerEx",
     "ASS_Criterion",
     "UWU",
+    "None",
     "O4S",
     "O5S",
     "O6S",
@@ -73952,9 +76484,11 @@
     "TheSingularityReactorUnreal",
     "TheAbyssalFracture",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheFinalVerseQuantum",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 226
+   "uses": 229
   },
   "L_7b5b8293": {
    "id": "L_7b5b8293",
@@ -74567,9 +77101,10 @@
     "ContainmentBayS1T7Unreal",
     "UltimasBaneUnreal",
     "TheMinstrelsBalladZodiarksFall",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 96
+   "uses": 97
   },
   "L_20c39163": {
    "id": "L_20c39163",
@@ -74749,9 +77284,10 @@
    "contents": [
     "DMU",
     "P6S",
-    "O9S"
+    "O9S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 3
+   "uses": 4
   },
   "L_208baeba": {
    "id": "L_208baeba",
@@ -74806,9 +77342,10 @@
     "TheLunarSubterrane",
     "TheFinalDay",
     "TheMinstrelsBalladHydaelynsCall",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 31
+   "uses": 32
   },
   "S_18c1b7fb": {
    "id": "S_18c1b7fb",
@@ -75010,9 +77547,11 @@
     "AnotherMountRokkonSavage",
     "AnotherMountRokkon",
     "MountRokkon",
-    "AsphodelosTheThirdCircle"
+    "AsphodelosTheThirdCircle",
+    "TheFinalVerseQuantum",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 33
+   "uses": 35
   },
   "L_0524c68a": {
    "id": "L_0524c68a",
@@ -75184,9 +77723,10 @@
     "TheAbyssalFracture",
     "ContainmentBayZ1T9Unreal",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 138
+   "uses": 139
   },
   "L_b082c858": {
    "id": "L_b082c858",
@@ -75749,9 +78289,10 @@
     "TheAbyssalFracture",
     "ContainmentBayZ1T9Unreal",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 166
+   "uses": 167
   },
   "C_afb4c62e": {
    "id": "C_afb4c62e",
@@ -76145,9 +78686,10 @@
     "TheAbyssalFracture",
     "ContainmentBayZ1T9Unreal",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 92
+   "uses": 93
   },
   "L_0869071c": {
    "id": "L_0869071c",
@@ -76170,6 +78712,7 @@
     "P1S",
     "P8N",
     "BarbarEx",
+    "None",
     "O8S",
     "O10S",
     "Euphrosyne",
@@ -76219,9 +78762,10 @@
     "StormsCrown",
     "TheMinstrelsBalladHydaelynsCall",
     "TheMothercrystal",
-    "ContainmentBayZ1T9Unreal"
+    "ContainmentBayZ1T9Unreal",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 66
+   "uses": 68
   },
   "L_b5bbee54": {
    "id": "L_b5bbee54",
@@ -76501,9 +79045,11 @@
     "TheFellCourtOfTroia",
     "TheVoidcastDais",
     "TheMinstrelsBalladZodiarksFall",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheFinalVerseQuantum",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 27
+   "uses": 29
   },
   "L_06b76274": {
    "id": "L_06b76274",
@@ -77468,9 +80014,10 @@
     "MountOrdeals",
     "ContainmentBayS1T7Unreal",
     "ContainmentBayZ1T9Unreal",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 34
+   "uses": 35
   },
   "S_e9253f13": {
    "id": "S_e9253f13",
@@ -77519,6 +80066,7 @@
     "M6S",
     "M8S",
     "M4S",
+    "None",
     "Everkeep",
     "M8N",
     "M9N",
@@ -77526,7 +80074,7 @@
     "DunScaith",
     "TheTowerAtParadigmsBreach"
    ],
-   "uses": 10
+   "uses": 11
   },
   "L_b96c2f76": {
    "id": "L_b96c2f76",
@@ -77664,9 +80212,10 @@
     "TheSeatOfSacrificeExtreme",
     "TheSeatOfSacrifice",
     "AnotherAloaloIsland",
-    "TheAbyssalFracture"
+    "TheAbyssalFracture",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 49
+   "uses": 50
   },
   "L_a6423c3b": {
    "id": "L_a6423c3b",
@@ -78550,9 +81099,10 @@
     "P12S",
     "O10S",
     "DtEx7",
-    "M8N"
+    "M8N",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 6
+   "uses": 7
   },
   "L_a414231e": {
    "id": "L_a414231e",
@@ -78564,9 +81114,10 @@
     "DtEx7",
     "M11N",
     "TheSildihnSubterrane",
-    "TheMothercrystal"
+    "TheMothercrystal",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 6
+   "uses": 7
   },
   "L_32c30796": {
    "id": "L_32c30796",
@@ -78930,9 +81481,10 @@
    "kind": "line",
    "ja": "十字が先",
    "contents": [
-    "M12S"
+    "M12S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_fa03cd67": {
    "id": "L_fa03cd67",
@@ -79090,9 +81642,10 @@
    "contents": [
     "M5S",
     "P5S",
-    "P6S"
+    "P6S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 3
+   "uses": 4
   },
   "L_a73cc39a": {
    "id": "L_a73cc39a",
@@ -79214,9 +81767,10 @@
     "EdensVerseRefulgence",
     "EdensVerseRefulgenceSavage",
     "AloaloIsland",
-    "LapisManalis"
+    "LapisManalis",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 8
+   "uses": 9
   },
   "L_d5a86815": {
    "id": "L_d5a86815",
@@ -79233,9 +81787,10 @@
     "EdensVerseRefulgenceSavage",
     "AloaloIsland",
     "LapisManalis",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 11
+   "uses": 12
   },
   "L_8dad5963": {
    "id": "L_8dad5963",
@@ -79893,9 +82448,10 @@
     "UltimasBaneUnreal",
     "TheAbyssalFracture",
     "TheMinstrelsBalladZodiarksFall",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 34
+   "uses": 35
   },
   "L_728b20fd": {
    "id": "L_728b20fd",
@@ -80469,9 +83025,10 @@
     "M9N",
     "EdensGateSepultureSavage",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 9
+   "uses": 10
   },
   "L_695a7ea2": {
    "id": "L_695a7ea2",
@@ -80486,9 +83043,10 @@
     "M9N",
     "EdensGateSepultureSavage",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 9
+   "uses": 10
   },
   "S_f1f4c216": {
    "id": "S_f1f4c216",
@@ -80562,9 +83120,10 @@
     "AsphodelosTheFirstCircle",
     "AsphodelosTheThirdCircle",
     "ContainmentBayS1T7Unreal",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 50
+   "uses": 51
   },
   "L_851cdd60": {
    "id": "L_851cdd60",
@@ -80620,9 +83179,10 @@
     "AsphodelosTheFirstCircle",
     "AsphodelosTheThirdCircle",
     "ContainmentBayS1T7Unreal",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 50
+   "uses": 51
   },
   "S_11ab2505": {
    "id": "S_11ab2505",
@@ -80757,18 +83317,20 @@
    "ja": "外、十字",
    "contents": [
     "M2S",
-    "MountRokkon"
+    "MountRokkon",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_5853e2e6": {
    "id": "L_5853e2e6",
    "kind": "line",
    "ja": "中、斜め",
    "contents": [
-    "M2S"
+    "M2S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_1c3eb05f": {
    "id": "L_1c3eb05f",
@@ -80776,9 +83338,10 @@
    "ja": "外、斜め",
    "contents": [
     "M2S",
-    "MountRokkon"
+    "MountRokkon",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "S_0b0f79d4": {
    "id": "S_0b0f79d4",
@@ -82017,9 +84580,10 @@
    "ja": "十字範囲",
    "contents": [
     "DtEx2",
-    "P12S"
+    "P12S",
+    "None"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_1b162572": {
    "id": "L_1b162572",
@@ -82310,9 +84874,10 @@
     "LapisManalis",
     "TheFellCourtOfTroia",
     "Vanaspati",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 30
+   "uses": 31
   },
   "L_521a4129": {
    "id": "L_521a4129",
@@ -82326,9 +84891,10 @@
     "EdensPromiseUmbraSavage",
     "TheAkhAfahAmphitheatreUnreal",
     "AnotherMountRokkonSavage",
-    "AnotherMountRokkon"
+    "AnotherMountRokkon",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 8
+   "uses": 9
   },
   "L_198631ac": {
    "id": "L_198631ac",
@@ -82917,9 +85483,11 @@
     "ContainmentBayP1T6Unreal",
     "TheSingularityReactorUnreal",
     "TheMinstrelsBalladZodiarksFall",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheFinalVerseQuantum",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 25
+   "uses": 30
   },
   "S_6417fd8b": {
    "id": "S_6417fd8b",
@@ -83143,9 +85711,10 @@
     "EdensVerseFurorSavage",
     "AnotherAloaloIslandSavage",
     "AnotherAloaloIsland",
-    "ContainmentBayZ1T9Unreal"
+    "ContainmentBayZ1T9Unreal",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 8
+   "uses": 9
   },
   "S_593ef7ef": {
    "id": "S_593ef7ef",
@@ -83646,9 +86215,10 @@
     "TheSeatOfSacrificeExtreme",
     "AnotherAloaloIsland",
     "KtisisHyperboreia",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 31
+   "uses": 32
   },
   "L_fd64a990": {
    "id": "L_fd64a990",
@@ -83942,6 +86512,7 @@
    "contents": [
     "Dragonsong",
     "ASS_Criterion",
+    "None",
     "O5S",
     "Euphrosyne",
     "TsukuyomiUn",
@@ -83982,9 +86553,10 @@
     "TheTowerOfBabil",
     "AsphodelosTheFourthCircle",
     "ContainmentBayP1T6Unreal",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 43
+   "uses": 45
   },
   "L_72776ab6": {
    "id": "L_72776ab6",
@@ -84500,9 +87072,10 @@
     "EdensPromiseUmbra",
     "EdensPromiseUmbraSavage",
     "AnotherAloaloIslandSavage",
-    "AnotherAloaloIsland"
+    "AnotherAloaloIsland",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 9
+   "uses": 10
   },
   "L_24a93bf7": {
    "id": "L_24a93bf7",
@@ -85192,9 +87765,10 @@
    "kind": "segment",
    "ja": "線あり",
    "contents": [
-    "P12S"
+    "P12S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_973b1b47": {
    "id": "L_973b1b47",
@@ -85482,9 +88056,10 @@
     "TheMinstrelsBalladHydaelynsCall",
     "ContainmentBayS1T7Unreal",
     "ContainmentBayZ1T9Unreal",
-    "JeunoTheFirstWalk"
+    "JeunoTheFirstWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 48
+   "uses": 49
   },
   "L_1efb1135": {
    "id": "L_1efb1135",
@@ -85619,9 +88194,10 @@
    "ja": "横、そのあと前か後ろ",
    "contents": [
     "P6S",
-    "O9S"
+    "O9S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_9d4926e9": {
    "id": "L_9d4926e9",
@@ -86572,9 +89148,10 @@
    "ja": "を避ける",
    "contents": [
     "P8S",
-    "EdensVerseIconoclasmSavage"
+    "EdensVerseIconoclasmSavage",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_0633b734": {
    "id": "L_0633b734",
@@ -87007,9 +89584,10 @@
    "kind": "line",
    "ja": "枷",
    "contents": [
-    "P1S"
+    "P1S",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_34e33a9e": {
    "id": "L_34e33a9e",
@@ -87316,9 +89894,10 @@
    "kind": "segment",
    "ja": "に線",
    "contents": [
-    "P3S"
+    "P3S",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 1
+   "uses": 2
   },
   "S_4ecf32d1": {
    "id": "S_4ecf32d1",
@@ -88302,9 +90881,10 @@
     "BarbarEx",
     "TheGrandCosmos",
     "EdensVerseIconoclasmSavage",
-    "TheCrownOfTheImmaculateExtreme"
+    "TheCrownOfTheImmaculateExtreme",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 4
+   "uses": 5
   },
   "L_454b5060": {
    "id": "L_454b5060",
@@ -88991,6 +91571,63 @@
    "ja": "右レーザー",
    "contents": [
     "UWU"
+   ],
+   "uses": 1
+  },
+  "L_63b560db": {
+   "id": "L_63b560db",
+   "kind": "line",
+   "ja": "テスト",
+   "contents": [
+    "None"
+   ],
+   "uses": 1
+  },
+  "L_6ce2c331": {
+   "id": "L_6ce2c331",
+   "kind": "line",
+   "ja": "フー",
+   "contents": [
+    "None"
+   ],
+   "uses": 1
+  },
+  "L_340632c0": {
+   "id": "L_340632c0",
+   "kind": "line",
+   "ja": "ディレイ",
+   "contents": [
+    "None"
+   ],
+   "uses": 1
+  },
+  "L_b1a8fa9e": {
+   "id": "L_b1a8fa9e",
+   "kind": "line",
+   "ja": "外へ",
+   "contents": [
+    "None",
+    "TheSeatOfSacrifice"
+   ],
+   "uses": 2
+  },
+  "S_de3d1ecc": {
+   "id": "S_de3d1ecc",
+   "kind": "segment",
+   "ja": "に",
+   "contents": [
+    "None",
+    "AnotherMountRokkonSavage",
+    "AnotherMountRokkon"
+   ],
+   "uses": 3
+  },
+  "L_d856497c": {
+   "id": "L_d856497c",
+   "kind": "line",
+   "ja": "このコンテンツは専用のトリガーが無いので、汎用の読み上げを使います",
+   "contents": [
+    "None"
    ],
    "uses": 1
   },
@@ -90418,18 +93055,20 @@
    "ja": "ボス同士を離す",
    "contents": [
     "O12S",
-    "AlphascapeV40"
+    "AlphascapeV40",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_cd183882": {
    "id": "L_cd183882",
    "kind": "line",
    "ja": "ボス同士を寄せる",
    "contents": [
-    "O12S"
+    "O12S",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_958f0541": {
    "id": "L_958f0541",
@@ -90670,9 +93309,10 @@
     "TheMothercrystal",
     "MountOrdeals",
     "JeunoTheFirstWalk",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 20
+   "uses": 21
   },
   "L_84e846c1": {
    "id": "L_84e846c1",
@@ -90857,9 +93497,10 @@
     "Aglaia",
     "Underkeep",
     "CastrumFluminis",
-    "AsphodelosTheSecondCircle"
+    "AsphodelosTheSecondCircle",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 4
+   "uses": 5
   },
   "L_ffcb6fa7": {
    "id": "L_ffcb6fa7",
@@ -91100,9 +93741,10 @@
    "kind": "line",
    "ja": "右前",
    "contents": [
-    "Euphrosyne"
+    "Euphrosyne",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_1410040b": {
    "id": "L_1410040b",
@@ -91110,9 +93752,10 @@
    "ja": "左後ろ",
    "contents": [
     "Euphrosyne",
-    "TheSildihnSubterrane"
+    "TheSildihnSubterrane",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_1412c79e": {
    "id": "L_1412c79e",
@@ -93493,9 +96136,11 @@
     "TheCopiedFactory",
     "EdensPromiseUmbra",
     "EdensPromiseUmbraSavage",
-    "MemoriaMiseraExtreme"
+    "MemoriaMiseraExtreme",
+    "TheFinalVerseQuantum",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 15
+   "uses": 17
   },
   "L_0c7a2cc1": {
    "id": "L_0c7a2cc1",
@@ -93607,9 +96252,10 @@
     "AnotherAloaloIsland",
     "LapisManalis",
     "TheDeadEnds",
-    "TheLunarSubterrane"
+    "TheLunarSubterrane",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 11
+   "uses": 12
   },
   "L_e489d9d6": {
    "id": "L_e489d9d6",
@@ -93762,9 +96408,10 @@
    "ja": "床誘導、3回",
    "contents": [
     "WorqorLarDor",
-    "M11N"
+    "M11N",
+    "TheFinalVerseQuantum"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_fe566ded": {
    "id": "L_fe566ded",
@@ -94221,9 +96868,10 @@
     "TheFractalContinuumHard",
     "MtGulg",
     "TheTowerOfBabil",
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 9
+   "uses": 10
   },
   "L_ba3cb53a": {
    "id": "L_ba3cb53a",
@@ -99485,9 +102133,10 @@
    "kind": "line",
    "ja": "自分に直線頭割り",
    "contents": [
-    "CastrumFluminis"
+    "CastrumFluminis",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_60d24396": {
    "id": "L_60d24396",
@@ -100923,9 +103572,10 @@
    "ja": "青",
    "contents": [
     "EdensPromiseEternitySavage",
-    "EdensVerseRefulgenceSavage"
+    "EdensVerseRefulgenceSavage",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 2
+   "uses": 3
   },
   "L_4942686d": {
    "id": "L_4942686d",
@@ -102320,9 +104970,10 @@
    "kind": "segment",
    "ja": "赤",
    "contents": [
-    "EdensVerseRefulgenceSavage"
+    "EdensVerseRefulgenceSavage",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "S_e349ae13": {
    "id": "S_e349ae13",
@@ -103445,15 +106096,6 @@
    "id": "L_1cab4219",
    "kind": "line",
    "ja": "三角の外",
-   "contents": [
-    "TheSeatOfSacrifice"
-   ],
-   "uses": 1
-  },
-  "L_b1a8fa9e": {
-   "id": "L_b1a8fa9e",
-   "kind": "line",
-   "ja": "外へ",
    "contents": [
     "TheSeatOfSacrifice"
    ],
@@ -104786,16 +107428,6 @@
    "id": "L_bca985f1",
    "kind": "line",
    "ja": "横、外",
-   "contents": [
-    "AnotherMountRokkonSavage",
-    "AnotherMountRokkon"
-   ],
-   "uses": 2
-  },
-  "S_de3d1ecc": {
-   "id": "S_de3d1ecc",
-   "kind": "segment",
-   "ja": "に",
    "contents": [
     "AnotherMountRokkonSavage",
     "AnotherMountRokkon"
@@ -107151,9 +109783,10 @@
    "kind": "line",
    "ja": "見る",
    "contents": [
-    "WindurstTheThirdWalk"
+    "WindurstTheThirdWalk",
+    "TheOccultCrescentSouthHorn"
    ],
-   "uses": 1
+   "uses": 2
   },
   "L_bb25414c": {
    "id": "L_bb25414c",
@@ -107179,6 +109812,1258 @@
    "ja": "剣の扇範囲を避ける",
    "contents": [
     "WindurstTheThirdWalk"
+   ],
+   "uses": 1
+  },
+  "L_f90a72ce": {
+   "id": "L_f90a72ce",
+   "kind": "line",
+   "ja": "ボスのHP差を確認",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "S_5fb57b93": {
+   "id": "S_5fb57b93",
+   "kind": "segment",
+   "ja": "に石化",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "S_91ff677b": {
+   "id": "S_91ff677b",
+   "kind": "segment",
+   "ja": "にヒステリー",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_a86cba5a": {
+   "id": "L_a86cba5a",
+   "kind": "line",
+   "ja": "ヴェンジェンスを付け直す",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "S_df045200": {
+   "id": "S_df045200",
+   "kind": "segment",
+   "ja": "あとで",
+   "contents": [
+    "TheFinalVerseQuantum",
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 3
+  },
+  "S_75638baf": {
+   "id": "S_75638baf",
+   "kind": "segment",
+   "ja": "エクサフレアを避ける",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_48b8f233": {
+   "id": "L_48b8f233",
+   "kind": "line",
+   "ja": "闇のペアと頭割り",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_236e1c62": {
+   "id": "L_236e1c62",
+   "kind": "line",
+   "ja": "光のペアと頭割り",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_39cf16c8": {
+   "id": "L_39cf16c8",
+   "kind": "line",
+   "ja": "中央で頭割り、鎖",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_91326736": {
+   "id": "L_91326736",
+   "kind": "line",
+   "ja": "鎖を切る、そのあと全体攻撃、継続ダメージあり",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_2b92db02": {
+   "id": "L_2b92db02",
+   "kind": "line",
+   "ja": "自分に頭割り、タンクが前",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "S_ef21f8e1": {
+   "id": "S_ef21f8e1",
+   "kind": "segment",
+   "ja": "に頭割り、タンクが前",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_c0133e9e": {
+   "id": "L_c0133e9e",
+   "kind": "line",
+   "ja": "塔を倒す",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_1d4a726c": {
+   "id": "L_1d4a726c",
+   "kind": "line",
+   "ja": "フレイムボーンを誘導",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_c8b58662": {
+   "id": "L_c8b58662",
+   "kind": "line",
+   "ja": "全体攻撃と引き寄せ",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_b88c3c05": {
+   "id": "L_b88c3c05",
+   "kind": "line",
+   "ja": "3回タンク強攻撃、継続ダメージあり",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_1af7f912": {
+   "id": "L_1af7f912",
+   "kind": "line",
+   "ja": "左前か右後ろ、レーザーを避ける",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_6370eac5": {
+   "id": "L_6370eac5",
+   "kind": "line",
+   "ja": "右前か左後ろ、レーザーを避ける",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_bfc99b05": {
+   "id": "L_bfc99b05",
+   "kind": "line",
+   "ja": "闇のヴェンジェンスを取る",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_e0b57d6b": {
+   "id": "L_e0b57d6b",
+   "kind": "line",
+   "ja": "自分に罪の担い手",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "S_9f0d90ad": {
+   "id": "S_9f0d90ad",
+   "kind": "segment",
+   "ja": "に罪の担い手",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_7267ac54": {
+   "id": "L_7267ac54",
+   "kind": "line",
+   "ja": "罪の担い手を渡す",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_b288a0ac": {
+   "id": "L_b288a0ac",
+   "kind": "line",
+   "ja": "光のヴェンジェンスを取る",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_cf562ed6": {
+   "id": "L_cf562ed6",
+   "kind": "line",
+   "ja": "闇のヴェンジェンスのまま",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "S_fac6747a": {
+   "id": "S_fac6747a",
+   "kind": "segment",
+   "ja": "が戦闘不能、交代",
+   "contents": [
+    "TheFinalVerseQuantum"
+   ],
+   "uses": 1
+  },
+  "L_d06107f5": {
+   "id": "L_d06107f5",
+   "kind": "line",
+   "ja": "自分にタンク扇、直線頭割りを避ける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_7538239a": {
+   "id": "S_7538239a",
+   "kind": "segment",
+   "ja": "にタンク扇",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_cefa9346": {
+   "id": "L_cefa9346",
+   "kind": "line",
+   "ja": "ボスの当たり判定の外へ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_ea4fd710": {
+   "id": "S_ea4fd710",
+   "kind": "segment",
+   "ja": "赤が",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_6c1a9beb": {
+   "id": "S_6c1a9beb",
+   "kind": "segment",
+   "ja": "増える",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "S_67dab95a": {
+   "id": "S_67dab95a",
+   "kind": "segment",
+   "ja": "青が",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_910570d0": {
+   "id": "S_910570d0",
+   "kind": "segment",
+   "ja": "スライムは",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "L_37fe79f6": {
+   "id": "L_37fe79f6",
+   "kind": "line",
+   "ja": "自分に直線頭割り、タンク扇を避ける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_f419cb42": {
+   "id": "L_f419cb42",
+   "kind": "line",
+   "ja": "ワイルドチャージの配置",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_f1e5b035": {
+   "id": "S_f1e5b035",
+   "kind": "segment",
+   "ja": "へノックバック、そのあと壁で頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_b75beca4": {
+   "id": "L_b75beca4",
+   "kind": "line",
+   "ja": "雪玉へノックバック、そのあと壁で頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_1755b322": {
+   "id": "L_1755b322",
+   "kind": "line",
+   "ja": "中央から離れる、グループの配置",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_be0cc4d6": {
+   "id": "L_be0cc4d6",
+   "kind": "line",
+   "ja": "噴射を2つ避ける、そのあと散開",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_241d0aab": {
+   "id": "L_241d0aab",
+   "kind": "line",
+   "ja": "中、そのあとノックバック",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_cc9b592f": {
+   "id": "L_cc9b592f",
+   "kind": "line",
+   "ja": "左、そのあと背後へ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_d8a89e15": {
+   "id": "L_d8a89e15",
+   "kind": "line",
+   "ja": "右、そのあと背後へ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_5f3b0e7e": {
+   "id": "L_5f3b0e7e",
+   "kind": "line",
+   "ja": "左、ボスの背後",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_2afc8a50": {
+   "id": "L_2afc8a50",
+   "kind": "line",
+   "ja": "右、ボスの背後",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_39c92899": {
+   "id": "S_39c92899",
+   "kind": "segment",
+   "ja": "で外",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "S_026f1893": {
+   "id": "S_026f1893",
+   "kind": "segment",
+   "ja": "で中、そのあとノックバック",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "L_287c7319": {
+   "id": "L_287c7319",
+   "kind": "line",
+   "ja": "自分にメテオ、外",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_33ee1cbe": {
+   "id": "L_33ee1cbe",
+   "kind": "line",
+   "ja": "自分にメテオ、中、そのあとノックバック",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_43c7950c": {
+   "id": "S_43c7950c",
+   "kind": "segment",
+   "ja": "自分にメテオ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "L_1f5ccd68": {
+   "id": "L_1f5ccd68",
+   "kind": "line",
+   "ja": "南で外、そのあと自分に打ち上げの頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_c45ac07c": {
+   "id": "L_c45ac07c",
+   "kind": "line",
+   "ja": "南で中、ノックバック、そのあと自分に打ち上げの頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_4cf865c9": {
+   "id": "L_4cf865c9",
+   "kind": "line",
+   "ja": "北で外、そのあと自分に打ち上げの頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_e8328e60": {
+   "id": "L_e8328e60",
+   "kind": "line",
+   "ja": "北で中、ノックバック、そのあと自分に打ち上げの頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_d056442a": {
+   "id": "L_d056442a",
+   "kind": "line",
+   "ja": "頭割り、ボスを越えて打ち上げ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_a1ca7aaf": {
+   "id": "L_a1ca7aaf",
+   "kind": "line",
+   "ja": "頭割り、ボスに向かって打ち上げ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_97c74824": {
+   "id": "L_97c74824",
+   "kind": "line",
+   "ja": "雑魚の配置、外",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_8fe943af": {
+   "id": "S_8fe943af",
+   "kind": "segment",
+   "ja": "で外、そのあと塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_b6569935": {
+   "id": "L_b6569935",
+   "kind": "line",
+   "ja": "塔の側で外",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_f7260c52": {
+   "id": "S_f7260c52",
+   "kind": "segment",
+   "ja": "で中、ノックバック、そのあと塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_36da896d": {
+   "id": "L_36da896d",
+   "kind": "line",
+   "ja": "塔の側で中、そのあとノックバック",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_e5daf9fd": {
+   "id": "L_e5daf9fd",
+   "kind": "line",
+   "ja": "塔を踏む、そのあと右前",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_0479d7af": {
+   "id": "L_0479d7af",
+   "kind": "line",
+   "ja": "塔を踏む、そのあと左後ろ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_1d0e3408": {
+   "id": "L_1d0e3408",
+   "kind": "line",
+   "ja": "塔を踏む、そのあと安全な角",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_ab89bd25": {
+   "id": "L_ab89bd25",
+   "kind": "line",
+   "ja": "あとで右前",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_d6dc0651": {
+   "id": "L_d6dc0651",
+   "kind": "line",
+   "ja": "あとで左後ろ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_a1d4727e": {
+   "id": "L_a1d4727e",
+   "kind": "line",
+   "ja": "落ちてくる像を避ける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_8182bfed": {
+   "id": "L_8182bfed",
+   "kind": "line",
+   "ja": "タンクは近く、パーティは遠く、3回",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_66ccfb8b": {
+   "id": "L_66ccfb8b",
+   "kind": "line",
+   "ja": "タンクは遠く、パーティは近く、3回",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_382b1852": {
+   "id": "L_382b1852",
+   "kind": "line",
+   "ja": "反転したY字の短剣",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_de82078e": {
+   "id": "L_de82078e",
+   "kind": "line",
+   "ja": "Y字の短剣",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_2e000f1d": {
+   "id": "L_2e000f1d",
+   "kind": "line",
+   "ja": "外、四角の角",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_fbb5f14c": {
+   "id": "L_fbb5f14c",
+   "kind": "line",
+   "ja": "中、四角の間",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_ee13438b": {
+   "id": "L_ee13438b",
+   "kind": "line",
+   "ja": "近くと遠くにタンク扇、そのあとタンクにオートアタック2回",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_aa7d0084": {
+   "id": "L_aa7d0084",
+   "kind": "line",
+   "ja": "ボスの当たり判定に入る、タンク扇を避ける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_ab7f8e81": {
+   "id": "L_ab7f8e81",
+   "kind": "line",
+   "ja": "黄色のキャニスターを攻撃、斧",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_c5ddb22a": {
+   "id": "L_c5ddb22a",
+   "kind": "line",
+   "ja": "青のキャニスターを攻撃、槍",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_fc7c0cdf": {
+   "id": "L_fc7c0cdf",
+   "kind": "line",
+   "ja": "杖で直線頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_1f42394b": {
+   "id": "L_1f42394b",
+   "kind": "line",
+   "ja": "自分に大きい範囲、紫の円のそばの壁へ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_29a1c0f4": {
+   "id": "L_29a1c0f4",
+   "kind": "line",
+   "ja": "自分に小さい範囲、四角に残る、そのあと四角の間",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_12249555": {
+   "id": "L_12249555",
+   "kind": "line",
+   "ja": "あとで自分に大きい範囲",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_d2f51246": {
+   "id": "L_d2f51246",
+   "kind": "line",
+   "ja": "あとで自分に小さい範囲",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_67caadd7": {
+   "id": "S_67caadd7",
+   "kind": "segment",
+   "ja": "に大きい範囲、四角に乗る",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_8d6a93be": {
+   "id": "S_8d6a93be",
+   "kind": "segment",
+   "ja": "に小さい範囲",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_474642be": {
+   "id": "S_474642be",
+   "kind": "segment",
+   "ja": "に範囲",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_c58d7d9b": {
+   "id": "L_c58d7d9b",
+   "kind": "line",
+   "ja": "範囲を受けてから中、四角の間",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_fd844241": {
+   "id": "L_fd844241",
+   "kind": "line",
+   "ja": "中、四角の間、そのあと壁へ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_fb2c90c8": {
+   "id": "L_fb2c90c8",
+   "kind": "line",
+   "ja": "中、四角の間、そのあと1人で四角",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_c4e09f80": {
+   "id": "L_c4e09f80",
+   "kind": "line",
+   "ja": "中、四角の間、そのあと四角に乗る",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_e6418fdf": {
+   "id": "L_e6418fdf",
+   "kind": "line",
+   "ja": "自分に小さい範囲、1人で四角に乗る",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_c593c64f": {
+   "id": "S_c593c64f",
+   "kind": "segment",
+   "ja": "四角に乗る",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_9ceb10ab": {
+   "id": "L_9ceb10ab",
+   "kind": "line",
+   "ja": "自分に短い頭割り、17秒",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_c12695d3": {
+   "id": "L_c12695d3",
+   "kind": "line",
+   "ja": "自分に中くらいの頭割り、25秒",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_48a3e88c": {
+   "id": "L_48a3e88c",
+   "kind": "line",
+   "ja": "自分に長い頭割り、33秒",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_8699de4f": {
+   "id": "L_8699de4f",
+   "kind": "line",
+   "ja": "北東はオフ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_2ca627ee": {
+   "id": "L_2ca627ee",
+   "kind": "line",
+   "ja": "北東はオン",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_d3e89314": {
+   "id": "L_d3e89314",
+   "kind": "line",
+   "ja": "南はオフ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_71c41065": {
+   "id": "L_71c41065",
+   "kind": "line",
+   "ja": "南はオン",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_8fce3c6a": {
+   "id": "L_8fce3c6a",
+   "kind": "line",
+   "ja": "北西はオフ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_e595f0f6": {
+   "id": "S_e595f0f6",
+   "kind": "segment",
+   "ja": "で当たる",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_199d9725": {
+   "id": "L_199d9725",
+   "kind": "line",
+   "ja": "円が先",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_e65a6a93": {
+   "id": "L_e65a6a93",
+   "kind": "line",
+   "ja": "自分にタンク強攻撃、継続ダメージあり",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_ff11b69a": {
+   "id": "L_ff11b69a",
+   "kind": "line",
+   "ja": "竜巻を避ける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_3642b76e": {
+   "id": "L_3642b76e",
+   "kind": "line",
+   "ja": "斜めの塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_c47d38b9": {
+   "id": "L_c47d38b9",
+   "kind": "line",
+   "ja": "十字の塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_bca1c2ce": {
+   "id": "L_bca1c2ce",
+   "kind": "line",
+   "ja": "十字か斜めの塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_c8a20bc2": {
+   "id": "S_c8a20bc2",
+   "kind": "segment",
+   "ja": "にダイブ、そのあと塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_87399cd9": {
+   "id": "L_87399cd9",
+   "kind": "line",
+   "ja": "ボスがダイブ、そのあと塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_95c7a4ae": {
+   "id": "S_95c7a4ae",
+   "kind": "segment",
+   "ja": "の塔、そのあと斜めの塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_06d9c0e6": {
+   "id": "S_06d9c0e6",
+   "kind": "segment",
+   "ja": "の塔、そのあと十字の塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_7e74a8cf": {
+   "id": "L_7e74a8cf",
+   "kind": "line",
+   "ja": "塔、そのあと十字か斜めの塔",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_8789f50d": {
+   "id": "L_8789f50d",
+   "kind": "line",
+   "ja": "自分にウィキッドウォーター",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_cb4dd4c4": {
+   "id": "L_cb4dd4c4",
+   "kind": "line",
+   "ja": "氷の爆発に当たる",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_bd4b44d7": {
+   "id": "L_bd4b44d7",
+   "kind": "line",
+   "ja": "ジェイルを壊す",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_199d9725": {
+   "id": "S_199d9725",
+   "kind": "segment",
+   "ja": "円が先",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "S_cfc8f428": {
+   "id": "S_cfc8f428",
+   "kind": "segment",
+   "ja": "十字が先",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "L_9ae541bb": {
+   "id": "L_9ae541bb",
+   "kind": "line",
+   "ja": "縦の塔を踏む",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_688f663c": {
+   "id": "S_688f663c",
+   "kind": "segment",
+   "ja": "縦の塔を踏む、そのあと",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_5268383f": {
+   "id": "L_5268383f",
+   "kind": "line",
+   "ja": "横の塔を踏む",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_6c24752b": {
+   "id": "S_6c24752b",
+   "kind": "segment",
+   "ja": "横の塔を踏む、そのあと",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_cf01c8f4": {
+   "id": "S_cf01c8f4",
+   "kind": "segment",
+   "ja": "塔を踏む、そのあと",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_48c14622": {
+   "id": "S_48c14622",
+   "kind": "segment",
+   "ja": "北",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_6820937b": {
+   "id": "S_6820937b",
+   "kind": "segment",
+   "ja": "に詠唱中断",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 2
+  },
+  "S_e6ac67fb": {
+   "id": "S_e6ac67fb",
+   "kind": "segment",
+   "ja": "南",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_025b14f2": {
+   "id": "L_025b14f2",
+   "kind": "line",
+   "ja": "ワイルドチャージ、東、縦に並んで頭割り",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_1f5e297f": {
+   "id": "L_1f5e297f",
+   "kind": "line",
+   "ja": "北、全体攻撃、できればディスペル",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_bfaa34f6": {
+   "id": "L_bfaa34f6",
+   "kind": "line",
+   "ja": "南、全体攻撃、できればディスペル",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_81dec48b": {
+   "id": "L_81dec48b",
+   "kind": "line",
+   "ja": "できればロメオバラード",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_b7590504": {
+   "id": "L_b7590504",
+   "kind": "line",
+   "ja": "上の列、ボスを離す",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_460006f7": {
+   "id": "L_460006f7",
+   "kind": "line",
+   "ja": "下の列、ボスを離す",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_8882395e": {
+   "id": "L_8882395e",
+   "kind": "line",
+   "ja": "上の列、ボスをくっつける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_9416ddfb": {
+   "id": "L_9416ddfb",
+   "kind": "line",
+   "ja": "下の列、ボスをくっつける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_2cba65ed": {
+   "id": "L_2cba65ed",
+   "kind": "line",
+   "ja": "ボスを爆弾から離す",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_137c391d": {
+   "id": "L_137c391d",
+   "kind": "line",
+   "ja": "できればリキュペレート",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "S_bc2b30c1": {
+   "id": "S_bc2b30c1",
+   "kind": "segment",
+   "ja": "にディスペル",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_82e7ec55": {
+   "id": "L_82e7ec55",
+   "kind": "line",
+   "ja": "中と十字",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_ae00d570": {
+   "id": "L_ae00d570",
+   "kind": "line",
+   "ja": "広がる輪を避ける",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_bf90f886": {
+   "id": "L_bf90f886",
+   "kind": "line",
+   "ja": "中、そのあと外、そのあと横",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_9da6fab6": {
+   "id": "L_9da6fab6",
+   "kind": "line",
+   "ja": "外、そのあと中、そのあと横",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_4f248a2b": {
+   "id": "L_4f248a2b",
+   "kind": "line",
+   "ja": "突進について行く、そのあと背後へ",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
+   ],
+   "uses": 1
+  },
+  "L_add1c975": {
+   "id": "L_add1c975",
+   "kind": "line",
+   "ja": "突進のあと離れる",
+   "contents": [
+    "TheOccultCrescentSouthHorn"
    ],
    "uses": 1
   }

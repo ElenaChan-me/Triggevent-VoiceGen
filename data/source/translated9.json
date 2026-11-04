@@ -1,0 +1,787 @@
+[
+ {
+  "en": "Check Boss HP Difference",
+  "ja": "ボスのHP差を確認",
+  "note": ""
+ },
+ {
+  "en": "Petrification on {event.target}",
+  "ja": "{event.target}に石化",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Hysteria on {event.target}",
+  "ja": "{event.target}にヒステリー",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Refresh Vengeance",
+  "ja": "ヴェンジェンスを付け直す",
+  "note": "技名要確認"
+ },
+ {
+  "en": "{frontBack}-{leftRight}, for later",
+  "ja": "{frontBack}{leftRight}、あとで",
+  "note": ""
+ },
+ {
+  "en": "{frontBack}-{leftRight}, Avoid Exaflares",
+  "ja": "{frontBack}{leftRight}、エクサフレアを避ける",
+  "note": ""
+ },
+ {
+  "en": "{dir} + {inOut}",
+  "ja": "{dir}、{inOut}",
+  "note": ""
+ },
+ {
+  "en": "{dir1}/{dir2} + {inOut}",
+  "ja": "{dir1}か{dir2}、{inOut}",
+  "note": ""
+ },
+ {
+  "en": "Stack with Dark Partner",
+  "ja": "闇のペアと頭割り",
+  "note": ""
+ },
+ {
+  "en": "Stack with Light Partner",
+  "ja": "光のペアと頭割り",
+  "note": ""
+ },
+ {
+  "en": "{mech1}, then {mech2}",
+  "ja": "{mech1}、そのあと{mech2}",
+  "note": ""
+ },
+ {
+  "en": "Stack Middle for Chains",
+  "ja": "中央で頭割り、鎖",
+  "note": ""
+ },
+ {
+  "en": "Break Chains, then Raidwide with Bleed",
+  "ja": "鎖を切る、そのあと全体攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Stack on You, Tank in Front",
+  "ja": "自分に頭割り、タンクが前",
+  "note": ""
+ },
+ {
+  "en": "Stack on {event.target}, Tank in Front",
+  "ja": "{event.target}に頭割り、タンクが前",
+  "note": ""
+ },
+ {
+  "en": "Kill Add",
+  "ja": "雑魚を倒す",
+  "note": ""
+ },
+ {
+  "en": "Kill Towers",
+  "ja": "塔を倒す",
+  "note": ""
+ },
+ {
+  "en": "Bait Flameborn",
+  "ja": "フレイムボーンを誘導",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Tether on {player}",
+  "ja": "{player}に線",
+  "note": ""
+ },
+ {
+  "en": "Raidwide + Draw In",
+  "ja": "全体攻撃と引き寄せ",
+  "note": ""
+ },
+ {
+  "en": "3x Tankbuster with Bleed",
+  "ja": "3回タンク強攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Front-left/Back-right, Avoid Laser",
+  "ja": "左前か右後ろ、レーザーを避ける",
+  "note": ""
+ },
+ {
+  "en": "Front-right/Back-left, Avoid Laser",
+  "ja": "右前か左後ろ、レーザーを避ける",
+  "note": ""
+ },
+ {
+  "en": "Get Dark Vengeance",
+  "ja": "闇のヴェンジェンスを取る",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Sin Bearer on You",
+  "ja": "自分に罪の担い手",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Sin Bearer on {event.target}",
+  "ja": "{event.target}に罪の担い手",
+  "note": ""
+ },
+ {
+  "en": "Pass Sin Bearer",
+  "ja": "罪の担い手を渡す",
+  "note": ""
+ },
+ {
+  "en": "Get Light Vengeance",
+  "ja": "光のヴェンジェンスを取る",
+  "note": ""
+ },
+ {
+  "en": "Stay Dark Vengeance",
+  "ja": "闇のヴェンジェンスのまま",
+  "note": ""
+ },
+ {
+  "en": "{event.target} Dead, Swap",
+  "ja": "{event.target}が戦闘不能、交代",
+  "note": ""
+ },
+ {
+  "en": "Tethered to {boss}",
+  "ja": "{boss}と線",
+  "note": ""
+ },
+ {
+  "en": "Tank Cleave on You, Avoid Line Stack",
+  "ja": "自分にタンク扇、直線頭割りを避ける",
+  "note": ""
+ },
+ {
+  "en": "Tank Cleaves on {players}",
+  "ja": "{players}にタンク扇",
+  "note": ""
+ },
+ {
+  "en": "Out of Hitbox",
+  "ja": "ボスの当たり判定の外へ",
+  "note": ""
+ },
+ {
+  "en": "+{count} Red",
+  "ja": "赤が{count}増える",
+  "note": ""
+ },
+ {
+  "en": "+{count} Blue",
+  "ja": "青が{count}増える",
+  "note": ""
+ },
+ {
+  "en": "{hit} for Ooze",
+  "ja": "スライムは{hit}",
+  "note": ""
+ },
+ {
+  "en": "Red: {red}, Blue: {blue}",
+  "ja": "赤{red}、青{blue}",
+  "note": ""
+ },
+ {
+  "en": "{dir} for Ooze",
+  "ja": "スライムは{dir}",
+  "note": ""
+ },
+ {
+  "en": "{dir1} / {dir2} Safe Spots",
+  "ja": "{dir1}か{dir2}が安置",
+  "note": ""
+ },
+ {
+  "en": "Line Stacks on {players}",
+  "ja": "{players}に直線頭割り",
+  "note": ""
+ },
+ {
+  "en": "Line Stack on You, Avoid Tank Cleave",
+  "ja": "自分に直線頭割り、タンク扇を避ける",
+  "note": ""
+ },
+ {
+  "en": "Wild Charge Positions",
+  "ja": "ワイルドチャージの配置",
+  "note": ""
+ },
+ {
+  "en": "Tether: Knockback to {dir}, then Stack at Wall",
+  "ja": "線あり、{dir}へノックバック、そのあと壁で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Knockback to Snowball, then Stack at Wall",
+  "ja": "雪玉へノックバック、そのあと壁で頭割り",
+  "note": ""
+ },
+ {
+  "en": "Out of Middle, Group Positions",
+  "ja": "中央から離れる、グループの配置",
+  "note": ""
+ },
+ {
+  "en": "Dodge Two Jets, then Spread",
+  "ja": "噴射を2つ避ける、そのあと散開",
+  "note": ""
+ },
+ {
+  "en": "In, then Knockback",
+  "ja": "中、そのあとノックバック",
+  "note": ""
+ },
+ {
+  "en": "Tankbusters on {players}",
+  "ja": "{players}にタンク強攻撃",
+  "note": ""
+ },
+ {
+  "en": "Left, then Get Behind",
+  "ja": "左、そのあと背後へ",
+  "note": ""
+ },
+ {
+  "en": "Right, then Get Behind",
+  "ja": "右、そのあと背後へ",
+  "note": ""
+ },
+ {
+  "en": "Left (Behind Boss)",
+  "ja": "左、ボスの背後",
+  "note": ""
+ },
+ {
+  "en": "Right (Behind Boss)",
+  "ja": "右、ボスの背後",
+  "note": ""
+ },
+ {
+  "en": "{dir} & Out",
+  "ja": "{dir}で外",
+  "note": ""
+ },
+ {
+  "en": "{dir} & In, then Knockback",
+  "ja": "{dir}で中、そのあとノックバック",
+  "note": ""
+ },
+ {
+  "en": "Meteor on You, Out",
+  "ja": "自分にメテオ、外",
+  "note": ""
+ },
+ {
+  "en": "Meteor on You, In, then Knockback",
+  "ja": "自分にメテオ、中、そのあとノックバック",
+  "note": ""
+ },
+ {
+  "en": "Meteor on You, Go {dir} & Out",
+  "ja": "自分にメテオ、{dir}で外",
+  "note": ""
+ },
+ {
+  "en": "Meteor on You, Go {dir} & In, then Knockback",
+  "ja": "自分にメテオ、{dir}で中、そのあとノックバック",
+  "note": ""
+ },
+ {
+  "en": "Go South Out, then Stack Launch Marker on You",
+  "ja": "南で外、そのあと自分に打ち上げの頭割り",
+  "note": ""
+ },
+ {
+  "en": "Go South In (Knockback), then Stack Launch Marker on You",
+  "ja": "南で中、ノックバック、そのあと自分に打ち上げの頭割り",
+  "note": ""
+ },
+ {
+  "en": "Go North Out, then Stack Launch Marker on You",
+  "ja": "北で外、そのあと自分に打ち上げの頭割り",
+  "note": ""
+ },
+ {
+  "en": "Go North In (Knockback), then Stack Launch Marker on You",
+  "ja": "北で中、ノックバック、そのあと自分に打ち上げの頭割り",
+  "note": ""
+ },
+ {
+  "en": "Stack, Launch over Boss",
+  "ja": "頭割り、ボスを越えて打ち上げ",
+  "note": ""
+ },
+ {
+  "en": "Stack, Launch towards Boss",
+  "ja": "頭割り、ボスに向かって打ち上げ",
+  "note": ""
+ },
+ {
+  "en": "Add Positions and Out",
+  "ja": "雑魚の配置、外",
+  "note": ""
+ },
+ {
+  "en": "{dir} Out, then Towers",
+  "ja": "{dir}で外、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "Go Towers Side and Out",
+  "ja": "塔の側で外",
+  "note": ""
+ },
+ {
+  "en": "{dir} In, then Knockback, then Towers",
+  "ja": "{dir}で中、ノックバック、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "Go Towers Side and In, then Knockback",
+  "ja": "塔の側で中、そのあとノックバック",
+  "note": ""
+ },
+ {
+  "en": "Get Towers, then Front Right",
+  "ja": "塔を踏む、そのあと右前",
+  "note": ""
+ },
+ {
+  "en": "Get Towers, then Back Left",
+  "ja": "塔を踏む、そのあと左後ろ",
+  "note": ""
+ },
+ {
+  "en": "Get Towers, then Safe Corner",
+  "ja": "塔を踏む、そのあと安全な角",
+  "note": ""
+ },
+ {
+  "en": "Front Right (Later)",
+  "ja": "あとで右前",
+  "note": ""
+ },
+ {
+  "en": "Back Left (Later)",
+  "ja": "あとで左後ろ",
+  "note": ""
+ },
+ {
+  "en": "Avoid Falling Statues",
+  "ja": "落ちてくる像を避ける",
+  "note": ""
+ },
+ {
+  "en": "Tanks Close (Party Far) x3",
+  "ja": "タンクは近く、パーティは遠く、3回",
+  "note": ""
+ },
+ {
+  "en": "Tanks Far (Party Close) x3",
+  "ja": "タンクは遠く、パーティは近く、3回",
+  "note": ""
+ },
+ {
+  "en": "Flipped Y Daggers",
+  "ja": "反転したY字の短剣",
+  "note": ""
+ },
+ {
+  "en": "Y Daggers",
+  "ja": "Y字の短剣",
+  "note": ""
+ },
+ {
+  "en": "Out, Square Corner",
+  "ja": "外、四角の角",
+  "note": ""
+ },
+ {
+  "en": "In, between Squares",
+  "ja": "中、四角の間",
+  "note": ""
+ },
+ {
+  "en": "Near and Far Tank Cleave, then 2 Tank Autos",
+  "ja": "近くと遠くにタンク扇、そのあとタンクにオートアタック2回",
+  "note": ""
+ },
+ {
+  "en": "Be on Boss Hitbox, Avoid Tank Cleaves",
+  "ja": "ボスの当たり判定に入る、タンク扇を避ける",
+  "note": ""
+ },
+ {
+  "en": "Attack Yellow Canisters (Axe)",
+  "ja": "黄色のキャニスターを攻撃、斧",
+  "note": ""
+ },
+ {
+  "en": "Attack Blue Canisters (Lance)",
+  "ja": "青のキャニスターを攻撃、槍",
+  "note": ""
+ },
+ {
+  "en": "Line Stack at Staff",
+  "ja": "杖で直線頭割り",
+  "note": ""
+ },
+ {
+  "en": "Big AoE on You, Go to Wall by Purple Circle",
+  "ja": "自分に大きい範囲、紫の円のそばの壁へ",
+  "note": ""
+ },
+ {
+  "en": "Small AoE on You, Stay Square, then Between Squares",
+  "ja": "自分に小さい範囲、四角に残る、そのあと四角の間",
+  "note": ""
+ },
+ {
+  "en": "Big AoE on You (Later)",
+  "ja": "あとで自分に大きい範囲",
+  "note": ""
+ },
+ {
+  "en": "Small AoE on You (Later)",
+  "ja": "あとで自分に小さい範囲",
+  "note": ""
+ },
+ {
+  "en": "Big AoE on {event.target}, Be on Square",
+  "ja": "{event.target}に大きい範囲、四角に乗る",
+  "note": ""
+ },
+ {
+  "en": "Small AoEs on {players}",
+  "ja": "{players}に小さい範囲",
+  "note": ""
+ },
+ {
+  "en": "AoEs on {players}",
+  "ja": "{players}に範囲",
+  "note": ""
+ },
+ {
+  "en": "Stay for AoE, then In, Between Squares",
+  "ja": "範囲を受けてから中、四角の間",
+  "note": ""
+ },
+ {
+  "en": "In, Between Squares, then To Wall",
+  "ja": "中、四角の間、そのあと壁へ",
+  "note": ""
+ },
+ {
+  "en": "In, Between Squares, then Solo Square",
+  "ja": "中、四角の間、そのあと1人で四角",
+  "note": ""
+ },
+ {
+  "en": "In, between Squares, then On Square",
+  "ja": "中、四角の間、そのあと四角に乗る",
+  "note": ""
+ },
+ {
+  "en": "Small AoE on You, Be on Square (Solo)",
+  "ja": "自分に小さい範囲、1人で四角に乗る",
+  "note": ""
+ },
+ {
+  "en": "On Square, Avoid {players}",
+  "ja": "四角に乗る、{players}を避ける",
+  "note": ""
+ },
+ {
+  "en": "Short Stack on You (17)",
+  "ja": "自分に短い頭割り、17秒",
+  "note": ""
+ },
+ {
+  "en": "Medium Stack on You (25)",
+  "ja": "自分に中くらいの頭割り、25秒",
+  "note": ""
+ },
+ {
+  "en": "Long Stack on You (33)",
+  "ja": "自分に長い頭割り、33秒",
+  "note": ""
+ },
+ {
+  "en": "Northeast Off",
+  "ja": "北東はオフ",
+  "note": ""
+ },
+ {
+  "en": "Northeast On",
+  "ja": "北東はオン",
+  "note": ""
+ },
+ {
+  "en": "South Off",
+  "ja": "南はオフ",
+  "note": ""
+ },
+ {
+  "en": "South On",
+  "ja": "南はオン",
+  "note": ""
+ },
+ {
+  "en": "Northwest Off",
+  "ja": "北西はオフ",
+  "note": ""
+ },
+ {
+  "en": "{dir} Later",
+  "ja": "あとで{dir}",
+  "note": ""
+ },
+ {
+  "en": "{dir} Later, then Get Hit {dir}",
+  "ja": "あとで{dir}、そのあと{dir}で当たる",
+  "note": ""
+ },
+ {
+  "en": "Circles First",
+  "ja": "円が先",
+  "note": ""
+ },
+ {
+  "en": "Crosses First",
+  "ja": "十字が先",
+  "note": ""
+ },
+ {
+  "en": "Tankbuster with Bleed on You",
+  "ja": "自分にタンク強攻撃、継続ダメージあり",
+  "note": ""
+ },
+ {
+  "en": "Avoid Twister",
+  "ja": "竜巻を避ける",
+  "note": ""
+ },
+ {
+  "en": "Intercard Towers",
+  "ja": "斜めの塔",
+  "note": ""
+ },
+ {
+  "en": "Cardinal Towers",
+  "ja": "十字の塔",
+  "note": ""
+ },
+ {
+  "en": "Cardinal/Intercard Towers",
+  "ja": "十字か斜めの塔",
+  "note": ""
+ },
+ {
+  "en": "{dir1}/{dir2} Dive, then Towers",
+  "ja": "{dir1}か{dir2}にダイブ、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "Boss Dive, then Towers",
+  "ja": "ボスがダイブ、そのあと塔",
+  "note": ""
+ },
+ {
+  "en": "{dir1}/{dir2} Towers, then Intercard Towers",
+  "ja": "{dir1}か{dir2}の塔、そのあと斜めの塔",
+  "note": ""
+ },
+ {
+  "en": "{dir1}/{dir2} Towers, then Cardinal Towers",
+  "ja": "{dir1}か{dir2}の塔、そのあと十字の塔",
+  "note": ""
+ },
+ {
+  "en": "Towers, then Cardinal/Intercard Towers",
+  "ja": "塔、そのあと十字か斜めの塔",
+  "note": ""
+ },
+ {
+  "en": "Wicked Water on You",
+  "ja": "自分にウィキッドウォーター",
+  "note": "技名要確認"
+ },
+ {
+  "en": "Get Hit by Ice Explosion",
+  "ja": "氷の爆発に当たる",
+  "note": ""
+ },
+ {
+  "en": "Break Gaols",
+  "ja": "ジェイルを壊す",
+  "note": ""
+ },
+ {
+  "en": "{clock}",
+  "ja": "{clock}",
+  "note": ""
+ },
+ {
+  "en": "Circles First + {clock}",
+  "ja": "円が先、{clock}",
+  "note": ""
+ },
+ {
+  "en": "Crosses First + {clock}",
+  "ja": "十字が先、{clock}",
+  "note": ""
+ },
+ {
+  "en": "{dir}: {clock}",
+  "ja": "{dir}、{clock}",
+  "note": ""
+ },
+ {
+  "en": "{dir}: Circles First + {clock}",
+  "ja": "{dir}、円が先、{clock}",
+  "note": ""
+ },
+ {
+  "en": "{dir}: Crosses First + {clock}",
+  "ja": "{dir}、十字が先、{clock}",
+  "note": ""
+ },
+ {
+  "en": "Get Vertical Towers",
+  "ja": "縦の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Get Vertical Towers, then {dir}",
+  "ja": "縦の塔を踏む、そのあと{dir}",
+  "note": ""
+ },
+ {
+  "en": "Get Horizontal Towers",
+  "ja": "横の塔を踏む",
+  "note": ""
+ },
+ {
+  "en": "Get Horizontal Towers, then {dir}",
+  "ja": "横の塔を踏む、そのあと{dir}",
+  "note": ""
+ },
+ {
+  "en": "Get Towers, then {dir}",
+  "ja": "塔を踏む、そのあと{dir}",
+  "note": ""
+ },
+ {
+  "en": "North: Interrupt {event.source}",
+  "ja": "北、{event.source}に詠唱中断",
+  "note": ""
+ },
+ {
+  "en": "South: Interrupt {event.source}",
+  "ja": "南、{event.source}に詠唱中断",
+  "note": ""
+ },
+ {
+  "en": "Wild Charge (East), Stack in a Row",
+  "ja": "ワイルドチャージ、東、縦に並んで頭割り",
+  "note": ""
+ },
+ {
+  "en": "North: Raidwide, Dispel if Possible",
+  "ja": "北、全体攻撃、できればディスペル",
+  "note": ""
+ },
+ {
+  "en": "South: Raidwide, Dispel if Possible",
+  "ja": "南、全体攻撃、できればディスペル",
+  "note": ""
+ },
+ {
+  "en": "Romeo's Ballad if Possible",
+  "ja": "できればロメオバラード",
+  "note": "サポートジョブのアクション名要確認"
+ },
+ {
+  "en": "Top Row, Bosses Apart",
+  "ja": "上の列、ボスを離す",
+  "note": ""
+ },
+ {
+  "en": "Bottom Row, Bosses Apart",
+  "ja": "下の列、ボスを離す",
+  "note": ""
+ },
+ {
+  "en": "Top Row, Bosses Together",
+  "ja": "上の列、ボスをくっつける",
+  "note": ""
+ },
+ {
+  "en": "Bottom Row, Bosses Together",
+  "ja": "下の列、ボスをくっつける",
+  "note": ""
+ },
+ {
+  "en": "Pull Boss Away from Bombs",
+  "ja": "ボスを爆弾から離す",
+  "note": ""
+ },
+ {
+  "en": "Recuperation if Possible",
+  "ja": "できればリキュペレート",
+  "note": "サポートジョブのアクション名要確認"
+ },
+ {
+  "en": "Dispel {event.target}",
+  "ja": "{event.target}にディスペル",
+  "note": ""
+ },
+ {
+  "en": "In+Cardinals",
+  "ja": "中と十字",
+  "note": ""
+ },
+ {
+  "en": "Dodge Expanding Rings",
+  "ja": "広がる輪を避ける",
+  "note": ""
+ },
+ {
+  "en": "In, then Out, then Sides",
+  "ja": "中、そのあと外、そのあと横",
+  "note": ""
+ },
+ {
+  "en": "Out, then In, then Sides",
+  "ja": "外、そのあと中、そのあと横",
+  "note": ""
+ },
+ {
+  "en": "Follow Dash, then Get Behind",
+  "ja": "突進について行く、そのあと背後へ",
+  "note": ""
+ },
+ {
+  "en": "Away After Dash",
+  "ja": "突進のあと離れる",
+  "note": ""
+ },
+ {
+  "en": "{event.ability} on {event.target}",
+  "ja": "{event.target}に{event.ability}",
+  "note": ""
+ },
+ {
+  "en": "No dedicated triggers here, using generic callouts",
+  "ja": "このコンテンツは専用のトリガーが無いので、汎用の読み上げを使います",
+  "note": ""
+ }
+]

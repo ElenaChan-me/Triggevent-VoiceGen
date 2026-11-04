@@ -2606,5 +2606,21 @@
 "official": true,
 "expac": "黄金のレガシー",
 "kind": "絶"
+},
+{
+"key": "TheFinalVerseQuantum",
+"zone": 1311,
+"name": "詩想エミネントグリーフ討滅戦",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "討滅戦"
+},
+{
+"key": "TheOccultCrescentSouthHorn",
+"zone": 1252,
+"name": "蜃気楼の島 クレセントアイル：南征編",
+"official": true,
+"expac": "黄金のレガシー",
+"kind": "フィールド"
 }
 ]

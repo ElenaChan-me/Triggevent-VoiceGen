@@ -63,6 +63,8 @@ CONTENTS = [
     ('UWU', '絶アルテマウェポン破壊作戦（UWU）', '紅蓮のリベレーター', '絶'),
     ('Odin', 'オーディン討滅戦', '新生エオルゼア', 'その他'),
 ]
+# 汎用トリガーなど、どのコンテンツでも使う読み上げ
+CONTENTS.append(('None', '共通の読み上げ（汎用トリガーなど）', '共通', '共通'))
 # 上の一覧に無いコンテンツは、ゲームデータの日本語名（duty_names.json）で後ろに足す
 _listed = {c[0] for c in CONTENTS}
 for d in json.load(open('duty_names.json', encoding='utf-8')):

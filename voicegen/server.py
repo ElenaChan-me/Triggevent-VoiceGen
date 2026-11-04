@@ -17,7 +17,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from . import applio, audio, names, recordings, script, voicevox
+from . import applio, audio, lines, names, recordings, script, voicevox
 from .config import Config, ConfigError
 from .pipeline import Pipeline, SharedEngine
 
@@ -35,6 +35,7 @@ class App:
         self.engine = SharedEngine(cfg)
         self.pipeline = Pipeline(cfg, log=lambda _: None, engine=self.engine)
         self.names = Pipeline(cfg, log=lambda _: None, engine=self.engine, subdir="names")
+        self.lines = Pipeline(cfg, log=lambda _: None, engine=self.engine, subdir="lines")
         # RVC は GPU を使い、manifest も書き換えるので、作り直しは1件ずつ順番に行う
         self.lock = threading.Lock()
 
@@ -78,17 +79,23 @@ class App:
         directory はパックのフォルダ。XIVToolHub で入れたパックは出力先と違う場所にあるので、そのパックの names に置く。
         書き込むのは、同じ名前のパックの manifest.json があるフォルダの names だけに限る。
         """
+        return self._make(pack, names.items(requested), "names", self.names, directory)
+
+    def make_lines(self, pack: str, requested: list, directory: str | None = None) -> dict:
+        """台本に無い読み上げ（Triggevent Plus が日本語にした文）の音声を作る。置き場所の決まりは make_names と同じ。"""
+        return self._make(pack, lines.items(requested), "lines", self.lines, directory)
+
+    def _make(self, pack: str, items: list, subdir: str, default: Pipeline, directory: str | None) -> dict:
         if pack != self.cfg.pack.name:
             raise PermissionError(f"このサーバーはパック「{self.cfg.pack.name}」用です（頼まれたのは「{pack}」）。")
-        pipe = self.names if not directory else self.names_for(Path(directory))
-        items = names.items(requested)
+        pipe = default if not directory else self.pipeline_for(Path(directory), subdir)
         todo = [i for i in items if not pipe.is_current(i)]
         if todo:
             with self.lock:
                 pipe.run_all(todo)
         return {"pack": self.cfg.pack.name, "generated": len(todo), "ready": [i.id for i in items if pipe.is_current(i)]}
 
-    def names_for(self, directory: Path) -> Pipeline:
+    def pipeline_for(self, directory: Path, subdir: str) -> Pipeline:
         if not directory.is_absolute():
             raise ValueError("パックのフォルダは絶対パスで指定してください。")
         manifest = directory / "manifest.json"
@@ -98,8 +105,8 @@ class App:
             raise ValueError(f"パックのフォルダに manifest.json がありません: {directory}") from e
         if name != self.cfg.pack.name:
             raise PermissionError(f"{directory} はパック「{self.cfg.pack.name}」ではありません。")
-        pipe = Pipeline(self.cfg, log=lambda _: None, engine=self.engine, subdir="names")
-        pipe.pack_dir = directory.resolve() / "names"
+        pipe = Pipeline(self.cfg, log=lambda _: None, engine=self.engine, subdir=subdir)
+        pipe.pack_dir = directory.resolve() / subdir
         return pipe
 
     def audio_path(self, kind: str, item: script.Item) -> Path:
@@ -178,7 +185,9 @@ def make_handler(app: App, origin: str):
                 return
             parts = self._route()
             if parts == ["api", "names"]:
-                return self._names()
+                return self._generate(app.make_names, "names")
+            if parts == ["api", "lines"]:
+                return self._generate(app.make_lines, "lines")
             if len(parts) != 3 or parts[0] != "api" or parts[1] not in ("recording", "generate"):
                 return self._error(HTTPStatus.NOT_FOUND, "見つかりません。")
             try:
@@ -196,15 +205,15 @@ def make_handler(app: App, origin: str):
                 traceback.print_exc()
                 self._error(HTTPStatus.INTERNAL_SERVER_ERROR, "予期しないエラーが発生しました。コンソールを確認してください。")
 
-        def _names(self):
+        def _generate(self, make, key):
             length = int(self.headers.get("Content-Length") or 0)
             if length <= 0 or length > 64 * 1024:
-                return self._error(HTTPStatus.BAD_REQUEST, "名前の一覧が空か、大きすぎます。")
+                return self._error(HTTPStatus.BAD_REQUEST, "一覧が空か、大きすぎます。")
             try:
                 body = json.loads(self.rfile.read(length))
                 directory = body.get("directory")
-                self._json(app.make_names(str(body.get("pack", "")), list(body.get("names", [])),
-                                          str(directory) if directory else None))
+                self._json(make(str(body.get("pack", "")), list(body.get(key, [])),
+                                str(directory) if directory else None))
             except PermissionError as e:
                 self._error(HTTPStatus.CONFLICT, str(e))
             except (ValueError, TypeError, AttributeError) as e:

@@ -78,6 +78,12 @@ Triggevent Plus の「VoiceGen のフォルダ（自動で起動）」にこの�
 `python -m voicegen names "Lily Tayler"` creates name clips in the pack's `names` folder (first name only). While `ui` is running, Triggevent Plus can request them automatically via `/api/names` (127.0.0.1 only).
 If this folder is set as "VoiceGen folder" in Triggevent Plus, it starts the server itself when needed (`--pack` picks the matching `config*.toml`, `--parent-pid` stops the server and VOICEVOX when Triggevent Plus exits). The server log is written to `work/voicegen-server.log`.
 
+### 台本に無い読み上げ / Lines outside the script
+
+`python -m voicegen lines "北東が安置"` で、パックの `lines` フォルダに日本語の文の音声を作ります。Triggevent Plus の「収録の無い読み上げの音声を VoiceGen で作る」を有効にすると、収録の無い読み上げを ACT の TTS で読んだあとに自動で頼まれます（`/api/lines`、127.0.0.1 のみ、1回 24 件・1文 120 文字まで）。`names` と同じく、配布用の zip には入れません。
+
+`python -m voicegen lines "<Japanese text>"` creates clips in the pack's `lines` folder. Triggevent Plus requests them automatically via `/api/lines` for callouts that had no recording. They are not included in the distributable zip.
+
 ## 自分の声で直す / Fixing lines with your own voice
 
 TTS の読み方がおかしいセリフは、自分で読んだ声を RVC に通して差し替えられます。録音があるセリフは、VOICEVOX の代わりに録音が使われます。

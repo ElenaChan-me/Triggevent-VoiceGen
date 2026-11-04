@@ -396,6 +396,25 @@ class ServerTests(unittest.TestCase):
         status, res = self.call("POST", "/api/names", body)
         self.assertEqual(json.loads(res)["generated"], 0)
 
+    def test_lines_are_generated_into_pack(self):
+        from voicegen import lines
+        pack = self.app.cfg.pack.name
+        installed = self.base / "hub" / "voicepack"
+        installed.mkdir(parents=True)
+        (installed / "manifest.json").write_text(json.dumps({"name": pack}), encoding="utf-8")
+        body = json.dumps({"pack": pack, "directory": str(installed), "lines": ["北東が安置", " 北東が安置 "]}).encode()
+        status, res = self.call("POST", "/api/lines", body)
+        self.assertEqual(status, 200, res)
+        line_id = lines.line_id("北東が安置")
+        self.assertEqual(json.loads(res)["ready"], [line_id])
+        self.assertEqual(FakeVoicevox.texts[-1:], ["北東が安置"])
+        self.assertTrue((installed / "lines" / f"{line_id}.wav").is_file())
+        # 長すぎる文や制御文字の入った文は作らない
+        for bad in ["あ" * (lines.MAX_CHARS + 1), "北\n東", ""]:
+            body = json.dumps({"pack": pack, "lines": [bad]}).encode()
+            status, _ = self.call("POST", "/api/lines", body)
+            self.assertEqual(status, 400, bad)
+
     def test_names_go_into_pack_installed_elsewhere(self):
         pack = self.app.cfg.pack.name
         installed = self.base / "hub" / "voicepack"

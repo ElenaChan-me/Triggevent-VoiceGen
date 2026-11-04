@@ -1,7 +1,7 @@
 """ボイスパックを配布用の zip にする。
 
 XIVToolHub は zip を展開したフォルダの manifest.json を目印にするので、manifest.json を zip の一番上に置く。
-プレイヤー名の音声（names）は使う人ごとに違うので入れない。
+プレイヤー名の音声（names）と、使う人の PC で後から作った読み上げ（lines）は、使う人ごとに違うので入れない。
 """
 from __future__ import annotations
 
